@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vs2010 on 程序猿的小本本</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/vs2010/</link>
+    <link>http://www.gsymy.com/tags/vs2010/</link>
     <description>Recent content in Vs2010 on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -10,14 +10,14 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Tue, 27 Oct 2015 10:33:30 +0000</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/vs2010/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.gsymy.com/tags/vs2010/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>qmake不能生成vs工程文件</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/10/27/qmake_vsproject.html</link>
+      <link>http://www.gsymy.com/2015/10/27/qmake_vsproject.html</link>
       <pubDate>Tue, 27 Oct 2015 10:33:30 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/10/27/qmake_vsproject.html</guid>
+      <guid>http://www.gsymy.com/2015/10/27/qmake_vsproject.html</guid>
       <description>&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;报错信息如下：&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;WARNING: Unable to generate output for: Makefile.Debug [TEMPLATE vcapp]&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
@@ -44,10 +44,10 @@
     
     <item>
       <title>not found or not built by the last incremental link VS2010编译警告</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/10/25/not-found-or-not-built-by-the-last-incremental-link-vs2010warning.html</link>
+      <link>http://www.gsymy.com/2015/10/25/not-found-or-not-built-by-the-last-incremental-link-vs2010warning.html</link>
       <pubDate>Sun, 25 Oct 2015 11:54:56 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/10/25/not-found-or-not-built-by-the-last-incremental-link-vs2010warning.html</guid>
+      <guid>http://www.gsymy.com/2015/10/25/not-found-or-not-built-by-the-last-incremental-link-vs2010warning.html</guid>
       <description>&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;not found or not built by the last incremental link; performing full link&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span style=&#34;color: gray; font-size: 9pt;&#34;&gt;2015年10月25日&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
@@ -74,10 +74,10 @@
     
     <item>
       <title>Visualstudio C语言包含C&#43;&#43;头文件编译不通过</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/09/07/vs_error_include_cpp.html</link>
+      <link>http://www.gsymy.com/2015/09/07/vs_error_include_cpp.html</link>
       <pubDate>Mon, 07 Sep 2015 10:29:39 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/09/07/vs_error_include_cpp.html</guid>
+      <guid>http://www.gsymy.com/2015/09/07/vs_error_include_cpp.html</guid>
       <description>&lt;pre class=&#34;&#34;&gt;&lt;code&gt;error C2054: expected &#39;(&#39; to follow &#39;using&#39;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;pre&gt;&lt;code&gt;error C2061: syntax error : identifier &#39;using&#39;

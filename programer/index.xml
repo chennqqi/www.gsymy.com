@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programers on 程序猿的小本本</title>
-    <link>http://replace-this-with-your-hugo-site.com/programer/</link>
+    <link>http://www.gsymy.com/programer/</link>
     <description>Recent content in Programers on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -10,14 +10,14 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Tue, 01 Sep 2015 11:12:44 +0000</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/programer/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.gsymy.com/programer/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>程序猿酷站</title>
-      <link>http://replace-this-with-your-hugo-site.com/programer/</link>
+      <link>http://www.gsymy.com/programer/</link>
       <pubDate>Tue, 01 Sep 2015 11:12:44 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/programer/</guid>
+      <guid>http://www.gsymy.com/programer/</guid>
       <description>
 
 &lt;p&gt;根据我的经验分享一些不错程序员酷站给大家，并且附上我的点评&lt;/p&gt;

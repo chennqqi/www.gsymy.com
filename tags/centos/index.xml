@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Centos on 程序猿的小本本</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/centos/</link>
+    <link>http://www.gsymy.com/tags/centos/</link>
     <description>Recent content in Centos on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -10,14 +10,14 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Wed, 09 Dec 2015 14:15:43 +0000</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/centos/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.gsymy.com/tags/centos/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>linux更新svn客户端 | svn,subversion,更新svn</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/12/09/linux_update_svn.html</link>
+      <link>http://www.gsymy.com/2015/12/09/linux_update_svn.html</link>
       <pubDate>Wed, 09 Dec 2015 14:15:43 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/12/09/linux_update_svn.html</guid>
+      <guid>http://www.gsymy.com/2015/12/09/linux_update_svn.html</guid>
       <description>&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;CentOS自带的svn版本是1.6.11&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://subversion.apache.org/images/svn-name-banner.jpg&#34; alt=&#34;Subversion&#34; /&gt;&lt;/p&gt;
@@ -64,10 +64,10 @@
     
     <item>
       <title>非root用户使用tcpdump</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/08/23/tcpdumpnoroot.html</link>
+      <link>http://www.gsymy.com/2015/08/23/tcpdumpnoroot.html</link>
       <pubDate>Sun, 23 Aug 2015 15:10:26 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/08/23/tcpdumpnoroot.html</guid>
+      <guid>http://www.gsymy.com/2015/08/23/tcpdumpnoroot.html</guid>
       <description>&lt;ol&gt;
 &lt;li&gt;&lt;p&gt; centos/redhat下安装tcpdump &lt;pre class=&#34;lang:default decode:true&#34;&gt;sudo yum install -y tcpdump&lt;/pre&gt;&lt;/p&gt;
 
@@ -85,10 +85,10 @@
     
     <item>
       <title>linux 修改默认Qt版本</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/08/08/linux-change_default_qt_version.html</link>
+      <link>http://www.gsymy.com/2015/08/08/linux-change_default_qt_version.html</link>
       <pubDate>Sat, 08 Aug 2015 03:03:59 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/08/08/linux-change_default_qt_version.html</guid>
+      <guid>http://www.gsymy.com/2015/08/08/linux-change_default_qt_version.html</guid>
       <description>&lt;p&gt;centos 5\6 下默认使用Qt3&lt;/p&gt;
 
 &lt;p&gt;可以通过sudo yum install qt-devel 安装qt4&lt;/p&gt;
@@ -175,10 +175,10 @@ fi&lt;/pre&gt;
     
     <item>
       <title>centos 无法找到json-c</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/07/30/centos-cantfind-json-c.html</link>
+      <link>http://www.gsymy.com/2015/07/30/centos-cantfind-json-c.html</link>
       <pubDate>Thu, 30 Jul 2015 15:46:20 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/07/30/centos-cantfind-json-c.html</guid>
+      <guid>http://www.gsymy.com/2015/07/30/centos-cantfind-json-c.html</guid>
       <description>
 
 &lt;h2 id=&#34;错误信息&#34;&gt;错误信息:&lt;/h2&gt;
@@ -232,10 +232,10 @@ fi&lt;/pre&gt;
     
     <item>
       <title>linux 无法找到gengetopt</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/07/30/linux_not_found_gengetopt.html</link>
+      <link>http://www.gsymy.com/2015/07/30/linux_not_found_gengetopt.html</link>
       <pubDate>Thu, 30 Jul 2015 15:43:42 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/07/30/linux_not_found_gengetopt.html</guid>
+      <guid>http://www.gsymy.com/2015/07/30/linux_not_found_gengetopt.html</guid>
       <description>
 
 &lt;h2 id=&#34;系统没有安装gengetopt&#34;&gt;&lt;strong&gt;系统没有安装gengetopt&lt;/strong&gt;&lt;/h2&gt;

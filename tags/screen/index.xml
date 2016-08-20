@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Screen on 程序猿的小本本</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/screen/</link>
+    <link>http://www.gsymy.com/tags/screen/</link>
     <description>Recent content in Screen on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -10,14 +10,14 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Tue, 25 Aug 2015 00:57:10 +0000</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/screen/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.gsymy.com/tags/screen/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>linux screen 命令详解(转)</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/08/25/linux-screen.html</link>
+      <link>http://www.gsymy.com/2015/08/25/linux-screen.html</link>
       <pubDate>Tue, 25 Aug 2015 00:57:10 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/08/25/linux-screen.html</guid>
+      <guid>http://www.gsymy.com/2015/08/25/linux-screen.html</guid>
       <description>&lt;p&gt;转&lt;a href=&#34;http://www.cnblogs.com/mchina/archive/2013/01/30/2880680.html&#34; target=&#34;_blank&#34;&gt;linux screen 命令详解 &amp;#8211; David_Tang &amp;#8211; 博客园&lt;/a&gt;&lt;/p&gt;
 
 &lt;div id=&#34;home&#34;&gt;

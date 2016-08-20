@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows 开发 on 程序猿的小本本</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/windows-%E5%BC%80%E5%8F%91/</link>
+    <link>http://www.gsymy.com/tags/windows-%E5%BC%80%E5%8F%91/</link>
     <description>Recent content in Windows 开发 on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -10,14 +10,14 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Thu, 13 Aug 2015 10:45:25 +0000</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/windows-%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.gsymy.com/tags/windows-%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>windows错误码大全,妈妈再也不担心我win32api返回失败了！</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/08/13/win_errorcode.html</link>
+      <link>http://www.gsymy.com/2015/08/13/win_errorcode.html</link>
       <pubDate>Thu, 13 Aug 2015 10:45:25 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/08/13/win_errorcode.html</guid>
+      <guid>http://www.gsymy.com/2015/08/13/win_errorcode.html</guid>
       <description>&lt;p&gt;windows错误码大全，中文对照表&lt;/p&gt;
 
 &lt;pre class=&#34;width:500 lang:php decode:true&#34; title=&#34;window错误码大全&#34;&gt;0000 操作已成功完成。
@@ -959,10 +959,10 @@
     
     <item>
       <title>VS20XX 错误 Error C2143 (missing ; before namespace) in MS VC include</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/06/30/vs20xx-error-c2143-missing-before-namespace-in-ms-vc-include.html</link>
+      <link>http://www.gsymy.com/2015/06/30/vs20xx-error-c2143-missing-before-namespace-in-ms-vc-include.html</link>
       <pubDate>Tue, 30 Jun 2015 09:44:00 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/06/30/vs20xx-error-c2143-missing-before-namespace-in-ms-vc-include.html</guid>
+      <guid>http://www.gsymy.com/2015/06/30/vs20xx-error-c2143-missing-before-namespace-in-ms-vc-include.html</guid>
       <description>
 
 &lt;h2 id=&#34;错误信息&#34;&gt;错误信息：&lt;/h2&gt;

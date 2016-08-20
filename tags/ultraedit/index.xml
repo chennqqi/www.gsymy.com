@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ultraedit on 程序猿的小本本</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/ultraedit/</link>
+    <link>http://www.gsymy.com/tags/ultraedit/</link>
     <description>Recent content in Ultraedit on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -10,14 +10,14 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Sun, 23 Aug 2015 15:14:50 +0000</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/ultraedit/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.gsymy.com/tags/ultraedit/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>UE编辑器加载格式化代码插件astyle</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/08/23/ue_format.html</link>
+      <link>http://www.gsymy.com/2015/08/23/ue_format.html</link>
       <pubDate>Sun, 23 Aug 2015 15:14:50 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/08/23/ue_format.html</guid>
+      <guid>http://www.gsymy.com/2015/08/23/ue_format.html</guid>
       <description>&lt;p&gt;UE 的格式化功能不强，自带的astyle版本陈旧，一般采用开源工具astyle来实现代码格式化。&lt;/p&gt;
 
 &lt;ol&gt;

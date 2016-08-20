@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>程序猿的小本本</title>
-    <link>http://replace-this-with-your-hugo-site.com/</link>
+    <link>http://www.gsymy.com/</link>
     <description>Recent content on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -10,14 +10,14 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Mon, 11 Jan 2016 14:48:49 +0000</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.gsymy.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>centos安装gitolite</title>
-      <link>http://replace-this-with-your-hugo-site.com/2016/01/11/centos_install_gitolite.html</link>
+      <link>http://www.gsymy.com/2016/01/11/centos_install_gitolite.html</link>
       <pubDate>Mon, 11 Jan 2016 14:48:49 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2016/01/11/centos_install_gitolite.html</guid>
+      <guid>http://www.gsymy.com/2016/01/11/centos_install_gitolite.html</guid>
       <description>&lt;p&gt;&lt;span style=&#34;color: black; font-family: 微软雅黑;&#34;&gt;&lt;strong&gt;安装基础包&lt;/strong&gt;&lt;span style=&#34;font-size: 12pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
 
 &lt;p style=&#34;margin-left: 27pt;&#34;&gt;
@@ -456,10 +456,10 @@
     
     <item>
       <title>使用nginx搭建https服务器</title>
-      <link>http://replace-this-with-your-hugo-site.com/2016/01/10/using_https_in_nginx.html</link>
+      <link>http://www.gsymy.com/2016/01/10/using_https_in_nginx.html</link>
       <pubDate>Sun, 10 Jan 2016 10:33:53 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2016/01/10/using_https_in_nginx.html</guid>
+      <guid>http://www.gsymy.com/2016/01/10/using_https_in_nginx.html</guid>
       <description>&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;最近在研究&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;nginx&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;，整好遇到一个需求就是希望服务器与客户端之间传输内容是加密的，防止中间监听泄露信息，但是去证书服务商那边申请证书又不合算，因为访问服务器的都是内部人士，所以自己给自己颁发证书，忽略掉浏览器的不信任警报即可。下面是颁发证书和配置过程。&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;首先确保机器上安装了&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;openssl&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;和&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;openssl-devel&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
@@ -504,10 +504,10 @@ ssl_certificate_key /usr/local/nginx/conf/server_nopwd.key;
     
     <item>
       <title>Redis 删除所有键值 | redis,删除key,key</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/12/30/redis-delkey.html</link>
+      <link>http://www.gsymy.com/2015/12/30/redis-delkey.html</link>
       <pubDate>Wed, 30 Dec 2015 13:16:53 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/12/30/redis-delkey.html</guid>
+      <guid>http://www.gsymy.com/2015/12/30/redis-delkey.html</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://www.gsymy.com/wp-content/uploads/2015/12/123015_1045_Redis1.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;使用命令方式删除所有&lt;/span&gt;&lt;/p&gt;
@@ -526,10 +526,10 @@ ssl_certificate_key /usr/local/nginx/conf/server_nopwd.key;
     
     <item>
       <title>Visualstudio 编译不能打开pch文件 | vs2010,visualstudio,pch,预处理</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/12/30/visualstudio-pch.html</link>
+      <link>http://www.gsymy.com/2015/12/30/visualstudio-pch.html</link>
       <pubDate>Wed, 30 Dec 2015 10:38:43 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/12/30/visualstudio-pch.html</guid>
+      <guid>http://www.gsymy.com/2015/12/30/visualstudio-pch.html</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.gsymy.com/wp-content/uploads/2015/12/a8773912b31bb051b9d04542307adab44bede0e0.jpg&#34; rel=&#34;attachment wp-att-539&#34;&gt;&lt;img class=&#34;alignnone size-full wp-image-539&#34; src=&#34;http://www.gsymy.com/wp-content/uploads/2015/12/a8773912b31bb051b9d04542307adab44bede0e0.jpg&#34; alt=&#34;a8773912b31bb051b9d04542307adab44bede0e0&#34; width=&#34;600&#34; height=&#34;300&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;pch&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;文件是&lt;/span&gt;vs&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;生成的预编译文件，用来加速编译的。&lt;/span&gt;pch&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;文件通常是由&lt;/span&gt;std&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;afx.cpp文件生成的。&lt;/span&gt;&lt;/p&gt;
@@ -606,10 +606,10 @@ ssl_certificate_key /usr/local/nginx/conf/server_nopwd.key;
     
     <item>
       <title>Linux使用C&#43;&#43;11</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/12/22/linux_using_cxx11.html</link>
+      <link>http://www.gsymy.com/2015/12/22/linux_using_cxx11.html</link>
       <pubDate>Tue, 22 Dec 2015 09:30:10 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/12/22/linux_using_cxx11.html</guid>
+      <guid>http://www.gsymy.com/2015/12/22/linux_using_cxx11.html</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.gsymy.com/wp-content/uploads/2015/12/centos.jpg&#34; rel=&#34;attachment wp-att-530&#34;&gt;&lt;img class=&#34;alignnone size-full wp-image-530&#34; src=&#34;http://www.gsymy.com/wp-content/uploads/2015/12/centos.jpg&#34; alt=&#34;centos&#34; width=&#34;486&#34; height=&#34;307&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;CentOS&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;中默认使用的&lt;/span&gt;GCC&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;是&lt;/span&gt;4.4&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;的，所以不支持&lt;/span&gt;C++11&lt;/p&gt;
@@ -661,10 +661,10 @@ sudo yum install devtoolset-2-gcc devtoolset-2-binutils devtoolset-2-gcc-c++&lt;
     
     <item>
       <title>linux更新svn客户端 | svn,subversion,更新svn</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/12/09/linux_update_svn.html</link>
+      <link>http://www.gsymy.com/2015/12/09/linux_update_svn.html</link>
       <pubDate>Wed, 09 Dec 2015 14:15:43 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/12/09/linux_update_svn.html</guid>
+      <guid>http://www.gsymy.com/2015/12/09/linux_update_svn.html</guid>
       <description>&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;CentOS自带的svn版本是1.6.11&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://subversion.apache.org/images/svn-name-banner.jpg&#34; alt=&#34;Subversion&#34; /&gt;&lt;/p&gt;
@@ -711,20 +711,20 @@ sudo yum install devtoolset-2-gcc devtoolset-2-binutils devtoolset-2-gcc-c++&lt;
     
     <item>
       <title>一个充满魔性的外国妹子，看了好几遍…</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/11/29/magicgirl.html</link>
+      <link>http://www.gsymy.com/2015/11/29/magicgirl.html</link>
       <pubDate>Sun, 29 Nov 2015 13:29:29 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/11/29/magicgirl.html</guid>
+      <guid>http://www.gsymy.com/2015/11/29/magicgirl.html</guid>
       <description>&lt;p&gt;程序员爱看妹子&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>CentOS安装mongodb</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/11/20/centos_install_mongodb.html</link>
+      <link>http://www.gsymy.com/2015/11/20/centos_install_mongodb.html</link>
       <pubDate>Fri, 20 Nov 2015 07:31:11 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/11/20/centos_install_mongodb.html</guid>
+      <guid>http://www.gsymy.com/2015/11/20/centos_install_mongodb.html</guid>
       <description>&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;yum源中添加mongodb下载地址&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;具体步骤：&lt;span style=&#34;font-family: 宋体;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
@@ -751,10 +751,10 @@ enabled=1&lt;/pre&gt;
     
     <item>
       <title>jni GetFieldID崩溃的一个可能原因</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/11/15/jni-getfieldidcrash.html</link>
+      <link>http://www.gsymy.com/2015/11/15/jni-getfieldidcrash.html</link>
       <pubDate>Sun, 15 Nov 2015 06:46:37 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/11/15/jni-getfieldidcrash.html</guid>
+      <guid>http://www.gsymy.com/2015/11/15/jni-getfieldidcrash.html</guid>
       <description>&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;错误信息如下：&lt;span style=&#34;font-family: 宋体;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;# Problematic frame:&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
@@ -775,10 +775,10 @@ enabled=1&lt;/pre&gt;
     
     <item>
       <title>PHP字符集错误</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/11/15/php_codec_error.html</link>
+      <link>http://www.gsymy.com/2015/11/15/php_codec_error.html</link>
       <pubDate>Sun, 15 Nov 2015 06:46:03 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/11/15/php_codec_error.html</guid>
+      <guid>http://www.gsymy.com/2015/11/15/php_codec_error.html</guid>
       <description>&lt;p&gt;安装最新版本的phpymyadmin无法打开网站，查看日志显示如下：&lt;/p&gt;
 
 &lt;pre class=&#34;lang:default decode:true &#34;&gt;PHP message: PHP Fatal error:  Call to undefined function mb_detect_encoding()&lt;/pre&gt;
@@ -834,10 +834,10 @@ sudo service php-fpm restart&lt;/pre&gt;
     
     <item>
       <title>Google 镜像站搜集</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/11/06/google-mirror.html</link>
+      <link>http://www.gsymy.com/2015/11/06/google-mirror.html</link>
       <pubDate>Fri, 06 Nov 2015 03:11:33 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/11/06/google-mirror.html</guid>
+      <guid>http://www.gsymy.com/2015/11/06/google-mirror.html</guid>
       <description>&lt;p&gt;&lt;span style=&#34;color: black; font-size: 16pt;&#34;&gt;Google 镜像站搜集&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;在特殊的地方和特殊的时间，流畅顺利的打开一个网站也变得如此艰难。&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
@@ -1014,10 +1014,10 @@ sudo service php-fpm restart&lt;/pre&gt;
     
     <item>
       <title>网友评选的“2015中国11大光棍职业”，程序员光荣上榜</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/10/29/programmer_job_2015.html</link>
+      <link>http://www.gsymy.com/2015/10/29/programmer_job_2015.html</link>
       <pubDate>Thu, 29 Oct 2015 13:47:58 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/10/29/programmer_job_2015.html</guid>
+      <guid>http://www.gsymy.com/2015/10/29/programmer_job_2015.html</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://a.33iq.com/upload/14/10/20/images/14137866152756.jpg&#34; alt=&#34;&#34; /&gt;有道是“女怕嫁错郎，男怕入错行”。走入社会之后不同职业会产生不同的人生路线。这里从网上摘来&amp;#8221;2015年中国11大光棍职业&amp;#8221;。你的职业登榜了吗？即将走入社会的大学生，看了这个榜单你有没有考虑换个职业呢？&lt;/p&gt;
 
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
@@ -1050,10 +1050,10 @@ sudo service php-fpm restart&lt;/pre&gt;
     
     <item>
       <title>qmake不能生成vs工程文件</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/10/27/qmake_vsproject.html</link>
+      <link>http://www.gsymy.com/2015/10/27/qmake_vsproject.html</link>
       <pubDate>Tue, 27 Oct 2015 10:33:30 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/10/27/qmake_vsproject.html</guid>
+      <guid>http://www.gsymy.com/2015/10/27/qmake_vsproject.html</guid>
       <description>&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;报错信息如下：&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;WARNING: Unable to generate output for: Makefile.Debug [TEMPLATE vcapp]&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
@@ -1080,10 +1080,10 @@ sudo service php-fpm restart&lt;/pre&gt;
     
     <item>
       <title>not found or not built by the last incremental link VS2010编译警告</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/10/25/not-found-or-not-built-by-the-last-incremental-link-vs2010warning.html</link>
+      <link>http://www.gsymy.com/2015/10/25/not-found-or-not-built-by-the-last-incremental-link-vs2010warning.html</link>
       <pubDate>Sun, 25 Oct 2015 11:54:56 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/10/25/not-found-or-not-built-by-the-last-incremental-link-vs2010warning.html</guid>
+      <guid>http://www.gsymy.com/2015/10/25/not-found-or-not-built-by-the-last-incremental-link-vs2010warning.html</guid>
       <description>&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;not found or not built by the last incremental link; performing full link&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span style=&#34;color: gray; font-size: 9pt;&#34;&gt;2015年10月25日&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
@@ -1110,10 +1110,10 @@ sudo service php-fpm restart&lt;/pre&gt;
     
     <item>
       <title>程序员如何找对象?</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/10/22/programer_gf.html</link>
+      <link>http://www.gsymy.com/2015/10/22/programer_gf.html</link>
       <pubDate>Thu, 22 Oct 2015 13:49:31 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/10/22/programer_gf.html</guid>
+      <guid>http://www.gsymy.com/2015/10/22/programer_gf.html</guid>
       <description>&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;a href=&#34;http://www.gsymy.com/wp-content/uploads/2015/10/731905338306293186.jpg&#34;&gt;&lt;img class=&#34;alignnone size-full wp-image-484&#34; src=&#34;http://www.gsymy.com/wp-content/uploads/2015/10/731905338306293186.jpg&#34; alt=&#34;731905338306293186&#34; width=&#34;720&#34; height=&#34;1280&#34; /&gt;&lt;/a&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
 </description>
     </item>
