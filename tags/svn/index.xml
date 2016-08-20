@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Svn on 程序猿的小本本</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/svn/</link>
+    <link>http://www.gsymy.com/tags/svn/</link>
     <description>Recent content in Svn on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -10,14 +10,14 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Wed, 09 Dec 2015 14:15:43 +0000</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/svn/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.gsymy.com/tags/svn/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>linux更新svn客户端 | svn,subversion,更新svn</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/12/09/linux_update_svn.html</link>
+      <link>http://www.gsymy.com/2015/12/09/linux_update_svn.html</link>
       <pubDate>Wed, 09 Dec 2015 14:15:43 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/12/09/linux_update_svn.html</guid>
+      <guid>http://www.gsymy.com/2015/12/09/linux_update_svn.html</guid>
       <description>&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;CentOS自带的svn版本是1.6.11&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://subversion.apache.org/images/svn-name-banner.jpg&#34; alt=&#34;Subversion&#34; /&gt;&lt;/p&gt;

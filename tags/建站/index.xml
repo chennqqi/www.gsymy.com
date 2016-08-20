@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>建站 on 程序猿的小本本</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/%E5%BB%BA%E7%AB%99/</link>
+    <link>http://www.gsymy.com/tags/%E5%BB%BA%E7%AB%99/</link>
     <description>Recent content in 建站 on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -10,14 +10,14 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Wed, 05 Aug 2015 03:38:19 +0000</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/%E5%BB%BA%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.gsymy.com/tags/%E5%BB%BA%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>wordpress4 添加友链</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/08/05/wordpress4-friendlink.html</link>
+      <link>http://www.gsymy.com/2015/08/05/wordpress4-friendlink.html</link>
       <pubDate>Wed, 05 Aug 2015 03:38:19 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/08/05/wordpress4-friendlink.html</guid>
+      <guid>http://www.gsymy.com/2015/08/05/wordpress4-friendlink.html</guid>
       <description>&lt;p&gt;wordpress4 有些功能隐藏起来了，友链功能默认关闭。&lt;/p&gt;
 
 &lt;p&gt;解决办法:&lt;/p&gt;

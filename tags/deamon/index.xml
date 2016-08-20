@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Deamon on 程序猿的小本本</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/deamon/</link>
+    <link>http://www.gsymy.com/tags/deamon/</link>
     <description>Recent content in Deamon on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -10,14 +10,14 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Tue, 18 Aug 2015 02:26:13 +0000</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/deamon/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.gsymy.com/tags/deamon/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>怎么编写Linux守护程序</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/08/18/linux-daemon-writing-howto.html</link>
+      <link>http://www.gsymy.com/2015/08/18/linux-daemon-writing-howto.html</link>
       <pubDate>Tue, 18 Aug 2015 02:26:13 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/08/18/linux-daemon-writing-howto.html</guid>
+      <guid>http://www.gsymy.com/2015/08/18/linux-daemon-writing-howto.html</guid>
       <description>
 
 &lt;p&gt;来源： &lt;em&gt;&lt;a href=&#34;http://www.linuxprofilm.com/articles/linux-daemon-howto.html#&#34;&gt;Linux Daemon Writing HOWTO&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;

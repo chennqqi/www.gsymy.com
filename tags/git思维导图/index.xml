@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Git思维导图 on 程序猿的小本本</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/git%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/</link>
+    <link>http://www.gsymy.com/tags/git%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/</link>
     <description>Recent content in Git思维导图 on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -10,14 +10,14 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Fri, 28 Aug 2015 01:16:09 +0000</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/git%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.gsymy.com/tags/git%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>一张图学会git</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/08/28/git-mindpic.html</link>
+      <link>http://www.gsymy.com/2015/08/28/git-mindpic.html</link>
       <pubDate>Fri, 28 Aug 2015 01:16:09 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/08/28/git-mindpic.html</guid>
+      <guid>http://www.gsymy.com/2015/08/28/git-mindpic.html</guid>
       <description>&lt;div class=&#34;para&#34;&gt;
   Git是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。Git的读音为[gɪt]。
 &lt;/div&gt;

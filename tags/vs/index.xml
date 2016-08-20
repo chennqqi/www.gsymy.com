@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vs on 程序猿的小本本</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/vs/</link>
+    <link>http://www.gsymy.com/tags/vs/</link>
     <description>Recent content in Vs on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -10,14 +10,14 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Mon, 07 Sep 2015 10:29:39 +0000</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/vs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.gsymy.com/tags/vs/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Visualstudio C语言包含C&#43;&#43;头文件编译不通过</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/09/07/vs_error_include_cpp.html</link>
+      <link>http://www.gsymy.com/2015/09/07/vs_error_include_cpp.html</link>
       <pubDate>Mon, 07 Sep 2015 10:29:39 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/09/07/vs_error_include_cpp.html</guid>
+      <guid>http://www.gsymy.com/2015/09/07/vs_error_include_cpp.html</guid>
       <description>&lt;pre class=&#34;&#34;&gt;&lt;code&gt;error C2054: expected &#39;(&#39; to follow &#39;using&#39;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;pre&gt;&lt;code&gt;error C2061: syntax error : identifier &#39;using&#39;

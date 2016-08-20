@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Devops on 程序猿的小本本</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/devops/</link>
+    <link>http://www.gsymy.com/tags/devops/</link>
     <description>Recent content in Devops on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -10,14 +10,14 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Sun, 15 Nov 2015 06:46:03 +0000</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.gsymy.com/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>PHP字符集错误</title>
-      <link>http://replace-this-with-your-hugo-site.com/2015/11/15/php_codec_error.html</link>
+      <link>http://www.gsymy.com/2015/11/15/php_codec_error.html</link>
       <pubDate>Sun, 15 Nov 2015 06:46:03 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/2015/11/15/php_codec_error.html</guid>
+      <guid>http://www.gsymy.com/2015/11/15/php_codec_error.html</guid>
       <description>&lt;p&gt;安装最新版本的phpymyadmin无法打开网站，查看日志显示如下：&lt;/p&gt;
 
 &lt;pre class=&#34;lang:default decode:true &#34;&gt;PHP message: PHP Fatal error:  Call to undefined function mb_detect_encoding()&lt;/pre&gt;
