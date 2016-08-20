@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>UE编辑器加载格式化代码插件astyle  &middot; 程序猿的小本本</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="光说有毛用|程序猿的小本本" />
+
+<meta name="keywords" content="astyle, code format, ultraEdit, ">
+
+
+<meta property="og:title" content="UE编辑器加载格式化代码插件astyle  &middot; 程序猿的小本本 ">
+<meta property="og:site_name" content="程序猿的小本本"/>
+<meta property="og:url" content="http://replace-this-with-your-hugo-site.com/2015/08/23/ue_format.html" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2015-08-23T15:14:50Z" />
+<meta property="og:article:modified_time" content="2015-08-23T15:14:50Z" />
+
+  
+    
+<meta property="og:article:tag" content="astyle">
+    
+<meta property="og:article:tag" content="code format">
+    
+<meta property="og:article:tag" content="ultraEdit">
+    
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@" />
+<meta name="twitter:title" content="UE编辑器加载格式化代码插件astyle" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="http://replace-this-with-your-hugo-site.com/2015/08/23/ue_format.html" />
+<meta name="twitter:domain" content="http://replace-this-with-your-hugo-site.com/">
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "UE编辑器加载格式化代码插件astyle",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2015-08-23",
+    "description": "",
+    "wordCount":  24 
+  }
+</script>
+
+
+
+<link rel="canonical" href="http://replace-this-with-your-hugo-site.com/2015/08/23/ue_format.html" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://replace-this-with-your-hugo-site.com/touch-icon-144-precomposed.png">
+<link href="http://replace-this-with-your-hugo-site.com/favicon.png" rel="icon">
+<meta name="theme-color" content="#2053AB">
+<meta name="generator" content="Hugo 0.17-DEV" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://replace-this-with-your-hugo-site.com/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://replace-this-with-your-hugo-site.com/css/style.css">
+<link rel="stylesheet" href="http://replace-this-with-your-hugo-site.com/css/highlight/default.css">
+
+  
+</head>
+<body>
+  <main id="main-wrapper" class="container main_wrapper has-sidebar">
+    <header id="main-header" class="container main_header">
+  <div class="container brand">
+  <div class="container title h1-like">
+  <a class="baselink" href="http://replace-this-with-your-hugo-site.com/">
+  程序猿的小本本
+
+</a>
+
+</div>
+
+  
+<div class="container topline">
+  
+  光说有毛用
+
+
+</div>
+
+
+</div>
+
+  <nav class="container nav primary no-print">
+  
+
+<a class="homelink" href="http://replace-this-with-your-hugo-site.com/">Home</a>
+
+
+  
+<a href="http://replace-this-with-your-hugo-site.com/about">About</a>
+
+<a href="http://replace-this-with-your-hugo-site.com/post" title="Show list of posts">Posts</a>
+
+<a href="http://replace-this-with-your-hugo-site.com/tags" title="Show list of tags">Tags</a>
+
+
+</nav>
+
+<div class="container nav secondary no-print">
+  
+<a id="contact-link-email" class="contact_link" href="mailto:chennqqi@qq.com">
+  <span class="fa fa-envelope-square"></span><span>email</span></a>
+
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/chennqqi?tab=repositories">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+
+</header>
+
+
+<article id="main-content" class="container main_content single">
+  <header class="container hat">
+  <h1>UE编辑器加载格式化代码插件astyle
+</h1>
+
+  <div class="metas">
+<time datetime="2015-08-23">23 Aug, 2015</time>
+
+
+  
+    &middot; by admin
+  
+  &middot; Read in about 1 min
+  &middot; (24 Words)
+  <br>
+  
+<a class="label" href="http://replace-this-with-your-hugo-site.com/tags/astyle">astyle</a>
+
+<a class="label" href="http://replace-this-with-your-hugo-site.com/tags/code-format">code format</a>
+
+<a class="label" href="http://replace-this-with-your-hugo-site.com/tags/ultraedit">ultraEdit</a>
+
+
+
+</div>
+
+</header>
+
+  <div class="container content">
+  <p>UE 的格式化功能不强，自带的astyle版本陈旧，一般采用开源工具astyle来实现代码格式化。</p>
+
+<ol>
+<li><p>  首先下载最新的astyle，因为ue自带的astyle版本太老，不支持空格、中文名等。<a href="http://sourceforge.net/projects/astyle/?source=directory">下载点这里</a></p></li>
+
+<li><p>  解压缩后得到 astyle.exe, 将之拷贝到 ue目录的gnu目录下面，覆盖原来的astyle.exe</p></li>
+
+<li><p>  选择<strong>菜单</strong>-&gt;<strong>高级</strong>-&gt;<strong>工具栏配置-&gt;工具栏配置</strong>， 输入你命名的工具名&#8221;C++格式化&#8221;， 命令行输入:</p></li>
+</ol>
+
+<pre class="lang:default decode:true">前面使用你自己的UE安装路径
+
+"C:\Program Files\IDM Computer Solutions\UEStudio\GNU\astyle.exe" --style=ansi "%f"
+</pre>
+
+<p>转到选项卡的&#8221;输出&#8221;页， 选择“捕捉输出”，选择“输出到列表框”。 其它的保留默认。</p>
+
+<ol>
+<li><p>用ue打开源代码文件，然后&#8221;高级&#8221; &#8211; “格式化代码”</p></li>
+
+<li><p>如图</p></li>
+</ol>
+
+<p><a href="http://www.gsymy.com/wp-content/uploads/2015/08/无标题.png"><img class="alignnone size-full wp-image-170" src="http://www.gsymy.com/wp-content/uploads/2015/08/无标题.png" alt="无标题" width="1440" height="900" /></a></p>
+
+</div>
+
+
+  <footer class="container">
+  <div class="container navigation no-print">
+  <h2>Navigation</h2>
+  
+  
+
+    
+    <a class="prev" href="http://replace-this-with-your-hugo-site.com/2015/08/23/tcpdumpnoroot.html" title="非root用户使用tcpdump">
+      Previous
+    </a>
+    
+
+    
+    <a class="next" href="http://replace-this-with-your-hugo-site.com/2015/08/25/linux-screen.html" title="linux screen 命令详解(转)">
+      Next
+    </a>
+    
+
+  
+
+
+</div>
+
+  <div class="container comments">
+  <h2>Comments</h2>
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//your_disqus_shortname.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+</article>
+      <footer id="main-footer" class="container main_footer">
+  
+
+  <div class="container nav foot no-print">
+  
+
+  <a class="toplink" href="#">back to top</a>
+
+</div>
+
+  <div class="container credits">
+  
+<div class="container footline">
+  
+  code with <i class='fa fa-heart'></i>
+
+
+</div>
+
+
+  
+<div class="container copyright">
+  
+  &copy; 2016 gsymy.com.
+
+
+</div>
+
+
+</div>
+
+</footer>
+
+    </main>
+    
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//your_disqus_shortname.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+
+<script src="http://replace-this-with-your-hugo-site.com/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'Your Google Analytics tracking code', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    
+  </body>
+</html>
+

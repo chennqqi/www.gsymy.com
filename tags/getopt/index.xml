@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getopt on 程序猿的小本本</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/getopt/</link>
+    <description>Recent content in Getopt on 程序猿的小本本</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
+    <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
+    <copyright>(c) 2016 gsymy.com.</copyright>
+    <lastBuildDate>Sun, 23 Aug 2015 01:59:32 +0000</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/getopt/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Linux 命令行参数处理函数探究(转)</title>
+      <link>http://replace-this-with-your-hugo-site.com/2015/08/23/linux-getopt.html</link>
+      <pubDate>Sun, 23 Aug 2015 01:59:32 +0000</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/2015/08/23/linux-getopt.html</guid>
+      <description>&lt;p&gt;一、getopt函数&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://blog.chinaunix.net/attachment/201205/20/26833883_1337526381qRMV.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;div&gt;
+  A.函数功能：处理命令行参数
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  B.参数:
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  argc代表命令行参数的个数，argv[i]存放命令行参数在内存存放的地址。这两个参数直接从mian(int argc,char *argv[])得到。
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  如果argv的元素是以 &amp;#8220;-“开头称为一个选项元素,紧跟在&amp;#8221;-&amp;#8220;后面的一个字符称为选项字符。
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  eg:ls  -l
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  其中ls是可执行程序名称，-l称为选项元素，&amp;#8217;l&amp;#8217;称为选项字符
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  optstring:选项参数的集合
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  注意:如果getopt()函数被循环调用，每次调用都会返回一个对应选元素的选项字符,如果所有选项字符都放回后，再次调用getopt()函数返回-1。
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;pre class=&#34;lang:c decode:true &#34;&gt;./a.out   -a  -n  -l
+ 
+while(1)
+{
+    ch = getopt(argc,argv,&#34;anl&#34;);
+}&lt;/pre&gt;
+  
+  &lt;p&gt;
+    &amp;nbsp;
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  第一次调用ch : &amp;#8216;a&amp;#8217;
+&lt;/div&gt;
+
+&lt;div&gt;
+  第二次调用ch : &amp;#8216;n&amp;#8217;
+&lt;/div&gt;
+
+&lt;div&gt;
+  第三次调用ch : &amp;#8216;l&amp;#8217;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;p&gt;
+    案例一、
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a class=&#34;evt&#34; href=&#34;http://blog.chinaunix.net/attachment/201205/20/26833883_1337526418yiyG.png&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://mail.gsymy.com/attachment/downloadex?e=wordpress%40gsymy.com&amp;o=1&amp;et=normal&amp;m=2_0%3ADzzzzye7hPs%24----3XZGQex&amp;f=1f4be180-7e44-4e3f-9802-b2e7872c9dc2&amp;n=26833883_1337526418yiyG.png&amp;ext=png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;运行结果：&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&#34;evt&#34; href=&#34;http://blog.chinaunix.net/attachment/201205/20/26833883_1337526453JOOB.png&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://mail.gsymy.com/attachment/downloadex?e=wordpress%40gsymy.com&amp;o=1&amp;et=normal&amp;m=2_0%3ADzzzzye7hPs%24----3XZGQex&amp;f=c9a8f641-7970-457e-8640-76c5eef14900&amp;n=26833883_1337526453JOOB.png&amp;ext=png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;div&gt;
+  C.变量optind
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  每次getopt函数调用的时候，optind总是当前处理argv[index]的下一个被处理选项元素的索引即optind = index + 1，如:当前处理的选项元素argv[1]，则optind的值为2,即argv[2]的索引。
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  注意：其值默认初始化为1,如果。
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;p&gt;
+    案例二、
+  &lt;/p&gt;
+  
+  &lt;div&gt;
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;pre class=&#34;lang:c decode:true &#34;&gt;#include &amp;lt;stdio.h&amp;gt;
+#include &amp;lt;unistd.h&amp;gt;
+int main(int argc,char *argv[])
+{
+    int ch;
+    while((ch = getopt(argc,argv,&#34;cyg&#34;)) != -1)
+    {
+        switch(ch)
+        {
+        case &#39;c&#39;:
+            printf(&#34;optind = %d\n&#34;,optind);
+            printf(&#34;Option character \&#39;c\&#39;.\n&#34;);
+            break;
+        case &#39;y&#39;:
+            printf(&#34;optind = %d\n&#34;,optind);
+            printf(&#34;Option character \&#39;y\&#39;.\n&#34;);
+            break;
+        case &#39;g&#39;:
+            printf(&#34;optind = %d\n&#34;,optind);
+            printf(&#34;Option character \&#39;g\&#39;.\n&#34;);
+            break;
+        }
+    }
+    printf(&#34;Ending...\n&#34;);
+    printf(&#34;optind = %d\n&#34;,optind);
+    return 0;
+}&lt;/pre&gt;
+        
+        &lt;p&gt;
+          &amp;nbsp;&lt;/li&gt; &lt;/ol&gt; &lt;/div&gt; 
+          
+
+&lt;pre&gt;&lt;code&gt;      &amp;lt;p&amp;gt;
+        运行结果:
+      &amp;lt;/p&amp;gt;
+
+      &amp;lt;p&amp;gt;
+        &amp;lt;a class=&amp;quot;evt&amp;quot; href=&amp;quot;http://blog.chinaunix.net/attachment/201205/20/26833883_1337526516f9w5.png&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;http://mail.gsymy.com/attachment/downloadex?e=wordpress%40gsymy.com&amp;amp;o=1&amp;amp;et=normal&amp;amp;m=2_0%3ADzzzzye7hPs%24----3XZGQex&amp;amp;f=e78c330d-84fb-4f42-9e4f-5799ac7a0a7d&amp;amp;n=26833883_1337526516f9w5.png&amp;amp;ext=png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;
+      &amp;lt;/p&amp;gt;
+
+      &amp;lt;div&amp;gt;
+        D.变量optarg
+      &amp;lt;/div&amp;gt;
+
+      &amp;lt;div&amp;gt;
+      &amp;lt;/div&amp;gt;
+
+      &amp;lt;div&amp;gt;
+        如果optstring选项字符后面紧跟一个&amp;amp;#8221;:&amp;amp;#8221;，则要求选项元素后面跟一个参数;
+      &amp;lt;/div&amp;gt;
+
+      &amp;lt;div&amp;gt;
+        如果optstring选项字符后面紧跟两个&amp;amp;#8221;::&amp;amp;#8221;，则选项元素后面可以跟一个可选的参数
+      &amp;lt;/div&amp;gt;
+
+      &amp;lt;div&amp;gt;
+      &amp;lt;/div&amp;gt;
+
+      &amp;lt;div&amp;gt;
+        &amp;lt;p&amp;gt;
+          案例三:
+        &amp;lt;/p&amp;gt;
+
+        &amp;lt;div&amp;gt;
+          &amp;lt;ol&amp;gt;
+            &amp;lt;li&amp;gt;
+              &amp;lt;pre class=&amp;quot;lang:c decode:true &amp;quot;&amp;gt;#include &amp;amp;lt;stdio.h&amp;amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;#include &amp;lt;unistd.h&amp;gt;
+int main(int argc,char *argv[])
+{
+    int ch;
+    while((ch = getopt(argc,argv,&amp;laquo;c:yg::&amp;laquo;)) != -1)
+    {
+        switch(ch)
+        {
+        case &amp;lsquo;c&amp;rsquo;:
+            printf(&amp;laquo;optind = %d\n&amp;raquo;,optind);
+            printf(&amp;laquo;optarg = %s\n&amp;raquo;,optarg);
+            printf(&amp;laquo;Option character \&amp;lsquo;c\&amp;lsquo;.\n&amp;raquo;);
+            break;
+        case &amp;lsquo;y&amp;rsquo;:
+            printf(&amp;laquo;optind = %d\n&amp;raquo;,optind);
+            printf(&amp;laquo;Option character \&amp;lsquo;y\&amp;lsquo;.\n&amp;raquo;);
+            break;
+        case &amp;lsquo;g&amp;rsquo;:
+            printf(&amp;laquo;optind = %d\n&amp;raquo;,optind);
+            printf(&amp;laquo;optarg = %s\n&amp;raquo;,optarg);
+            printf(&amp;laquo;Option character \&amp;lsquo;g\&amp;lsquo;.\n&amp;raquo;);
+            break;
+        }
+    }
+    printf(&amp;laquo;Ending&amp;hellip;\n&amp;raquo;);
+    printf(&amp;laquo;argv[%d] = %s\n&amp;raquo;,optind,argv[optind]);
+    return 0;
+}&lt;/pre&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;              &amp;lt;p&amp;gt;
+                &amp;amp;nbsp;&amp;lt;/li&amp;gt; &amp;lt;/ol&amp;gt; &amp;lt;/div&amp;gt; 
+
+                &amp;lt;p&amp;gt;
+                  &amp;lt;a class=&amp;quot;evt&amp;quot; href=&amp;quot;http://blog.chinaunix.net/attachment/201205/20/26833883_1337526570jxAE.png&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;http://mail.gsymy.com/attachment/downloadex?e=wordpress%40gsymy.com&amp;amp;o=1&amp;amp;et=normal&amp;amp;m=2_0%3ADzzzzye7hPs%24----3XZGQex&amp;amp;f=476757e3-8aa2-4d6b-b9f1-7c40b78d1225&amp;amp;n=26833883_1337526570jxAE.png&amp;amp;ext=png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;
+                &amp;lt;/p&amp;gt;
+
+                &amp;lt;div&amp;gt;
+                  注意：上面的最后一次运行结果，&amp;amp;#8221;xxx&amp;amp;#8221;在一开始在argv的的索引值为3,但是我们发现它实际的索引值是4。这是因为getopt函数，会把不拥有选项参数的选项字符后面的操作数，放在最后。
+                &amp;lt;/div&amp;gt;
+
+                &amp;lt;div&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+                &amp;lt;div&amp;gt;
+                  E.变量opterr和变量optopt
+                &amp;lt;/div&amp;gt;
+
+                &amp;lt;div&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+                &amp;lt;div&amp;gt;
+                  getopt()函数在搜索argv时，如果发现argv拥有optstring所没有的选项字符，则会提示立即返回&amp;amp;#8217;?&amp;amp;#8217;,并提示错误信息，所没有的选项字符会放在opt里。如果不想系统提示默认的错误信息，将opterr设为0即可。
+                &amp;lt;/div&amp;gt;
+
+                &amp;lt;div&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+                &amp;lt;div&amp;gt;
+                  &amp;lt;p&amp;gt;
+                    案例四:
+                  &amp;lt;/p&amp;gt;
+
+                  &amp;lt;div&amp;gt;
+                    &amp;lt;ol&amp;gt;
+                      &amp;lt;li&amp;gt;
+                        &amp;lt;pre class=&amp;quot;lang:c decode:true &amp;quot;&amp;gt;#include &amp;amp;lt;stdio.h&amp;amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;#include &amp;lt;unistd.h&amp;gt;
+int main(int argc,char *argv[])
+{
+    int ch;
+    while((ch = getopt(argc,argv,&amp;laquo;c:yg::&amp;laquo;)) != -1)
+    {
+        switch(ch)
+        {
+        case &amp;lsquo;c&amp;rsquo;:
+            printf(&amp;laquo;optind = %d\n&amp;raquo;,optind);
+            printf(&amp;laquo;optarg = %s\n&amp;raquo;,optarg);
+            printf(&amp;laquo;Option character \&amp;lsquo;c\&amp;lsquo;.\n&amp;raquo;);
+            break;
+        case &amp;lsquo;y&amp;rsquo;:
+            printf(&amp;laquo;optind = %d\n&amp;raquo;,optind);
+            printf(&amp;laquo;Option character \&amp;lsquo;y\&amp;lsquo;.\n&amp;raquo;);
+            break;
+        case &amp;lsquo;g&amp;rsquo;:
+            printf(&amp;laquo;optind = %d\n&amp;raquo;,optind);
+            printf(&amp;laquo;optarg = %s\n&amp;raquo;,optarg);
+            printf(&amp;laquo;Option character \&amp;lsquo;g\&amp;lsquo;.\n&amp;raquo;);
+            break;
+        case &amp;lsquo;?&amp;rsquo;:
+            printf(&amp;laquo;Invalid Option character \&amp;lsquo;%c\&amp;lsquo;.\n&amp;raquo;,optopt);
+            break;
+        }
+    }
+    printf(&amp;laquo;Ending&amp;hellip;\n&amp;raquo;);
+    printf(&amp;laquo;argv[%d] = %s\n&amp;raquo;,optind,argv[optind]);
+    return 0;
+}&lt;/pre&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;                        &amp;lt;p&amp;gt;
+                          &amp;amp;nbsp;&amp;lt;/li&amp;gt; &amp;lt;/ol&amp;gt; &amp;lt;/div&amp;gt; 
+
+                          &amp;lt;p&amp;gt;
+                            运行结果：
+                          &amp;lt;/p&amp;gt;
+
+                          &amp;lt;p&amp;gt;
+                            &amp;lt;a class=&amp;quot;evt&amp;quot; href=&amp;quot;http://blog.chinaunix.net/attachment/201205/20/26833883_1337526663lAlS.png&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;http://mail.gsymy.com/attachment/downloadex?e=wordpress%40gsymy.com&amp;amp;o=1&amp;amp;et=normal&amp;amp;m=2_0%3ADzzzzye7hPs%24----3XZGQex&amp;amp;f=969fecda-458d-419b-b5b6-418ea7b2f6c9&amp;amp;n=26833883_1337526663lAlS.png&amp;amp;ext=png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;
+                          &amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt; 
+
+                          &amp;lt;div&amp;gt;
+                            注意:如果optstring字符串一开始就是&amp;amp;#8221;:&amp;amp;#8221;，则后面要求有选项参数的选项字符，在argv中没有选项参数时，此时调用getopt函数返回&amp;amp;#8221;:&amp;amp;#8221;,optopt存放的是没有跟选项参数的选项字符。
+                          &amp;lt;/div&amp;gt;
+
+                          &amp;lt;div&amp;gt;
+                          &amp;lt;/div&amp;gt;
+
+                          &amp;lt;div&amp;gt;
+                            &amp;lt;p&amp;gt;
+                              案例五:
+                            &amp;lt;/p&amp;gt;
+
+                            &amp;lt;div&amp;gt;
+                              &amp;lt;ol&amp;gt;
+                                &amp;lt;li&amp;gt;
+                                  &amp;lt;pre class=&amp;quot;lang:c decode:true &amp;quot;&amp;gt;#include &amp;amp;lt;stdio.h&amp;amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;#include &amp;lt;unistd.h&amp;gt;
+int main(int argc,char *argv[])
+{
+    int ch;
+    while((ch = getopt(argc,argv,&amp;raquo;:c:yg::&amp;laquo;)) != -1)
+    {
+        switch(ch)
+        {
+        case &amp;lsquo;c&amp;rsquo;:
+            printf(&amp;laquo;optind = %d\n&amp;raquo;,optind);
+            printf(&amp;laquo;optarg = %s\n&amp;raquo;,optarg);
+            printf(&amp;laquo;Option character \&amp;lsquo;c\&amp;lsquo;.\n&amp;raquo;);
+            break;
+        case &amp;lsquo;y&amp;rsquo;:
+            printf(&amp;laquo;optind = %d\n&amp;raquo;,optind);
+            printf(&amp;laquo;Option character \&amp;lsquo;y\&amp;lsquo;.\n&amp;raquo;);
+            break;
+        case &amp;lsquo;g&amp;rsquo;:
+            printf(&amp;laquo;optarg = %s\n&amp;raquo;,optarg);
+            printf(&amp;laquo;optind = %d\n&amp;raquo;,optind);
+            printf(&amp;laquo;Option character \&amp;lsquo;g\&amp;lsquo;.\n&amp;raquo;);
+            break;
+        case &amp;lsquo;:&amp;rsquo;:
+            printf(&amp;laquo;Option character \&amp;lsquo;%c\&amp;lsquo;,forget argument.\n&amp;raquo;,optopt);
+            break;
+        case &amp;lsquo;?&amp;rsquo;:
+            printf(&amp;laquo;optind = %d\n&amp;raquo;,optind);
+            printf(&amp;laquo;Invalid Option character \&amp;lsquo;%c\&amp;lsquo;.\n&amp;raquo;,optopt);
+            break;
+        }
+    }
+    printf(&amp;laquo;Ending&amp;hellip;\n&amp;raquo;);
+    printf(&amp;laquo;argv[%d] = %s\n&amp;raquo;,optind,argv[optind]);
+    return 0;
+}&lt;/pre&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;                                  &amp;lt;p&amp;gt;
+                                    &amp;amp;nbsp;&amp;lt;/li&amp;gt; &amp;lt;/ol&amp;gt; &amp;lt;/div&amp;gt; 
+
+                                    &amp;lt;p&amp;gt;
+                                      运行结果:
+                                    &amp;lt;/p&amp;gt;
+
+                                    &amp;lt;p&amp;gt;
+                                      &amp;lt;a class=&amp;quot;evt&amp;quot; href=&amp;quot;http://blog.chinaunix.net/attachment/201205/20/26833883_1337526728MXSY.png&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;http://mail.gsymy.com/attachment/downloadex?e=wordpress%40gsymy.com&amp;amp;o=1&amp;amp;et=normal&amp;amp;m=2_0%3ADzzzzye7hPs%24----3XZGQex&amp;amp;f=1ea510f3-b09d-4baf-a471-6ef043040479&amp;amp;n=26833883_1337526728MXSY.png&amp;amp;ext=png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;
+                                    &amp;lt;/p&amp;gt;
+
+                                    &amp;lt;div&amp;gt;
+                                      二、getopt_long函数
+                                    &amp;lt;/div&amp;gt;
+
+                                    &amp;lt;div&amp;gt;
+                                    &amp;lt;/div&amp;gt;
+
+                                    &amp;lt;div&amp;gt;
+                                       getopt_long函数也是处理命令行参数,我们会发现它多了一个long,这个long的意思是它支持长选项。
+                                    &amp;lt;/div&amp;gt;
+
+                                    &amp;lt;div&amp;gt;
+                                      前面我们讨论都是含有一个&amp;amp;#8221;-&amp;amp;#8220;的选项，常我们会看到&amp;amp;#8221;&amp;amp;#8211;help&amp;amp;#8221;这样的造型，其实这就是命令行参数中的长选项。一般短选项是选项名的缩写,长选项是选项名的全名。&amp;lt;br /&amp;gt; &amp;lt;a class=&amp;quot;evt&amp;quot; href=&amp;quot;http://blog.chinaunix.net/attachment/201205/20/26833883_1337526761a12B.png&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;http://mail.gsymy.com/attachment/downloadex?e=wordpress%40gsymy.com&amp;amp;o=1&amp;amp;et=normal&amp;amp;m=2_0%3ADzzzzye7hPs%24----3XZGQex&amp;amp;f=0250a467-60da-482d-8a3a-8c8d40b85c22&amp;amp;n=26833883_1337526761a12B.png&amp;amp;ext=png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;a class=&amp;quot;evt&amp;quot; href=&amp;quot;http://blog.chinaunix.net/attachment/201205/20/26833883_1337526779136u.png&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;http://mail.gsymy.com/attachment/downloadex?e=wordpress%40gsymy.com&amp;amp;o=1&amp;amp;et=normal&amp;amp;m=2_0%3ADzzzzye7hPs%24----3XZGQex&amp;amp;f=9ee72e9f-4d2b-4f82-9568-6c97ed9d5f9b&amp;amp;n=26833883_1337526779136u.png&amp;amp;ext=png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt; 
+
+                                      &amp;lt;div&amp;gt;
+                                        这个函数前三个参数和getopt一样，不解释了。我们来看看后面两个参数。
+                                      &amp;lt;/div&amp;gt;
+
+                                      &amp;lt;div&amp;gt;
+                                        getopt_long的长选项是一个结构体，定义如下:
+                                      &amp;lt;/div&amp;gt;
+
+                                      &amp;lt;p&amp;gt;
+                                        &amp;lt;a class=&amp;quot;evt&amp;quot; href=&amp;quot;http://blog.chinaunix.net/attachment/201205/20/26833883_1337526826Y0Ny.png&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;http://mail.gsymy.com/attachment/downloadex?e=wordpress%40gsymy.com&amp;amp;o=1&amp;amp;et=normal&amp;amp;m=2_0%3ADzzzzye7hPs%24----3XZGQex&amp;amp;f=4788c644-deda-402c-9d54-c8b50537979d&amp;amp;n=26833883_1337526826Y0Ny.png&amp;amp;ext=png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;a class=&amp;quot;evt&amp;quot; href=&amp;quot;http://blog.chinaunix.net/attachment/201205/20/26833883_1337526848iHkr.png&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;http://mail.gsymy.com/attachment/downloadex?e=wordpress%40gsymy.com&amp;amp;o=1&amp;amp;et=normal&amp;amp;m=2_0%3ADzzzzye7hPs%24----3XZGQex&amp;amp;f=bddbf760-90e4-4313-b9c4-f8749ad19fbe&amp;amp;n=26833883_1337526848iHkr.png&amp;amp;ext=png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;
+                                      &amp;lt;/p&amp;gt;
+
+                                      &amp;lt;div&amp;gt;
+                                        参数longindex不为空时，存放的是getopt_long处理当前长选项的索引值。
+                                      &amp;lt;/div&amp;gt;
+
+                                      &amp;lt;div&amp;gt;
+                                      &amp;lt;/div&amp;gt;
+
+                                      &amp;lt;div&amp;gt;
+                                        &amp;lt;p&amp;gt;
+                                          案例六:
+                                        &amp;lt;/p&amp;gt;
+
+                                        &amp;lt;div&amp;gt;
+                                          &amp;lt;ol&amp;gt;
+                                            &amp;lt;li&amp;gt;
+                                              &amp;lt;pre class=&amp;quot;lang:c decode:true &amp;quot;&amp;gt;#include &amp;amp;lt;stdio.h&amp;amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;#include &amp;lt;unistd.h&amp;gt;
+#include &amp;lt;getopt.h&amp;gt;
+int main(int argc,char *argv[])
+{
+    int flag_value = 100;
+    while(1)
+    {
+        int option_index = 0;
+        int rvalue = 0;
+        static struct option long_option[] = {
+            {&amp;laquo;help0&amp;raquo;,no_argument,0,0},
+            {&amp;laquo;help1&amp;raquo;,required_argument,0,0},
+            {&amp;laquo;help2&amp;raquo;,optional_argument,0,0},
+            {&amp;laquo;help3&amp;raquo;,no_argument,0,10},
+            {0,0,0,0},
+        };
+        long_option[3].flag = &amp;amp;flag_value;
+        rvalue = getopt_long(argc,argv,&amp;laquo;a:bc::&amp;laquo;,long_option,&amp;amp;option_index);
+        if(rvalue == -1)
+        {
+            printf(&amp;laquo;No more argument.\n&amp;raquo;);
+            return -1;
+        }
+        switch(option_index)
+        {
+        case 0:
+            printf(&amp;laquo;Long option is : %s\n&amp;raquo;,long_option[option_index].name);
+            break;
+        case 1:
+            printf(&amp;laquo;Long option is : %s &amp;laquo;,long_option[option_index].name);
+            if(optarg)
+            {
+                printf(&amp;laquo;with parm &amp;lsquo;%s&amp;rsquo;&amp;raquo;,optarg);
+            }
+            printf(&amp;raquo;\n&amp;raquo;);
+            break;
+        case 2:
+            printf(&amp;laquo;Long option is : %s &amp;laquo;,long_option[option_index].name);
+            if(optarg)
+            {
+                printf(&amp;laquo;with parm &amp;lsquo;%s&amp;rsquo;&amp;raquo;,optarg);
+            }
+            printf(&amp;raquo;\n&amp;raquo;);
+            break;
+        case 3:
+            printf(&amp;laquo;Long option is : %s\n&amp;raquo;,long_option[option_index].name);
+            break;
+        }
+        printf(&amp;laquo;flag_value = %d\n&amp;raquo;,flag_value);
+    }
+    return 0;
+}&lt;/pre&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;                                              &amp;lt;p&amp;gt;
+                                                &amp;amp;nbsp;&amp;lt;/li&amp;gt; &amp;lt;/ol&amp;gt; &amp;lt;/div&amp;gt; 
+
+                                                &amp;lt;p&amp;gt;
+                                                  运行结果：
+                                                &amp;lt;/p&amp;gt;
+
+                                                &amp;lt;p&amp;gt;
+                                                  &amp;lt;a class=&amp;quot;evt&amp;quot; href=&amp;quot;http://blog.chinaunix.net/attachment/201205/20/26833883_1337526922IiY2.png&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;http://mail.gsymy.com/attachment/downloadex?e=wordpress%40gsymy.com&amp;amp;o=1&amp;amp;et=normal&amp;amp;m=2_0%3ADzzzzye7hPs%24----3XZGQex&amp;amp;f=eeed00f5-f0fe-4441-8cae-196af0abe73d&amp;amp;n=26833883_1337526922IiY2.png&amp;amp;ext=png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;
+                                                &amp;lt;/p&amp;gt;
+
+                                                &amp;lt;p&amp;gt;
+                                                  三、getopt_long_only函数
+                                                &amp;lt;/p&amp;gt;
+
+                                                &amp;lt;p&amp;gt;
+                                                  &amp;lt;a class=&amp;quot;evt&amp;quot; href=&amp;quot;http://blog.chinaunix.net/attachment/201205/20/26833883_13375269502qqp.png&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;http://mail.gsymy.com/attachment/downloadex?e=wordpress%40gsymy.com&amp;amp;o=1&amp;amp;et=normal&amp;amp;m=2_0%3ADzzzzye7hPs%24----3XZGQex&amp;amp;f=aa5692ae-dfa9-4ffb-9feb-d74c50616a73&amp;amp;n=26833883_13375269502qqp.png&amp;amp;ext=png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;a class=&amp;quot;evt&amp;quot; href=&amp;quot;http://blog.chinaunix.net/attachment/201205/20/26833883_1337526976l7vv.png&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;http://mail.gsymy.com/attachment/downloadex?e=wordpress%40gsymy.com&amp;amp;o=1&amp;amp;et=normal&amp;amp;m=2_0%3ADzzzzye7hPs%24----3XZGQex&amp;amp;f=577129ce-6c34-4f6b-b3b9-e960116757f5&amp;amp;n=26833883_1337526976l7vv.png&amp;amp;ext=png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;
+                                                &amp;lt;/p&amp;gt;
+
+                                                &amp;lt;p&amp;gt;
+                                                  案例:
+                                                &amp;lt;/p&amp;gt;
+
+                                                &amp;lt;div&amp;gt;
+                                                  &amp;lt;ol&amp;gt;
+                                                    &amp;lt;li&amp;gt;
+                                                      &amp;lt;pre class=&amp;quot;lang:c decode:true&amp;quot;&amp;gt;#include &amp;amp;lt;stdio.h&amp;amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;#include &amp;lt;unistd.h&amp;gt;
+#include &amp;lt;getopt.h&amp;gt;
+int main(int argc,char *argv[])
+{
+    int flag_value = 100;
+    while(1)
+    {
+        int option_index = 0;
+        int rvalue = 0;
+        static struct option long_option[] = {
+            {&amp;laquo;help0&amp;raquo;,no_argument,0,0},
+            {&amp;laquo;help1&amp;raquo;,required_argument,0,0},
+            {&amp;laquo;help2&amp;raquo;,optional_argument,0,0},
+            {&amp;laquo;help3&amp;raquo;,no_argument,0,10},
+            {0,0,0,0},
+        };
+        long_option[3].flag = &amp;amp;flag_value;
+        rvalue = getopt_long_only(argc,argv,&amp;laquo;a:bc::&amp;laquo;,long_option,&amp;amp;option_index);
+        if(rvalue == -1)
+        {
+            printf(&amp;laquo;No more argument.\n&amp;raquo;);
+            return -1;
+        }
+        switch(option_index)
+        {
+        case 0:
+            printf(&amp;laquo;Long option is : %s\n&amp;raquo;,long_option[option_index].name);
+            break;
+        case 1:
+            printf(&amp;laquo;Long option is : %s &amp;laquo;,long_option[option_index].name);
+            if(optarg)
+            {
+                printf(&amp;laquo;with parm &amp;lsquo;%s&amp;rsquo;&amp;raquo;,optarg);
+            }
+            printf(&amp;raquo;\n&amp;raquo;);
+            break;
+        case 2:
+            printf(&amp;laquo;Long option is : %s &amp;laquo;,long_option[option_index].name);
+            if(optarg)
+            {
+                printf(&amp;laquo;with parm &amp;lsquo;%s&amp;rsquo;&amp;raquo;,optarg);
+            }
+            printf(&amp;raquo;\n&amp;raquo;);
+            break;
+        case 3:
+            printf(&amp;laquo;Long option is : %s\n&amp;raquo;,long_option[option_index].name);
+            break;
+        }
+        printf(&amp;laquo;flag_value = %d\n&amp;raquo;,flag_value);
+    }
+    return 0;
+}&lt;/pre&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;                                                      &amp;lt;p&amp;gt;
+                                                        &amp;amp;nbsp;&amp;lt;/li&amp;gt; &amp;lt;/ol&amp;gt; &amp;lt;/div&amp;gt; 
+
+                                                        &amp;lt;p&amp;gt;
+                                                          运行结果：
+                                                        &amp;lt;/p&amp;gt;
+
+                                                        &amp;lt;p&amp;gt;
+                                                          &amp;lt;a class=&amp;quot;evt&amp;quot; href=&amp;quot;http://blog.chinaunix.net/attachment/201205/20/26833883_1337527059HQkS.png&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;http://mail.gsymy.com/attachment/downloadex?e=wordpress%40gsymy.com&amp;amp;o=1&amp;amp;et=normal&amp;amp;m=2_0%3ADzzzzye7hPs%24----3XZGQex&amp;amp;f=779d825e-bea2-4de1-9563-d18e6671053b&amp;amp;n=26833883_1337527059HQkS.png&amp;amp;ext=png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;
+                                                        &amp;lt;/p&amp;gt;
+
+                                                        &amp;lt;p&amp;gt;
+                                                          注意：getopt_long和getopt_long_only的返回值
+                                                        &amp;lt;/p&amp;gt;
+
+                                                        &amp;lt;p&amp;gt;
+                                                          &amp;lt;a class=&amp;quot;evt&amp;quot; href=&amp;quot;http://blog.chinaunix.net/attachment/201205/20/26833883_1337527087i1XX.png&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;http://mail.gsymy.com/attachment/downloadex?e=wordpress%40gsymy.com&amp;amp;o=1&amp;amp;et=normal&amp;amp;m=2_0%3ADzzzzye7hPs%24----3XZGQex&amp;amp;f=19c38a3c-d577-4086-8152-542a97093e78&amp;amp;n=26833883_1337527087i1XX.png&amp;amp;ext=png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;
+                                                        &amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; 
+
+                                                        &amp;lt;p&amp;gt;
+                                                          原文链接:&amp;lt;a href=&amp;quot;http://blog.chinaunix.net/uid-26833883-id-3215592.html#&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;http://blog.chinaunix.net/uid-26833883-id-3215592.html#&amp;lt;/a&amp;gt;
+                                                        &amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jni崩溃 on 程序猿的小本本</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/jni%E5%B4%A9%E6%BA%83/</link>
+    <description>Recent content in Jni崩溃 on 程序猿的小本本</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
+    <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
+    <copyright>(c) 2016 gsymy.com.</copyright>
+    <lastBuildDate>Sun, 15 Nov 2015 06:46:37 +0000</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/jni%E5%B4%A9%E6%BA%83/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>jni GetFieldID崩溃的一个可能原因</title>
+      <link>http://replace-this-with-your-hugo-site.com/2015/11/15/jni-getfieldidcrash.html</link>
+      <pubDate>Sun, 15 Nov 2015 06:46:37 +0000</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/2015/11/15/jni-getfieldidcrash.html</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;错误信息如下：&lt;span style=&#34;font-family: 宋体;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;# Problematic frame:&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;# V [libjvm.so+0x5338c6] jni_GetFieldID+0xf6&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;java版本JDK 1.7.0 X64&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;分析GetFieldID第一个参数是通过FindClass来获得的，如果获取失败这里就崩溃了。&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;检查你FindClass里的参数是否正确；包路径是否正确；&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;注意：在低版本的java里FindClass包路径写&amp;#8221;com.XXX.XXX.XXX&amp;#8221;是可以的，&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;而java1.7里要求写&amp;#8221;com/XXX/XXX/XXX&amp;#8221;的路径方式&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

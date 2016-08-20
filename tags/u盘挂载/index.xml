@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>U盘挂载 on 程序猿的小本本</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/u%E7%9B%98%E6%8C%82%E8%BD%BD/</link>
+    <description>Recent content in U盘挂载 on 程序猿的小本本</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
+    <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
+    <copyright>(c) 2016 gsymy.com.</copyright>
+    <lastBuildDate>Sun, 02 Aug 2015 02:59:29 +0000</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/u%E7%9B%98%E6%8C%82%E8%BD%BD/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>linux 挂载U盘</title>
+      <link>http://replace-this-with-your-hugo-site.com/2015/08/02/linux-mountusbdisk.html</link>
+      <pubDate>Sun, 02 Aug 2015 02:59:29 +0000</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/2015/08/02/linux-mountusbdisk.html</guid>
+      <description>&lt;p&gt;U盘插入后，用fdisk -l(需要管理员权限，否则为空) 查看U是否已经被识别&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;如果没有识别&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;         [linxux]#modprobe usb-storage&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+&lt;li&gt;识别之后&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;再用fdisk -l 查看usb分区名字&lt;/p&gt;
+
+&lt;p&gt;通常为/dev/sdb 开头的一个名字&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;挂载&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;[linxux]#mkdir -p /mnt/usb&lt;/p&gt;
+
+&lt;p&gt;[linxux]#mount -t vfat /dev/sdb6 /mnt/usb&lt;/p&gt;
+
+&lt;p&gt;***常见问题，root身份挂载之后USB分区是普通用户只读的，可以在挂载时加入参数&lt;/p&gt;
+
+&lt;pre id=&#34;best-content-1722697460&#34; class=&#34;best-text mb-10&#34;&gt;-o umask=000&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+&lt;li&gt;卸载&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;[linxux]#umount /mnt/usb&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Install Scrapy on 程序猿的小本本</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/install-scrapy/</link>
+    <description>Recent content in Install Scrapy on 程序猿的小本本</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
+    <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
+    <copyright>(c) 2016 gsymy.com.</copyright>
+    <lastBuildDate>Sat, 12 Sep 2015 13:07:56 +0000</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/install-scrapy/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>安装scrapy</title>
+      <link>http://replace-this-with-your-hugo-site.com/2015/09/12/scrapy_install.html</link>
+      <pubDate>Sat, 12 Sep 2015 13:07:56 +0000</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/2015/09/12/scrapy_install.html</guid>
+      <description>&lt;div class=&#34;para&#34;&gt;
+  Scrapy，Python开发的一个快速,高层次的屏幕抓取和web抓取框架，用于抓取web站点并从页面中提取结构化的数据。Scrapy用途广泛，可以用于数据挖掘、监测和&lt;a href=&#34;http://baike.baidu.com/view/1303916.htm&#34; target=&#34;_blank&#34;&gt;自动化测试&lt;/a&gt;。
+&lt;/div&gt;
+
+&lt;div class=&#34;para&#34;&gt;
+  Scrapy吸引人的地方在于它是一个框架，任何人都可以根据需求方便的修改。它也提供了多种类型爬虫的基类，如BaseSpider、sitemap爬虫等，最新版本又提供了web2.0爬虫的支持。
+&lt;/div&gt;
+
+&lt;div class=&#34;para&#34;&gt;
+  Scrach，是抓取的意思，这个Python的爬虫框架叫Scrapy，大概也是这个意思吧，就叫它：小刮刮吧。[from&lt;a href=&#34;http://baike.baidu.com/link?url=yii3mkb4Eg2hvwk4B20GgoikhScodSEBN1gP3vJMh1uxI8Ipzi9d5iopQNUsIjFib4pMglkbmEf6e23D9MR-lq&#34; target=&#34;_blank&#34;&gt;百度百科&lt;/a&gt;]
+&lt;/div&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;0x00. 准备环境&lt;/p&gt;
+
+&lt;p&gt;linux环境请首先升级python版本到python2.7.10&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.gsymy.com/2015/09/12/centos_python2-7.html&#34; target=&#34;_blank&#34;&gt;参考链接&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.gsymy.com/2015/09/12/centos_python2-7.html&#34;&gt;http://www.gsymy.com/2015/09/12/centos_python2-7.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;0x01. 开始安装&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;pre class=&#34;lang:default decode:true&#34;&gt;sudo yum install libffi-devel -y
+pip install Scrapy&lt;/pre&gt;
+
+&lt;p&gt;0x02. 现在来解决第一个坑&lt;/p&gt;
+
+&lt;p&gt;如果你没有遇到这个坑请跳过这一条&lt;/p&gt;
+
+&lt;p&gt;安装过程中下载lxml报错&lt;/p&gt;
+
+&lt;p&gt;手动安装之，在错误信息中找到下载链接&lt;/p&gt;
+
+&lt;pre class=&#34;lang:default decode:true&#34;&gt;wget --no-check-certificate  https://pypi.python.org/packages/source/l/lxml/lxml-3.4.4.tar.gz
+
+md5checksum
+sudo pip install lxml-3.4.4.tar.gz&lt;/pre&gt;
+
+&lt;p&gt;似乎可能是网速太慢导致下载超时了，也可能是官网给的MD5没更新&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/16025788/why-does-pip-fail-with-bad-md5-hash-for-package&#34; target=&#34;_blank&#34;&gt;参考来源&lt;/a&gt;：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/16025788/why-does-pip-fail-with-bad-md5-hash-for-package&#34;&gt;http://stackoverflow.com/questions/16025788/why-does-pip-fail-with-bad-md5-hash-for-package&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;安装完成之后继续pip install scrapy&lt;/p&gt;
+
+&lt;p&gt;如果遇到类似问题，请如法炮制&lt;/p&gt;
+
+&lt;p&gt;0x03.  安装&lt;/p&gt;
+
+&lt;p&gt;libffi-devel&lt;/p&gt;
+
+&lt;p&gt;为了加速你的安装过程0x01 步骤中给你写了！&lt;/p&gt;
+
+&lt;pre class=&#34;lang:default decode:true&#34;&gt;sudo yum install libffi-devel -y&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

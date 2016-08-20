@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programers on 程序猿的小本本</title>
+    <link>http://replace-this-with-your-hugo-site.com/programer/</link>
+    <description>Recent content in Programers on 程序猿的小本本</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
+    <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
+    <copyright>(c) 2016 gsymy.com.</copyright>
+    <lastBuildDate>Tue, 01 Sep 2015 11:12:44 +0000</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/programer/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>程序猿酷站</title>
+      <link>http://replace-this-with-your-hugo-site.com/programer/</link>
+      <pubDate>Tue, 01 Sep 2015 11:12:44 +0000</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/programer/</guid>
+      <description>
+
+&lt;p&gt;根据我的经验分享一些不错程序员酷站给大家，并且附上我的点评&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;2015-12-22 新增&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://codecombat.com/&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://codecombat.com/&#34;&gt;http://codecombat.com/&lt;/a&gt;&lt;/a&gt; 一个通过玩游戏就可以学习编程的网站！&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 id=&#34;a-href-http-www-oschina-net-target-blank-开源中国-a-国内&#34;&gt;&lt;a href=&#34;http://www.oschina.net&#34; target=&#34;_blank&#34;&gt;开源中国&lt;/a&gt; 国内&lt;/h2&gt;
+
+&lt;div class=&#34;para&#34;&gt;
+  开源中国(oschina)成立于2008年8月，是目前国内最大的开源技术社区，拥有超过200万会员，形成了由开源软件库、代码分享、资讯、协作翻译、讨论区和博客等几大频道内容，为IT开发者提供了一个发现、使用、并交流开源技术的平台。2013年，开源中国建立大型综合性的云开发平台-中国源，为中国广大开发者提供团队协作、源码托管、代码质量分析、代码评审、测试、代码演示平台等功能。
+&lt;/div&gt;
+
+&lt;div class=&#34;para&#34;&gt;
+  开源中国一直不遗余力地推动国内开源软件的应用和发展，为本土开源能力的提高、开源生态环境的优化提供长期推进的平台。
+&lt;/div&gt;
+
+&lt;div class=&#34;para&#34;&gt;
+  &lt;span style=&#34;color: #ff0000;&#34;&gt;目前算是中国最活跃的开发者社区&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;para&#34;&gt;
+  &lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;a href=&#34;http://git.oschina.net&#34; target=&#34;_blank&#34;&gt;git.oschina.net&lt;/a&gt; 国内不错的代码托管平台&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;a-href-http-www-csdn-net-target-blank-csdn-a-国内&#34;&gt;&lt;a href=&#34;http://www.csdn.net&#34; target=&#34;_blank&#34;&gt;CSDN&lt;/a&gt; 国内&lt;/h2&gt;
+
+&lt;p&gt;CSDN创立于1999年，是中国最大的IT社区和服务平台，为中国的软件开发者和IT从业者提供知识传播、职业发展、软件开发等全生命周期服务，满足他们在职业发展中学习及共享知识和信息、建立职业发展社交圈、通过软件开发实现技术商业化等刚性需求。拥有超过3000万注册会员（其中活跃会员800万）、50万注册企业及合作伙伴。&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;近几年商业化运作的质量下降严重，流失了大批的开发者；&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;目前博客做的还不错，虽然抄袭很严重，有很多技术文章是不错的&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;a-href-http-www-pudn-com-target-blank-程序员联合开发网-a-国内&#34;&gt;&lt;a href=&#34;http://www.pudn.com&#34; target=&#34;_blank&#34;&gt;程序员联合开发网&lt;/a&gt; 国内&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://pudn.com/&#34; target=&#34;_blank&#34; rel=&#34;nofollow&#34;&gt;起步比较&lt;/a&gt;早的一个国内代码网站；上面的代码比较老，有些代码质量不是很高，很多非程序员提交的算法程序。良心网站，因为下载资料几乎不需要多少积分，我就提交了几个代码，后来的积分就一直没下载完。一些稀缺的代码找不到，不妨上去看看&lt;/p&gt;
+
+&lt;h2 id=&#34;a-href-http-github-com-target-blank-github-a-国外&#34;&gt;&lt;a href=&#34;http://github.com&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt; 国外&lt;/h2&gt;
+
+&lt;p&gt;作为开源代码库以及版本控制系统，Github拥有140多万开发者用户。随着越来越多的应用程序转移到了云上，Github已经成为了管理软件开发以及发现已有代码的首选方法&lt;span style=&#34;font-size: 12px; line-height: 0px;&#34;&gt;。&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;国际上算是最流行的代码托管平台&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;a-href-http-stackoverflow-com-target-blank-stackoverflow-a-国外&#34;&gt;&lt;a href=&#34;http://stackoverflow.com&#34; target=&#34;_blank&#34;&gt;stackoverflow&lt;/a&gt; 国外&lt;/h2&gt;
+
+&lt;p&gt;Stack Overflow是一个与程序相关的IT技术问答网站。用户可以在网站免费提交问题，浏览问题，索引相关内容，在创建主页的时候使用简单的HTML。在问题页面，我们不会弹出任何广告，销售信息，JavaScript 窗口等。&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;当你是在不知道一个问题该怎么解决时，不妨上去提问一下，当然你得写英文&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

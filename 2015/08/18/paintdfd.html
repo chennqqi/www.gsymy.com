@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>如何绘制数据流图  &middot; 程序猿的小本本</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="光说有毛用|程序猿的小本本" />
+
+<meta name="keywords" content="DFD, 数据流图, ">
+
+
+<meta property="og:title" content="如何绘制数据流图  &middot; 程序猿的小本本 ">
+<meta property="og:site_name" content="程序猿的小本本"/>
+<meta property="og:url" content="http://replace-this-with-your-hugo-site.com/2015/08/18/paintdfd.html" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2015-08-18T02:21:57Z" />
+<meta property="og:article:modified_time" content="2015-08-18T02:21:57Z" />
+
+  
+    
+<meta property="og:article:tag" content="DFD">
+    
+<meta property="og:article:tag" content="数据流图">
+    
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@" />
+<meta name="twitter:title" content="如何绘制数据流图" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="http://replace-this-with-your-hugo-site.com/2015/08/18/paintdfd.html" />
+<meta name="twitter:domain" content="http://replace-this-with-your-hugo-site.com/">
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "如何绘制数据流图",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2015-08-18",
+    "description": "",
+    "wordCount":  89 
+  }
+</script>
+
+
+
+<link rel="canonical" href="http://replace-this-with-your-hugo-site.com/2015/08/18/paintdfd.html" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://replace-this-with-your-hugo-site.com/touch-icon-144-precomposed.png">
+<link href="http://replace-this-with-your-hugo-site.com/favicon.png" rel="icon">
+<meta name="theme-color" content="#2053AB">
+<meta name="generator" content="Hugo 0.17-DEV" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://replace-this-with-your-hugo-site.com/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://replace-this-with-your-hugo-site.com/css/style.css">
+<link rel="stylesheet" href="http://replace-this-with-your-hugo-site.com/css/highlight/default.css">
+
+  
+</head>
+<body>
+  <main id="main-wrapper" class="container main_wrapper has-sidebar">
+    <header id="main-header" class="container main_header">
+  <div class="container brand">
+  <div class="container title h1-like">
+  <a class="baselink" href="http://replace-this-with-your-hugo-site.com/">
+  程序猿的小本本
+
+</a>
+
+</div>
+
+  
+<div class="container topline">
+  
+  光说有毛用
+
+
+</div>
+
+
+</div>
+
+  <nav class="container nav primary no-print">
+  
+
+<a class="homelink" href="http://replace-this-with-your-hugo-site.com/">Home</a>
+
+
+  
+<a href="http://replace-this-with-your-hugo-site.com/about">About</a>
+
+<a href="http://replace-this-with-your-hugo-site.com/post" title="Show list of posts">Posts</a>
+
+<a href="http://replace-this-with-your-hugo-site.com/tags" title="Show list of tags">Tags</a>
+
+
+</nav>
+
+<div class="container nav secondary no-print">
+  
+<a id="contact-link-email" class="contact_link" href="mailto:chennqqi@qq.com">
+  <span class="fa fa-envelope-square"></span><span>email</span></a>
+
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/chennqqi?tab=repositories">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+
+</header>
+
+
+<article id="main-content" class="container main_content single">
+  <header class="container hat">
+  <h1>如何绘制数据流图
+</h1>
+
+  <div class="metas">
+<time datetime="2015-08-18">18 Aug, 2015</time>
+
+
+  
+    &middot; by admin
+  
+  &middot; Read in about 1 min
+  &middot; (89 Words)
+  <br>
+  
+<a class="label" href="http://replace-this-with-your-hugo-site.com/tags/dfd">DFD</a>
+
+<a class="label" href="http://replace-this-with-your-hugo-site.com/tags/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE">数据流图</a>
+
+
+
+</div>
+
+</header>
+
+  <div class="container content">
+  <p><a href="http://www.cnblogs.com/spring5/archive/2012/04/29/2485238.html" target="_blank">原文链接</a></p>
+
+<p>数据流图（Data Flow Diagram）：简称DFD，它从数据传递和加工角度，以图形方式来表达系统的逻辑功能、数据在系统内部的逻辑流向和逻辑变换过程，是结构化系统分析方法的主要表达工具及用于表示软件模型的一种图示方法。（百科）</p>
+
+<p>&nbsp;</p>
+
+<p>谈谈我的一点理解</p>
+
+<p>有时候我们要开发或者理解一个系统，总体的系统结构我们弄清楚了，但是细节上需要再深入，而数据流图“自顶向下,由外到内,逐步细化”的思想就凸显出很重要的作用，它可以作为我们系统分析的指导方法。</p>
+
+<p>&nbsp;</p>
+
+<p>数据流图分析关注的重点是数据，将面向控制的信息作为数据进行处理，包括了系统的所有数据，能准确的抽象系统数据的流向和处理过程．概括的描述当数据在系统流程中流动和处理的移动变换过程；数据流图分层进行分析，对顶层图的分析可以发现是否有输入信息或需要输出的信息被遗漏，容易及早发现系统各部分的逻辑错误，也容易修正．每一层都明确强调“需要什么”，“干了什么”“给出什么”；</p>
+
+<p>这样逐层分解下去，系统被严密的展开，系统的框架就展现出来了．采用数据流图进行分析，可以提高分析的可见性和可控性，更容易理解软件要完成什么功能，数据来源于哪里，结果要输出到哪里等等，清晰明了。</p>
+
+<p>下面我们来看看数据流图的组成，设计原则和应用</p>
+
+<p>基本图形符号</p>
+
+<p><img src="http://my.csdn.net/uploads/201204/29/1335658348_6516.png" alt="" /></p>
+
+<p>加工（数据处理）：输入数据在此进行变换产生输出数据。加工对象为：数据结构或数据内容。</p>
+
+<p>数据流：箭头表示数据流向，作为加工之间传输数据的命名通道（数据流有名字），或数据存储文件与加工之间的非命名通道（数据流没名字，但其连接的加工和文件的名字，和流向可以确定其含义）。</p>
+
+<p>&nbsp;</p>
+
+<p>同一个数据流图上不能有同名的数据流，如果两个以上的数据流指向一个加工，或是从一个加工中输出两个以上的数据流，这些数据流往往存在一定关系，如图：</p>
+
+<p><img src="http://my.csdn.net/uploads/201204/29/1335658377_6269.png" alt="" /></p>
+
+<p>&nbsp;</p>
+
+<p>数据存储文件：流向数据存储的数据流可以理解为写入文件或查询文件，从数据存储流出的数据流可以理解为从文件读数据或得到查询结果。</p>
+
+<p>&nbsp;</p>
+
+<p>数据源点或终点：是系统外部环境中的实体，也称外部实体。它们作为系统与系统外部环境的接口界面，在实际问题中可能是人员、组织、其他硬件系统等。一般出现在顶层数据流图中。</p>
+
+<p>数据流图的设计原则</p>
+
+<p><img src="http://my.csdn.net/uploads/201204/29/1335658417_2447.png" alt="" /></p>
+
+<p>下面我们通过一些示例来说明这些设计原则</p>
+
+<p><span lang="zh-CN">示例</span><span lang="en-US">1</span><span lang="zh-CN">：</span></p>
+
+<p><img src="http://my.csdn.net/uploads/201204/29/1335658463_6372.png" alt="" /></p>
+
+<p>上图违反了父图与子图的平衡原则。</p>
+
+<p>因为父图中有提货单输出流，但子图中没有与这条输出流相关的输出流。</p>
+
+<p><span lang="zh-CN">我们看两者的输入流，父图的输入流是订货单，而子图的输入流是数量，账号，客户，这是平衡的，因为子图的三条输入流是对父图输入流的分解，同样子图中的加工</span><span lang="en-US">4.1</span><span lang="zh-CN">，</span><span lang="en-US">4.2</span><span lang="zh-CN">，</span><span lang="en-US">4.3</span><span lang="zh-CN">也可以看成是对父图加工</span><span lang="en-US">4</span><span lang="zh-CN">的分解，这符合</span><span lang="zh-CN">自顶向下，逐层细化</span><span lang="zh-CN">原则</span></p>
+
+<p>&nbsp;</p>
+
+<p><span lang="zh-CN">示例</span><span lang="en-US">2</span><span lang="zh-CN">：</span></p>
+
+<p>下面是一张有错的数据流图。</p>
+
+<p><img src="http://my.csdn.net/uploads/201204/29/1335658499_5696.png" alt="" /></p>
+
+<p><span lang="zh-CN">（</span><span lang="en-US">1</span><span lang="zh-CN">）根据</span><span lang="zh-CN"><strong>数据守恒原则</strong></span><span lang="zh-CN">，外部实体和外部实体，外部实体和数据存储之间不能存在数据流，，存储与存储之间也不应该有数据流，</span><span lang="zh-CN"><strong>数据流必须跟加工有关，</strong></span><span lang="zh-CN">没有加工数据流不可能流来流去的。</span></p>
+
+<p><img src="http://my.csdn.net/uploads/201204/29/1335658542_7669.png" alt="" /></p>
+
+<p><span lang="zh-CN">（</span><span lang="en-US">2</span><span lang="zh-CN">）对于加工，输入是</span><span lang="en-US">A</span><span lang="zh-CN">，输出还是</span><span lang="en-US">A</span><span lang="zh-CN">，也违反了数据守恒原则，输入与输出一样，加工没有作用。</span></p>
+
+<p><span lang="zh-CN"><img src="http://my.csdn.net/uploads/201204/29/1335658578_3510.png" alt="" /><br /> </span></p>
+
+<p><span lang="zh-CN">（</span><span lang="en-US">3</span><span lang="zh-CN">）对于加工，只有输入没有输出，违反了数据守恒原则。比如，人不可能只吃饭，不大小便。嘿嘿</span></p>
+
+<p><img src="http://my.csdn.net/uploads/201204/29/1335658613_7310.png" alt="" /></p>
+
+<p><span lang="zh-CN">（</span><span lang="en-US">4</span><span lang="zh-CN">）对于加工，只有输出没有输入，违反了数据守恒原则。比如，人不可能一直大小便，但不吃饭。嘿嘿</span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><span lang="zh-CN">示例</span><span lang="en-US">3</span><span lang="zh-CN">：</span></p>
+
+<p><img src="http://my.csdn.net/uploads/201204/29/1335658658_4720.png" alt="" /></p>
+
+<p><span lang="zh-CN"><strong>加工细节隐蔽</strong></span><span lang="zh-CN">原则说的是：在画父图时，只需画出加工和加工之间的关系，而不必画出各个加工内部的细节，例如上面的父图中，并没有画出加工</span><span lang="en-US">1</span><span lang="zh-CN">的内部细节</span></p>
+
+<p><span lang="zh-CN">再进行对加工</span><span lang="en-US">1</span><span lang="zh-CN">进行细化的时候，我们就应该画出它的内部细节，如第二个图。</span></p>
+
+<p>&nbsp;</p>
+
+<p><span lang="zh-CN"><strong>简化加工之间的关系</strong></span><span lang="zh-CN">：加工间的数据流越少，各个加工就越相对独立，耦合越低，所以应尽量减少加工间输入</span><span lang="en-US">/</span><span lang="zh-CN">输出数据流的数目。</span></p>
+
+<p>&nbsp;</p>
+
+<p><span lang="zh-CN"><strong>均匀分解：</strong></span><span lang="zh-CN">不要出现，一些加工分解了</span><span lang="en-US">10</span><span lang="zh-CN">层，而另一些加工分解了</span><span lang="en-US">3</span><span lang="zh-CN">层这样的情况</span></p>
+
+<p>&nbsp;</p>
+
+<p>忽略枝节：暂时不要考虑一些例外情况，出错处理等枝节性问题。</p>
+
+<p>&nbsp;</p>
+
+<p>表现的是输入流而不是控制流：不要和程序流程图混淆，数据流图，强调从数据加工的角度来描述系统，自然是数据流。</p>
+
+<p>这些原则中，最重要的当属：保持父图与子图平衡，保持数据平衡，加工细节隐蔽</p>
+
+<p>一般从这三个原则来考查一张数据流图是否正确。</p>
+
+<p>&nbsp;</p>
+
+<p>数据字典</p>
+
+<p>&nbsp;</p>
+
+<p>数据字典的就是对数据流图中出现的所有被命名的图形元素在数据字典中作为一个词条加以定义，使每个图形元素的名称都有一个确切的解释。</p>
+
+<p>&nbsp;</p>
+
+<p>在对数据流和数据文件词条进行描述时可能包含一定的数据结构，对于数据结构的描述常用的是定义是。如下表</p>
+
+<p><img src="http://my.csdn.net/uploads/201204/29/1335658692_7683.png" alt="" /></p>
+
+<p><span lang="zh-CN">在数据字典中有</span><span lang="en-US">4</span><span lang="zh-CN">种类型的条目：</span></p>
+
+<p><span lang="en-US">1</span><span lang="zh-CN">、数据项条目：通常为数据项的值类型，允许的取值范围等</span></p>
+
+<p><span lang="en-US">2</span><span lang="zh-CN">、数据流条目：给出某个数据流的定义，列出该数据流的各组成数据项。</span></p>
+
+<p><span lang="en-US">3</span><span lang="zh-CN">、文件条目：对文件的定义，列出期组成的数据项</span></p>
+
+<p><span lang="en-US">4</span><span lang="zh-CN">、加工条目：对每个不能再分解的加工做说明，包括加工的激发条件，加工的逻辑，优先级等等。</span></p>
+
+<p>&nbsp;</p>
+
+<p>示例：</p>
+
+<p>图书管理系统中</p>
+
+<p><span lang="zh-CN">查询请求信息</span><span lang="en-US">=[</span><span lang="zh-CN">查询读者请求信息</span><span lang="en-US">|</span><span lang="zh-CN">查询图书请求信息</span><span lang="en-US">]</span></p>
+
+<p><span lang="zh-CN">读者情况</span><span lang="en-US">=</span><span lang="zh-CN">读者号</span><span lang="en-US">+</span><span lang="zh-CN">姓名</span><span lang="en-US">+</span><span lang="zh-CN">所在单位</span><span lang="en-US">+{</span><span lang="zh-CN">借书情况</span><span lang="en-US">}</span></p>
+
+<p>&nbsp;</p>
+
+<p>根据上面的定义表，我们很容易看出这些条目的意思。</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>下面我们来看一个数据流图的综合应用问题，这样有助于我们理解数据流图。</p>
+
+<p>&nbsp;</p>
+
+<p>需求：</p>
+
+<p><img src="http://my.csdn.net/uploads/201204/29/1335658769_5422.png" alt="" /></p>
+
+<p><img src="http://my.csdn.net/uploads/201204/29/1335658804_1294.png" alt="" /></p>
+
+<p><img src="http://my.csdn.net/uploads/201204/29/1335658843_6538.png" alt="" /></p>
+
+<p>根据以上信息提出的几个问题！希望对这几个问题的解析，能加深大家对数据流图的理解。</p>
+
+<p><img src="http://my.csdn.net/uploads/201204/29/1335658873_3856.png" alt="" /></p>
+
+<p><span lang="zh-CN">对于问题</span><span lang="en-US">1:</span></p>
+
+<p>我们前面提到过，</p>
+
+<p>可以通过数据流图那三个重要设计原则（保持父图与子图平衡，保持数据平衡，加工细节隐蔽）来考查一张数据流图是否正确。</p>
+
+<p><span lang="en-US">1</span><span lang="zh-CN">、</span><span lang="zh-CN">查看是否平衡</span><span lang="en-US">,</span><span lang="zh-CN">即子图中的输入流合输出流和父图是否对应</span><span lang="en-US">;</span></p>
+
+<p><span lang="en-US">2</span><span lang="zh-CN">、查看</span><span lang="zh-CN">数据守恒，处理查询请求没有输入</span><span lang="en-US">,</span><span lang="zh-CN">登记读者信息没有输出</span><span lang="en-US">.</span></p>
+
+<p>正确应该如红色箭头画法。</p>
+
+<p><img src="http://my.csdn.net/uploads/201204/29/1335658904_9079.png" alt="" /></p>
+
+<p><span lang="zh-CN">对于问题</span><span lang="en-US">2</span><span lang="zh-CN">：</span></p>
+
+<p><span lang="en-US">1</span><span lang="zh-CN">、首先我们看到对于加工</span><span lang="en-US">2</span><span lang="zh-CN">，</span><span lang="zh-CN">父图和子图是平衡的</span><span lang="en-US">,</span><span lang="zh-CN">所以，本题只能是</span><span lang="en-US">2.1</span><span lang="zh-CN">和</span><span lang="en-US">2.2</span><span lang="zh-CN">或者他们和文件之间缺少数据流。</span></p>
+
+<p>只得根据需求描述去分析到底缺失哪些数据流。</p>
+
+<p>&nbsp;</p>
+
+<p>根据在原需求中的</p>
+
+<p><img src="http://my.csdn.net/uploads/201204/29/1335658935_4128.png" alt="" /></p>
+
+<p>我们可以很轻松的判断出缺少哪些数据流，如下图红色箭头</p>
+
+<p><img src="http://my.csdn.net/uploads/201204/29/1335658971_2939.png" alt="" /></p>
+
+<p><span lang="zh-CN">对于问题</span><span lang="en-US">3</span><span lang="zh-CN">：这是一个数据字典的应用问题。</span></p>
+
+<p><span lang="zh-CN"><img src="http://my.csdn.net/uploads/201204/29/1335659015_6316.png" alt="" /><br /> </span></p>
+
+<p>根据以上我们截取需求中的信息，，注意红色部分，再结合我们开始介绍的数据字典定义符号的使用，即可很轻松解决这个问题。</p>
+
+<p><span lang="zh-CN">管理工作请求单</span><span lang="en-US">=[</span><span lang="zh-CN">购入新书</span><span lang="en-US">|</span><span lang="zh-CN">读者借书</span><span lang="en-US">|</span><span lang="zh-CN">读者还书</span><span lang="en-US">|</span><span lang="zh-CN">图书注销</span><span lang="en-US">]</span></p>
+
+<p><span lang="zh-CN">入库单</span><span lang="en-US">=</span><span lang="zh-CN">分类目录号</span><span lang="en-US">+</span><span lang="zh-CN">书名</span><span lang="en-US">+</span><span lang="zh-CN">作者</span><span lang="en-US">+</span><span lang="zh-CN">价格</span><span lang="en-US">+</span><span lang="zh-CN">数量</span><span lang="en-US">+</span><span lang="zh-CN">购书日期。</span></p>
+
+<p>转自:<a href="http://www.cnblogs.com/spring5/archive/2012/04/29/2485238.html">http://www.cnblogs.com/spring5/archive/2012/04/29/2485238.html</a></p>
+
+</div>
+
+
+  <footer class="container">
+  <div class="container navigation no-print">
+  <h2>Navigation</h2>
+  
+  
+
+    
+    <a class="prev" href="http://replace-this-with-your-hugo-site.com/2015/08/13/win_errorcode.html" title="windows错误码大全,妈妈再也不担心我win32api返回失败了！">
+      Previous
+    </a>
+    
+
+    
+    <a class="next" href="http://replace-this-with-your-hugo-site.com/2015/08/18/linux-daemon-writing-howto.html" title="怎么编写Linux守护程序">
+      Next
+    </a>
+    
+
+  
+
+
+</div>
+
+  <div class="container comments">
+  <h2>Comments</h2>
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//your_disqus_shortname.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+</article>
+      <footer id="main-footer" class="container main_footer">
+  
+
+  <div class="container nav foot no-print">
+  
+
+  <a class="toplink" href="#">back to top</a>
+
+</div>
+
+  <div class="container credits">
+  
+<div class="container footline">
+  
+  code with <i class='fa fa-heart'></i>
+
+
+</div>
+
+
+  
+<div class="container copyright">
+  
+  &copy; 2016 gsymy.com.
+
+
+</div>
+
+
+</div>
+
+</footer>
+
+    </main>
+    
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//your_disqus_shortname.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+
+<script src="http://replace-this-with-your-hugo-site.com/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'Your Google Analytics tracking code', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    
+  </body>
+</html>
+

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>程序猿的小本本 </title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="光说有毛用|程序猿的小本本" />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:title" content="程序猿的小本本 ">
+<meta property="og:site_name" content="程序猿的小本本"/>
+<meta property="og:url" content="http://replace-this-with-your-hugo-site.com/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="website" />
+
+
+
+<link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="alternate" type="application/rss+xml" title="程序猿的小本本" />
+
+<link rel="canonical" href="http://replace-this-with-your-hugo-site.com/" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://replace-this-with-your-hugo-site.com/touch-icon-144-precomposed.png">
+<link href="http://replace-this-with-your-hugo-site.com/favicon.png" rel="icon">
+<meta name="theme-color" content="#2053AB">
+<meta name="generator" content="Hugo 0.17-DEV" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://replace-this-with-your-hugo-site.com/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://replace-this-with-your-hugo-site.com/css/style.css">
+<link rel="stylesheet" href="http://replace-this-with-your-hugo-site.com/css/highlight/default.css">
+
+  
+</head>
+<body>
+  <main id="main-wrapper" class="container main_wrapper has-sidebar">
+    <header id="main-header" class="container main_header">
+  <div class="container brand">
+  <div class="container title h1-like">
+  <a class="baselink" href="http://replace-this-with-your-hugo-site.com/">
+  程序猿的小本本
+
+</a>
+
+</div>
+
+  
+<div class="container topline">
+  
+  光说有毛用
+
+
+</div>
+
+
+</div>
+
+  <nav class="container nav primary no-print">
+  
+
+<a class="homelink" href="http://replace-this-with-your-hugo-site.com/">Home</a>
+
+
+  
+<a href="http://replace-this-with-your-hugo-site.com/about">About</a>
+
+<a href="http://replace-this-with-your-hugo-site.com/post" title="Show list of posts">Posts</a>
+
+<a href="http://replace-this-with-your-hugo-site.com/tags" title="Show list of tags">Tags</a>
+
+
+</nav>
+
+<div class="container nav secondary no-print">
+  
+<a id="contact-link-email" class="contact_link" href="mailto:chennqqi@qq.com">
+  <span class="fa fa-envelope-square"></span><span>email</span></a>
+
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/chennqqi?tab=repositories">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+
+</header>
+
+
+<section id="main-content" class="container main_content homepage">
+  <header class="container header">
+    <h1>程序猿的小本本
+</h1>
+
+    <span>last update: <time datetime="2016-01-11T14:48:49Z">11 January at 2:48pm</time>
+</span>
+
+  </header>
+  
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://replace-this-with-your-hugo-site.com/2015/08/23/linux-getopt.html">Linux 命令行参数处理函数探究(转)
+</a>
+</h2>
+
+  <time datetime="2015-08-23">23 Aug, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    <p>一、getopt函数</p>
+
+<p>![][1]</p>
+
+<div>
+  A.函数功能：处理命令行参数
+</div>
+
+<div>
+</div>
+
+<div>
+  B.参数:
+</div>
+
+<div>
+</div>
+
+<div>
+  argc代表命令行参数的个数，argv[i]存放命令行参数在内存存放的地址。这两个参数直接从mian(int argc,char *argv[])得到。
+</div>
+
+<div>
+</div>
+
+<div>
+  如果argv的元素是以 &#8220;-“开头称为一个选项元素,紧跟在&#8221;-&#8220;后面的一个字符称为选项字符。
+</div>
+
+<div>
+</div>
+
+<div>
+  eg:ls  -l
+</div>
+
+<div>
+</div>
+
+<div>
+  其中ls是可执行程序名称，-l称为选项元素，&#8217;l&#8217;称为选项字符
+</div>
+
+<div>
+</div>
+
+<div>
+  optstring:选项参数的集合
+</div>
+
+<div>
+</div>
+
+<div>
+  注意:如果getopt()函数被循环调用，每次调用都会返回一个对应选元素的选项字符,如果所有选项字符都放回后，再次调用getopt()函数返回-1。
+</div>
+
+<div>
+</div>
+
+<div>
+</div>
+
+<div>
+  <pre class="lang:c decode:true ">./a.out   -a  -n  -l
+ 
+while(1)
+{
+    ch = getopt(argc,argv,"anl");
+}</pre>
+  
+  <p>
+    &nbsp;
+  </p>
+</div>
+
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://replace-this-with-your-hugo-site.com/2015/08/23/linux-getopt.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://replace-this-with-your-hugo-site.com/2015/08/19/vserrornoprjfile.html">VS编译出错，工程文件不存在
+</a>
+</h2>
+
+  <time datetime="2015-08-19">19 Aug, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    <h3 id="vs编译出错信息-title-pre-fs1">VS编译出错信息: {.title.pre.fs1}</h3>
+
+<h3 id="span-class-tcnt-8220-the-project-file-8221-has-been-renamed-or-is-no-longer-in-the-solution-8221-span-title-pre-fs1"><span class="tcnt">&#8220;The project file &#8221; has been renamed or is no longer in the solution&#8221;</span> {.title.pre.fs1}</h3>
+
+<p>看一下 .sln 和 .vcxproj 文件中的 GUID 是否匹配。 <wbr /></p>
+
+<div>
+  可能原因1:
+</div>
+
+<div>
+  出这个提示，一般是 .vcxproj 中 <ProjectGuid> 中的 GUID 和 .sln 中的 Project GUID 不一致了。（Project Depedencies）
+</div>
+
+<div>
+   
+</div>
+
+<div>
+  可能原因2:
+</div>
+
+<div>
+  也有可能是 .sln 引用了 A.vcxproj，而 A.vcxproj 依赖了 B.vcxproj，而 B.vcxproj 未被加入到 .sln 中。查看 A.vcxproj 中的 <ProjectReference>，看看引用了哪个未加入 .sln 的工程，加一下就好。
+</div>
+
+<div>
+   
+</div>
+
+<div>
+  说明：
+</div>
+
+<div>
+  打开.sln工程文件，检查
+</div>
+
+<div>
+  <strong>Project(&#8220;&#8230;</strong>
+</div>
+
+<div>
+  <strong> EndProject</strong>
+</div>
+
+<div>
+  节和每个*.vcxproj工程里的GUID匹配不，不匹配改正，
+</div>
+
+<div>
+  如果有重复的，利用VS生成新的，替换掉。
+</div>
+
+<div>
+   
+</div>
+
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://replace-this-with-your-hugo-site.com/2015/08/19/vserrornoprjfile.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://replace-this-with-your-hugo-site.com/2015/08/19/wordpress-basic.html">wordpress基础操作
+</a>
+</h2>
+
+  <time datetime="2015-08-19">19 Aug, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    添加favoriteicon 在wp-content/themes/YOURTHEM/header.php 中添加下面语句，然后把favicon.ico文件放置到网站根目录 &lt;link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /&gt; &nbsp; 添加统计代码 在wp-content/themes/YOURTHEM/footer.php 中添加对应的网站js代码即可 &nbsp; 在wp-content/themes/YOURTHEM/footer.php 允许友链操作功能 add_filter('pre_option_link_manager_enabled','__return_true'); &nbsp; 网站居中对齐 在wp-content/themes/YOURTHEM/style.css 最后添加一行 #page {margin:0 auto;} &nbsp; &nbsp;
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://replace-this-with-your-hugo-site.com/2015/08/19/wordpress-basic.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://replace-this-with-your-hugo-site.com/2015/08/19/vsnotbuildbysolution.html">Project not selected to build for this solution configuration.
+</a>
+</h2>
+
+  <time datetime="2015-08-19">19 Aug, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    <h1 id="cb_post_title_url.postTitle2">[Project not selected to build for this solution configuration.][1]</h1>
+
+<p>{.postTitle}</p>
+
+<div id="cnblogs_post_body">
+  <h3 class="post-title entry-title">
+    Project not selected to build for this solution configuration.
+  </h3>
+  
+  <div class="post-header">
+     
+  </div>
+  
+
+<p><div id="post-body-7943090463870159502" class="post-body entry-content">
+    When you upgrade your older solution files to latest version of visual studio 2010 or 2012 you may get compilation output as &#8220;Project not selected to build for this solution configuration&#8221;, even though with the earlier version of visual studio these projects were building fine. In order to build required project you just have to modify the solution configuration. Steps below mention how to do it.</p>
+
+<pre><code>&lt;ol&gt;
+  &lt;li&gt;
+    Launch the Solution properties, by right clicking solution and select Properties.
+  &lt;/li&gt;
+  &lt;li&gt;
+    On solution properties dialog box, from configuration properties group select Configuration.
+  &lt;/li&gt;
+  &lt;li&gt;
+    For the projects which you are getting the error as above select the check box under Build column if not checked.
+  &lt;/li&gt;
+  &lt;li&gt;
+    Save configuration by pressing OK.
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+  Now your project being skipped should get built, while building the solution.
+&lt;/p&gt;
+</code></pre>
+
+<p></div></p>
+
+<p><div class="post-body entry-content">
+     
+  </div></p>
+
+<p><div class="post-body entry-content">
+     
+  </div></p>
+
+<p><div class="post-body entry-content">
+    visual studio 2012 can not build
+  </div></p>
+
+<p><div class="post-body entry-content">
+    not selected to build for this solution configuration
+  </div></p>
+
+<p><div class="post-body entry-content">
+    Project not selected to build for this solution
+  </div></p>
+
+<p><div class="post-body entry-content">
+    Project not selected to build for this
+  </div></p>
+
+<p><div class="post-body entry-content">
+    Project not selected to build for
+  </div></p>
+
+<p><div class="post-body entry-content">
+    Project not selected to build
+  </div></p>
+
+<p><div class="post-body entry-content">
+    build for this solution configuration
+  </div></p>
+
+<p><div class="post-body entry-content">
+    vs2012 can not build
+  </div>
+</div></p>
+
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://replace-this-with-your-hugo-site.com/2015/08/19/vsnotbuildbysolution.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+  
+<div class="container pagination">
+  
+
+
+<a aria-label="First" href="http://replace-this-with-your-hugo-site.com//">
+  <span aria-hidden="true">««</span>
+</a>
+
+<a aria-label="Previous" href="http://replace-this-with-your-hugo-site.com//page/10/">
+  <span aria-hidden="true">«</span>
+</a>
+
+
+<a href="http://replace-this-with-your-hugo-site.com//">
+  1
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/2/">
+  2
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/3/">
+  3
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/4/">
+  4
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/5/">
+  5
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/6/">
+  6
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/7/">
+  7
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/8/">
+  8
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/9/">
+  9
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/10/">
+  10
+</a>
+
+<a class="active" href="http://replace-this-with-your-hugo-site.com//page/11/">
+  11
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/12/">
+  12
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/13/">
+  13
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/14/">
+  14
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/15/">
+  15
+</a>
+
+
+<a aria-label="Next" href="http://replace-this-with-your-hugo-site.com//page/12/">
+  <span aria-hidden="true">»</span>
+</a>
+
+<a aria-label="Last" href="http://replace-this-with-your-hugo-site.com//page/15/">
+  <span aria-hidden="true">»»</span>
+</a>
+
+
+</div>
+
+
+</section>
+
+      <footer id="main-footer" class="container main_footer">
+  
+
+  <div class="container nav foot no-print">
+  
+
+  <a class="toplink" href="#">back to top</a>
+
+</div>
+
+  <div class="container credits">
+  
+<div class="container footline">
+  
+  code with <i class='fa fa-heart'></i>
+
+
+</div>
+
+
+  
+<div class="container copyright">
+  
+  &copy; 2016 gsymy.com.
+
+
+</div>
+
+
+</div>
+
+</footer>
+
+    </main>
+    
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//your_disqus_shortname.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+
+<script src="http://replace-this-with-your-hugo-site.com/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'Your Google Analytics tracking code', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    
+  </body>
+</html>
+

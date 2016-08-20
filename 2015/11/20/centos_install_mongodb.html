@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>CentOS安装mongodb  &middot; 程序猿的小本本</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="光说有毛用|程序猿的小本本" />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:title" content="CentOS安装mongodb  &middot; 程序猿的小本本 ">
+<meta property="og:site_name" content="程序猿的小本本"/>
+<meta property="og:url" content="http://replace-this-with-your-hugo-site.com/2015/11/20/centos_install_mongodb.html" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2015-11-20T07:31:11Z" />
+<meta property="og:article:modified_time" content="2015-11-20T07:31:11Z" />
+
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@" />
+<meta name="twitter:title" content="CentOS安装mongodb" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="http://replace-this-with-your-hugo-site.com/2015/11/20/centos_install_mongodb.html" />
+<meta name="twitter:domain" content="http://replace-this-with-your-hugo-site.com/">
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "CentOS安装mongodb",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2015-11-20",
+    "description": "",
+    "wordCount":  20 
+  }
+</script>
+
+
+
+<link rel="canonical" href="http://replace-this-with-your-hugo-site.com/2015/11/20/centos_install_mongodb.html" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://replace-this-with-your-hugo-site.com/touch-icon-144-precomposed.png">
+<link href="http://replace-this-with-your-hugo-site.com/favicon.png" rel="icon">
+<meta name="theme-color" content="#2053AB">
+<meta name="generator" content="Hugo 0.17-DEV" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://replace-this-with-your-hugo-site.com/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://replace-this-with-your-hugo-site.com/css/style.css">
+<link rel="stylesheet" href="http://replace-this-with-your-hugo-site.com/css/highlight/default.css">
+
+  
+</head>
+<body>
+  <main id="main-wrapper" class="container main_wrapper has-sidebar">
+    <header id="main-header" class="container main_header">
+  <div class="container brand">
+  <div class="container title h1-like">
+  <a class="baselink" href="http://replace-this-with-your-hugo-site.com/">
+  程序猿的小本本
+
+</a>
+
+</div>
+
+  
+<div class="container topline">
+  
+  光说有毛用
+
+
+</div>
+
+
+</div>
+
+  <nav class="container nav primary no-print">
+  
+
+<a class="homelink" href="http://replace-this-with-your-hugo-site.com/">Home</a>
+
+
+  
+<a href="http://replace-this-with-your-hugo-site.com/about">About</a>
+
+<a href="http://replace-this-with-your-hugo-site.com/post" title="Show list of posts">Posts</a>
+
+<a href="http://replace-this-with-your-hugo-site.com/tags" title="Show list of tags">Tags</a>
+
+
+</nav>
+
+<div class="container nav secondary no-print">
+  
+<a id="contact-link-email" class="contact_link" href="mailto:chennqqi@qq.com">
+  <span class="fa fa-envelope-square"></span><span>email</span></a>
+
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/chennqqi?tab=repositories">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+
+</header>
+
+
+<article id="main-content" class="container main_content single">
+  <header class="container hat">
+  <h1>CentOS安装mongodb
+</h1>
+
+  <div class="metas">
+<time datetime="2015-11-20">20 Nov, 2015</time>
+
+
+  
+    &middot; by admin
+  
+  &middot; Read in about 1 min
+  &middot; (20 Words)
+  <br>
+  
+
+
+</div>
+
+</header>
+
+  <div class="container content">
+  <p><span style="color: black; font-size: 10pt;">yum源中添加mongodb下载地址<br /> </span></p>
+
+<p><span style="color: black; font-size: 10pt;">具体步骤：<span style="font-family: 宋体;"><br /> </span></span></p>
+
+<p><span style="color: black; font-size: 10pt;">Cd /etc/yum.repo.d/<br /> </span></p>
+
+<p><span style="color: black; font-size: 10pt;">创建 mongodb.repo<br /> </span></p>
+
+<p><span style="color: black; font-size: 10pt;">添加内容<span style="font-family: 宋体;"><br /> </span></span></p>
+
+<pre class="EnlighterJSRAW " data-enlighter-language="shell">[mongodb]
+name=MongoDB Repository
+baseurl=http://downloads-distro.mongodb.org/repo/redhat/os/x86_64/
+gpgcheck=0
+enabled=1</pre>
+
+<p><span style="color: black; font-size: 10pt;"><br /> </span></p>
+
+<p><span style="color: black; font-size: 10pt;"><span style="background-color: white;">执行sudo yum install -y mongodb-org </span><br /> </span></p>
+
+<p><span style="color: #595959; font-size: 8pt;">来自 &lt;<a href="http://cache.baiducontent.com/c?m=9f65cb4a8c8507ed4fece7631046893b4c4380146d96864968d4e414c42246101d27abfa3a715042889422301cf91e1ab9ab68332a0321b690c88e40d8afd7756fde28652740c01c53c419de941b79947dc60a&p=8b2a975986cc41ac5dbc8a3f465294&newp=8a6dc54ad6c044b509be9b7c7f05cf231610db2151d4d1106585&user=baidu&fm=sc&query=centos+mongodb&qid=ae2d9c2c0000752b&p1=4">http://cache.baiducontent.com/c?m=9f65cb4a8c8507ed4fece7631046893b4c4380146d96864968d4e414c42246101d27abfa3a715042889422301cf91e1ab9ab68332a0321b690c88e40d8afd7756fde28652740c01c53c419de941b79947dc60a&p=8b2a975986cc41ac5dbc8a3f465294&newp=8a6dc54ad6c044b509be9b7c7f05cf231610db2151d4d1106585&user=baidu&fm=sc&query=centos+mongodb&qid=ae2d9c2c0000752b&p1=4</a>&gt;</span><span style="color: black; font-size: 10pt;"><span style="font-family: 宋体;"><br /> </span></span></p>
+
+</div>
+
+
+  <footer class="container">
+  <div class="container navigation no-print">
+  <h2>Navigation</h2>
+  
+  
+
+    
+    <a class="prev" href="http://replace-this-with-your-hugo-site.com/2015/11/15/jni-getfieldidcrash.html" title="jni GetFieldID崩溃的一个可能原因">
+      Previous
+    </a>
+    
+
+    
+    <a class="next" href="http://replace-this-with-your-hugo-site.com/2015/11/29/magicgirl.html" title="一个充满魔性的外国妹子，看了好几遍…">
+      Next
+    </a>
+    
+
+  
+
+
+</div>
+
+  <div class="container comments">
+  <h2>Comments</h2>
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//your_disqus_shortname.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+</article>
+      <footer id="main-footer" class="container main_footer">
+  
+
+  <div class="container nav foot no-print">
+  
+
+  <a class="toplink" href="#">back to top</a>
+
+</div>
+
+  <div class="container credits">
+  
+<div class="container footline">
+  
+  code with <i class='fa fa-heart'></i>
+
+
+</div>
+
+
+  
+<div class="container copyright">
+  
+  &copy; 2016 gsymy.com.
+
+
+</div>
+
+
+</div>
+
+</footer>
+
+    </main>
+    
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//your_disqus_shortname.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+
+<script src="http://replace-this-with-your-hugo-site.com/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'Your Google Analytics tracking code', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    
+  </body>
+</html>
+

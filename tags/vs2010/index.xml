@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vs2010 on 程序猿的小本本</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/vs2010/</link>
+    <description>Recent content in Vs2010 on 程序猿的小本本</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
+    <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
+    <copyright>(c) 2016 gsymy.com.</copyright>
+    <lastBuildDate>Tue, 27 Oct 2015 10:33:30 +0000</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/vs2010/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>qmake不能生成vs工程文件</title>
+      <link>http://replace-this-with-your-hugo-site.com/2015/10/27/qmake_vsproject.html</link>
+      <pubDate>Tue, 27 Oct 2015 10:33:30 +0000</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/2015/10/27/qmake_vsproject.html</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;报错信息如下：&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;WARNING: Unable to generate output for: Makefile.Debug [TEMPLATE vcapp]&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;正常情况下命令式:&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;pre class=&#34;EnlighterJSRAW&#34; data-enlighter-language=&#34;shell&#34;&gt;qmake -tp vc xxx.pro&lt;/pre&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;strong&gt;解决办法&lt;/strong&gt;&lt;span style=&#34;font-family: 宋体;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;有些环境下装了多个Qt或者是环境变量有问题导致qmake没有找到正确的spec&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;修改命令为:&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;pre class=&#34;lang:sh decode:true &#34;&gt;qmake -tp vc -spec win32-msvc2010 xxx.pro&lt;/pre&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;这里spec选择你需要的版本即可&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>not found or not built by the last incremental link VS2010编译警告</title>
+      <link>http://replace-this-with-your-hugo-site.com/2015/10/25/not-found-or-not-built-by-the-last-incremental-link-vs2010warning.html</link>
+      <pubDate>Sun, 25 Oct 2015 11:54:56 +0000</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/2015/10/25/not-found-or-not-built-by-the-last-incremental-link-vs2010warning.html</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;not found or not built by the last incremental link; performing full link&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: gray; font-size: 9pt;&#34;&gt;2015年10月25日&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: gray; font-size: 9pt;&#34;&gt;19:53&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;VS的一个编译警告，不算错误。原因和解决办法如下：&lt;/span&gt;&lt;span style=&#34;font-size: 12pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;用visualstudio创建一个Win32 Console Application，编译后生成两个Debug目录，一个在项目所属的Solution下，这个Debug中会生成.exe等类型程序结果文件。另外 的一个在Project的目录中，这个Debug中包含pdb等文件，但是没有生成.exe等程序结果文件。&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;Condition：&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;当再次重新编译项目时，出现如题的问题。&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;Cause:&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;引起这个错误的根源在于Microsoft的VS的两个配置项配置冲突造成的： 配置1：Configuration Properties-&amp;gt;General-&amp;gt;Output Directory默认配置是$(SolutionDir)$(ConfigurationName) 配置2：Configuration Properties-&amp;gt;Linker-&amp;gt;General-&amp;gt;Output Directory默认配置是$(OutDir)/$(ProjectName).exe 上述的两项配置是冲突的。所以在你重新编译的时候这个错误就出现了&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;Solution:&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;在project的property配置窗口中：Configuration Properties-&amp;gt;General：把Output Directory从$(SolutionDir)$(ConfigurationName)改 成$(ProjectDir)$(ConfigurationName)&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Visualstudio C语言包含C&#43;&#43;头文件编译不通过</title>
+      <link>http://replace-this-with-your-hugo-site.com/2015/09/07/vs_error_include_cpp.html</link>
+      <pubDate>Mon, 07 Sep 2015 10:29:39 +0000</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/2015/09/07/vs_error_include_cpp.html</guid>
+      <description>&lt;pre class=&#34;&#34;&gt;&lt;code&gt;error C2054: expected &#39;(&#39; to follow &#39;using&#39;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;error C2061: syntax error : identifier &#39;using&#39;
+
+
+c:\program files\microsoft visual studio 10.0\vc\include\cstdio(38): error C2054: expected &#39;(&#39; to follow &#39;using&#39;
+c:\program files\microsoft visual studio 10.0\vc\include\cstdio(40): error C2061: syntax error : identifier &#39;using&#39;
+c:\program files\microsoft visual studio 10.0\vc\include\cstdio(40): error C2054: expected &#39;(&#39; to follow &#39;using&#39;
+c:\program files\microsoft visual studio 10.0\vc\include\cstdio(40): error C2061: syntax error : identifier &#39;using&#39;
+c:\program files\microsoft visual studio 10.0\vc\include\cstdio(41): error C2061: syntax error : identifier &#39;clearerr&#39;
+
+ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;VS 编译代码时，如果里边既包含C又包含C++，在公共头文件中有C++头文件（如stl系列&lt;string&gt;&lt;set&gt;）时会报这个错误&lt;/p&gt;
+
+&lt;p&gt;解决办法一:&lt;/p&gt;
+
+&lt;p&gt;修改工程，将所有的C代码编译成C++代码&lt;/p&gt;
+
+&lt;p&gt;工程属性(Configuration Properties -&amp;gt; C/C++ -&amp;gt; Advanced -&amp;gt; Compile As C++ code)&lt;/p&gt;
+
+&lt;p&gt;解决办法二:&lt;/p&gt;
+
+&lt;p&gt;将所有的.c扩展名改为.cpp，修改代码编译通过即可&lt;/p&gt;
+
+&lt;p&gt;参考：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/6086656/build-failed-with-cstdio-and-cstdlib-files-errors-in-visual-studio-2010&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://stackoverflow.com/questions/6086656/build-failed-with-cstdio-and-cstdlib-files-errors-in-visual-studio-2010&#34;&gt;http://stackoverflow.com/questions/6086656/build-failed-with-cstdio-and-cstdlib-files-errors-in-visual-studio-2010&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

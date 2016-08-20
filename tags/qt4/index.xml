@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Qt4 on 程序猿的小本本</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/qt4/</link>
+    <description>Recent content in Qt4 on 程序猿的小本本</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
+    <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
+    <copyright>(c) 2016 gsymy.com.</copyright>
+    <lastBuildDate>Sat, 08 Aug 2015 03:03:59 +0000</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/qt4/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>linux 修改默认Qt版本</title>
+      <link>http://replace-this-with-your-hugo-site.com/2015/08/08/linux-change_default_qt_version.html</link>
+      <pubDate>Sat, 08 Aug 2015 03:03:59 +0000</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/2015/08/08/linux-change_default_qt_version.html</guid>
+      <description>&lt;p&gt;centos 5\6 下默认使用Qt3&lt;/p&gt;
+
+&lt;p&gt;可以通过sudo yum install qt-devel 安装qt4&lt;/p&gt;
+
+&lt;p&gt;安装后系统默认的还是qt3&lt;/p&gt;
+
+&lt;p&gt;解决办法：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;vim 编辑 /etc/profile.d/qt.sh 文件&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre class=&#34;lang:sh decode:true &#34; title=&#34;qt.sh 文件&#34;&gt;# Qt initialization script (sh)
+
+# In multilib environments there is a preferred architecture, 64 bit over 32 bit in x86_64,
+# When a conflict is found between two packages corresponding with different arches,
+# the installed file is the one from the preferred arch. This is very common for executables
+# in /usr/bin, for example. If the file /usr/bin/foo is found in an x86_64 package and in an
+# i386 package, the executable from x86_64 will be installe
+
+if [ -z &#34;${QTDIR}&#34; ]; then
+
+case `uname -m` in
+   x86_64 | ia64 | s390x | ppc64 )
+      QT_PREFIXES=&#34;/usr/lib64/qt4 /usr/lib/qt4&#34; ;;
+   * )
+      QT_PREFIXES=&#34;/usr/lib/qt4 /usr/lib64/qt4&#34; ;;
+esac
+
+for QTDIR in ${QT_PREFIXES} ; do
+  test -d &#34;${QTDIR}&#34; &amp;&amp; break
+done
+unset QT_PREFIXES
+
+if ! echo ${PATH} | /bin/grep -q $QTDIR/bin ; then
+   PATH=$QTDIR/bin:${PATH}
+fi
+
+QTINC=&#34;$QTDIR/include&#34;
+QTLIB=&#34;$QTDIR/lib&#34;
+
+export QTDIR QTINC QTLIB PATH
+
+fi&lt;/pre&gt;
+
+&lt;pre class=&#34;lang:sh decode:true &#34; title=&#34;qt.sh 文件&#34;&gt;# Qt initialization script (sh)
+
+# In multilib environments there is a preferred architecture, 64 bit over 32 bit in x86_64,
+# When a conflict is found between two packages corresponding with different arches,
+# the installed file is the one from the preferred arch. This is very common for executables
+# in /usr/bin, for example. If the file /usr/bin/foo is found in an x86_64 package and in an
+# i386 package, the executable from x86_64 will be installe
+
+if [ -z &#34;${QTDIR}&#34; ]; then
+
+case `uname -m` in
+   x86_64 | ia64 | s390x | ppc64 )
+      QT_PREFIXES=&#34;/usr/lib64/qt4 /usr/lib/qt4&#34; ;;
+   * )
+      QT_PREFIXES=&#34;/usr/lib/qt4 /usr/lib64/qt4&#34; ;;
+esac
+
+for QTDIR in ${QT_PREFIXES} ; do
+  test -d &#34;${QTDIR}&#34; &amp;&amp; break
+done
+unset QT_PREFIXES
+
+if ! echo ${PATH} | /bin/grep -q $QTDIR/bin ; then
+   PATH=$QTDIR/bin:${PATH}
+fi
+
+QTINC=&#34;$QTDIR/include&#34;
+QTLIB=&#34;$QTDIR/lib&#34;
+
+export QTDIR QTINC QTLIB PATH
+
+fi&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;重启系统&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

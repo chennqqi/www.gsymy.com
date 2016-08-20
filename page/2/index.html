@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>程序猿的小本本 </title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="光说有毛用|程序猿的小本本" />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:title" content="程序猿的小本本 ">
+<meta property="og:site_name" content="程序猿的小本本"/>
+<meta property="og:url" content="http://replace-this-with-your-hugo-site.com/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="website" />
+
+
+
+<link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="alternate" type="application/rss+xml" title="程序猿的小本本" />
+
+<link rel="canonical" href="http://replace-this-with-your-hugo-site.com/" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://replace-this-with-your-hugo-site.com/touch-icon-144-precomposed.png">
+<link href="http://replace-this-with-your-hugo-site.com/favicon.png" rel="icon">
+<meta name="theme-color" content="#2053AB">
+<meta name="generator" content="Hugo 0.17-DEV" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://replace-this-with-your-hugo-site.com/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://replace-this-with-your-hugo-site.com/css/style.css">
+<link rel="stylesheet" href="http://replace-this-with-your-hugo-site.com/css/highlight/default.css">
+
+  
+</head>
+<body>
+  <main id="main-wrapper" class="container main_wrapper has-sidebar">
+    <header id="main-header" class="container main_header">
+  <div class="container brand">
+  <div class="container title h1-like">
+  <a class="baselink" href="http://replace-this-with-your-hugo-site.com/">
+  程序猿的小本本
+
+</a>
+
+</div>
+
+  
+<div class="container topline">
+  
+  光说有毛用
+
+
+</div>
+
+
+</div>
+
+  <nav class="container nav primary no-print">
+  
+
+<a class="homelink" href="http://replace-this-with-your-hugo-site.com/">Home</a>
+
+
+  
+<a href="http://replace-this-with-your-hugo-site.com/about">About</a>
+
+<a href="http://replace-this-with-your-hugo-site.com/post" title="Show list of posts">Posts</a>
+
+<a href="http://replace-this-with-your-hugo-site.com/tags" title="Show list of tags">Tags</a>
+
+
+</nav>
+
+<div class="container nav secondary no-print">
+  
+<a id="contact-link-email" class="contact_link" href="mailto:chennqqi@qq.com">
+  <span class="fa fa-envelope-square"></span><span>email</span></a>
+
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/chennqqi?tab=repositories">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+
+</header>
+
+
+<section id="main-content" class="container main_content homepage">
+  <header class="container header">
+    <h1>程序猿的小本本
+</h1>
+
+    <span>last update: <time datetime="2016-01-11T14:48:49Z">11 January at 2:48pm</time>
+</span>
+
+  </header>
+  
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://replace-this-with-your-hugo-site.com/2015/12/22/linux_using_cxx11.html">Linux使用C&#43;&#43;11
+</a>
+</h2>
+
+  <time datetime="2015-12-22">22 Dec, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    CentOS中默认使用的GCC是4.4的，所以不支持C++11 gcc选项 -std=c++11 需要GCC4.7以上的版本 这里提供一个简单简单的方法 Centos使用 cd /etc/yum.repos.d sudo wget http://people.centos.org/tru/devtools-1.1/devtools-1.1.repo sudo yum --enablerepo=testing-1.1-devtools-6 install devtoolset-1.1-gcc devtoolset-1.1-binutils devtoolset-1.1-gcc-c++ 安装后gcc版本是4.7.2 你也可以激进一点安装更高版本的 sudo wget http://people.centos.org/tru/devtools-2/devtools-2.repo sudo yum install devtoolset-2-gcc devtoolset-2-binutils devtoolset-2-gcc-c++ 安装之后gcc版本是4.8.2 切换4.7.2 scl enable devtoolset-1.1 bash 切换4.8.2 scl enable devtoolset-2 bash 参考资料： http://braaten-family.org/ed/blog/2014-05-28-devtools-for-centos/ http://preilly.me/2013/05/28/redhat-developer-toolset-1-1/ ubuntu使用 参考这里: https://stackoverflow.com/questions/7832892/how-to-change-the-default-gcc-compiler-in-ubuntu
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://replace-this-with-your-hugo-site.com/2015/12/22/linux_using_cxx11.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://replace-this-with-your-hugo-site.com/2015/12/09/linux_update_svn.html">linux更新svn客户端 | svn,subversion,更新svn
+</a>
+</h2>
+
+  <time datetime="2015-12-09">9 Dec, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    CentOS自带的svn版本是1.6.11 Svn1.6版本之前的设计是在每个文件夹下都存有.svn来保存svn信息和备份； 这种设计对于手工回复文件有一定的好处。1.6之后的版本都是使用在根目录下保存.svn文件夹， 这种新的设计大大增强了安全性。新的设计你拷贝一个文件夹时不再附带无用的版本信息，删除svn信息也更加方便 将这种文件夹拷贝给别人时也不用担心svn泄露。 从web安全的角度讲也是更加安全了。 关于svn泄露漏洞这里贴一点资料，大家自己去看；此话题已经脱离了本问标题，不再讨论。 升级过程 subversion是apache旗下的一个软件官方页面 http://subversion.apache.org/download.cgi#installing 里边有几种安装(升级)方式。 我这里给出最方便的方式，直接使用wandisco.com公司编译出的稳定版本； 点击此处打开http://www.wandisco.com/subversion/download 在页面中选择适合你系统的版本，在跳转的页面中填写一个表单。 其他信息无所谓关键是邮箱一定要写真实邮箱，稍后你邮箱中会接收到一个下载地址。 下载并以sudo权限执行bash脚本就OK了。 为了方便大伙使用，我这里贴一个我已经下载好了的CentOS6 X86_64的bash脚本。其他版本请自行下载！ svn泄露相关资料： http://www.aisec.cn/secinfo/info/?type=svn http://www.secpulse.com/archives/tag/svn%E6%96%87%E4%BB%B6%E6%B3%84%E9%9C%B2
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://replace-this-with-your-hugo-site.com/2015/12/09/linux_update_svn.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://replace-this-with-your-hugo-site.com/2015/11/29/magicgirl.html">一个充满魔性的外国妹子，看了好几遍…
+</a>
+</h2>
+
+  <time datetime="2015-11-29">29 Nov, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    程序员爱看妹子
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://replace-this-with-your-hugo-site.com/2015/11/29/magicgirl.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://replace-this-with-your-hugo-site.com/2015/11/20/centos_install_mongodb.html">CentOS安装mongodb
+</a>
+</h2>
+
+  <time datetime="2015-11-20">20 Nov, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    yum源中添加mongodb下载地址 具体步骤： Cd /etc/yum.repo.d/ 创建 mongodb.repo 添加内容 [mongodb] name=MongoDB Repository baseurl=http://downloads-distro.mongodb.org/repo/redhat/os/x86_64/ gpgcheck=0 enabled=1 执行sudo yum install -y mongodb-org 来自 &lt;http://cache.baiducontent.com/c?m=9f65cb4a8c8507ed4fece7631046893b4c4380146d96864968d4e414c42246101d27abfa3a715042889422301cf91e1ab9ab68332a0321b690c88e40d8afd7756fde28652740c01c53c419de941b79947dc60a&p=8b2a975986cc41ac5dbc8a3f465294&newp=8a6dc54ad6c044b509be9b7c7f05cf231610db2151d4d1106585&user=baidu&fm=sc&query=centos+mongodb&qid=ae2d9c2c0000752b&p1=4&gt;
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://replace-this-with-your-hugo-site.com/2015/11/20/centos_install_mongodb.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+  
+<div class="container pagination">
+  
+
+
+<a aria-label="First" href="http://replace-this-with-your-hugo-site.com//">
+  <span aria-hidden="true">««</span>
+</a>
+
+<a aria-label="Previous" href="http://replace-this-with-your-hugo-site.com//">
+  <span aria-hidden="true">«</span>
+</a>
+
+
+<a href="http://replace-this-with-your-hugo-site.com//">
+  1
+</a>
+
+<a class="active" href="http://replace-this-with-your-hugo-site.com//page/2/">
+  2
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/3/">
+  3
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/4/">
+  4
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/5/">
+  5
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/6/">
+  6
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/7/">
+  7
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/8/">
+  8
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/9/">
+  9
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/10/">
+  10
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/11/">
+  11
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/12/">
+  12
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/13/">
+  13
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/14/">
+  14
+</a>
+
+<a href="http://replace-this-with-your-hugo-site.com//page/15/">
+  15
+</a>
+
+
+<a aria-label="Next" href="http://replace-this-with-your-hugo-site.com//page/3/">
+  <span aria-hidden="true">»</span>
+</a>
+
+<a aria-label="Last" href="http://replace-this-with-your-hugo-site.com//page/15/">
+  <span aria-hidden="true">»»</span>
+</a>
+
+
+</div>
+
+
+</section>
+
+      <footer id="main-footer" class="container main_footer">
+  
+
+  <div class="container nav foot no-print">
+  
+
+  <a class="toplink" href="#">back to top</a>
+
+</div>
+
+  <div class="container credits">
+  
+<div class="container footline">
+  
+  code with <i class='fa fa-heart'></i>
+
+
+</div>
+
+
+  
+<div class="container copyright">
+  
+  &copy; 2016 gsymy.com.
+
+
+</div>
+
+
+</div>
+
+</footer>
+
+    </main>
+    
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//your_disqus_shortname.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+
+<script src="http://replace-this-with-your-hugo-site.com/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'Your Google Analytics tracking code', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    
+  </body>
+</html>
+

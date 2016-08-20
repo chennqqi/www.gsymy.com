@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>集合算法题  &middot; 程序猿的小本本</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="光说有毛用|程序猿的小本本" />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:title" content="集合算法题  &middot; 程序猿的小本本 ">
+<meta property="og:site_name" content="程序猿的小本本"/>
+<meta property="og:url" content="http://replace-this-with-your-hugo-site.com/2015/09/07/get_subset_order.html" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2015-09-07T12:27:05Z" />
+<meta property="og:article:modified_time" content="2015-09-07T12:27:05Z" />
+
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@" />
+<meta name="twitter:title" content="集合算法题" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="http://replace-this-with-your-hugo-site.com/2015/09/07/get_subset_order.html" />
+<meta name="twitter:domain" content="http://replace-this-with-your-hugo-site.com/">
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "集合算法题",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2015-09-07",
+    "description": "",
+    "wordCount":  59 
+  }
+</script>
+
+
+
+<link rel="canonical" href="http://replace-this-with-your-hugo-site.com/2015/09/07/get_subset_order.html" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://replace-this-with-your-hugo-site.com/touch-icon-144-precomposed.png">
+<link href="http://replace-this-with-your-hugo-site.com/favicon.png" rel="icon">
+<meta name="theme-color" content="#2053AB">
+<meta name="generator" content="Hugo 0.17-DEV" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://replace-this-with-your-hugo-site.com/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://replace-this-with-your-hugo-site.com/css/style.css">
+<link rel="stylesheet" href="http://replace-this-with-your-hugo-site.com/css/highlight/default.css">
+
+  
+</head>
+<body>
+  <main id="main-wrapper" class="container main_wrapper has-sidebar">
+    <header id="main-header" class="container main_header">
+  <div class="container brand">
+  <div class="container title h1-like">
+  <a class="baselink" href="http://replace-this-with-your-hugo-site.com/">
+  程序猿的小本本
+
+</a>
+
+</div>
+
+  
+<div class="container topline">
+  
+  光说有毛用
+
+
+</div>
+
+
+</div>
+
+  <nav class="container nav primary no-print">
+  
+
+<a class="homelink" href="http://replace-this-with-your-hugo-site.com/">Home</a>
+
+
+  
+<a href="http://replace-this-with-your-hugo-site.com/about">About</a>
+
+<a href="http://replace-this-with-your-hugo-site.com/post" title="Show list of posts">Posts</a>
+
+<a href="http://replace-this-with-your-hugo-site.com/tags" title="Show list of tags">Tags</a>
+
+
+</nav>
+
+<div class="container nav secondary no-print">
+  
+<a id="contact-link-email" class="contact_link" href="mailto:chennqqi@qq.com">
+  <span class="fa fa-envelope-square"></span><span>email</span></a>
+
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/chennqqi?tab=repositories">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+
+</header>
+
+
+<article id="main-content" class="container main_content single">
+  <header class="container hat">
+  <h1>集合算法题
+</h1>
+
+  <div class="metas">
+<time datetime="2015-09-07">7 Sep, 2015</time>
+
+
+  
+    &middot; by admin
+  
+  &middot; Read in about 1 min
+  &middot; (59 Words)
+  <br>
+  
+
+
+</div>
+
+</header>
+
+  <div class="container content">
+  <p>有点意思的集合算法题；不是特别简单，也不是特别复杂，想做好还得好好想想。</p>
+
+<pre class="lang:default decode:true  ">已知现在有若干组集合,集合的元素由字符串构成
+
+set1 = {"abc","bcd",...};
+
+...
+
+setn = {...}
+
+1. 求所有集合的并集UnionSet
+2. 将集合UnionSet中元素顺序进行编号，求出每个子集中元素的编号；
+3. 选取Unionset中任意个元素，组成新的集合，求原有子集中哪些是新集合的子集(2015-09-08补充)
+
+编程对于给定的集合以最小的时间代价完成1和2
+</pre>
+
+<p>我先说一下我的想法</p>
+
+<p>我说一下我的想法；</p>
+
+<ol>
+<li>用map来做并集是思路是可行的。但是用std::map效率不高，还有很大空间。</li>
+</ol>
+
+<p>数据量稍微一大，std::map的插入会变慢；据说std::map是基于平衡树的，效率是O( log(N) )</p>
+
+<p>的，所以用hashmap的话效率会高于std::map，那么这里就要用一个效率比较高的</p>
+
+<p>hashmap 。关于hash算法的探究也算是一个话题；</p>
+
+<ol>
+<li><p>将std::string放入map之后效率也会降低，直接用char*</p></li>
+
+<li><p>题目2中没有要求集合元素是有序的，而用std::map完成之后是有序的；这不是重点。</p></li>
+</ol>
+
+<p>重点是集合中顺序，如果已经有序了，可以将每个子集里的元素指针做二分查找(如果用char*的话）算是比较快的一种方法；如果是无序的需要做循环遍历；这都不是很好的方法。</p>
+
+<p>我能想到更好的方法是在题目1，插入数据时，将数据所在子集的指针作为最终并集中元素的一个成员变量（链表），这样最终产生并集后:</p>
+
+<pre class="lang:default decode:true">idx = 0
+for (element in unionset)
+{
+   for (setPtr in element.setPtrsList)
+    {     
+          setPtr.subsetPtr[setPtr.elementIdx].idx = idx
+     }
+     idx++
+}
+
+setPtr.subsetPtr 子集指针；
+subsetPtr[element].idx 是题目要求的结果;是子集中元素在UnionSet中的索引顺序
+setPtr.elementIdx 是元素在子集中的索引，可以保存在setPtrsList中
+IndexOf(element) = setPtr.
+</pre>
+
+<p>就是利用数据元素下标来处理；</p>
+
+<p>&nbsp;</p>
+
+</div>
+
+
+  <footer class="container">
+  <div class="container navigation no-print">
+  <h2>Navigation</h2>
+  
+  
+
+    
+    <a class="prev" href="http://replace-this-with-your-hugo-site.com/2015/09/07/vs_error_include_cpp.html" title="Visualstudio C语言包含C&#43;&#43;头文件编译不通过">
+      Previous
+    </a>
+    
+
+    
+    <a class="next" href="http://replace-this-with-your-hugo-site.com/2015/09/08/programer_barbecue.html" title="论程序员如何转行烧烤行业">
+      Next
+    </a>
+    
+
+  
+
+
+</div>
+
+  <div class="container comments">
+  <h2>Comments</h2>
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//your_disqus_shortname.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+</article>
+      <footer id="main-footer" class="container main_footer">
+  
+
+  <div class="container nav foot no-print">
+  
+
+  <a class="toplink" href="#">back to top</a>
+
+</div>
+
+  <div class="container credits">
+  
+<div class="container footline">
+  
+  code with <i class='fa fa-heart'></i>
+
+
+</div>
+
+
+  
+<div class="container copyright">
+  
+  &copy; 2016 gsymy.com.
+
+
+</div>
+
+
+</div>
+
+</footer>
+
+    </main>
+    
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//your_disqus_shortname.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+
+<script src="http://replace-this-with-your-hugo-site.com/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'Your Google Analytics tracking code', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    
+  </body>
+</html>
+

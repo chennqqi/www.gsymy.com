@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programmers Day on 程序猿的小本本</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/programmers-day/</link>
+    <description>Recent content in Programmers Day on 程序猿的小本本</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
+    <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
+    <copyright>(c) 2016 gsymy.com.</copyright>
+    <lastBuildDate>Sun, 13 Sep 2015 07:06:56 +0000</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/programmers-day/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>今天是程序员节</title>
+      <link>http://replace-this-with-your-hugo-site.com/2015/09/13/programer_day.html</link>
+      <pubDate>Sun, 13 Sep 2015 07:06:56 +0000</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/2015/09/13/programer_day.html</guid>
+      <description>
+
+&lt;h1 id=&#34;img-class-alignnone-size-medium-wp-image-306-src-http-www-gsymy-com-wp-content-uploads-2015-09-logo512-jpg-alt-logo512-width-0-height-0-1&#34;&gt; &lt;a href=&#34;http://www.gsymy.com/wp-content/uploads/2015/09/logo512.jpg&#34;&gt;&lt;img class=&#34;alignnone size-medium wp-image-306&#34; src=&#34;http://www.gsymy.com/wp-content/uploads/2015/09/logo512.jpg&#34; alt=&#34;logo512&#34; width=&#34;0&#34; height=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/h1&gt;
+
+&lt;h1 id=&#34;今天是程序员节-programmer-s-day-if-ie-7&#34;&gt;今天是程序员节（Programmer’s Day）&amp;lt;!&amp;ndash; [if IE 7]&amp;gt;&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;http://assets.tuicool.com/assets/font-awesome-ie7.min.css&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&amp;lt;![endif]&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;div class=&#34;container-fluid&#34;&gt;
+  &lt;div class=&#34;row-fluid article_row_fluid&#34;&gt;
+    &lt;div class=&#34;span8 contant article_detail_bg&#34;&gt;
+      &lt;table cellspacing=&#34;0&#34; cellpadding=&#34;0&#34;&gt;
+        &lt;tr&gt;
+          &lt;td&gt;
+            程序员节是一个为庆祝并感谢程序员所做工作的节日。该节日在国际上已被众多 IT 企业认可，日期定于每年的第 256 天，也就是平年的 9 月 13 日或闰年的 9 月12 日。&lt;/p&gt; 
+            
+            &lt;p&gt;
+              之所以选择 256（2 的 8 次幂），是因为它是一个程序员所熟知的数字。1 个字节等于8 个比特，最多能表示 256 个数值。而且在平年中，256 是 2 的幂中最接近但小于 365 的数值。
+            &lt;/p&gt;
+            
+            &lt;p&gt;
+              虽然这是俄罗斯的一个官方节日，不过还是有其他很多国家也庆祝，其中包括中国、以色列、孟加拉国、智利、巴西、墨西哥、奥地利、德国、加拿大、克罗地亚、法国、危地马拉、印度、比利时、澳大利亚、新西兰、波兰、斯洛文尼亚、英国、美国和乌拉圭。
+            &lt;/p&gt;
+            
+            &lt;p&gt;
+              &amp;nbsp;
+            &lt;/p&gt;
+            
+            &lt;h2&gt;
+              节日历史
+            &lt;/h2&gt;
+            
+            &lt;p&gt;
+              设立这个节日要归功于瓦伦丁·巴尔特（Valentin Balt），他是并行技术网页设计公司的一名职员。2002年他收集签名向俄罗斯联邦政府请愿，请求将这一天定为程序员节。
+            &lt;/p&gt;
+            
+            &lt;p&gt;
+              2009年7月24日，俄罗斯联邦通信与大众传媒部提出了新的节日安排方案，设立程序员节。9月11日，俄罗斯总统梅德韦杰夫签署了这个法案。&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; 
+              
+              &lt;h2&gt;
+                该怎么庆祝这个节日？
+              &lt;/h2&gt;
+              
+              &lt;p&gt;
+                &amp;nbsp;
+              &lt;/p&gt;
+              
+              &lt;p&gt;
+                你想怎么庆祝都可以！（只要别干犯法的事就好~）下面有些建议：
+              &lt;/p&gt;
+              
+              &lt;ul&gt;
+                &lt;li&gt;
+                  用代码（或伪代码）沟通交流，或者干脆学下面这张 Gif 图，直接用 0 和 1 来聊天吧；
+                &lt;/li&gt;
+              &lt;/ul&gt;
+              
+              &lt;p&gt;
+                &lt;img src=&#34;http://ww4.sinaimg.cn/bmiddle/7cc829d3jw1du3by8d2fpg.gif&#34; alt=&#34;&#34; width=&#34;150&#34; /&gt;
+              &lt;/p&gt;
+              
+              &lt;p&gt;
+                （话说你知道他俩在说什么？）
+              &lt;/p&gt;
+              
+              &lt;ul&gt;
+                &lt;li&gt;
+                  整一棵树，再整一些 0 和 1 的字符，装饰装饰，就可以来&lt;strong&gt;做一颗二叉树&lt;/strong&gt;。这个点子应该来自圣诞树。大家要是嫌麻烦，那就对着下面这棵&lt;strong&gt;完全二叉树&lt;/strong&gt;看几分钟。
+                &lt;/li&gt;
+              &lt;/ul&gt;
+              
+              &lt;p&gt;
+                &lt;a class=&#34;cboxElement&#34; title=&#34;doum palm - balanced binary tree&#34; href=&#34;http://jbcdn2.b0.upaiyun.com/2012/09/doum-palm-balanced-binary-tree.jpg&#34; rel=&#34;lightbox[26551]&#34;&gt;&lt;img title=&#34;doum palm - balanced binary tree&#34; src=&#34;http://jbcdn2.b0.upaiyun.com/2012/09/doum-palm-balanced-binary-tree.jpg&#34; alt=&#34;doum palm - balanced binary tree&#34; width=&#34;504&#34; height=&#34;410&#34; /&gt;&lt;/a&gt;
+              &lt;/p&gt;
+              
+              &lt;p&gt;
+                （ Hyphaene Compressa：一种棕榈树，东非有很多）
+              &lt;/p&gt;
+              
+              &lt;ul&gt;
+                &lt;li&gt;
+                  &lt;strong&gt;用 ASCII 艺术字来制作节日贺卡；&lt;/strong&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+              
+              &lt;ul&gt;
+                &lt;li&gt;
+                  &lt;strong&gt;穿白色的衣服。&lt;/strong&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  白色被选为程序员节的主题色。在红绿蓝RGB）三原色的 24 比特模式中，每种原色可以有 256 种（从 0 到 255，共 256 个数值）深浅变化，当三种原色都达到最大深浅值，即为十六进制的 0xFFFFFF 时，表示白色。所以可以穿着白色来庆祝这一天。）
+                &lt;/li&gt;
+              &lt;/ul&gt;
+              
+              &lt;p&gt;
+                [From &lt;a href=&#34;http://www.tuicool.com/articles/VNvqQv&#34; target=&#34;_blank&#34;&gt;推酷&lt;/a&gt;]
+              &lt;/p&gt;
+              
+              &lt;p&gt;
+                &lt;a href=&#34;http://www.tuicool.com/articles/VNvqQv&#34; target=&#34;_blank&#34;&gt;http://www.tuicool.com/articles/VNvqQv&lt;/a&gt;
+              &lt;/p&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; 
+              
+
+&lt;pre&gt;&lt;code&gt;          &amp;lt;p&amp;gt;
+
+          &amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

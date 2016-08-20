@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git教程 on 程序猿的小本本</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/git%E6%95%99%E7%A8%8B/</link>
+    <description>Recent content in Git教程 on 程序猿的小本本</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
+    <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
+    <copyright>(c) 2016 gsymy.com.</copyright>
+    <lastBuildDate>Fri, 28 Aug 2015 01:16:09 +0000</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/git%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>一张图学会git</title>
+      <link>http://replace-this-with-your-hugo-site.com/2015/08/28/git-mindpic.html</link>
+      <pubDate>Fri, 28 Aug 2015 01:16:09 +0000</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/2015/08/28/git-mindpic.html</guid>
+      <description>&lt;div class=&#34;para&#34;&gt;
+  Git是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。Git的读音为[gɪt]。
+&lt;/div&gt;
+
+&lt;div class=&#34;para&#34;&gt;
+  Git是一个开源的分布式版本控制系统，用以有效、高速的处理从很小到非常大的项目版本管理。Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。
+&lt;/div&gt;
+
+&lt;div class=&#34;para&#34;&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;para&#34;&gt;
+  Git可以说是目前最火、最流行的版本控制软件，目前绝大多数的代码仓库(国外的github、国内的oschina、coding)都使用的是Git
+&lt;/div&gt;
+
+&lt;div class=&#34;para&#34;&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;para&#34;&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;para&#34;&gt;
+  自己在学习Git时发现了别人发的一张思维导图，感觉挺不错的就盗了过来
+&lt;/div&gt;
+
+&lt;div class=&#34;para&#34;&gt;
+  &lt;a href=&#34;http://www.gsymy.com/wp-content/uploads/2015/08/git-mind.png&#34;&gt;&lt;img class=&#34;alignnone size-full wp-image-193&#34; src=&#34;http://www.gsymy.com/wp-content/uploads/2015/08/git-mind.png&#34; alt=&#34;git mind&#34; width=&#34;1759&#34; height=&#34;3162&#34; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;para&#34;&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;para&#34;&gt;
+  原图出处:&lt;a href=&#34;http://www.cnblogs.com/1-2-3/archive/2010/07/18/git-commands.html&#34; target=&#34;_blank&#34;&gt;http://www.cnblogs.com/1-2-3/archive/2010/07/18/git-commands.html&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;para&#34;&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;para&#34;&gt;
+  这里有git的中文教程:
+&lt;/div&gt;
+
+&lt;div class=&#34;para&#34;&gt;
+  from 廖雪峰个人网站
+&lt;/div&gt;
+
+&lt;div class=&#34;para&#34;&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;para&#34;&gt;
+  &lt;a href=&#34;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/&#34; target=&#34;_blank&#34;&gt;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;para&#34;&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;para&#34;&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

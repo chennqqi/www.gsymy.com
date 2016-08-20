@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Qmake on 程序猿的小本本</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/qmake/</link>
+    <description>Recent content in Qmake on 程序猿的小本本</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
+    <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
+    <copyright>(c) 2016 gsymy.com.</copyright>
+    <lastBuildDate>Tue, 27 Oct 2015 10:33:30 +0000</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/qmake/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>qmake不能生成vs工程文件</title>
+      <link>http://replace-this-with-your-hugo-site.com/2015/10/27/qmake_vsproject.html</link>
+      <pubDate>Tue, 27 Oct 2015 10:33:30 +0000</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/2015/10/27/qmake_vsproject.html</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;报错信息如下：&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;WARNING: Unable to generate output for: Makefile.Debug [TEMPLATE vcapp]&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;正常情况下命令式:&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;pre class=&#34;EnlighterJSRAW&#34; data-enlighter-language=&#34;shell&#34;&gt;qmake -tp vc xxx.pro&lt;/pre&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;strong&gt;解决办法&lt;/strong&gt;&lt;span style=&#34;font-family: 宋体;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;有些环境下装了多个Qt或者是环境变量有问题导致qmake没有找到正确的spec&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;修改命令为:&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;pre class=&#34;lang:sh decode:true &#34;&gt;qmake -tp vc -spec win32-msvc2010 xxx.pro&lt;/pre&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;这里spec选择你需要的版本即可&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

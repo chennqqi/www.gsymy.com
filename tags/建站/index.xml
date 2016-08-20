@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>建站 on 程序猿的小本本</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/%E5%BB%BA%E7%AB%99/</link>
+    <description>Recent content in 建站 on 程序猿的小本本</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
+    <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
+    <copyright>(c) 2016 gsymy.com.</copyright>
+    <lastBuildDate>Wed, 05 Aug 2015 03:38:19 +0000</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/%E5%BB%BA%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>wordpress4 添加友链</title>
+      <link>http://replace-this-with-your-hugo-site.com/2015/08/05/wordpress4-friendlink.html</link>
+      <pubDate>Wed, 05 Aug 2015 03:38:19 +0000</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://replace-this-with-your-hugo-site.com/2015/08/05/wordpress4-friendlink.html</guid>
+      <description>&lt;p&gt;wordpress4 有些功能隐藏起来了，友链功能默认关闭。&lt;/p&gt;
+
+&lt;p&gt;解决办法:&lt;/p&gt;
+
+&lt;p&gt;这里就不详细写了，直接看&lt;a href=&#34;http://jingyan.baidu.com/article/1e5468f9239311484861b77e.html&#34; target=&#34;_blank&#34;&gt;百度经验&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://jingyan.baidu.com/article/1e5468f9239311484861b77e.html&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://jingyan.baidu.com/article/1e5468f9239311484861b77e.html&#34;&gt;http://jingyan.baidu.com/article/1e5468f9239311484861b77e.html&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;注意事项：&lt;/p&gt;
+
+&lt;p&gt;编辑玩友链之后一定要点右侧的&amp;#8221;添加链接&amp;#8221;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
