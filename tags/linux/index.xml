@@ -9,8 +9,40 @@
     <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
-    <lastBuildDate>Tue, 25 Aug 2015 00:57:10 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Aug 2016 13:35:57 +0800</lastBuildDate>
     <atom:link href="http://www.gsymy.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>pyenv rehash problem</title>
+      <link>http://www.gsymy.com/2016/08/25/pyenv_rehash_problem.html</link>
+      <pubDate>Thu, 25 Aug 2016 13:35:57 +0800</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://www.gsymy.com/2016/08/25/pyenv_rehash_problem.html</guid>
+      <description>&lt;p&gt;#pyenv rehash problem&lt;/p&gt;
+
+&lt;p&gt;description:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pyenv: cannot rehash: /home/XXX/.pyenv/shims/.pyenv-shim exists
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;fixup:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;rm /home/XXX/.pyenv/shims/.pyenv-shim exists
+pyenv rehash &amp;amp;&amp;amp; hash -r
+pyenv rehash &amp;amp;&amp;amp; rehash
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;note:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;replace XXX with your real username
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;reference:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http://stackoverflow.com/questions/29753592/pyenv-shim-not-created-when-installing-package-using-setup-py
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>linux screen 命令详解(转)</title>

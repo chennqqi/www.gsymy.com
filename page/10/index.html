@@ -126,11 +126,40 @@
     <h1>程序猿的小本本
 </h1>
 
-    <span>last update: <time datetime="2016-01-11T14:48:49Z">11 January at 2:48pm</time>
+    <span>last update: <time datetime="2016-08-25T13:35:57&#43;08:00">25 August at 1:35pm</time>
 </span>
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://www.gsymy.com/2015/08/26/nginx_auth_proxy.html">nginx 搭建带验证的HTTP代理
+</a>
+</h2>
+
+  <time datetime="2015-08-26">26 Aug, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    核心配置代码 server { listen 8080;#监听端口 client_body_timeout 60000;#超时 client_max_body_size 1024m; send_timeout 60000; client_header_buffer_size 16k; large_client_header_buffers 4 64k; proxy_headers_hash_bucket_size 1024; proxy_headers_hash_max_size 4096; proxy_read_timeout 60000; proxy_send_timeout 60000; location / { auth_basic "Please input your password:"; auth_basic_user_file /usr/share/nginx/htpasswd; resolver 8.8.8.8; proxy_pass http://$http_host$request_uri; } } 说明auth_basic_user_file指向你生成的密码文件，这个文件是由apache的htpasswd生成的。 用法如下: htpasswd -c /usr/share/nginx/authdb liming 实际路径根据实际情况，如果没有htpasswd，可以先行安装apache。或者参考http://blog.csdn.net/stevenprime/article/details/7776713 他是写了一个perl脚本
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://www.gsymy.com/2015/08/26/nginx_auth_proxy.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -294,35 +323,6 @@
 
   <div class="container readlink">
   <a href="http://www.gsymy.com/2015/08/23/ue_format.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="http://www.gsymy.com/2015/08/23/tcpdumpnoroot.html">非root用户使用tcpdump
-</a>
-</h2>
-
-  <time datetime="2015-08-23">23 Aug, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    centos/redhat下安装tcpdump sudo yum install -y tcpdump 在tcpdump所在目录下执行 sudo chmod u+s tcpdump &nbsp; 原理参考： tcpdump 安装和文件的s权限 &#8211; arkblue的专栏 &#8211; 博客频道 &#8211; CSDN.NET
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="http://www.gsymy.com/2015/08/23/tcpdumpnoroot.html">Read more &rarr;</a>
 
 </div>
 

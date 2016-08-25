@@ -9,8 +9,40 @@
     <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
-    <lastBuildDate>Mon, 11 Jan 2016 14:48:49 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Aug 2016 13:35:57 +0800</lastBuildDate>
     <atom:link href="http://www.gsymy.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>pyenv rehash problem</title>
+      <link>http://www.gsymy.com/2016/08/25/pyenv_rehash_problem.html</link>
+      <pubDate>Thu, 25 Aug 2016 13:35:57 +0800</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://www.gsymy.com/2016/08/25/pyenv_rehash_problem.html</guid>
+      <description>&lt;p&gt;#pyenv rehash problem&lt;/p&gt;
+
+&lt;p&gt;description:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pyenv: cannot rehash: /home/XXX/.pyenv/shims/.pyenv-shim exists
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;fixup:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;rm /home/XXX/.pyenv/shims/.pyenv-shim exists
+pyenv rehash &amp;amp;&amp;amp; hash -r
+pyenv rehash &amp;amp;&amp;amp; rehash
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;note:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;replace XXX with your real username
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;reference:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http://stackoverflow.com/questions/29753592/pyenv-shim-not-created-when-installing-package-using-setup-py
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>centos安装gitolite</title>
@@ -1105,16 +1137,6 @@ sudo service php-fpm restart&lt;/pre&gt;
 &lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;Solution:&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;在project的property配置窗口中：Configuration Properties-&amp;gt;General：把Output Directory从$(SolutionDir)$(ConfigurationName)改 成$(ProjectDir)$(ConfigurationName)&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>程序员如何找对象?</title>
-      <link>http://www.gsymy.com/2015/10/22/programer_gf.html</link>
-      <pubDate>Thu, 22 Oct 2015 13:49:31 +0000</pubDate>
-      <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/10/22/programer_gf.html</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;a href=&#34;http://www.gsymy.com/wp-content/uploads/2015/10/731905338306293186.jpg&#34;&gt;&lt;img class=&#34;alignnone size-full wp-image-484&#34; src=&#34;http://www.gsymy.com/wp-content/uploads/2015/10/731905338306293186.jpg&#34; alt=&#34;731905338306293186&#34; width=&#34;720&#34; height=&#34;1280&#34; /&gt;&lt;/a&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
 </description>
     </item>
     

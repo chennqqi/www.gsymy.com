@@ -126,11 +126,119 @@
     <h1>程序猿的小本本
 </h1>
 
-    <span>last update: <time datetime="2016-01-11T14:48:49Z">11 January at 2:48pm</time>
+    <span>last update: <time datetime="2016-08-25T13:35:57&#43;08:00">25 August at 1:35pm</time>
 </span>
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://www.gsymy.com/2015/08/19/vsnotbuildbysolution.html">Project not selected to build for this solution configuration.
+</a>
+</h2>
+
+  <time datetime="2015-08-19">19 Aug, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    <h1 id="cb_post_title_url.postTitle2">[Project not selected to build for this solution configuration.][1]</h1>
+
+<p>{.postTitle}</p>
+
+<div id="cnblogs_post_body">
+  <h3 class="post-title entry-title">
+    Project not selected to build for this solution configuration.
+  </h3>
+  
+  <div class="post-header">
+     
+  </div>
+  
+
+<p><div id="post-body-7943090463870159502" class="post-body entry-content">
+    When you upgrade your older solution files to latest version of visual studio 2010 or 2012 you may get compilation output as &#8220;Project not selected to build for this solution configuration&#8221;, even though with the earlier version of visual studio these projects were building fine. In order to build required project you just have to modify the solution configuration. Steps below mention how to do it.</p>
+
+<pre><code>&lt;ol&gt;
+  &lt;li&gt;
+    Launch the Solution properties, by right clicking solution and select Properties.
+  &lt;/li&gt;
+  &lt;li&gt;
+    On solution properties dialog box, from configuration properties group select Configuration.
+  &lt;/li&gt;
+  &lt;li&gt;
+    For the projects which you are getting the error as above select the check box under Build column if not checked.
+  &lt;/li&gt;
+  &lt;li&gt;
+    Save configuration by pressing OK.
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+  Now your project being skipped should get built, while building the solution.
+&lt;/p&gt;
+</code></pre>
+
+<p></div></p>
+
+<p><div class="post-body entry-content">
+     
+  </div></p>
+
+<p><div class="post-body entry-content">
+     
+  </div></p>
+
+<p><div class="post-body entry-content">
+    visual studio 2012 can not build
+  </div></p>
+
+<p><div class="post-body entry-content">
+    not selected to build for this solution configuration
+  </div></p>
+
+<p><div class="post-body entry-content">
+    Project not selected to build for this solution
+  </div></p>
+
+<p><div class="post-body entry-content">
+    Project not selected to build for this
+  </div></p>
+
+<p><div class="post-body entry-content">
+    Project not selected to build for
+  </div></p>
+
+<p><div class="post-body entry-content">
+    Project not selected to build
+  </div></p>
+
+<p><div class="post-body entry-content">
+    build for this solution configuration
+  </div></p>
+
+<p><div class="post-body entry-content">
+    vs2012 can not build
+  </div>
+</div></p>
+
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://www.gsymy.com/2015/08/19/vsnotbuildbysolution.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -228,50 +336,6 @@ devenv xxxx.sln /Clean "Debug|x64"</pre>
 
   <div class="container readlink">
   <a href="http://www.gsymy.com/2015/08/18/linux-daemon-writing-howto.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="http://www.gsymy.com/2015/08/18/paintdfd.html">如何绘制数据流图
-</a>
-</h2>
-
-  <time datetime="2015-08-18">18 Aug, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    <p><a href="http://www.cnblogs.com/spring5/archive/2012/04/29/2485238.html" target="_blank">原文链接</a></p>
-
-<p>数据流图（Data Flow Diagram）：简称DFD，它从数据传递和加工角度，以图形方式来表达系统的逻辑功能、数据在系统内部的逻辑流向和逻辑变换过程，是结构化系统分析方法的主要表达工具及用于表示软件模型的一种图示方法。（百科）</p>
-
-<p>&nbsp;</p>
-
-<p>谈谈我的一点理解</p>
-
-<p>有时候我们要开发或者理解一个系统，总体的系统结构我们弄清楚了，但是细节上需要再深入，而数据流图“自顶向下,由外到内,逐步细化”的思想就凸显出很重要的作用，它可以作为我们系统分析的指导方法。</p>
-
-<p>&nbsp;</p>
-
-<p>数据流图分析关注的重点是数据，将面向控制的信息作为数据进行处理，包括了系统的所有数据，能准确的抽象系统数据的流向和处理过程．概括的描述当数据在系统流程中流动和处理的移动变换过程；数据流图分层进行分析，对顶层图的分析可以发现是否有输入信息或需要输出的信息被遗漏，容易及早发现系统各部分的逻辑错误，也容易修正．每一层都明确强调“需要什么”，“干了什么”“给出什么”；</p>
-
-<p>这样逐层分解下去，系统被严密的展开，系统的框架就展现出来了．采用数据流图进行分析，可以提高分析的可见性和可控性，更容易理解软件要完成什么功能，数据来源于哪里，结果要输出到哪里等等，清晰明了。</p>
-
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="http://www.gsymy.com/2015/08/18/paintdfd.html">Read more &rarr;</a>
 
 </div>
 
