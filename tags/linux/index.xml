@@ -9,8 +9,48 @@
     <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
-    <lastBuildDate>Thu, 25 Aug 2016 13:35:57 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 17 Sep 2016 22:28:22 +0800</lastBuildDate>
     <atom:link href="http://www.gsymy.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>git install linux</title>
+      <link>http://www.gsymy.com/2016/09/17/install_git.html</link>
+      <pubDate>Sat, 17 Sep 2016 22:28:22 +0800</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://www.gsymy.com/2016/09/17/install_git.html</guid>
+      <description>&lt;p&gt;#linux 安装最新版本的git&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;下载源代码&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;https://www.kernel.org/pub/software/scm/git/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;最新版本为2.10.0&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;wget https://www.kernel.org/pub/software/scm/git/git-2.10.0.tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;安装依赖环境(以CentOS为例)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo yum install -y openssl-devel libpcre-devel perl-ExtUtils-Embed libcurl-devel
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;配置安装&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tar xvf git-2.10.0.tar.gz
+cd git-2.10.0
+./configure --with-openssl --with-libpcre --with-expat --with-curl
+make
+sudo make install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;说明：&lt;br /&gt;
+    &lt;code&gt;--with-openssl --with-libpcre --with-expat --with-curl&lt;/code&gt;选项开启支持https&lt;br /&gt;
+    如果不安装&lt;code&gt;perl-ExtUtils-Embed&lt;/code&gt;可能导致编译失败&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
     
     <item>
       <title>pyenv rehash problem</title>
@@ -39,8 +79,7 @@ pyenv rehash &amp;amp;&amp;amp; rehash
 
 &lt;p&gt;reference:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;http://stackoverflow.com/questions/29753592/pyenv-shim-not-created-when-installing-package-using-setup-py
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/29753592/pyenv-shim-not-created-when-installing-package-using-setup-py&#34;&gt;http://stackoverflow.com/questions/29753592/pyenv-shim-not-created-when-installing-package-using-setup-py&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

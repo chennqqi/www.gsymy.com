@@ -5,31 +5,65 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Linux  &middot; 程序猿的小本本</title>
+  <title>git install linux  &middot; 程序猿的小本本</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<meta name="description" content="光说有毛用|程序猿的小本本" />
+<meta name="description" content="linux 安装最新版本的git" />
 
-<meta name="keywords" content="">
+<meta name="keywords" content="linux, git, ">
 
 
-<meta property="og:title" content="Linux  &middot; 程序猿的小本本 ">
+<meta property="og:title" content="git install linux  &middot; 程序猿的小本本 ">
 <meta property="og:site_name" content="程序猿的小本本"/>
-<meta property="og:url" content="http://www.gsymy.com/tags/linux/" />
+<meta property="og:url" content="http://www.gsymy.com/2016/09/17/install_git.html" />
 <meta property="og:locale" content="en-us">
 
 
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="og:description" content="linux 安装最新版本的git"/>
+<meta property="og:article:published_time" content="2016-09-17T22:28:22&#43;08:00" />
+<meta property="og:article:modified_time" content="2016-09-17T22:28:22&#43;08:00" />
+
+  
+    
+<meta property="og:article:tag" content="linux">
+    
+<meta property="og:article:tag" content="git">
+    
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@" />
+<meta name="twitter:title" content="git install linux" />
+<meta name="twitter:description" content="linux 安装最新版本的git" />
+<meta name="twitter:url" content="http://www.gsymy.com/2016/09/17/install_git.html" />
+<meta name="twitter:domain" content="http://www.gsymy.com/">
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "git install linux",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2016-09-17",
+    "description": "linux 安装最新版本的git",
+    "wordCount":  37 
+  }
+</script>
 
 
 
-<link href="http://www.gsymy.com/tags/linux/index.xml" rel="alternate" type="application/rss+xml" title="Linux" />
-
-<link rel="canonical" href="http://www.gsymy.com/tags/linux/" />
+<link rel="canonical" href="http://www.gsymy.com/2016/09/17/install_git.html" />
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.gsymy.com/touch-icon-144-precomposed.png">
 <link href="http://www.gsymy.com/favicon.png" rel="icon">
@@ -121,65 +155,109 @@
 </header>
 
 
-<article id="main-content" class="container main_content list">
-  <header class="container">
-    <h1>Linux
+<article id="main-content" class="container main_content single">
+  <header class="container hat">
+  <h1>git install linux
 </h1>
 
-  </header>
-  <ul class="container content">
-    
-      <li><a href="http://www.gsymy.com/2015/07/30/centos-cantfind-json-c.html">centos 无法找到json-c
-</a>
+  <div class="metas">
+<time datetime="2016-09-17">17 Sep, 2016</time>
 
-</li>
 
-    
-      <li><a href="http://www.gsymy.com/2015/07/30/linux_not_found_gengetopt.html">linux 无法找到gengetopt
-</a>
-
-</li>
-
-    
-  </ul>
   
-<div class="container pagination">
+    &middot; by admin
   
+  &middot; Read in about 1 min
+  &middot; (37 Words)
+  <br>
+  
+<a class="label" href="http://www.gsymy.com/tags/git">git</a>
 
+<a class="label" href="http://www.gsymy.com/tags/linux">linux</a>
 
-<a aria-label="First" href="http://www.gsymy.com//tags/linux/">
-  <span aria-hidden="true">««</span>
-</a>
-
-<a aria-label="Previous" href="http://www.gsymy.com//tags/linux/page/2/">
-  <span aria-hidden="true">«</span>
-</a>
-
-
-<a href="http://www.gsymy.com//tags/linux/">
-  1
-</a>
-
-<a href="http://www.gsymy.com//tags/linux/page/2/">
-  2
-</a>
-
-<a class="active" href="http://www.gsymy.com//tags/linux/page/3/">
-  3
-</a>
-
-
-<a class="disabled" aria-label="Next" href="#">
-  <span aria-hidden="true">»</span>
-</a>
-
-<a aria-label="Last" href="http://www.gsymy.com//tags/linux/page/3/">
-  <span aria-hidden="true">»»</span>
-</a>
 
 
 </div>
 
+</header>
+
+  <div class="container content">
+  <p>#linux 安装最新版本的git</p>
+
+<ol>
+<li><p>下载源代码</p>
+
+<pre><code>https://www.kernel.org/pub/software/scm/git/
+</code></pre>
+
+<p>最新版本为2.10.0</p>
+
+<pre><code>wget https://www.kernel.org/pub/software/scm/git/git-2.10.0.tar.gz
+</code></pre></li>
+
+<li><p>安装依赖环境(以CentOS为例)</p>
+
+<pre><code>sudo yum install -y openssl-devel libpcre-devel perl-ExtUtils-Embed libcurl-devel
+</code></pre></li>
+
+<li><p>配置安装</p>
+
+<pre><code>tar xvf git-2.10.0.tar.gz
+cd git-2.10.0
+./configure --with-openssl --with-libpcre --with-expat --with-curl
+make
+sudo make install
+</code></pre>
+
+<p>说明：<br />
+    <code>--with-openssl --with-libpcre --with-expat --with-curl</code>选项开启支持https<br />
+    如果不安装<code>perl-ExtUtils-Embed</code>可能导致编译失败</p></li>
+</ol>
+
+</div>
+
+
+  <footer class="container">
+  <div class="container navigation no-print">
+  <h2>Navigation</h2>
+  
+  
+
+    
+    <a class="prev" href="http://www.gsymy.com/2016/08/25/pyenv_rehash_problem.html" title="pyenv rehash problem">
+      Previous
+    </a>
+    
+
+    
+
+  
+
+
+</div>
+
+  <div class="container comments">
+  <h2>Comments</h2>
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//your_disqus_shortname.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
 
 </article>
       <footer id="main-footer" class="container main_footer">

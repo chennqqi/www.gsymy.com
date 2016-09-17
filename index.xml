@@ -9,8 +9,48 @@
     <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
-    <lastBuildDate>Thu, 25 Aug 2016 13:35:57 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 17 Sep 2016 22:28:22 +0800</lastBuildDate>
     <atom:link href="http://www.gsymy.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>git install linux</title>
+      <link>http://www.gsymy.com/2016/09/17/install_git.html</link>
+      <pubDate>Sat, 17 Sep 2016 22:28:22 +0800</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://www.gsymy.com/2016/09/17/install_git.html</guid>
+      <description>&lt;p&gt;#linux 安装最新版本的git&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;下载源代码&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;https://www.kernel.org/pub/software/scm/git/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;最新版本为2.10.0&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;wget https://www.kernel.org/pub/software/scm/git/git-2.10.0.tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;安装依赖环境(以CentOS为例)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo yum install -y openssl-devel libpcre-devel perl-ExtUtils-Embed libcurl-devel
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;配置安装&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tar xvf git-2.10.0.tar.gz
+cd git-2.10.0
+./configure --with-openssl --with-libpcre --with-expat --with-curl
+make
+sudo make install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;说明：&lt;br /&gt;
+    &lt;code&gt;--with-openssl --with-libpcre --with-expat --with-curl&lt;/code&gt;选项开启支持https&lt;br /&gt;
+    如果不安装&lt;code&gt;perl-ExtUtils-Embed&lt;/code&gt;可能导致编译失败&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
     
     <item>
       <title>pyenv rehash problem</title>
@@ -39,8 +79,7 @@ pyenv rehash &amp;amp;&amp;amp; rehash
 
 &lt;p&gt;reference:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;http://stackoverflow.com/questions/29753592/pyenv-shim-not-created-when-installing-package-using-setup-py
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/29753592/pyenv-shim-not-created-when-installing-package-using-setup-py&#34;&gt;http://stackoverflow.com/questions/29753592/pyenv-shim-not-created-when-installing-package-using-setup-py&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -1107,36 +1146,6 @@ sudo service php-fpm restart&lt;/pre&gt;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;这里spec选择你需要的版本即可&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>not found or not built by the last incremental link VS2010编译警告</title>
-      <link>http://www.gsymy.com/2015/10/25/not-found-or-not-built-by-the-last-incremental-link-vs2010warning.html</link>
-      <pubDate>Sun, 25 Oct 2015 11:54:56 +0000</pubDate>
-      <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/10/25/not-found-or-not-built-by-the-last-incremental-link-vs2010warning.html</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;not found or not built by the last incremental link; performing full link&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: gray; font-size: 9pt;&#34;&gt;2015年10月25日&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: gray; font-size: 9pt;&#34;&gt;19:53&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;VS的一个编译警告，不算错误。原因和解决办法如下：&lt;/span&gt;&lt;span style=&#34;font-size: 12pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;用visualstudio创建一个Win32 Console Application，编译后生成两个Debug目录，一个在项目所属的Solution下，这个Debug中会生成.exe等类型程序结果文件。另外 的一个在Project的目录中，这个Debug中包含pdb等文件，但是没有生成.exe等程序结果文件。&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;Condition：&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;当再次重新编译项目时，出现如题的问题。&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;Cause:&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;引起这个错误的根源在于Microsoft的VS的两个配置项配置冲突造成的： 配置1：Configuration Properties-&amp;gt;General-&amp;gt;Output Directory默认配置是$(SolutionDir)$(ConfigurationName) 配置2：Configuration Properties-&amp;gt;Linker-&amp;gt;General-&amp;gt;Output Directory默认配置是$(OutDir)/$(ProjectName).exe 上述的两项配置是冲突的。所以在你重新编译的时候这个错误就出现了&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;Solution:&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;在project的property配置窗口中：Configuration Properties-&amp;gt;General：把Output Directory从$(SolutionDir)$(ConfigurationName)改 成$(ProjectDir)$(ConfigurationName)&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
 </description>
     </item>
     
