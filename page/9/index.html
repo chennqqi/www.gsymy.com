@@ -126,11 +126,40 @@
     <h1>程序猿的小本本
 </h1>
 
-    <span>last update: <time datetime="2016-09-17T22:28:22&#43;08:00">17 September at 10:28pm</time>
+    <span>last update: <time datetime="2016-09-18T16:30:17&#43;08:00">18 September at 4:30pm</time>
 </span>
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://www.gsymy.com/2015/09/07/get_subset_order.html">集合算法题
+</a>
+</h2>
+
+  <time datetime="2015-09-07">7 Sep, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    有点意思的集合算法题；不是特别简单，也不是特别复杂，想做好还得好好想想。 已知现在有若干组集合,集合的元素由字符串构成 set1 = {"abc","bcd",...}; ... setn = {...} 1. 求所有集合的并集UnionSet 2. 将集合UnionSet中元素顺序进行编号，求出每个子集中元素的编号； 3. 选取Unionset中任意个元素，组成新的集合，求原有子集中哪些是新集合的子集(2015-09-08补充) 编程对于给定的集合以最小的时间代价完成1和2 我先说一下我的想法 我说一下我的想法； 用map来做并集是思路是可行的。但是用std::map效率不高，还有很大空间。 数据量稍微一大，std::map的插入会变慢；据说std::map是基于平衡树的，效率是O( log(N) ) 的，所以用hashmap的话效率会高于std::map，那么这里就要用一个效率比较高的 hashmap 。关于hash算法的探究也算是一个话题； 将std::string放入map之后效率也会降低，直接用char* 题目2中没有要求集合元素是有序的，而用std::map完成之后是有序的；这不是重点。 重点是集合中顺序，如果已经有序了，可以将每个子集里的元素指针做二分查找(如果用char*的话）算是比较快的一种方法；如果是无序的需要做循环遍历；这都不是很好的方法。 我能想到更好的方法是在题目1，插入数据时，将数据所在子集的指针作为最终并集中元素的一个成员变量（链表），这样最终产生并集后: idx = 0 for (element in unionset) { for (setPtr in element.setPtrsList) { setPtr.subsetPtr[setPtr.elementIdx].idx = idx } idx++ } setPtr.subsetPtr 子集指针； subsetPtr[element].idx 是题目要求的结果;是子集中元素在UnionSet中的索引顺序 setPtr.elementIdx 是元素在子集中的索引，可以保存在setPtrsList中 IndexOf(element) = setPtr. 就是利用数据元素下标来处理； &nbsp;
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://www.gsymy.com/2015/09/07/get_subset_order.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -212,66 +241,6 @@
 
   <div class="container readlink">
   <a href="http://www.gsymy.com/2015/08/31/centos_stop_cups.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="http://www.gsymy.com/2015/08/28/git-mindpic.html">一张图学会git
-</a>
-</h2>
-
-  <time datetime="2015-08-28">28 Aug, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    <div class="para">
-  Git是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。Git的读音为[gɪt]。
-</div>
-
-<div class="para">
-  Git是一个开源的分布式版本控制系统，用以有效、高速的处理从很小到非常大的项目版本管理。Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。
-</div>
-
-<div class="para">
-</div>
-
-<div class="para">
-  Git可以说是目前最火、最流行的版本控制软件，目前绝大多数的代码仓库(国外的github、国内的oschina、coding)都使用的是Git
-</div>
-
-<div class="para">
-</div>
-
-<div class="para">
-</div>
-
-<div class="para">
-  自己在学习Git时发现了别人发的一张思维导图，感觉挺不错的就盗了过来
-</div>
-
-<div class="para">
-  <a href="http://www.gsymy.com/wp-content/uploads/2015/08/git-mind.png"><img class="alignnone size-full wp-image-193" src="http://www.gsymy.com/wp-content/uploads/2015/08/git-mind.png" alt="git mind" width="1759" height="3162" /></a>
-</div>
-
-<div class="para">
-</div>
-
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="http://www.gsymy.com/2015/08/28/git-mindpic.html">Read more &rarr;</a>
 
 </div>
 
@@ -440,6 +409,14 @@
 
 
     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256010403'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1256010403%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+<script>  
+	(	function(){
+			var bp = document.createElement('script');   
+			bp.src = '//push.zhanzhang.baidu.com/push.js';   
+			var s = document.getElementsByTagName("script")[0];   
+			s.parentNode.insertBefore(bp, s);   
+			})();   
+</script>
 
   </body>
 </html>

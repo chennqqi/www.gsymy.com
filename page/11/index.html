@@ -126,11 +126,122 @@
     <h1>程序猿的小本本
 </h1>
 
-    <span>last update: <time datetime="2016-09-17T22:28:22&#43;08:00">17 September at 10:28pm</time>
+    <span>last update: <time datetime="2016-09-18T16:30:17&#43;08:00">18 September at 4:30pm</time>
 </span>
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://www.gsymy.com/2015/08/25/linux-screen.html">linux screen 命令详解(转)
+</a>
+</h2>
+
+  <time datetime="2015-08-25">25 Aug, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    <p>转<a href="http://www.cnblogs.com/mchina/archive/2013/01/30/2880680.html" target="_blank">linux screen 命令详解 &#8211; David_Tang &#8211; 博客园</a></p>
+
+<p><div id="home">
+  <div id="main">
+    <div id="mainContent">
+      <div class="forFlow">
+        <div id="post_detail">
+          <div id="topics">
+            <div class="post">
+              <div class="postBody">
+                <div id="cnblogs_post_body">
+                  <p>
+                    <strong>一、背景</strong>
+                  </p></p>
+
+<pre><code>              &lt;p&gt;
+                系统管理员经常需要SSH 或者telent 远程登录到Linux 服务器，经常运行一些需要很长时间才能完成的任务，比如系统备份、ftp 传输等等。通常情况下我们都是为每一个这样的任务开一个远程终端窗口，因为它们执行的时间太长了。必须等待它们执行完毕，在此期间不能关掉窗口或者断开连接，否则这个任务就会被杀掉，一切半途而废了。
+              &lt;/p&gt;
+
+              &lt;p&gt;
+                &lt;strong&gt;二、简介&lt;/strong&gt;
+              &lt;/p&gt;
+
+              &lt;p&gt;
+                &lt;strong&gt;GNU Screen&lt;/strong&gt;是一款由GNU计划开发的用于命令行终端切换的自由软件。用户可以通过该软件同时连接多个本地或远程的命令行会话，并在其间自由切换。
+              &lt;/p&gt;
+
+              &lt;p&gt;
+                GNU Screen可以看作是窗口管理器的命令行界面版本。它提供了统一的管理多个会话的界面和相应的功能。
+              &lt;/p&gt;
+
+              &lt;ul&gt;
+                &lt;li&gt;
+                  &lt;strong&gt;会话恢复&lt;/strong&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+
+              &lt;dl&gt;
+                &lt;dd&gt;
+                  只要Screen本身没有终止，在其内部运行的会话都可以恢复。这一点对于远程登录的用户特别有用——即使网络连接中断，用户也不会失去对已经打开的命令行会话的控制。只要再次登录到主机上执行&lt;strong&gt;screen -r&lt;/strong&gt;就可以恢复会话的运行。同样在暂时离开的时候，也可以执行分离命令&lt;strong&gt;detach&lt;/strong&gt;，在保证里面的程序正常运行的情况下让Screen挂起（切换到后台）。这一点和图形界面下的VNC很相似。
+                &lt;/dd&gt;
+              &lt;/dl&gt;
+
+              &lt;ul&gt;
+                &lt;li&gt;
+                  &lt;strong&gt;多窗口&lt;/strong&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+
+              &lt;dl&gt;
+                &lt;dd&gt;
+                  在Screen环境下，所有的会话都独立的运行，并拥有各自的编号、输入、输出和窗口缓存。用户可以通过快捷键在不同的窗口下切换，并可以自由的重定向各个窗口的输入和输出。Screen实现了基本的文本操作，如复制粘贴等；还提供了类似滚动条的功能，可以查看窗口状况的历史记录。窗口还可以被分区和命名，还可以监视后台窗口的活动。
+                &lt;/dd&gt;
+              &lt;/dl&gt;
+
+              &lt;ul&gt;
+                &lt;li&gt;
+                  &lt;strong&gt;会话共享&lt;/strong&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+
+              &lt;dl&gt;
+                &lt;dd&gt;
+                  Screen可以让一个或多个用户从不同终端多次登录一个会话，并共享会话的所有特性（比如可以看到完全相同的输出）。它同时提供了窗口访问权限的机制，可以对窗口进行密码保护。
+                &lt;/dd&gt;
+              &lt;/dl&gt;
+
+              &lt;p&gt;
+                GNU&amp;#8217;s Screen 官方站点：&lt;a href=&quot;http://www.gnu.org/software/screen/&quot; target=&quot;_blank&quot;&gt;http://www.gnu.org/software/screen/&lt;/a&gt;
+              &lt;/p&gt;
+
+              &lt;p&gt;
+                &lt;strong&gt;三、语法&lt;/strong&gt;
+              &lt;/p&gt;
+
+              &lt;p&gt;
+                # screen [-AmRvx -ls -wipe][-d &lt;作业名称&gt;][-h &lt;行数&gt;][-r &lt;作业名称&gt;][-s ][-S &lt;作业名称&gt;]
+              &lt;/p&gt;
+
+              &lt;p&gt;
+                &lt;strong&gt;参数说明&lt;/strong&gt;&lt;br /&gt; 
+</code></pre>
+
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://www.gsymy.com/2015/08/25/linux-screen.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -287,92 +398,6 @@ while(1)
 
   <div class="container readlink">
   <a href="http://www.gsymy.com/2015/08/23/linux-getopt.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="http://www.gsymy.com/2015/08/19/vserrornoprjfile.html">VS编译出错，工程文件不存在
-</a>
-</h2>
-
-  <time datetime="2015-08-19">19 Aug, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    <h3 id="vs编译出错信息-title-pre-fs1">VS编译出错信息: {.title.pre.fs1}</h3>
-
-<h3 id="span-class-tcnt-8220-the-project-file-8221-has-been-renamed-or-is-no-longer-in-the-solution-8221-span-title-pre-fs1"><span class="tcnt">&#8220;The project file &#8221; has been renamed or is no longer in the solution&#8221;</span> {.title.pre.fs1}</h3>
-
-<p>看一下 .sln 和 .vcxproj 文件中的 GUID 是否匹配。 <wbr /></p>
-
-<div>
-  可能原因1:
-</div>
-
-<div>
-  出这个提示，一般是 .vcxproj 中 <ProjectGuid> 中的 GUID 和 .sln 中的 Project GUID 不一致了。（Project Depedencies）
-</div>
-
-<div>
-   
-</div>
-
-<div>
-  可能原因2:
-</div>
-
-<div>
-  也有可能是 .sln 引用了 A.vcxproj，而 A.vcxproj 依赖了 B.vcxproj，而 B.vcxproj 未被加入到 .sln 中。查看 A.vcxproj 中的 <ProjectReference>，看看引用了哪个未加入 .sln 的工程，加一下就好。
-</div>
-
-<div>
-   
-</div>
-
-<div>
-  说明：
-</div>
-
-<div>
-  打开.sln工程文件，检查
-</div>
-
-<div>
-  <strong>Project(&#8220;&#8230;</strong>
-</div>
-
-<div>
-  <strong> EndProject</strong>
-</div>
-
-<div>
-  节和每个*.vcxproj工程里的GUID匹配不，不匹配改正，
-</div>
-
-<div>
-  如果有重复的，利用VS生成新的，替换掉。
-</div>
-
-<div>
-   
-</div>
-
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="http://www.gsymy.com/2015/08/19/vserrornoprjfile.html">Read more &rarr;</a>
 
 </div>
 
@@ -541,6 +566,14 @@ while(1)
 
 
     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256010403'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1256010403%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+<script>  
+	(	function(){
+			var bp = document.createElement('script');   
+			bp.src = '//push.zhanzhang.baidu.com/push.js';   
+			var s = document.getElementsByTagName("script")[0];   
+			s.parentNode.insertBefore(bp, s);   
+			})();   
+</script>
 
   </body>
 </html>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mingw32 on 程序猿的小本本</title>
+    <link>http://www.gsymy.com/tags/mingw32/</link>
+    <description>Recent content in Mingw32 on 程序猿的小本本</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
+    <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
+    <copyright>(c) 2016 gsymy.com.</copyright>
+    <lastBuildDate>Sun, 18 Sep 2016 16:30:17 +0800</lastBuildDate>
+    <atom:link href="http://www.gsymy.com/tags/mingw32/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>mingw32 编译器遇到的一些问题</title>
+      <link>http://www.gsymy.com/2016/09/18/mingw32_errors.html</link>
+      <pubDate>Sun, 18 Sep 2016 16:30:17 +0800</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://www.gsymy.com/2016/09/18/mingw32_errors.html</guid>
+      <description>&lt;p&gt;#使用mingw32 移植项目时遇到的一些问题&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;原创文章转载请注明出处！&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;mingw32  &amp;lsquo;typeof&amp;rsquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;typeof 是GCC扩展的特性，所以要求编译器支持GCC特性，在GCC编译选项中加入`-std=gnu99`
+
+-std=c99 -&amp;gt; -std=gnu99
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;mingw &amp;lsquo;unamed union&amp;rsquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;无名联合体，例如
+
+    struct sss{
+        union{
+            int a;
+            char b;
+        }
+        double c;
+    };
+gcc支持无名联合体需要开启以下选项
+
+`-fms-extensions`
+
+注：有些高版本的GCC编译器可能默认自带了此选项，也有可能去掉；详细可能需要自己研究gcc标准；
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;mingw &amp;lsquo;for&amp;rsquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sample code:
+`for (int i=0; i&amp;lt;10; i++) {}`
+
+以上代码在C++编译器下无任何问题，在C编译中需要C99以上特性    
+
+在编译选项中加入`-std=c99`  或者`-std=gnu99`
+
+前者兼容标准C99，后者支持gnu扩展C99
+
+-std=c99 / -std=gnu99
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;mingw &amp;lsquo;GetFileSizeEx&amp;rsquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;这个函数是windows函数要求 windows&amp;gt;=XP(windows&amp;gt;=Server2003)
+通常链接是加入kernel.lib即可
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

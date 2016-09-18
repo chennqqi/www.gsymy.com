@@ -126,11 +126,40 @@
     <h1>程序猿的小本本
 </h1>
 
-    <span>last update: <time datetime="2016-09-17T22:28:22&#43;08:00">17 September at 10:28pm</time>
+    <span>last update: <time datetime="2016-09-18T16:30:17&#43;08:00">18 September at 4:30pm</time>
 </span>
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://www.gsymy.com/2015/11/15/php_codec_error.html">PHP字符集错误
+</a>
+</h2>
+
+  <time datetime="2015-11-15">15 Nov, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    安装最新版本的phpymyadmin无法打开网站，查看日志显示如下： PHP message: PHP Fatal error: Call to undefined function mb_detect_encoding() 原因排查，没有安装php的mbstring扩展 解决办法: linux. sudo yum install -y php-mbstring &nbsp; 用locate查找一下你的mbstring.so路径 加入扩展 sudo vim /etc/php.ini 加入一行 extension=mbstring.so路径 重启php前端(php-fpm等) php-fpm sudo service php-fpm restart windows. 同理 下载mbstring.dll session http://www.phperz.com/article/14/1222/42451.html &nbsp; &nbsp; &nbsp; &nbsp;
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://www.gsymy.com/2015/11/15/php_codec_error.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -212,35 +241,6 @@
 
   <div class="container readlink">
   <a href="http://www.gsymy.com/2015/10/27/qmake_vsproject.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="http://www.gsymy.com/2015/10/25/not-found-or-not-built-by-the-last-incremental-link-vs2010warning.html">not found or not built by the last incremental link VS2010编译警告
-</a>
-</h2>
-
-  <time datetime="2015-10-25">25 Oct, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    not found or not built by the last incremental link; performing full link 2015年10月25日 19:53 VS的一个编译警告，不算错误。原因和解决办法如下： 用visualstudio创建一个Win32 Console Application，编译后生成两个Debug目录，一个在项目所属的Solution下，这个Debug中会生成.exe等类型程序结果文件。另外 的一个在Project的目录中，这个Debug中包含pdb等文件，但是没有生成.exe等程序结果文件。 Condition： 当再次重新编译项目时，出现如题的问题。 Cause: 引起这个错误的根源在于Microsoft的VS的两个配置项配置冲突造成的： 配置1：Configuration Properties-&gt;General-&gt;Output Directory默认配置是$(SolutionDir)$(ConfigurationName) 配置2：Configuration Properties-&gt;Linker-&gt;General-&gt;Output Directory默认配置是$(OutDir)/$(ProjectName).exe 上述的两项配置是冲突的。所以在你重新编译的时候这个错误就出现了 Solution: 在project的property配置窗口中：Configuration Properties-&gt;General：把Output Directory从$(SolutionDir)$(ConfigurationName)改 成$(ProjectDir)$(ConfigurationName)
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="http://www.gsymy.com/2015/10/25/not-found-or-not-built-by-the-last-incremental-link-vs2010warning.html">Read more &rarr;</a>
 
 </div>
 
@@ -409,6 +409,14 @@
 
 
     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256010403'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1256010403%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+<script>  
+	(	function(){
+			var bp = document.createElement('script');   
+			bp.src = '//push.zhanzhang.baidu.com/push.js';   
+			var s = document.getElementsByTagName("script")[0];   
+			s.parentNode.insertBefore(bp, s);   
+			})();   
+</script>
 
   </body>
 </html>
