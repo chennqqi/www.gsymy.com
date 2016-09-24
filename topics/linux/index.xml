@@ -9,8 +9,35 @@
     <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
-    <lastBuildDate>Sat, 17 Sep 2016 22:28:22 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 24 Sep 2016 09:14:14 +0800</lastBuildDate>
     <atom:link href="http://www.gsymy.com/topics/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>没有找到visudo - not found sudo</title>
+      <link>http://www.gsymy.com/2016/09/24/notfound-sudo.html</link>
+      <pubDate>Sat, 24 Sep 2016 09:14:14 +0800</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://www.gsymy.com/2016/09/24/notfound-sudo.html</guid>
+      <description>&lt;p&gt;##没有找到sudo/visudo &amp;ndash; not found sudo/visudo&lt;/p&gt;
+
+&lt;p&gt;买了一个VPS，新建了一个普通用户，想给配置个sudo权限时发现既没有visudo
+也没有/etc/sudoers&lt;/p&gt;
+
+&lt;p&gt;错误信息:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;-bash: sudo: command not found
+-bash: visudo: command not found
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;解决办法&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;yum install sudo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;注：
+    未在ubuntu下进行测试&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>linux 安装最新版本的git</title>

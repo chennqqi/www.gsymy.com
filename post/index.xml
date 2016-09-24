@@ -9,8 +9,35 @@
     <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
-    <lastBuildDate>Sun, 18 Sep 2016 16:30:17 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 24 Sep 2016 09:14:14 +0800</lastBuildDate>
     <atom:link href="http://www.gsymy.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>没有找到visudo - not found sudo</title>
+      <link>http://www.gsymy.com/2016/09/24/notfound-sudo.html</link>
+      <pubDate>Sat, 24 Sep 2016 09:14:14 +0800</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://www.gsymy.com/2016/09/24/notfound-sudo.html</guid>
+      <description>&lt;p&gt;##没有找到sudo/visudo &amp;ndash; not found sudo/visudo&lt;/p&gt;
+
+&lt;p&gt;买了一个VPS，新建了一个普通用户，想给配置个sudo权限时发现既没有visudo
+也没有/etc/sudoers&lt;/p&gt;
+
+&lt;p&gt;错误信息:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;-bash: sudo: command not found
+-bash: visudo: command not found
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;解决办法&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;yum install sudo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;注：
+    未在ubuntu下进行测试&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>mingw32 编译器遇到的一些问题</title>
@@ -1139,42 +1166,6 @@ sudo service php-fpm restart&lt;/pre&gt;
 &lt;p&gt;&lt;a href=&#34;https://google-hk.wewell.net/imghp&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;https://google-hk.wewell.net/imghp&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span style=&#34;color: #595959; font-size: 8pt;&#34;&gt;来自 &amp;lt;&lt;a href=&#34;http://www.itechzero.com/google-mirror-sites-collect.html&#34;&gt;http://www.itechzero.com/google-mirror-sites-collect.html&lt;/a&gt;&amp;gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>网友评选的“2015中国11大光棍职业”，程序员光荣上榜</title>
-      <link>http://www.gsymy.com/2015/10/29/programmer_job_2015.html</link>
-      <pubDate>Thu, 29 Oct 2015 13:47:58 +0000</pubDate>
-      <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/10/29/programmer_job_2015.html</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://a.33iq.com/upload/14/10/20/images/14137866152756.jpg&#34; alt=&#34;&#34; /&gt;有道是“女怕嫁错郎，男怕入错行”。走入社会之后不同职业会产生不同的人生路线。这里从网上摘来&amp;#8221;2015年中国11大光棍职业&amp;#8221;。你的职业登榜了吗？即将走入社会的大学生，看了这个榜单你有没有考虑换个职业呢？&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;网友评选的“2015年中国11大光棍职业”排行榜：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;　　公务员&lt;/li&gt;
-&lt;li&gt;　　快递员&lt;/li&gt;
-&lt;li&gt;　　空姐、空少&lt;/li&gt;
-&lt;li&gt;　　作家、诗人&lt;/li&gt;
-&lt;li&gt;　　歌手、演员、模特、主持人&lt;/li&gt;
-&lt;li&gt;　　&lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;strong&gt;程序员&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;　　农民工&lt;/li&gt;
-&lt;li&gt;　　厨师&lt;/li&gt;
-&lt;li&gt;　　记者、编辑&lt;/li&gt;
-&lt;li&gt;　　画家、书法家&lt;/li&gt;
-&lt;li&gt;　　医生、护士&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://a.33iq.com/upload/14/10/20/images/14137866152756.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;新闻来源:搜狐网&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://news.sohu.com/20151028/n424488061.shtml&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://news.sohu.com/20151028/n424488061.shtml&#34;&gt;http://news.sohu.com/20151028/n424488061.shtml&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

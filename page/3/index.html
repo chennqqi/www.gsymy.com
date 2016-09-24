@@ -126,11 +126,40 @@
     <h1>程序猿的小本本
 </h1>
 
-    <span>last update: <time datetime="2016-09-18T16:30:17&#43;08:00">18 September at 4:30pm</time>
+    <span>last update: <time datetime="2016-09-24T09:14:14&#43;08:00">24 September at 9:14am</time>
 </span>
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://www.gsymy.com/2015/12/22/linux_using_cxx11.html">Linux使用C&#43;&#43;11
+</a>
+</h2>
+
+  <time datetime="2015-12-22">22 Dec, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    CentOS中默认使用的GCC是4.4的，所以不支持C++11 gcc选项 -std=c++11 需要GCC4.7以上的版本 这里提供一个简单简单的方法 Centos使用 cd /etc/yum.repos.d sudo wget http://people.centos.org/tru/devtools-1.1/devtools-1.1.repo sudo yum --enablerepo=testing-1.1-devtools-6 install devtoolset-1.1-gcc devtoolset-1.1-binutils devtoolset-1.1-gcc-c++ 安装后gcc版本是4.7.2 你也可以激进一点安装更高版本的 sudo wget http://people.centos.org/tru/devtools-2/devtools-2.repo sudo yum install devtoolset-2-gcc devtoolset-2-binutils devtoolset-2-gcc-c++ 安装之后gcc版本是4.8.2 切换4.7.2 scl enable devtoolset-1.1 bash 切换4.8.2 scl enable devtoolset-2 bash 参考资料： http://braaten-family.org/ed/blog/2014-05-28-devtools-for-centos/ http://preilly.me/2013/05/28/redhat-developer-toolset-1-1/ ubuntu使用 参考这里: https://stackoverflow.com/questions/7832892/how-to-change-the-default-gcc-compiler-in-ubuntu
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://www.gsymy.com/2015/12/22/linux_using_cxx11.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -212,35 +241,6 @@
 
   <div class="container readlink">
   <a href="http://www.gsymy.com/2015/11/20/centos_install_mongodb.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="http://www.gsymy.com/2015/11/15/jni-getfieldidcrash.html">jni GetFieldID崩溃的一个可能原因
-</a>
-</h2>
-
-  <time datetime="2015-11-15">15 Nov, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    错误信息如下： # Problematic frame: # V [libjvm.so+0x5338c6] jni_GetFieldID+0xf6 java版本JDK 1.7.0 X64 分析GetFieldID第一个参数是通过FindClass来获得的，如果获取失败这里就崩溃了。 检查你FindClass里的参数是否正确；包路径是否正确； 注意：在低版本的java里FindClass包路径写&#8221;com.XXX.XXX.XXX&#8221;是可以的， 而java1.7里要求写&#8221;com/XXX/XXX/XXX&#8221;的路径方式
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="http://www.gsymy.com/2015/11/15/jni-getfieldidcrash.html">Read more &rarr;</a>
 
 </div>
 

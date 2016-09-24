@@ -126,11 +126,40 @@
     <h1>程序猿的小本本
 </h1>
 
-    <span>last update: <time datetime="2016-09-18T16:30:17&#43;08:00">18 September at 4:30pm</time>
+    <span>last update: <time datetime="2016-09-24T09:14:14&#43;08:00">24 September at 9:14am</time>
 </span>
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://www.gsymy.com/2015/11/15/jni-getfieldidcrash.html">jni GetFieldID崩溃的一个可能原因
+</a>
+</h2>
+
+  <time datetime="2015-11-15">15 Nov, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    错误信息如下： # Problematic frame: # V [libjvm.so+0x5338c6] jni_GetFieldID+0xf6 java版本JDK 1.7.0 X64 分析GetFieldID第一个参数是通过FindClass来获得的，如果获取失败这里就崩溃了。 检查你FindClass里的参数是否正确；包路径是否正确； 注意：在低版本的java里FindClass包路径写&#8221;com.XXX.XXX.XXX&#8221;是可以的， 而java1.7里要求写&#8221;com/XXX/XXX/XXX&#8221;的路径方式
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://www.gsymy.com/2015/11/15/jni-getfieldidcrash.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -212,35 +241,6 @@
 
   <div class="container readlink">
   <a href="http://www.gsymy.com/2015/10/29/programmer_job_2015.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="http://www.gsymy.com/2015/10/27/qmake_vsproject.html">qmake不能生成vs工程文件
-</a>
-</h2>
-
-  <time datetime="2015-10-27">27 Oct, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    报错信息如下： WARNING: Unable to generate output for: Makefile.Debug [TEMPLATE vcapp] 正常情况下命令式: qmake -tp vc xxx.pro 解决办法 有些环境下装了多个Qt或者是环境变量有问题导致qmake没有找到正确的spec 修改命令为: qmake -tp vc -spec win32-msvc2010 xxx.pro &nbsp; 这里spec选择你需要的版本即可
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="http://www.gsymy.com/2015/10/27/qmake_vsproject.html">Read more &rarr;</a>
 
 </div>
 
