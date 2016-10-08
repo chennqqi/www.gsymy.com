@@ -9,8 +9,52 @@
     <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
-    <lastBuildDate>Sat, 24 Sep 2016 09:14:14 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 08 Oct 2016 13:56:17 +0800</lastBuildDate>
     <atom:link href="http://www.gsymy.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>linux_mount_NTFS</title>
+      <link>http://www.gsymy.com/2016/10/18/linux-mount-sudo.html</link>
+      <pubDate>Sat, 08 Oct 2016 13:56:17 +0800</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://www.gsymy.com/2016/10/18/linux-mount-sudo.html</guid>
+      <description>&lt;p&gt;#how to mount a ntfs partition/drive on linux&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;linux may not integrate ntfs driver, so you need install ntfs-3g&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#yum install ntfs-3g
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;detect your ntfs partition name&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;parted&lt;/code&gt; is an gnu partition tool that can analize disk like &lt;code&gt;fdisk&lt;/code&gt; which
+support &lt;code&gt;GPT&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#parted  
+    &amp;gt;print all
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;find you ntfs partition name. eg. /dev/sdb1&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;mount&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#mkdir /mnt/ntfs
+#mount -t ntfs-3g /dev/sdb1 /mnt/ntfs
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;now you can vist &lt;code&gt;/mnt/ntfs&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;others:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    1. all operation need root privilege.
+    2. if you want regular user vist the mounted ntfs partition. you need mount like this:
+
+        mount -o umask=000 -t ntfs-3g /dev/sdb1 /mnt/ntfs1
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>没有找到visudo - not found sudo</title>
@@ -986,186 +1030,6 @@ sudo service php-fpm restart&lt;/pre&gt;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Google 镜像站搜集</title>
-      <link>http://www.gsymy.com/2015/11/06/google-mirror.html</link>
-      <pubDate>Fri, 06 Nov 2015 03:11:33 +0000</pubDate>
-      <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/11/06/google-mirror.html</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;color: black; font-size: 16pt;&#34;&gt;Google 镜像站搜集&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;在特殊的地方和特殊的时间，流畅顺利的打开一个网站也变得如此艰难。&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;&lt;span style=&#34;color: red;&#34;&gt;列表中有些打不开可能是 &lt;a href=&#34;http://www.itechzero.com/tag/dns-poisoning/&#34;&gt;DNS污染&lt;/a&gt; 的原因，可以参考 &lt;a href=&#34;http://www.itechzero.com/dns-hijacking-dns-pollution-introduction-and-public-dns-recommend.html&#34;&gt;DNS劫持 DNS污染 介绍 与 公共DNS 推荐&lt;/a&gt; 一文尝试解决。&lt;span style=&#34;color: #333333;&#34;&gt;不要没有尝试就问，谢谢！&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;以下镜像站分&lt;strong&gt;原版&lt;/strong&gt;、&lt;strong&gt;非原版&lt;/strong&gt;。非原版的界面有些改变，搜索结果&lt;span style=&#34;color: red;&#34;&gt;在一定程度上可能&lt;span style=&#34;color: #333333;&#34;&gt;与原版相同。&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;&lt;strong&gt;如果您是以下镜像的作者，并且不希望您的镜像出现在以下列表中，可以&lt;a href=&#34;http://www.itechzero.com/about/&#34;&gt;联系我&lt;/a&gt;移除链接。&lt;/strong&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333;&#34;&gt;&lt;strong&gt;原版网页：&lt;span style=&#34;font-size: 10pt;&#34;&gt;[最后检测：2015-11-4]&lt;/span&gt;&lt;/strong&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: red; font-size: 10pt;&#34;&gt;[推荐]&lt;a href=&#34;http://www.itechzero.com/go/googo-cf&#34;&gt;http://googo.cf/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: red; font-size: 10pt;&#34;&gt;[推荐]&lt;a href=&#34;http://www.itechzero.com/go/g-weme-so/&#34;&gt;https://g.weme.so/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: red; font-size: 10pt;&#34;&gt;[推荐]&lt;a href=&#34;http://www.itechzero.com/go/www-gog-pw/&#34;&gt;http://www.gog.pw/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: red; font-size: 10pt;&#34;&gt;[推荐]&lt;a href=&#34;http://www.itechzero.com/go/g-eeload-com/&#34;&gt;https://g.eeload.com/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: red; font-size: 10pt;&#34;&gt;[推荐]&lt;a href=&#34;http://www.itechzero.com/go/www-guge119-com/&#34;&gt;https://www.guge119.com/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.itechzero.com/go/g-yon-hk/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://g.yon.hk/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.itechzero.com/go/gg-wen-lu/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;https://gg.wen.lu/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.itechzero.com/go/hisbig-com/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://hisbig.com/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.itechzero.com/go/gg-kfd-me/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;https://gg.kfd.me/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.itechzero.com/go/gs-awei-me/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;https://gs.awei.me/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.itechzero.com/go/gg-cytbj-com/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://gg.cytbj.com/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.itechzero.com/go/www-ppx-pw/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;https://www.ppx.pw/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.itechzero.com/go/www-guge-link/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://www.guge.link/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.itechzero.com/go/www-fcczp-com/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://www.fcczp.com/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.itechzero.com/go/www-ggooo-net/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://www.ggooo.net/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.itechzero.com/go/www-guge-click/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;https://www.guge.click/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.itechzero.com/go/www-guge-date/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;https://www.guge.date/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.itechzero.com/go/g-searcher-top/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;https://gg.searcher.top/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.itechzero.com/go/gg-cellmean-com/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://gg.cellmean.com/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.itechzero.com/go/google-kainidi-cn/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://google.kainidi.cn/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.itechzero.com/go/google-xface-me/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;https://google.xface.me/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.itechzero.com/go/go-hibenben-com/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://go.hibenben.com/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.itechzero.com/go/google-hk-wewell-net/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;https://google-hk.wewell.net/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.itechzero.com/go/google-sidney-aldebaran-me/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://google.sidney-aldebaran.me/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333;&#34;&gt;&lt;strong&gt;非原版网页：&lt;span style=&#34;font-size: 10pt;&#34;&gt;[最后检测：2015-10-31]&lt;/span&gt;&lt;/strong&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: red; font-size: 10pt;&#34;&gt;[推荐]&lt;span style=&#34;color: #333333;&#34;&gt;微搜：&lt;a href=&#34;http://www.wesou.org/&#34;&gt;http://www.wesou.org/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: red; font-size: 10pt;&#34;&gt;[推荐]&lt;span style=&#34;color: #333333;&#34;&gt;谷歌363：&lt;a href=&#34;http://www.g363.com/&#34;&gt;http://www.g363.com/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: red; font-size: 10pt;&#34;&gt;[推荐]&lt;span style=&#34;color: #333333;&#34;&gt;Whats搜索：&lt;a href=&#34;http://whatsoo.com/&#34;&gt;http://whatsoo.com/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: red; font-size: 10pt;&#34;&gt;[推荐]&lt;span style=&#34;color: #333333;&#34;&gt;图灵搜索：&lt;a href=&#34;https://www.tulingss.com/&#34;&gt;https://www.tulingss.com/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: red; font-size: 10pt;&#34;&gt;[推荐]&lt;span style=&#34;color: #333333;&#34;&gt;九尾搜索：&lt;a href=&#34;http://jiuweisoso.wallpai.com/&#34;&gt;http://jiuweisoso.wallpai.com/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;谷粉网：&lt;a href=&#34;http://www.gool.wang/&#34;&gt;http://www.gool.wang/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;谷歌婊：&lt;a href=&#34;http://www.gugebiao.com/&#34;&gt;http://www.gugebiao.com/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;丸子163：&lt;a href=&#34;http://www.wanzi163.com/&#34;&gt;http://www.wanzi163.com/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;谷粉163：&lt;a href=&#34;http://www.gufen163.com/&#34;&gt;http://www.gufen163.com/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;丸子138：&lt;a href=&#34;http://www.itechzero.com/go/wanzi138/&#34;&gt;http://www.wanzi138.com/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;谷粉138：&lt;a href=&#34;http://www.itechzero.com/go/gufen138/&#34;&gt;http://www.gufen138.com/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;谷歌搜索：&lt;a href=&#34;http://guge.pro/&#34;&gt;http://guge.pro/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;快搜香港：&lt;a href=&#34;http://hk.kuaiso.com/&#34;&gt;http://hk.kuaiso.com/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;网搜天下：&lt;a href=&#34;http://www.258369.cn/&#34;&gt;http://www.258369.cn/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;谷粉搜搜：&lt;a href=&#34;http://www.googfen.com/&#34;&gt;http://www.googfen.com/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;谷粉搜搜：&lt;a href=&#34;http://gfsoso.hao136.com/&#34;&gt;http://gfsoso.hao136.com/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;红杏谷歌：&lt;a href=&#34;http://www.hxgoogle.com/&#34;&gt;http://www.hxgoogle.com/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;布谷鸟搜索：&lt;a href=&#34;http://m.wcuckoo.com/search/&#34;&gt;http://m.wcuckoo.com/search/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;Ask：&lt;a href=&#34;http://home.tb.ask.com/&#34;&gt;http://home.tb.ask.com/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;AOL：&lt;a href=&#34;http://m.search.aol.com/&#34;&gt;http://m.search.aol.com/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;Avira：&lt;a href=&#34;https://safesearch.avira.com/&#34;&gt;https://safesearch.avira.com/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;Suche：&lt;a href=&#34;http://suche.web.de/&#34;&gt;http://suche.web.de/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;Disconnect：&lt;a href=&#34;https://search.disconnect.me/&#34;&gt;https://search.disconnect.me/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;WebWebWeb：&lt;a href=&#34;http://webwebweb.com/&#34;&gt;http://webwebweb.com/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333;&#34;&gt;&lt;strong&gt;谷歌学术：&lt;span style=&#34;font-size: 10pt;&#34;&gt;[最后检测：2015-11-4]&lt;/span&gt;&lt;/strong&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: red; font-size: 10pt;&#34;&gt;[推荐]&lt;a href=&#34;http://scholar.ppx.pw/&#34;&gt;http://scholar.ppx.pw/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: red; font-size: 10pt;&#34;&gt;[推荐]&lt;a href=&#34;http://googo.cf/scholar/&#34;&gt;http://googo.cf/scholar/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: red; font-size: 10pt;&#34;&gt;[推荐]&lt;a href=&#34;http://gg.cytbj.com/scholar/&#34;&gt;http://gg.cytbj.com/scholar/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: red; font-size: 10pt;&#34;&gt;[推荐]&lt;a href=&#34;http://www.fcczp.com/scholar/&#34;&gt;http://www.fcczp.com/scholar/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: red; font-size: 10pt;&#34;&gt;[推荐]&lt;a href=&#34;https://www.guge119.com/scholar/&#34;&gt;https://www.guge119.com/scholar/&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://g.linkscholar.org/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://g.linkscholar.org/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.roolin.com/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;https://www.roolin.com/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://scholar.g363.com/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://scholar.g363.com/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.scholarnet.cn/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://www.scholarnet.cn/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://scholar.searcher.top/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://scholar.searcher.top/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://xueshu.cytbj.com/scholar/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://xueshu.cytbj.com/scholar/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://gfss.cc.wallpai.com/scholar/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://gfss.cc.wallpai.com/scholar/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://scholar.jiuminghu.com/scholar/&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;https://scholar.jiuminghu.com/scholar/&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333;&#34;&gt;&lt;strong&gt;谷歌图片：&lt;span style=&#34;font-size: 10pt;&#34;&gt;[最后检测：2015-11-4]&lt;/span&gt;&lt;/strong&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: red; font-size: 10pt;&#34;&gt;[推荐]&lt;a href=&#34;http://googo.cf/imghp&#34;&gt;http://googo.cf/imghp&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: red; font-size: 10pt;&#34;&gt;[推荐]&lt;a href=&#34;https://gtlds.me/imghp&#34;&gt;https://gtlds.me/imghp&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: red; font-size: 10pt;&#34;&gt;[推荐]&lt;a href=&#34;https://g.eeload.com/imghp&#34;&gt;https://g.eeload.com/imghp&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: red; font-size: 10pt;&#34;&gt;[推荐]&lt;a href=&#34;http://gg.cellmean.com/imghp&#34;&gt;http://gg.cellmean.com/imghp&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: red; font-size: 10pt;&#34;&gt;[推荐]&lt;a href=&#34;https://www.guge119.com/imghp&#34;&gt;https://www.guge119.com/imghp&lt;/a&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://hisbig.com/imghp&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://hisbig.com/imghp&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://g.weme.so/imghp&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;https://g.weme.so/imghp&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://gg.cytbj.com/imghp&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://gg.cytbj.com/imghp&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.ppx.pw/imghp&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;https://www.ppx.pw/imghp&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.guge.link/imghp&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://www.guge.link/imghp&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.fcczp.com/imghp&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://www.fcczp.com/imghp&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.ggooo.net/imghp&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://www.ggooo.net/imghp&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.guge.click/imghp&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;https://www.guge.click/imghp&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://google.xface.me/imghp&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;https://google.xface.me/imghp&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://google-hk.wewell.net/imghp&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;https://google-hk.wewell.net/imghp&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #595959; font-size: 8pt;&#34;&gt;来自 &amp;lt;&lt;a href=&#34;http://www.itechzero.com/google-mirror-sites-collect.html&#34;&gt;http://www.itechzero.com/google-mirror-sites-collect.html&lt;/a&gt;&amp;gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
 </description>
     </item>
     

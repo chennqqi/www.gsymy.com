@@ -154,7 +154,52 @@
 </div>
 
 
-  
+  <div id="main-header-extra" class="container extra">
+  ﻿<button onClick="showFriendLinks(this)" ><i class="fa fa-chevron-down" id="btn-friendlinkicon"></i> links</button>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+<script>
+	var F=false;
+	function showFriendLinks(obj){
+		console.log("show ")
+	  	if (F) {
+	    	document.getElementById('D').style.display="none";
+		    document.getElementById('btn-friendlinkicon').className="fa fa-chevron-down";
+	 		obj.value="friend links↓";
+	    	F=false;
+	  	}else{
+	    	document.getElementById('D').style.display="";
+		    document.getElementById('btn-friendlinkicon').className="fa fa-chevron-up";
+	 		obj.value="hide↑"
+	    	F=true;    
+  		}
+	}
+</script>
+
+<div id="D" style="display:none; margin-top:10px; width:160px; line-height:180%; font-family:Raleway, Arial, sans-serif; font-size:14px;"> 
+  <div class="friend-links">
+    <div class="friend-links-url">
+    <a href="http://wianm.com">wianm安全博客</a>
+    </div>
+    <div class="friend-links-url">
+      <a href="http://zzxiaoyu.cn">小宇安全站</a>
+    </div>
+    <div class="friend-links-url">
+      <a href="http://gs98.cn">故事酒吧</a>
+    </div>
+    <div class="friend-links-url">
+      <a href="http://cnkk.me">cnkk.me前端小站</a>
+    </div>
+    <div class="friend-links-url">
+      <a href="http://cnkk.me">影视搜高清</a>
+    </div>
+      <div class="friend-links-url">
+      <a href="http://0413.so/">0413.so</a>
+    </div>
+</div>
+</div>
+
+
+</div>
 
 </header>
 
@@ -220,6 +265,10 @@
     </a>
     
 
+    
+    <a class="next" href="http://www.gsymy.com/2016/10/18/linux-mount-sudo.html" title="linux_mount_NTFS">
+      Next
+    </a>
     
 
   

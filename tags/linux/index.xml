@@ -9,8 +9,52 @@
     <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
-    <lastBuildDate>Sat, 24 Sep 2016 09:14:14 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 08 Oct 2016 13:56:17 +0800</lastBuildDate>
     <atom:link href="http://www.gsymy.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>linux_mount_NTFS</title>
+      <link>http://www.gsymy.com/2016/10/18/linux-mount-sudo.html</link>
+      <pubDate>Sat, 08 Oct 2016 13:56:17 +0800</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://www.gsymy.com/2016/10/18/linux-mount-sudo.html</guid>
+      <description>&lt;p&gt;#how to mount a ntfs partition/drive on linux&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;linux may not integrate ntfs driver, so you need install ntfs-3g&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#yum install ntfs-3g
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;detect your ntfs partition name&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;parted&lt;/code&gt; is an gnu partition tool that can analize disk like &lt;code&gt;fdisk&lt;/code&gt; which
+support &lt;code&gt;GPT&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#parted  
+    &amp;gt;print all
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;find you ntfs partition name. eg. /dev/sdb1&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;mount&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#mkdir /mnt/ntfs
+#mount -t ntfs-3g /dev/sdb1 /mnt/ntfs
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;now you can vist &lt;code&gt;/mnt/ntfs&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;others:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    1. all operation need root privilege.
+    2. if you want regular user vist the mounted ntfs partition. you need mount like this:
+
+        mount -o umask=000 -t ntfs-3g /dev/sdb1 /mnt/ntfs1
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>没有找到visudo - not found sudo</title>

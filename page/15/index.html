@@ -116,7 +116,52 @@
 </div>
 
 
-  
+  <div id="main-header-extra" class="container extra">
+  ﻿<button onClick="showFriendLinks(this)" ><i class="fa fa-chevron-down" id="btn-friendlinkicon"></i> links</button>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+<script>
+	var F=false;
+	function showFriendLinks(obj){
+		console.log("show ")
+	  	if (F) {
+	    	document.getElementById('D').style.display="none";
+		    document.getElementById('btn-friendlinkicon').className="fa fa-chevron-down";
+	 		obj.value="friend links↓";
+	    	F=false;
+	  	}else{
+	    	document.getElementById('D').style.display="";
+		    document.getElementById('btn-friendlinkicon').className="fa fa-chevron-up";
+	 		obj.value="hide↑"
+	    	F=true;    
+  		}
+	}
+</script>
+
+<div id="D" style="display:none; margin-top:10px; width:160px; line-height:180%; font-family:Raleway, Arial, sans-serif; font-size:14px;"> 
+  <div class="friend-links">
+    <div class="friend-links-url">
+    <a href="http://wianm.com">wianm安全博客</a>
+    </div>
+    <div class="friend-links-url">
+      <a href="http://zzxiaoyu.cn">小宇安全站</a>
+    </div>
+    <div class="friend-links-url">
+      <a href="http://gs98.cn">故事酒吧</a>
+    </div>
+    <div class="friend-links-url">
+      <a href="http://cnkk.me">cnkk.me前端小站</a>
+    </div>
+    <div class="friend-links-url">
+      <a href="http://cnkk.me">影视搜高清</a>
+    </div>
+      <div class="friend-links-url">
+      <a href="http://0413.so/">0413.so</a>
+    </div>
+</div>
+</div>
+
+
+</div>
 
 </header>
 
@@ -126,11 +171,40 @@
     <h1>程序猿的小本本
 </h1>
 
-    <span>last update: <time datetime="2016-09-24T09:14:14&#43;08:00">24 September at 9:14am</time>
+    <span>last update: <time datetime="2016-10-08T13:56:17&#43;08:00">8 October at 1:56pm</time>
 </span>
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://www.gsymy.com/2015/08/12/visualstudio-shortcut.html">visualstudio快捷键
+</a>
+</h2>
+
+  <time datetime="2015-08-12">12 Aug, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    分享一个visualstudio快捷键的网站 http://visualstudioshortcuts.com 这个网站是个人站，不是微软官方的。这也是个做网站的思路，应该会有一些流量的 &nbsp;
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://www.gsymy.com/2015/08/12/visualstudio-shortcut.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -231,56 +305,6 @@
 
   <div class="container readlink">
   <a href="http://www.gsymy.com/2015/08/05/wordpress4-friendlink.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="http://www.gsymy.com/2015/08/02/linux-mountusbdisk.html">linux 挂载U盘
-</a>
-</h2>
-
-  <time datetime="2015-08-02">2 Aug, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    <p>U盘插入后，用fdisk -l(需要管理员权限，否则为空) 查看U是否已经被识别</p>
-
-<ol>
-<li>如果没有识别</li>
-</ol>
-
-<blockquote>
-<p>         [linxux]#modprobe usb-storage</p>
-</blockquote>
-
-<ol>
-<li>识别之后</li>
-</ol>
-
-<p>再用fdisk -l 查看usb分区名字</p>
-
-<p>通常为/dev/sdb 开头的一个名字</p>
-
-<ol>
-<li>挂载</li>
-</ol>
-
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="http://www.gsymy.com/2015/08/02/linux-mountusbdisk.html">Read more &rarr;</a>
 
 </div>
 
