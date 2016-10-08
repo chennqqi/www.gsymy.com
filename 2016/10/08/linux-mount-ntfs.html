@@ -5,38 +5,36 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>没有找到visudo - not found sudo  &middot; 程序猿的小本本</title>
+  <title>mount NTFS on linux  &middot; 程序猿的小本本</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<meta name="description" content="没有找到visudo - not found sudo" />
+<meta name="description" content="linux mount NTFS" />
 
-<meta name="keywords" content="centos7, linux, sudo, visudo, ">
+<meta name="keywords" content="linux, mount, ntfs, ">
 
 
-<meta property="og:title" content="没有找到visudo - not found sudo  &middot; 程序猿的小本本 ">
+<meta property="og:title" content="mount NTFS on linux  &middot; 程序猿的小本本 ">
 <meta property="og:site_name" content="程序猿的小本本"/>
-<meta property="og:url" content="http://www.gsymy.com/2016/09/24/notfound-sudo.html" />
+<meta property="og:url" content="http://www.gsymy.com/2016/10/08/linux-mount-ntfs.html" />
 <meta property="og:locale" content="en-us">
 
 
 <meta property="og:type" content="article" />
-<meta property="og:description" content="没有找到visudo - not found sudo"/>
-<meta property="og:article:published_time" content="2016-09-24T09:14:14&#43;08:00" />
-<meta property="og:article:modified_time" content="2016-09-24T09:14:14&#43;08:00" />
+<meta property="og:description" content="linux mount NTFS"/>
+<meta property="og:article:published_time" content="2016-10-08T13:56:17&#43;08:00" />
+<meta property="og:article:modified_time" content="2016-10-08T13:56:17&#43;08:00" />
 
   
     
-<meta property="og:article:tag" content="centos7">
-    
 <meta property="og:article:tag" content="linux">
     
-<meta property="og:article:tag" content="sudo">
+<meta property="og:article:tag" content="mount">
     
-<meta property="og:article:tag" content="visudo">
+<meta property="og:article:tag" content="ntfs">
     
   
 
@@ -44,9 +42,9 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@" />
-<meta name="twitter:title" content="没有找到visudo - not found sudo" />
-<meta name="twitter:description" content="没有找到visudo - not found sudo" />
-<meta name="twitter:url" content="http://www.gsymy.com/2016/09/24/notfound-sudo.html" />
+<meta name="twitter:title" content="mount NTFS on linux" />
+<meta name="twitter:description" content="linux mount NTFS" />
+<meta name="twitter:url" content="http://www.gsymy.com/2016/10/08/linux-mount-ntfs.html" />
 <meta name="twitter:domain" content="http://www.gsymy.com/">
   
 
@@ -54,20 +52,20 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "没有找到visudo - not found sudo",
+    "headline": "mount NTFS on linux",
     "author": {
       "@type": "Person",
       "name": "http://profiles.google.com/+?rel=author"
     },
-    "datePublished": "2016-09-24",
-    "description": "没有找到visudo - not found sudo",
-    "wordCount":  24 
+    "datePublished": "2016-10-08",
+    "description": "linux mount NTFS",
+    "wordCount":  103 
   }
 </script>
 
 
 
-<link rel="canonical" href="http://www.gsymy.com/2016/09/24/notfound-sudo.html" />
+<link rel="canonical" href="http://www.gsymy.com/2016/10/08/linux-mount-ntfs.html" />
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.gsymy.com/touch-icon-144-precomposed.png">
 <link href="http://www.gsymy.com/favicon.png" rel="icon">
@@ -206,23 +204,23 @@
 
 <article id="main-content" class="container main_content single">
   <header class="container hat">
-  <h1>没有找到visudo - not found sudo
+  <h1>mount NTFS on linux
 </h1>
 
   <div class="metas">
-<time datetime="2016-09-24">24 Sep, 2016</time>
+<time datetime="2016-10-08">8 Oct, 2016</time>
 
 
   
     &middot; by admin
   
   &middot; Read in about 1 min
-  &middot; (24 Words)
+  &middot; (103 Words)
   <br>
   
-<a class="label" href="http://www.gsymy.com/tags/centos">centos</a>
-
 <a class="label" href="http://www.gsymy.com/tags/linux">linux</a>
+
+<a class="label" href="http://www.gsymy.com/tags/centos">centos</a>
 
 
 
@@ -231,24 +229,42 @@
 </header>
 
   <div class="container content">
-  <p>##没有找到sudo/visudo &ndash; not found sudo/visudo</p>
+  <p>#how to mount a ntfs partition/drive on linux</p>
 
-<p>买了一个VPS，新建了一个普通用户，想给配置个sudo权限时发现既没有visudo
-也没有/etc/sudoers</p>
+<ol>
+<li><p>linux may not integrate ntfs driver, so you need install ntfs-3g<br />
+<code>ntfs-3g</code> is an opensource ntfs driver for linux</p>
 
-<p>错误信息:</p>
+<pre><code>#yum install ntfs-3g
+</code></pre></li>
 
-<pre><code>-bash: sudo: command not found
--bash: visudo: command not found
+<li><p>detect your ntfs partition name</p>
+
+<p><code>parted</code> is an gnu partition tool that can analize disk like <code>fdisk</code> which
+support <code>GPT</code></p>
+
+<pre><code>#parted  
+    &gt;print all
 </code></pre>
 
-<p>解决办法</p>
+<p>find you ntfs partition name. eg. /dev/sdb1</p></li>
 
-<pre><code>yum install sudo
+<li><p>mount</p>
+
+<pre><code>#mkdir /mnt/ntfs
+#mount -t ntfs-3g /dev/sdb1 /mnt/ntfs
 </code></pre>
 
-<p>注：
-    未在ubuntu下进行测试</p>
+<p>now you can vist <code>/mnt/ntfs</code></p></li>
+</ol>
+
+<p>others:</p>
+
+<pre><code>    1. all operation need root privilege.
+    2. if you want regular user vist the mounted ntfs partition. you need mount like this:
+
+        mount -o umask=000 -t ntfs-3g /dev/sdb1 /mnt/ntfs1
+</code></pre>
 
 </div>
 
@@ -260,15 +276,11 @@
   
 
     
-    <a class="prev" href="http://www.gsymy.com/2016/09/18/mingw32_errors.html" title="mingw32 编译器遇到的一些问题">
+    <a class="prev" href="http://www.gsymy.com/2016/09/24/notfound-sudo.html" title="没有找到visudo - not found sudo">
       Previous
     </a>
     
 
-    
-    <a class="next" href="http://www.gsymy.com/2016/10/08/linux-mount-ntfs.html" title="mount NTFS on linux">
-      Next
-    </a>
     
 
   

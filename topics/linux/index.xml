@@ -13,15 +13,16 @@
     <atom:link href="http://www.gsymy.com/topics/linux/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>linux_mount_NTFS</title>
-      <link>http://www.gsymy.com/2016/10/18/linux-mount-sudo.html</link>
+      <title>mount NTFS on linux</title>
+      <link>http://www.gsymy.com/2016/10/08/linux-mount-ntfs.html</link>
       <pubDate>Sat, 08 Oct 2016 13:56:17 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/10/18/linux-mount-sudo.html</guid>
+      <guid>http://www.gsymy.com/2016/10/08/linux-mount-ntfs.html</guid>
       <description>&lt;p&gt;#how to mount a ntfs partition/drive on linux&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;linux may not integrate ntfs driver, so you need install ntfs-3g&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;linux may not integrate ntfs driver, so you need install ntfs-3g&lt;br /&gt;
+&lt;code&gt;ntfs-3g&lt;/code&gt; is an opensource ntfs driver for linux&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;#yum install ntfs-3g
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
