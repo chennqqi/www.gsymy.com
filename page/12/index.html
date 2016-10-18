@@ -174,11 +174,40 @@
     <h1>程序猿的小本本
 </h1>
 
-    <span>last update: <time datetime="2016-10-08T13:56:17&#43;08:00">8 October at 1:56pm</time>
+    <span>last update: <time datetime="2016-10-18T10:11:56&#43;08:00">18 October at 10:11am</time>
 </span>
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://www.gsymy.com/2015/08/23/ue_format.html">UE编辑器加载格式化代码插件astyle
+</a>
+</h2>
+
+  <time datetime="2015-08-23">23 Aug, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    UE 的格式化功能不强，自带的astyle版本陈旧，一般采用开源工具astyle来实现代码格式化。 首先下载最新的astyle，因为ue自带的astyle版本太老，不支持空格、中文名等。下载点这里 解压缩后得到 astyle.exe, 将之拷贝到 ue目录的gnu目录下面，覆盖原来的astyle.exe 选择菜单-&gt;高级-&gt;工具栏配置-&gt;工具栏配置， 输入你命名的工具名&#8221;C++格式化&#8221;， 命令行输入: 前面使用你自己的UE安装路径 "C:\Program Files\IDM Computer Solutions\UEStudio\GNU\astyle.exe" --style=ansi "%f" 转到选项卡的&#8221;输出&#8221;页， 选择“捕捉输出”，选择“输出到列表框”。 其它的保留默认。 用ue打开源代码文件，然后&#8221;高级&#8221; &#8211; “格式化代码” 如图
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://www.gsymy.com/2015/08/23/ue_format.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -399,35 +428,6 @@ while(1)
 </article>
 
   
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="http://www.gsymy.com/2015/08/19/wordpress-basic.html">wordpress基础操作
-</a>
-</h2>
-
-  <time datetime="2015-08-19">19 Aug, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    添加favoriteicon 在wp-content/themes/YOURTHEM/header.php 中添加下面语句，然后把favicon.ico文件放置到网站根目录 &lt;link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /&gt; &nbsp; 添加统计代码 在wp-content/themes/YOURTHEM/footer.php 中添加对应的网站js代码即可 &nbsp; 在wp-content/themes/YOURTHEM/footer.php 允许友链操作功能 add_filter('pre_option_link_manager_enabled','__return_true'); &nbsp; 网站居中对齐 在wp-content/themes/YOURTHEM/style.css 最后添加一行 #page {margin:0 auto;} &nbsp; &nbsp;
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="http://www.gsymy.com/2015/08/19/wordpress-basic.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
   
 <div class="container pagination">
   
@@ -506,12 +506,16 @@ while(1)
   16
 </a>
 
+<a href="http://www.gsymy.com//page/17/">
+  17
+</a>
+
 
 <a aria-label="Next" href="http://www.gsymy.com//page/13/">
   <span aria-hidden="true">»</span>
 </a>
 
-<a aria-label="Last" href="http://www.gsymy.com//page/16/">
+<a aria-label="Last" href="http://www.gsymy.com//page/17/">
   <span aria-hidden="true">»»</span>
 </a>
 
