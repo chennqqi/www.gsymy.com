@@ -155,9 +155,6 @@
       <a href="http://cnkk.me">cnkk.me前端小站</a>
     </div>
     <div class="friend-links-url">
-      <a href="http://cnkk.me">影视搜高清</a>
-    </div>
-    <div class="friend-links-url">
       <a href="http://0413.so/">0413.so</a>
     </div>    
     <div class="friend-links-url">
@@ -175,11 +172,97 @@
     <h1>程序猿的小本本
 </h1>
 
-    <span>last update: <time datetime="2016-10-18T10:11:56&#43;08:00">18 October at 10:11am</time>
+    <span>last update: <time datetime="2016-11-02T15:19:17&#43;08:00">2 November at 3:19pm</time>
 </span>
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://www.gsymy.com/2015/08/19/vserrornoprjfile.html">VS编译出错，工程文件不存在
+</a>
+</h2>
+
+  <time datetime="2015-08-19">19 Aug, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    <h3 id="vs编译出错信息-title-pre-fs1">VS编译出错信息: {.title.pre.fs1}</h3>
+
+<h3 id="span-class-tcnt-8220-the-project-file-8221-has-been-renamed-or-is-no-longer-in-the-solution-8221-span-title-pre-fs1"><span class="tcnt">&#8220;The project file &#8221; has been renamed or is no longer in the solution&#8221;</span> {.title.pre.fs1}</h3>
+
+<p>看一下 .sln 和 .vcxproj 文件中的 GUID 是否匹配。 <wbr /></p>
+
+<div>
+  可能原因1:
+</div>
+
+<div>
+  出这个提示，一般是 .vcxproj 中 <ProjectGuid> 中的 GUID 和 .sln 中的 Project GUID 不一致了。（Project Depedencies）
+</div>
+
+<div>
+   
+</div>
+
+<div>
+  可能原因2:
+</div>
+
+<div>
+  也有可能是 .sln 引用了 A.vcxproj，而 A.vcxproj 依赖了 B.vcxproj，而 B.vcxproj 未被加入到 .sln 中。查看 A.vcxproj 中的 <ProjectReference>，看看引用了哪个未加入 .sln 的工程，加一下就好。
+</div>
+
+<div>
+   
+</div>
+
+<div>
+  说明：
+</div>
+
+<div>
+  打开.sln工程文件，检查
+</div>
+
+<div>
+  <strong>Project(&#8220;&#8230;</strong>
+</div>
+
+<div>
+  <strong> EndProject</strong>
+</div>
+
+<div>
+  节和每个*.vcxproj工程里的GUID匹配不，不匹配改正，
+</div>
+
+<div>
+  如果有重复的，利用VS生成新的，替换掉。
+</div>
+
+<div>
+   
+</div>
+
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://www.gsymy.com/2015/08/19/vserrornoprjfile.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -349,35 +432,6 @@ devenv xxxx.sln /Clean "Debug|x64"</pre>
 
   <div class="container readlink">
   <a href="http://www.gsymy.com/2015/08/18/vs-cmdline-build.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="http://www.gsymy.com/2015/08/18/a-cpp-manual.html">分享一个C/C&#43;&#43; 参考手册
-</a>
-</h2>
-
-  <time datetime="2015-08-18">18 Aug, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    下载链接 :http://pan.baidu.com/s/1eQuEo0a &nbsp; &nbsp;
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="http://www.gsymy.com/2015/08/18/a-cpp-manual.html">Read more &rarr;</a>
 
 </div>
 
