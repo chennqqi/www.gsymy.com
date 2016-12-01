@@ -9,8 +9,37 @@
     <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
-    <lastBuildDate>Wed, 02 Nov 2016 15:19:17 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 01 Dec 2016 21:20:40 +0800</lastBuildDate>
     <atom:link href="http://www.gsymy.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>python mysql 2014 error</title>
+      <link>http://www.gsymy.com/2016/12/02/python-mysql-2014-error.html</link>
+      <pubDate>Thu, 01 Dec 2016 21:20:40 +0800</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://www.gsymy.com/2016/12/02/python-mysql-2014-error.html</guid>
+      <description>&lt;p&gt;###python mysqlDB批量插入数据时报错&lt;/p&gt;
+
+&lt;p&gt;python MySQLdb module error code:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Error 2014: Commands out of sync; you can&#39;t run this command now&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This happened when excute mysql batch operation.
+Solution:&lt;/p&gt;
+
+&lt;p&gt;Every mysql option done, then call &lt;code&gt;commit()&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Using &lt;code&gt;executemany&lt;/code&gt; funcion is recommand.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list = []
+sql = &#39;INSERT INTO tablexxx(a,b,c) VALUES(%s,%s,%s)&#39;
+for l in ll:
+    list.append(l)
+db.executemany(sql, list)#db.fetchmany() ...
+db.commit()
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>说说外企在中国的水土不服</title>
@@ -1023,36 +1052,6 @@ sudo yum install devtoolset-2-gcc devtoolset-2-binutils devtoolset-2-gcc-c++&lt;
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2015/11/29/magicgirl.html</guid>
       <description>&lt;p&gt;程序员爱看妹子&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>CentOS安装mongodb</title>
-      <link>http://www.gsymy.com/2015/11/20/centos_install_mongodb.html</link>
-      <pubDate>Fri, 20 Nov 2015 07:31:11 +0000</pubDate>
-      <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/11/20/centos_install_mongodb.html</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;yum源中添加mongodb下载地址&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;具体步骤：&lt;span style=&#34;font-family: 宋体;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;Cd /etc/yum.repo.d/&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;创建 mongodb.repo&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;添加内容&lt;span style=&#34;font-family: 宋体;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;pre class=&#34;EnlighterJSRAW &#34; data-enlighter-language=&#34;shell&#34;&gt;[mongodb]
-name=MongoDB Repository
-baseurl=http://downloads-distro.mongodb.org/repo/redhat/os/x86_64/
-gpgcheck=0
-enabled=1&lt;/pre&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;span style=&#34;background-color: white;&#34;&gt;执行sudo yum install -y mongodb-org &lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #595959; font-size: 8pt;&#34;&gt;来自 &amp;lt;&lt;a href=&#34;http://cache.baiducontent.com/c?m=9f65cb4a8c8507ed4fece7631046893b4c4380146d96864968d4e414c42246101d27abfa3a715042889422301cf91e1ab9ab68332a0321b690c88e40d8afd7756fde28652740c01c53c419de941b79947dc60a&amp;p=8b2a975986cc41ac5dbc8a3f465294&amp;newp=8a6dc54ad6c044b509be9b7c7f05cf231610db2151d4d1106585&amp;user=baidu&amp;fm=sc&amp;query=centos+mongodb&amp;qid=ae2d9c2c0000752b&amp;p1=4&#34;&gt;http://cache.baiducontent.com/c?m=9f65cb4a8c8507ed4fece7631046893b4c4380146d96864968d4e414c42246101d27abfa3a715042889422301cf91e1ab9ab68332a0321b690c88e40d8afd7756fde28652740c01c53c419de941b79947dc60a&amp;p=8b2a975986cc41ac5dbc8a3f465294&amp;newp=8a6dc54ad6c044b509be9b7c7f05cf231610db2151d4d1106585&amp;user=baidu&amp;fm=sc&amp;query=centos+mongodb&amp;qid=ae2d9c2c0000752b&amp;p1=4&lt;/a&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 宋体;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
 </description>
     </item>
     

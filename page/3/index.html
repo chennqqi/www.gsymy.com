@@ -158,7 +158,7 @@
       <a href="http://0413.so/">0413.so</a>
     </div>    
     <div class="friend-links-url">
-      <a href="http://www.yhsc17.com/">南宁花鸟市场</a>
+      <a href="http://www.ipaddr.site/">ipaddr.site</a>
     </div>    
 </div>
 </div>
@@ -172,11 +172,40 @@
     <h1>程序猿的小本本
 </h1>
 
-    <span>last update: <time datetime="2016-11-02T15:19:17&#43;08:00">2 November at 3:19pm</time>
+    <span>last update: <time datetime="2016-12-01T21:20:40&#43;08:00">1 December at 9:20pm</time>
 </span>
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://www.gsymy.com/2016/01/11/centos_install_gitolite.html">centos安装gitolite
+</a>
+</h2>
+
+  <time datetime="2016-01-11">11 Jan, 2016</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    安装基础包 yum install perl openssh git yum install perl-Time-HiRes 创建git用户 useradd -d /home/git git passwd git 在git用户家目录下安装gitolite 切换到git用户 # su – git 创建文件夹bin $ mkdir bin 克隆gitolite源码 $ git clone https://github.com/sitaramc/gitolite.git $ ls bin gitolite 安装gitolite $ ./gitolite/install -to /home/git/bin/ $ cd bin/ $ ls commands gitolite gitolite-shell lib syntactic-sugar triggers VERSION VREF 配置gitolite管理员 生成管理员账户的公钥（此处指定本地root用户为管理员，键入回车使用默认值） # ssh-keygen 复制管理的公钥 # cp .ssh/id_rsa.pub /tmp/admin.pub 切换回git用户，为gitolite配置管理员 $ /home/git/bin/gitolite setup -pk /tmp/admin.pub Initialized empty Git repository in /home/git/repositories/gitolite-admin.git/ Initialized empty Git repository in /home/git/repositories/testing.git/ WARNING: /home/git/.ssh missing; creating a new one WARNING: /home/git/.ssh/authorized_keys missing; creating a new one $ ls bin gitolite projects.list repositories 管理员日常管理 管理员clone管理库（此处为本地root用户） # git clone git@192.168.1.95:gitolite-admin Initialized empty Git repository in /root/gitolite-admin/.git/ The authenticity of host &#8216;192.168.213.130 (192.168.213.130)&#8216; can&#8216;t be established.
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://www.gsymy.com/2016/01/11/centos_install_gitolite.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -258,35 +287,6 @@
 
   <div class="container readlink">
   <a href="http://www.gsymy.com/2015/12/30/visualstudio-pch.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="http://www.gsymy.com/2015/12/22/linux_using_cxx11.html">Linux使用C&#43;&#43;11
-</a>
-</h2>
-
-  <time datetime="2015-12-22">22 Dec, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    CentOS中默认使用的GCC是4.4的，所以不支持C++11 gcc选项 -std=c++11 需要GCC4.7以上的版本 这里提供一个简单简单的方法 Centos使用 cd /etc/yum.repos.d sudo wget http://people.centos.org/tru/devtools-1.1/devtools-1.1.repo sudo yum --enablerepo=testing-1.1-devtools-6 install devtoolset-1.1-gcc devtoolset-1.1-binutils devtoolset-1.1-gcc-c++ 安装后gcc版本是4.7.2 你也可以激进一点安装更高版本的 sudo wget http://people.centos.org/tru/devtools-2/devtools-2.repo sudo yum install devtoolset-2-gcc devtoolset-2-binutils devtoolset-2-gcc-c++ 安装之后gcc版本是4.8.2 切换4.7.2 scl enable devtoolset-1.1 bash 切换4.8.2 scl enable devtoolset-2 bash 参考资料： http://braaten-family.org/ed/blog/2014-05-28-devtools-for-centos/ http://preilly.me/2013/05/28/redhat-developer-toolset-1-1/ ubuntu使用 参考这里: https://stackoverflow.com/questions/7832892/how-to-change-the-default-gcc-compiler-in-ubuntu
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="http://www.gsymy.com/2015/12/22/linux_using_cxx11.html">Read more &rarr;</a>
 
 </div>
 
@@ -441,7 +441,7 @@
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?f0f7d05b2bbbb8c6a0d1d1a6b450bd97";
+  hm.src = "https://hm.baidu.com/hm.js?f0f7d05b2bbbb8c6a0d1d1a6b450bd97";
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();

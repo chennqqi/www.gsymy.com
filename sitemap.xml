@@ -3,7 +3,12 @@
   
   <url>
     <loc>http://www.gsymy.com/</loc>
-    <lastmod>2016-11-02T15:19:17+08:00</lastmod>
+    <lastmod>2016-12-01T21:20:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.gsymy.com/2016/12/02/python-mysql-2014-error.html</loc>
+    <lastmod>2016-12-01T21:20:40+08:00</lastmod>
   </url>
   
   <url>
@@ -348,6 +353,10 @@
   
   <url>
     <loc>http://www.gsymy.com/license/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.gsymy.com/post/2016-12-01_python_mysql2014/</loc>
   </url>
   
 </urlset>

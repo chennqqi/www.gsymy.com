@@ -9,8 +9,37 @@
     <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
-    <lastBuildDate>Thu, 25 Aug 2016 13:35:57 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 01 Dec 2016 21:20:40 +0800</lastBuildDate>
     <atom:link href="http://www.gsymy.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>python mysql 2014 error</title>
+      <link>http://www.gsymy.com/2016/12/02/python-mysql-2014-error.html</link>
+      <pubDate>Thu, 01 Dec 2016 21:20:40 +0800</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://www.gsymy.com/2016/12/02/python-mysql-2014-error.html</guid>
+      <description>&lt;p&gt;###python mysqlDB批量插入数据时报错&lt;/p&gt;
+
+&lt;p&gt;python MySQLdb module error code:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Error 2014: Commands out of sync; you can&#39;t run this command now&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This happened when excute mysql batch operation.
+Solution:&lt;/p&gt;
+
+&lt;p&gt;Every mysql option done, then call &lt;code&gt;commit()&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Using &lt;code&gt;executemany&lt;/code&gt; funcion is recommand.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list = []
+sql = &#39;INSERT INTO tablexxx(a,b,c) VALUES(%s,%s,%s)&#39;
+for l in ll:
+    list.append(l)
+db.executemany(sql, list)#db.fetchmany() ...
+db.commit()
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>pyenv rehash problem</title>
