@@ -9,8 +9,30 @@
     <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
-    <lastBuildDate>Thu, 06 Aug 2015 08:08:18 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Dec 2016 18:11:53 +0800</lastBuildDate>
     <atom:link href="http://www.gsymy.com/tags/vistualstudio/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>microsoft released vs2017 enterpirse</title>
+      <link>http://www.gsymy.com/2016/12/03/vs2017.html</link>
+      <pubDate>Sat, 03 Dec 2016 18:11:53 +0800</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://www.gsymy.com/2016/12/03/vs2017.html</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://www.visualstudio.com/wp-content/uploads/2016/11/Productivity-Epic-960x540.jpg&#34; alt=&#34;VS2017&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;2016/11/16 Microsoft released vistual studio 2017 RC version.&lt;/p&gt;
+
+&lt;p&gt;I tried to install(windows7), but failed.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m excited about this version. But maybe wait some time
+until it&amp;rsquo;s stable.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://mobile.163.com/16/1116/19/C613OUGU00118021.html&#34;&gt;今晚VS2017 RC将携Visual Studio for Mac 2017预览版亮相&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.visualstudio.com/vs/visual-studio-2017-rc/&#34;&gt;download vs2017 here&lt;/a&gt;
+&lt;a href=&#34;https://www.visualstudio.com/&#34;&gt;https://www.visualstudio.com/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>VisualStudio 断点不生效分析</title>
