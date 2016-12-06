@@ -9,8 +9,36 @@
     <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
-    <lastBuildDate>Sat, 08 Oct 2016 13:56:17 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 06 Dec 2016 22:17:01 +0800</lastBuildDate>
     <atom:link href="http://www.gsymy.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>install gnu parallel, not only centos platform</title>
+      <link>http://www.gsymy.com/2016/12/06/install_gnu_parallel.html</link>
+      <pubDate>Tue, 06 Dec 2016 22:17:01 +0800</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://www.gsymy.com/2016/12/06/install_gnu_parallel.html</guid>
+      <description>&lt;p&gt;##&lt;/p&gt;
+
+&lt;p&gt;Steps:
+ visit &lt;a href=&#34;https://build.opensuse.org/package/show?package=parallel&amp;amp;project=home%3Atange&#34;&gt;https://build.opensuse.org/package/show?package=parallel&amp;amp;project=home%3Atange&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;look at right top corner, click &lt;a href=&#34;http://software.opensuse.org/download.html?project=home%3Atange&amp;amp;package=parallel&#34;&gt;download&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This support such platforms:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://software.opensuse.org/assets/download/centos-de865c285c8e1567761ee0feadbf4778.png&#34; alt=&#34;CentOS&#34; /&gt;
+ &lt;img src=&#34;http://software.opensuse.org/assets/download/debian-7c7747407454caca1c5ab01fed35581d.png&#34; alt=&#34;Debian&#34; /&gt;
+ &lt;img src=&#34;http://software.opensuse.org/assets/download/opensuse-ea5fec454e9f4ca53ea7276f48905243.png&#34; alt=&#34;openSUSE&#34; /&gt;
+ &lt;img src=&#34;http://software.opensuse.org/assets/download/rhel-4f3565f8f0c66c2a555caf5c5fc3b287.png&#34; alt=&#34;redhat&#34; /&gt;
+ &lt;img src=&#34;http://software.opensuse.org/assets/download/sle-a04c87206b6b247faebf37f846f8781d.png&#34; alt=&#34;suse&#34; /&gt;
+ &lt;img src=&#34;http://software.opensuse.org/assets/download/ubuntu-1275234a5d802bea3ebcf789a50c9589.png&#34; alt=&#34;ubuntu&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Reference:&lt;br /&gt;
+1. &lt;a href=&#34;https://www.gnu.org/software/parallel/&#34;&gt;gnu parallel offical&lt;/a&gt;&lt;br /&gt;
+2. &lt;a href=&#34;http://blog.sina.com.cn/s/blog_3f7652740100y0ju.html&#34;&gt;轻松并发执行作业&amp;ndash;GNU Parallel&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>mount NTFS on linux</title>

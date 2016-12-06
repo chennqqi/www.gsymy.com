@@ -172,11 +172,40 @@
     <h1>程序猿的小本本
 </h1>
 
-    <span>last update: <time datetime="2016-12-03T18:11:53&#43;08:00">3 December at 6:11pm</time>
+    <span>last update: <time datetime="2016-12-06T22:17:01&#43;08:00">6 December at 10:17pm</time>
 </span>
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://www.gsymy.com/2015/09/12/centos_python2-7.html">centos安装python2.7
+</a>
+</h2>
+
+  <time datetime="2015-09-12">12 Sep, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    centos 系统默认带的python是2.6的，现在最新的一些程序很多要求python2.7，根据我的经验写一下整个过程 0x01. 下载python2.7.10源码 wget https://www.python.org/ftp/python/2.7.10/Python-2.7.10.tgz 0x02. 解压缩&amp;编译 tar xvf Python-2.7.10.tgz cd Python-2.7.10 ./configure make sudo make install 0x03. 修改系统默认python sudo rm /usr/bin/python sudo ln -s /usr/local/bin/python /usr/bin/python sudo rm /usr/bin/python-config sudo ln -s /usr/local/bin/python2.7-config /usr/bin/python-config 0x04. 恢复yum python版本 centos的yum 必须要使用python 2.6 否则可能会导致包管理不正常，修改方法： sudo vim /usr/bin/yum 修改第一行内容 #!/usr/bin/python 为 #!/usr/bin/python2.6 sudo vim /usr/bin/easy_install-2.6 按照上面的方法恢复 0x05. 安装2.7的easy_install wget http://peak.telecommunity.com/dist/ez_setup.py sudo python ez_setup.py 0x06. 安装pip(可选) 到页面 https://pypi.python.org/pypi/pip#downloads 找到最新版本的pip wget --no-check-certificate https://pypi.python.org/packages/source/p/pip/pip-7.1.2.tar.gz#md5=3823d2343d9f3aaab21cf9c917710196 tar
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://www.gsymy.com/2015/09/12/centos_python2-7.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -293,35 +322,6 @@
 
   <div class="container readlink">
   <a href="http://www.gsymy.com/2015/09/07/get_subset_order.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="http://www.gsymy.com/2015/09/07/vs_error_include_cpp.html">Visualstudio C语言包含C&#43;&#43;头文件编译不通过
-</a>
-</h2>
-
-  <time datetime="2015-09-07">7 Sep, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    error C2054: expected '(' to follow 'using' error C2061: syntax error : identifier 'using' c:\program files\microsoft visual studio 10.0\vc\include\cstdio(38): error C2054: expected '(' to follow 'using' c:\program files\microsoft visual studio 10.0\vc\include\cstdio(40): error C2061: syntax error : identifier 'using' c:\program files\microsoft visual studio 10.0\vc\include\cstdio(40): error C2054: expected '(' to follow 'using' c:\program files\microsoft visual studio 10.0\vc\include\cstdio(40): error C2061: syntax error : identifier 'using' c:\program files\microsoft visual studio 10.0\vc\include\cstdio(41): error C2061: syntax
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="http://www.gsymy.com/2015/09/07/vs_error_include_cpp.html">Read more &rarr;</a>
 
 </div>
 
