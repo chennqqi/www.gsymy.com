@@ -9,8 +9,33 @@
     <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
-    <lastBuildDate>Tue, 06 Dec 2016 22:17:01 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 03 Feb 2017 10:01:17 +0800</lastBuildDate>
     <atom:link href="http://www.gsymy.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>unknown_u16_type</title>
+      <link>http://www.gsymy.com/2017/02/03/unknown_u16_type.html</link>
+      <pubDate>Fri, 03 Feb 2017 10:01:17 +0800</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://www.gsymy.com/2017/02/03/unknown_u16_type.html</guid>
+      <description>&lt;p&gt;issue:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;gcc build error
+
+error: unknown type name ‘u16’
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;solution:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;install kernel-headers
+
+sudo yum install kernel-headers -y 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;referer:
+    &lt;a href=&#34;https://bugzilla.redhat.com/show_bug.cgi?format=multiple&amp;amp;id=689756&#34;&gt;https://bugzilla.redhat.com/show_bug.cgi?format=multiple&amp;amp;id=689756&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>install gnu parallel, not only centos platform</title>
@@ -987,61 +1012,6 @@ ssl_certificate_key /usr/local/nginx/conf/server_nopwd.key;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Linux使用C&#43;&#43;11</title>
-      <link>http://www.gsymy.com/2015/12/22/linux_using_cxx11.html</link>
-      <pubDate>Tue, 22 Dec 2015 09:30:10 +0000</pubDate>
-      <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/12/22/linux_using_cxx11.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.gsymy.com/wp-content/uploads/2015/12/centos.jpg&#34; rel=&#34;attachment wp-att-530&#34;&gt;&lt;img class=&#34;alignnone size-full wp-image-530&#34; src=&#34;http://www.gsymy.com/wp-content/uploads/2015/12/centos.jpg&#34; alt=&#34;centos&#34; width=&#34;486&#34; height=&#34;307&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;CentOS&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;中默认使用的&lt;/span&gt;GCC&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;是&lt;/span&gt;4.4&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;的，所以不支持&lt;/span&gt;C++11&lt;/p&gt;
-
-&lt;p&gt;gcc&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;选项&lt;/span&gt; -std=c++11 &lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;需要&lt;/span&gt;GCC&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;4.7以上的版本&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;这里提供一个简单简单的方法&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Centos&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;使用&lt;/span&gt;&lt;/p&gt;
-
-&lt;pre class=&#34;lang:default decode:true&#34;&gt;cd /etc/yum.repos.d
-
-sudo wget http://people.centos.org/tru/devtools-1.1/devtools-1.1.repo
-
-sudo yum --enablerepo=testing-1.1-devtools-6 install 
-devtoolset-1.1-gcc devtoolset-1.1-binutils devtoolset-1.1-gcc-c++&lt;/pre&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;安装后&lt;/span&gt;gcc&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;版本是&lt;/span&gt;4.7.2&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;你也可以激进一点安装更高版本的&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;pre class=&#34;lang:default decode:true &#34;&gt;sudo wget http://people.centos.org/tru/devtools-2/devtools-2.repo
-
-sudo yum install devtoolset-2-gcc devtoolset-2-binutils devtoolset-2-gcc-c++&lt;/pre&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;安装之后&lt;/span&gt;gcc&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;版本是&lt;/span&gt;4.8.2&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;切换&lt;/span&gt;4.7.2&lt;/p&gt;
-
-&lt;pre class=&#34;lang:default decode:true &#34;&gt;scl enable devtoolset-1.1 bash&lt;/pre&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;切换&lt;/span&gt;4.8.2&lt;/p&gt;
-
-&lt;pre class=&#34;lang:default decode:true&#34;&gt;scl enable devtoolset-2 bash&lt;/pre&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;参考资料：&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://braaten-family.org/ed/blog/2014-05-28-devtools-for-centos/&#34;&gt;http://braaten-family.org/ed/blog/2014-05-28-devtools-for-centos/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://preilly.me/2013/05/28/redhat-developer-toolset-1-1/&#34;&gt;http://preilly.me/2013/05/28/redhat-developer-toolset-1-1/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;ubuntu&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;使用&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;参考这里&lt;/span&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://stackoverflow.com/questions/7832892/how-to-change-the-default-gcc-compiler-in-ubuntu&#34;&gt;https://stackoverflow.com/questions/7832892/how-to-change-the-default-gcc-compiler-in-ubuntu&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

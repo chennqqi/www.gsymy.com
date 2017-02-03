@@ -172,11 +172,40 @@
     <h1>程序猿的小本本
 </h1>
 
-    <span>last update: <time datetime="2016-12-06T22:17:01&#43;08:00">6 December at 10:17pm</time>
+    <span>last update: <time datetime="2017-02-03T10:01:17&#43;08:00">3 February at 10:01am</time>
 </span>
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://www.gsymy.com/2015/09/25/virt-what.html">利用virt-what工具检测VPS虚拟化技术(转)
+</a>
+</h2>
+
+  <time datetime="2015-09-25">25 Sep, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    利用virt-what工具检测VPS虚拟化技术 检测是OpenVZ还是Xen老蒋 发布于 1年前 (2014-09-26) 分类：VPS基础应用阅读(543) 评论(0) 我们在选择VPS主机的时候肯定会看到商家提供方案有提到是用的openvz、xen、kvm等架构技术，具体我们不去讨论这3个常用的技术特点，总之相对而言，openvz可以超售比较多，所以相对成本就低，对于xen和kvm理论上操作可以超售部分，但相对比ovz好一些。 对于我们购买的VPS，也可能听到的技术不准确，可以用到virt-what方法来真实的检测。 第一、下载以及安装virt-what脚本 wget http://soft.itbulu.com/tools/virt-what-1.11.tar.gz #下载 tar zxf virt-what-1.11.tar.gz #解压 cd virt-what-1.11 #进入目录 ./configure #设置 make && make install #编译安装 理论上是可以操作没有问题的，但是在执行make && make install的时候会出现&#8221;make: *** No targets specified and no makefile found&#8221;的错误提示。 解决方法： yum install gcc gcc-c++ autoconf automake 安装必备的组件支持。 然后我们在操作： ./configure make && make install 这样就可以把virt-what安装成功。 第二、检测系统架构技术 virt-what 可以检测到老蒋这台机器使用的openvz，与官方卖给我的是一样的，没有骗我。 转载from: http://www.itbulu.com/virt-what.html
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://www.gsymy.com/2015/09/25/virt-what.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -366,65 +395,6 @@
 
   <div class="container readlink">
   <a href="http://www.gsymy.com/2015/09/13/programer_day.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="http://www.gsymy.com/2015/09/12/scrapy_install.html">安装scrapy
-</a>
-</h2>
-
-  <time datetime="2015-09-12">12 Sep, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    <div class="para">
-  Scrapy，Python开发的一个快速,高层次的屏幕抓取和web抓取框架，用于抓取web站点并从页面中提取结构化的数据。Scrapy用途广泛，可以用于数据挖掘、监测和<a href="http://baike.baidu.com/view/1303916.htm" target="_blank">自动化测试</a>。
-</div>
-
-<div class="para">
-  Scrapy吸引人的地方在于它是一个框架，任何人都可以根据需求方便的修改。它也提供了多种类型爬虫的基类，如BaseSpider、sitemap爬虫等，最新版本又提供了web2.0爬虫的支持。
-</div>
-
-<div class="para">
-  Scrach，是抓取的意思，这个Python的爬虫框架叫Scrapy，大概也是这个意思吧，就叫它：小刮刮吧。[from<a href="http://baike.baidu.com/link?url=yii3mkb4Eg2hvwk4B20GgoikhScodSEBN1gP3vJMh1uxI8Ipzi9d5iopQNUsIjFib4pMglkbmEf6e23D9MR-lq" target="_blank">百度百科</a>]
-</div>
-
-<p>&nbsp;</p>
-
-<p>0x00. 准备环境</p>
-
-<p>linux环境请首先升级python版本到python2.7.10</p>
-
-<p><a href="http://www.gsymy.com/2015/09/12/centos_python2-7.html" target="_blank">参考链接</a></p>
-
-<p><a href="http://www.gsymy.com/2015/09/12/centos_python2-7.html">http://www.gsymy.com/2015/09/12/centos_python2-7.html</a></p>
-
-<p>0x01. 开始安装</p>
-
-<p>&nbsp;</p>
-
-<pre class="lang:default decode:true">sudo yum install libffi-devel -y
-pip install Scrapy</pre>
-
-<p>0x02. 现在来解决第一个坑</p>
-
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="http://www.gsymy.com/2015/09/12/scrapy_install.html">Read more &rarr;</a>
 
 </div>
 
