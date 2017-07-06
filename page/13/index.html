@@ -172,11 +172,69 @@
     <h1>程序猿的小本本
 </h1>
 
-    <span>last update: <time datetime="2017-02-03T10:01:17&#43;08:00">3 February at 10:01am</time>
+    <span>last update: <time datetime="2017-07-06T22:56:21&#43;08:00">6 July at 10:56pm</time>
 </span>
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://www.gsymy.com/2015/08/26/nginx_auth_proxy.html">nginx 搭建带验证的HTTP代理
+</a>
+</h2>
+
+  <time datetime="2015-08-26">26 Aug, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    核心配置代码 server { listen 8080;#监听端口 client_body_timeout 60000;#超时 client_max_body_size 1024m; send_timeout 60000; client_header_buffer_size 16k; large_client_header_buffers 4 64k; proxy_headers_hash_bucket_size 1024; proxy_headers_hash_max_size 4096; proxy_read_timeout 60000; proxy_send_timeout 60000; location / { auth_basic "Please input your password:"; auth_basic_user_file /usr/share/nginx/htpasswd; resolver 8.8.8.8; proxy_pass http://$http_host$request_uri; } } 说明auth_basic_user_file指向你生成的密码文件，这个文件是由apache的htpasswd生成的。 用法如下: htpasswd -c /usr/share/nginx/authdb liming 实际路径根据实际情况，如果没有htpasswd，可以先行安装apache。或者参考http://blog.csdn.net/stevenprime/article/details/7776713 他是写了一个perl脚本
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://www.gsymy.com/2015/08/26/nginx_auth_proxy.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://www.gsymy.com/2015/08/26/nirsoft.html">nirsoft
+</a>
+</h2>
+
+  <time datetime="2015-08-26">26 Aug, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    推荐一个网站: http://www.nirsoft.net nirsoft开发了很多体积小又实用的windows软件，而且基本都是免费的。 涵盖网络、注册表、磁盘、系统、路由、服务等等，基本上windows上开发所涉及的都有工具。 这里可以下载工具合集 &nbsp; &nbsp; &nbsp; 语言包需要单独下载，并解压缩到软件集合（里边有很多exe)文件夹中 Japanese Simplified Chinese Traditional Chinese &nbsp;
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://www.gsymy.com/2015/08/26/nirsoft.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -318,139 +376,6 @@
 </article>
 
   
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="http://www.gsymy.com/2015/08/23/tcpdumpnoroot.html">非root用户使用tcpdump
-</a>
-</h2>
-
-  <time datetime="2015-08-23">23 Aug, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    centos/redhat下安装tcpdump sudo yum install -y tcpdump 在tcpdump所在目录下执行 sudo chmod u+s tcpdump &nbsp; 原理参考： tcpdump 安装和文件的s权限 &#8211; arkblue的专栏 &#8211; 博客频道 &#8211; CSDN.NET
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="http://www.gsymy.com/2015/08/23/tcpdumpnoroot.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="http://www.gsymy.com/2015/08/23/linux-getopt.html">Linux 命令行参数处理函数探究(转)
-</a>
-</h2>
-
-  <time datetime="2015-08-23">23 Aug, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    <p>一、getopt函数</p>
-
-<p>![][1]</p>
-
-<div>
-  A.函数功能：处理命令行参数
-</div>
-
-<div>
-</div>
-
-<div>
-  B.参数:
-</div>
-
-<div>
-</div>
-
-<div>
-  argc代表命令行参数的个数，argv[i]存放命令行参数在内存存放的地址。这两个参数直接从mian(int argc,char *argv[])得到。
-</div>
-
-<div>
-</div>
-
-<div>
-  如果argv的元素是以 &#8220;-“开头称为一个选项元素,紧跟在&#8221;-&#8220;后面的一个字符称为选项字符。
-</div>
-
-<div>
-</div>
-
-<div>
-  eg:ls  -l
-</div>
-
-<div>
-</div>
-
-<div>
-  其中ls是可执行程序名称，-l称为选项元素，&#8217;l&#8217;称为选项字符
-</div>
-
-<div>
-</div>
-
-<div>
-  optstring:选项参数的集合
-</div>
-
-<div>
-</div>
-
-<div>
-  注意:如果getopt()函数被循环调用，每次调用都会返回一个对应选元素的选项字符,如果所有选项字符都放回后，再次调用getopt()函数返回-1。
-</div>
-
-<div>
-</div>
-
-<div>
-</div>
-
-<div>
-  <pre class="lang:c decode:true ">./a.out   -a  -n  -l
- 
-while(1)
-{
-    ch = getopt(argc,argv,"anl");
-}</pre>
-  
-  <p>
-    &nbsp;
-  </p>
-</div>
-
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="http://www.gsymy.com/2015/08/23/linux-getopt.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
   
 <div class="container pagination">
   
@@ -537,12 +462,16 @@ while(1)
   18
 </a>
 
+<a href="http://www.gsymy.com//page/19/">
+  19
+</a>
+
 
 <a aria-label="Next" href="http://www.gsymy.com//page/14/">
   <span aria-hidden="true">»</span>
 </a>
 
-<a aria-label="Last" href="http://www.gsymy.com//page/18/">
+<a aria-label="Last" href="http://www.gsymy.com//page/19/">
   <span aria-hidden="true">»»</span>
 </a>
 

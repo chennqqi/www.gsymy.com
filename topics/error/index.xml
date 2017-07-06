@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Error on 程序猿的小本本</title>
+    <link>http://www.gsymy.com/topics/error/</link>
+    <description>Recent content in Error on 程序猿的小本本</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
+    <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
+    <copyright>(c) 2016 gsymy.com.</copyright>
+    <lastBuildDate>Mon, 12 Jun 2017 15:40:21 +0800</lastBuildDate>
+    <atom:link href="http://www.gsymy.com/topics/error/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>curl error 35</title>
+      <link>http://www.gsymy.com/2017/06/12/curl_error_35.html</link>
+      <pubDate>Mon, 12 Jun 2017 15:40:21 +0800</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://www.gsymy.com/2017/06/12/curl_error_35.html</guid>
+      <description>
+
+&lt;h1 id=&#34;curl-error-35&#34;&gt;curl error 35&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;原因未明，待查
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

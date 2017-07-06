@@ -9,8 +9,60 @@
     <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
-    <lastBuildDate>Fri, 03 Feb 2017 10:01:17 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 06 Jul 2017 22:56:21 +0800</lastBuildDate>
     <atom:link href="http://www.gsymy.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>netinstall centos5</title>
+      <link>http://www.gsymy.com/2017/07/06/netinstall_centos5.html</link>
+      <pubDate>Thu, 06 Jul 2017 22:56:21 +0800</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://www.gsymy.com/2017/07/06/netinstall_centos5.html</guid>
+      <description>
+
+&lt;h1 id=&#34;网络安装centos5&#34;&gt;网络安装CentOs5&lt;/h1&gt;
+
+&lt;p&gt;目前CentOs官方已经停止支持CentOS5了，最新的版本是5.11。 为了快速安装系统，使用了 netinstall.iso。 CentOS的安装URL与网上的教程不匹配了。 我这里简单记录一下&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;用netinstall.iso 做boot启动系统&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img1.51cto.com/attachment/201008/162309384.jpg&#34; alt=&#34;&#34; /&gt;
+原图无效请戳这里&lt;a href=&#34;http://img1.51cto.com/attachment/201008/162309384.jpg&#34;&gt;http://img1.51cto.com/attachment/201008/162309384.jpg&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;选择HTTP方式, 并按照您的实际情况配置网络&lt;/p&gt;
+
+&lt;p&gt;建议使用NAT方式和自动分配IP方式&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;旧版教程中&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://img1.51cto.com/attachment/201008/162920106.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Web Site name&lt;/strong&gt; 要填入 vault.centos.org&lt;br /&gt;
+&lt;strong&gt;CentOS directory&lt;/strong&gt; 要填入 5.11/os/x86_64&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;如果你要装的是32位请把x86_64替换为i386&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;参考:
+    &lt;a href=&#34;http://zh888.blog.51cto.com/1684752/380118&#34;&gt;http://zh888.blog.51cto.com/1684752/380118&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>curl error 35</title>
+      <link>http://www.gsymy.com/2017/06/12/curl_error_35.html</link>
+      <pubDate>Mon, 12 Jun 2017 15:40:21 +0800</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://www.gsymy.com/2017/06/12/curl_error_35.html</guid>
+      <description>
+
+&lt;h1 id=&#34;curl-error-35&#34;&gt;curl error 35&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;原因未明，待查
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>unknown_u16_type</title>
@@ -910,108 +962,6 @@ ssl_certificate_key /usr/local/nginx/conf/server_nopwd.key;
 &lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;控制面板&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; -&amp;gt; Internet&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;选项&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; -&amp;gt; &lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;内容&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; -&amp;gt; &lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;发行者 &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;-&amp;gt; &lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;受信任的根证书颁发机构&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; -&amp;gt; &lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;导入&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; &amp;#8211;&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;》选择&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;server.crt&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span style=&#34;color: #595959; font-size: 9pt;&#34;&gt;来自 &amp;lt;&lt;a href=&#34;https://www.cnblogs.com/tintin1926/archive/2012/07/12/2587311.html&#34;&gt;https://www.cnblogs.com/tintin1926/archive/2012/07/12/2587311.html&lt;/a&gt;&amp;gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Redis 删除所有键值 | redis,删除key,key</title>
-      <link>http://www.gsymy.com/2015/12/30/redis-delkey.html</link>
-      <pubDate>Wed, 30 Dec 2015 13:16:53 +0000</pubDate>
-      <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/12/30/redis-delkey.html</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://www.gsymy.com/wp-content/uploads/2015/12/123015_1045_Redis1.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;使用命令方式删除所有&lt;/span&gt;&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  redis-cli KEYS &amp;#8220;126.com*&amp;#8221; | xargs redis-cli DEL
-&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;使用&lt;/span&gt;lua&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;方式&lt;/span&gt;&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  EVAL &amp;#8220;return redis.call(&amp;#8216;del&amp;#8217;, unpack(redis.call(&amp;#8216;keys&amp;#8217;, ARGV[1])))&amp;#8221; 0 *
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Visualstudio 编译不能打开pch文件 | vs2010,visualstudio,pch,预处理</title>
-      <link>http://www.gsymy.com/2015/12/30/visualstudio-pch.html</link>
-      <pubDate>Wed, 30 Dec 2015 10:38:43 +0000</pubDate>
-      <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/12/30/visualstudio-pch.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.gsymy.com/wp-content/uploads/2015/12/a8773912b31bb051b9d04542307adab44bede0e0.jpg&#34; rel=&#34;attachment wp-att-539&#34;&gt;&lt;img class=&#34;alignnone size-full wp-image-539&#34; src=&#34;http://www.gsymy.com/wp-content/uploads/2015/12/a8773912b31bb051b9d04542307adab44bede0e0.jpg&#34; alt=&#34;a8773912b31bb051b9d04542307adab44bede0e0&#34; width=&#34;600&#34; height=&#34;300&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;pch&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;文件是&lt;/span&gt;vs&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;生成的预编译文件，用来加速编译的。&lt;/span&gt;pch&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;文件通常是由&lt;/span&gt;std&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;afx.cpp文件生成的。&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;如果你删除了这个文件而又实用了预编译选项则会报标题中的错误&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Can&amp;#8217;t open xxxx.pch&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;解决步骤&lt;/span&gt;:&lt;/p&gt;
-
-&lt;div style=&#34;margin-left: 24pt;&#34;&gt;
-  &lt;table style=&#34;border-collapse: collapse;&#34; border=&#34;0&#34;&gt;
-    &lt;colgroup&gt; &lt;col style=&#34;width: 529px;&#34; /&gt; &lt;col style=&#34;width: 131px;&#34; /&gt;&lt;/colgroup&gt; &lt;tr&gt;
-      &lt;td style=&#34;border: solid #a3a3a3 1.0pt; padding: 7px;&#34;&gt;
-        &lt;ul&gt;
-          &lt;li&gt;
-            &lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;工程属性&lt;/span&gt;-&gt;C/C++&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;预处理&lt;/span&gt;-&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;预处理头&lt;/span&gt;&lt;br /&gt; &lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;选择&lt;/span&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/td&gt;
-      
-      &lt;td style=&#34;border-top: solid #a3a3a3 1.0pt; border-left: none; border-bottom: solid #a3a3a3 1.0pt; border-right: solid #a3a3a3 1.0pt; padding: 7px;&#34;&gt;
-        &lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;使用&lt;/span&gt; Use/Yu
-      &lt;/td&gt;
-    &lt;/tr&gt;
-    
-    &lt;tr&gt;
-      &lt;td style=&#34;border-top: none; border-left: solid #a3a3a3 1.0pt; border-bottom: solid #a3a3a3 1.0pt; border-right: solid #a3a3a3 1.0pt; padding: 7px;&#34;&gt;
-        &lt;ul&gt;
-          &lt;li&gt;
-            &lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;右键工程中的&lt;/span&gt;stdafx.cpp&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;属性&lt;/span&gt;-&gt;C/C++&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;预处理&lt;/span&gt;-&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;预处理头&lt;/span&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/td&gt;
-      
-      &lt;td style=&#34;border-top: none; border-left: none; border-bottom: solid #a3a3a3 1.0pt; border-right: solid #a3a3a3 1.0pt; padding: 7px;&#34;&gt;
-        &lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;创建&lt;/span&gt; Create/Yc
-      &lt;/td&gt;
-    &lt;/tr&gt;
-    
-    &lt;tr&gt;
-      &lt;td style=&#34;border-top: none; border-left: solid #a3a3a3 1.0pt; border-bottom: solid #a3a3a3 1.0pt; border-right: solid #a3a3a3 1.0pt; padding: 7px;&#34;&gt;
-        &lt;ul&gt;
-          &lt;li&gt;
-            &lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;右键编译stdafx.cpp&lt;/span&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/td&gt;
-      
-      &lt;td style=&#34;border-top: none; border-left: none; border-bottom: solid #a3a3a3 1.0pt; border-right: solid #a3a3a3 1.0pt; padding: 7px;&#34;&gt;
-        &lt;span style=&#34;font-family: 微软雅黑;&#34;&gt; &lt;/span&gt;
-      &lt;/td&gt;
-    &lt;/tr&gt;
-    
-    &lt;tr&gt;
-      &lt;td style=&#34;border-top: none; border-left: solid #a3a3a3 1.0pt; border-bottom: solid #a3a3a3 1.0pt; border-right: solid #a3a3a3 1.0pt; padding: 7px;&#34;&gt;
-        &lt;ul&gt;
-          &lt;li&gt;
-            &lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;此时再编译工程就OK了。&lt;/span&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/td&gt;
-      
-      &lt;td style=&#34;border-top: none; border-left: none; border-bottom: solid #a3a3a3 1.0pt; border-right: solid #a3a3a3 1.0pt; padding: 7px;&#34;&gt;
-        &lt;span style=&#34;font-family: 微软雅黑;&#34;&gt; &lt;/span&gt;
-      &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/table&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
 </description>
     </item>
     
