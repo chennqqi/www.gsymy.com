@@ -172,11 +172,40 @@
     <h1>程序猿的小本本
 </h1>
 
-    <span>last update: <time datetime="2017-07-16T10:13:13&#43;08:00">16 July at 10:13am</time>
+    <span>last update: <time datetime="2017-07-16T19:19:42&#43;08:00">16 July at 7:19pm</time>
 </span>
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://www.gsymy.com/2015/10/13/libtcmalloc-so-4-linkerror.html">libtcmalloc.so.4 链接失败
+</a>
+</h2>
+
+  <time datetime="2015-10-13">13 Oct, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    error while loading shared libraries: libtcmalloc.so.4: cannot open shared object file: No such file or directory 楼主在安装lnmp时，开启了tmalloc优化，结果在安装过程中报了如上错误； 解决办法： 用locate命令或者find命令查找确认该文件确实存在的路径； 将路径加载到ld的配置中，命令就一句(root权限) echo /usr/local/lib &gt; /etc/ld.so.conf.d/libtcmalloc.conf 楼主的文件位于/usr/local/lib 来自 &lt;http://www.th7.cn/Program/cp/201310/154663.shtml&gt;
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://www.gsymy.com/2015/10/13/libtcmalloc-so-4-linkerror.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -258,35 +287,6 @@
 
   <div class="container readlink">
   <a href="http://www.gsymy.com/2015/10/03/tortoisegittortoisesvn-icon.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="http://www.gsymy.com/2015/09/25/virt-what.html">利用virt-what工具检测VPS虚拟化技术(转)
-</a>
-</h2>
-
-  <time datetime="2015-09-25">25 Sep, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    利用virt-what工具检测VPS虚拟化技术 检测是OpenVZ还是Xen老蒋 发布于 1年前 (2014-09-26) 分类：VPS基础应用阅读(543) 评论(0) 我们在选择VPS主机的时候肯定会看到商家提供方案有提到是用的openvz、xen、kvm等架构技术，具体我们不去讨论这3个常用的技术特点，总之相对而言，openvz可以超售比较多，所以相对成本就低，对于xen和kvm理论上操作可以超售部分，但相对比ovz好一些。 对于我们购买的VPS，也可能听到的技术不准确，可以用到virt-what方法来真实的检测。 第一、下载以及安装virt-what脚本 wget http://soft.itbulu.com/tools/virt-what-1.11.tar.gz #下载 tar zxf virt-what-1.11.tar.gz #解压 cd virt-what-1.11 #进入目录 ./configure #设置 make && make install #编译安装 理论上是可以操作没有问题的，但是在执行make && make install的时候会出现&#8221;make: *** No targets specified and no makefile found&#8221;的错误提示。 解决方法： yum install gcc gcc-c++ autoconf automake 安装必备的组件支持。 然后我们在操作： ./configure make && make install 这样就可以把virt-what安装成功。 第二、检测系统架构技术 virt-what 可以检测到老蒋这台机器使用的openvz，与官方卖给我的是一样的，没有骗我。 转载from: http://www.itbulu.com/virt-what.html
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="http://www.gsymy.com/2015/09/25/virt-what.html">Read more &rarr;</a>
 
 </div>
 

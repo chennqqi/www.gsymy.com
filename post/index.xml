@@ -9,8 +9,69 @@
     <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
-    <lastBuildDate>Sun, 16 Jul 2017 10:13:13 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 16 Jul 2017 19:19:42 +0800</lastBuildDate>
     <atom:link href="http://www.gsymy.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>软件著作权申请要点</title>
+      <link>http://www.gsymy.com/post/2017-07-16_software_copyright/</link>
+      <pubDate>Sun, 16 Jul 2017 19:19:42 +0800</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://www.gsymy.com/post/2017-07-16_software_copyright/</guid>
+      <description>
+
+&lt;h1 id=&#34;center-软件著作权申请要点-center&#34;&gt;&lt;center&gt;软件著作权申请要点&lt;/center&gt;&lt;/h1&gt;
+
+&lt;h2 id=&#34;1-必备材料&#34;&gt;1. 必备材料&lt;/h2&gt;
+
+&lt;p&gt;软件著作权的申请材料主要包括 申请书（中国版权保护中心上填写，网上生成）、源代码、文档（可以命名为需求规格说明书、设计方案、用户需求说明书等）三部分 还有申请人（单位）的身份证明&lt;/p&gt;
+
+&lt;h2 id=&#34;2-要点&#34;&gt;2. 要点&lt;/h2&gt;
+
+&lt;h3 id=&#34;申请表&#34;&gt;申请表&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;资料真实&lt;/li&gt;
+&lt;li&gt;自然人填写身份证号&lt;/li&gt;
+&lt;li&gt;软件名称应当和其他文档中统一&lt;/li&gt;
+&lt;li&gt;申请日期应当在软件完成之后&lt;/li&gt;
+&lt;li&gt;如果是企业申请，需要营业执照，注意全角字符和半角字符&lt;/li&gt;
+&lt;li&gt;注意企业的注册日期和软件的申请时间&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;软件源代码文档&#34;&gt;软件源代码文档&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;软件代码超过60页就贴前三十页和最后三十页&lt;/li&gt;
+&lt;li&gt;软件代码中间不留空行空页，不是完全不留空行，是不需要切页&lt;/li&gt;
+&lt;li&gt;一页代码50行&lt;/li&gt;
+&lt;li&gt;最后一页代码需要是一个完整的功能模块&lt;/li&gt;
+&lt;li&gt;如果代码不足60页需要全部贴上去&lt;/li&gt;
+&lt;li&gt;文档标题软件名称应当和申请表标题一致&lt;/li&gt;
+&lt;li&gt;注意日期时间应当满足： &lt;strong&gt;设计时间&amp;lt;代码时间&amp;lt;申请时间&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;设计说明书-可选用户手册等&#34;&gt;设计说明书（可选用户手册等）&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;每页不应少于30行，页面包含图片除外&lt;/li&gt;
+&lt;li&gt;图片截图需要截完整，需要包含完整的退出最大化按钮背景，背景最好包含别的参照&lt;/li&gt;
+&lt;li&gt;设计说明书完成日期应当在软件源码完成之前&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;3-更新历史&#34;&gt;3. 更新历史&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;TO BE CONTINUE...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;4-参考&#34;&gt;4. 参考&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ccopyright.com/index.php?optionid=1057&#34;&gt;http://www.ccopyright.com/index.php?optionid=1057&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zhihu.com/question/20850680&#34;&gt;https://www.zhihu.com/question/20850680&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
     
     <item>
       <title>VC MINGW dll lib 转换</title>
@@ -564,448 +625,6 @@ pyenv rehash &amp;amp;&amp;amp; rehash
 &lt;p&gt;reference:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/29753592/pyenv-shim-not-created-when-installing-package-using-setup-py&#34;&gt;http://stackoverflow.com/questions/29753592/pyenv-shim-not-created-when-installing-package-using-setup-py&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>centos安装gitolite</title>
-      <link>http://www.gsymy.com/2016/01/11/centos_install_gitolite.html</link>
-      <pubDate>Mon, 11 Jan 2016 14:48:49 +0000</pubDate>
-      <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/01/11/centos_install_gitolite.html</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;color: black; font-family: 微软雅黑;&#34;&gt;&lt;strong&gt;安装基础包&lt;/strong&gt;&lt;span style=&#34;font-size: 12pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;yum install perl openssh git&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;yum install perl-Time-HiRes&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;strong&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;创建&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;git&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;用户&lt;/span&gt;&lt;/strong&gt;&lt;span style=&#34;font-size: 12pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;useradd -d /home/git git&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;passwd git&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;strong&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;在&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;git&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;用户家目录下安装&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;gitolite&lt;/span&gt;&lt;/strong&gt;&lt;span style=&#34;font-size: 12pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;切换到&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;git&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;用户&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;# su &lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;–&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; git&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;创建文件夹&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;bin&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;$ mkdir bin&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;克隆&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;gitolite&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;源码&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;$ git clone &lt;a href=&#34;https://github.com/sitaramc/gitolite.git&#34;&gt;https://github.com/sitaramc/gitolite.git&lt;/a&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;$ ls&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;bin&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; gitolite&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;安装&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;gitolite&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;$ ./gitolite/install -to /home/git/bin/&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;$ cd bin/&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;$ ls&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;commands&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; gitolite&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; gitolite-shell&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; lib&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; syntactic-sugar&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; triggers&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; VERSION&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; VREF&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: black;&#34;&gt;&lt;strong&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;配置&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;gitolite&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;管理员&lt;/span&gt;&lt;/strong&gt;&lt;span style=&#34;font-size: 12pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;生成管理员账户的公钥（此处指定本地&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;root&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;用户为管理员，键入回车使用默认值） &lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;# ssh-keygen&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-family: 微软雅黑; font-size: 10pt;&#34;&gt;复制管理的公钥&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;# cp .ssh/id_rsa.pub /tmp/admin.pub&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;切换回&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;git&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;用户，为&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;gitolite&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;配置管理员 &lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;$ /home/git/bin/gitolite setup -pk /tmp/admin.pub&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;Initialized empty Git repository in /home/git/repositories/gitolite-admin.git/&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;Initialized empty Git repository in /home/git/repositories/testing.git/&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;WARNING: /home/git/.ssh missing; creating a new one&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;WARNING: /home/git/.ssh/authorized_keys missing; creating a new one&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;$ ls&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;bin&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; gitolite&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; projects.list&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; repositories&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: black; font-family: 微软雅黑;&#34;&gt;&lt;strong&gt;管理员日常管理&lt;/strong&gt;&lt;span style=&#34;font-size: 12pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;管理员&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;clone&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;管理库（此处为本地&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;root&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;用户） &lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;# git clone git@192.168.1.95:gitolite-admin&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;Initialized empty Git repository &lt;strong&gt;in&lt;/strong&gt; /root/gitolite-admin/.git/&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;The authenticity of host &lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;&amp;#8216;&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;192.168.213.130 (192.168.213.130)&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;&amp;#8216;&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; can&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;&amp;#8216;&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;t be established. &lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;RSA key fingerprint is d4:28:ca:66:58:b6:39:c1:aa:37:58:9a:5b:ed:50:05.&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;Are you sure you want to continue connecting (yes/no)? yes&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;em&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;# &lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;此处因为第一次&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;ssh&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;连接，所以需要输入&amp;#8217;&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;yes&lt;/span&gt;&lt;/em&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;&lt;em&gt;&amp;#8216;&lt;/em&gt; &lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;Warning: Permanently added &lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;&amp;#8216;&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;192.168.213.130&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;′&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; (RSA) to the list of known hosts. &lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;remote: Counting objects: 6, done.&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;remote: Compressing objects: 100% (4/4), done.&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;Receiving objects: 100% (6/6), 748 bytes, done.&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;remote: Total 6 (delta 0), reused 0 (delta 0)&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;# pwd&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;/home/git/gitolite-admin&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;# ls&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;conf&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; keydir&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-family: 微软雅黑; font-size: 10pt;&#34;&gt;创建库、添加用户&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;例如某&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;lm&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;用户访问&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;git&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;服务器上的&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;myFirstRepo&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;库&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;lm&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;用户向&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;git&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;服务器管理提交自己的&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;ssh&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;无密码公钥&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;管理员将&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;lm&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;的公钥复制到&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; gitolite-admin/keydir/ &lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;下 &lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;# cp lm.pub /home/git/gitolite-admin/keydir/&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;这里的&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;XX.pub&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;就是用户&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;XX&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;，及&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;conf&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;里的用户名，&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;windows&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;下通过&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;putty-keygen&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;生成&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;将蓝色的部分保存为&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;XXX.pub&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;，放到&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;gitolite-admin/keydir/&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;下，不是生成公钥的那个！私钥是通过生成私钥的按钮生成，之后在&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;tortoiseGit&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;里&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;load&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;这个私钥与&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;git&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;服务器通信。&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;windows&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;用户生成密钥&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;可以使用&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;putty&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;的&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;puttygen.exe&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;文件来直接生成公钥和&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;ppk&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;，但是公钥是最上面显示出来的，而不是&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;Save public key&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;产生的。&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;另一种方法是使用&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;msysgit&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;中的&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;ssh-keygen&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;来生成&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;: ssh-keygen -t rsa&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;，然后在将密钥通过&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;puttygen.exe&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;来&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;load&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;，然后在&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;Save private key&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;来生成&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;ppk&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;文件&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;管理员创建&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;myFirstRepo&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;库，并给&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;lm&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;分配权限 &lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;# cd gitolite-admin/conf/&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;# vi gitolite.conf&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-family: 微软雅黑; font-size: 10pt;&#34;&gt;默认内容为：&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;repo gitolite-admin&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;   &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; RW+ =&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; admin &lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;repo testing&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;   &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; RW+ =&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; @all&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;下边定义&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;myFirstRepo&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;库，并且指定用户权限： &lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;repo gitolite-admin&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;   &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; RW+ =&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; admin &lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;repo testing&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;   &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; RW+ =&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; @all &lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;@myGroup=admin&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; lm&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;repo myFirstRepo&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;   &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; RW+ =&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; @myGroup&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;注：此处&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;@myGroup&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;是一个组，给&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;myGroup&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;组赋予对&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;myFirstRepo&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;这个库的读、写、推送的权限（详细规则可参考&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;gitolite&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;的&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;readme.txt&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;）&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;管理员将对&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;gitolite-admin&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;的修改（建库、加用户）提交到&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;git&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;服务器&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;# pwd&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;/root/gitolite-admin&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;# git status&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;# On branch master&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;# Changed but not updated:&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; (use &lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;&amp;#8220;&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;git add &lt;file&gt;…&amp;#8221; to update what will be committed) &lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; (use &lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;&amp;#8220;&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;git checkout &lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;—&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; &lt;file&gt;…&amp;#8221; to discard changes in working directory) &lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;#&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;      &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; modified:&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; conf/gitolite.conf &lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;#&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;# Untracked files:&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; (use &lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;&amp;#8220;&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;git add &lt;file&gt;…&amp;#8221; to include in what will be committed) &lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;#&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;      &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; keydir/test123.pub &lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;no changes added to commit (use &lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;&amp;#8220;&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;git add&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;&amp;#8220;&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; and/or &lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;&amp;#8220;&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;git commit -a&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;&amp;#8220;&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;)&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;# git add *&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;# git commit -m &lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;&amp;#8220;&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;AddRepo:myFirstRepo;AddUser:test123&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;″ &lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;[master 4c5a5d0] AddRepo:myFirstRepo;AddUser:test123&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;Committer: root &lt;root@app-node-V-CC.(none)&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;Your name and email address were configured automatically based&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;on your username and hostname. Please check that they are accurate.&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;You can suppress this message by setting them explicitly:&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;   &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; git config &lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;–&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;global user.name &lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;&amp;#8220;&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;Your Name&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;&amp;#8221; &lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;   &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; git config &lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;–&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;global user.email you@example.com &lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;If the identity used for this commit is wrong, you can fix it with:&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;   &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; git commit &lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;–&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;amend &lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;–&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;author=&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;&amp;#8216;&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;Your Name &lt;you@example.com&gt;&amp;#8217; &lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;2 files changed, 6 insertions(+), 0 deletions(-)&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;create mode 100644 keydir/test123.pub&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;注：提示是建议设置用户信息（便于多人协作时辨别），可参照提示命令操作（其实&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;git&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;自动为你添加了）&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;# git push origin master&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;Counting objects: 10, done.&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;Delta compression using up to 2 threads.&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;Compressing objects: 100% (5/5), done.&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;Writing objects: 100% (6/6), 859 bytes, done.&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;Total 6 (delta 0), reused 0 (delta 0)&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;remote: Initialized empty Git repository in /home/git/repositories/myFirstRepo.git/&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;To git@192.168.213.130:gitolite-admin&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;48a7307..4c5a5d0&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt; master -&gt; master&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: black; font-family: 微软雅黑;&#34;&gt;&lt;strong&gt;客户验证&lt;/strong&gt;&lt;span style=&#34;font-size: 12pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #333333; font-size: 10pt;&#34;&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;lm&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;用户克隆&lt;/span&gt;&lt;span style=&#34;font-family: Verdana;&#34;&gt;myFirstRepo&lt;/span&gt;&lt;span style=&#34;font-family: 微软雅黑;&#34;&gt;库&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;$ git clone git@192.168.1.95:myFirstRepo&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;Initialized empty Git repository in /home/test123/myFirstRepo/.git/&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;warning: You appear to have cloned an empty repository.&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;$ ls&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style=&#34;margin-left: 27pt;&#34;&gt;
-  &lt;span style=&#34;color: #5b5b5b; font-family: Verdana; font-size: 10pt;&#34;&gt;myFirstRepo&lt;br /&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #595959; font-size: 9pt;&#34;&gt;来自 &amp;lt;&lt;a href=&#34;https://www.cnblogs.com/kudosharry/articles/3709418.html&#34;&gt;https://www.cnblogs.com/kudosharry/articles/3709418.html&lt;/a&gt;&amp;gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
 </description>
     </item>
     
