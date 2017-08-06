@@ -26,15 +26,12 @@
 <meta property="og:type" content="website" />
 
 
-
-<link href="http://www.gsymy.com/index.xml" rel="alternate" type="application/rss+xml" title="程序猿的小本本" />
-
 <link rel="canonical" href="http://www.gsymy.com/" />
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.gsymy.com/touch-icon-144-precomposed.png">
 <link href="http://www.gsymy.com/favicon.png" rel="icon">
 <meta name="theme-color" content="#2053AB">
-<meta name="generator" content="Hugo 0.17-DEV" />
+<meta name="generator" content="Hugo 0.25.1" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -193,7 +190,7 @@
   
     <p>转<a href="http://www.cnblogs.com/mchina/archive/2013/01/30/2880680.html" target="_blank">linux screen 命令详解 &#8211; David_Tang &#8211; 博客园</a></p>
 
-<p><div id="home">
+<div id="home">
   <div id="main">
     <div id="mainContent">
       <div class="forFlow">
@@ -204,76 +201,75 @@
                 <div id="cnblogs_post_body">
                   <p>
                     <strong>一、背景</strong>
-                  </p></p>
-
-<pre><code>              &lt;p&gt;
-                系统管理员经常需要SSH 或者telent 远程登录到Linux 服务器，经常运行一些需要很长时间才能完成的任务，比如系统备份、ftp 传输等等。通常情况下我们都是为每一个这样的任务开一个远程终端窗口，因为它们执行的时间太长了。必须等待它们执行完毕，在此期间不能关掉窗口或者断开连接，否则这个任务就会被杀掉，一切半途而废了。
-              &lt;/p&gt;
-
-              &lt;p&gt;
-                &lt;strong&gt;二、简介&lt;/strong&gt;
-              &lt;/p&gt;
-
-              &lt;p&gt;
-                &lt;strong&gt;GNU Screen&lt;/strong&gt;是一款由GNU计划开发的用于命令行终端切换的自由软件。用户可以通过该软件同时连接多个本地或远程的命令行会话，并在其间自由切换。
-              &lt;/p&gt;
-
-              &lt;p&gt;
-                GNU Screen可以看作是窗口管理器的命令行界面版本。它提供了统一的管理多个会话的界面和相应的功能。
-              &lt;/p&gt;
-
-              &lt;ul&gt;
-                &lt;li&gt;
-                  &lt;strong&gt;会话恢复&lt;/strong&gt;
-                &lt;/li&gt;
-              &lt;/ul&gt;
-
-              &lt;dl&gt;
-                &lt;dd&gt;
-                  只要Screen本身没有终止，在其内部运行的会话都可以恢复。这一点对于远程登录的用户特别有用——即使网络连接中断，用户也不会失去对已经打开的命令行会话的控制。只要再次登录到主机上执行&lt;strong&gt;screen -r&lt;/strong&gt;就可以恢复会话的运行。同样在暂时离开的时候，也可以执行分离命令&lt;strong&gt;detach&lt;/strong&gt;，在保证里面的程序正常运行的情况下让Screen挂起（切换到后台）。这一点和图形界面下的VNC很相似。
-                &lt;/dd&gt;
-              &lt;/dl&gt;
-
-              &lt;ul&gt;
-                &lt;li&gt;
-                  &lt;strong&gt;多窗口&lt;/strong&gt;
-                &lt;/li&gt;
-              &lt;/ul&gt;
-
-              &lt;dl&gt;
-                &lt;dd&gt;
-                  在Screen环境下，所有的会话都独立的运行，并拥有各自的编号、输入、输出和窗口缓存。用户可以通过快捷键在不同的窗口下切换，并可以自由的重定向各个窗口的输入和输出。Screen实现了基本的文本操作，如复制粘贴等；还提供了类似滚动条的功能，可以查看窗口状况的历史记录。窗口还可以被分区和命名，还可以监视后台窗口的活动。
-                &lt;/dd&gt;
-              &lt;/dl&gt;
-
-              &lt;ul&gt;
-                &lt;li&gt;
-                  &lt;strong&gt;会话共享&lt;/strong&gt;
-                &lt;/li&gt;
-              &lt;/ul&gt;
-
-              &lt;dl&gt;
-                &lt;dd&gt;
-                  Screen可以让一个或多个用户从不同终端多次登录一个会话，并共享会话的所有特性（比如可以看到完全相同的输出）。它同时提供了窗口访问权限的机制，可以对窗口进行密码保护。
-                &lt;/dd&gt;
-              &lt;/dl&gt;
-
-              &lt;p&gt;
-                GNU&amp;#8217;s Screen 官方站点：&lt;a href=&quot;http://www.gnu.org/software/screen/&quot; target=&quot;_blank&quot;&gt;http://www.gnu.org/software/screen/&lt;/a&gt;
-              &lt;/p&gt;
-
-              &lt;p&gt;
-                &lt;strong&gt;三、语法&lt;/strong&gt;
-              &lt;/p&gt;
-
-              &lt;p&gt;
-                # screen [-AmRvx -ls -wipe][-d &lt;作业名称&gt;][-h &lt;行数&gt;][-r &lt;作业名称&gt;][-s ][-S &lt;作业名称&gt;]
-              &lt;/p&gt;
-
-              &lt;p&gt;
-                &lt;strong&gt;参数说明&lt;/strong&gt;&lt;br /&gt; 
-</code></pre>
-
+                  </p>
+                  
+                  <p>
+                    系统管理员经常需要SSH 或者telent 远程登录到Linux 服务器，经常运行一些需要很长时间才能完成的任务，比如系统备份、ftp 传输等等。通常情况下我们都是为每一个这样的任务开一个远程终端窗口，因为它们执行的时间太长了。必须等待它们执行完毕，在此期间不能关掉窗口或者断开连接，否则这个任务就会被杀掉，一切半途而废了。
+                  </p>
+                  
+                  <p>
+                    <strong>二、简介</strong>
+                  </p>
+                  
+                  <p>
+                    <strong>GNU Screen</strong>是一款由GNU计划开发的用于命令行终端切换的自由软件。用户可以通过该软件同时连接多个本地或远程的命令行会话，并在其间自由切换。
+                  </p>
+                  
+                  <p>
+                    GNU Screen可以看作是窗口管理器的命令行界面版本。它提供了统一的管理多个会话的界面和相应的功能。
+                  </p>
+                  
+                  <ul>
+                    <li>
+                      <strong>会话恢复</strong>
+                    </li>
+                  </ul>
+                  
+                  <dl>
+                    <dd>
+                      只要Screen本身没有终止，在其内部运行的会话都可以恢复。这一点对于远程登录的用户特别有用——即使网络连接中断，用户也不会失去对已经打开的命令行会话的控制。只要再次登录到主机上执行<strong>screen -r</strong>就可以恢复会话的运行。同样在暂时离开的时候，也可以执行分离命令<strong>detach</strong>，在保证里面的程序正常运行的情况下让Screen挂起（切换到后台）。这一点和图形界面下的VNC很相似。
+                    </dd>
+                  </dl>
+                  
+                  <ul>
+                    <li>
+                      <strong>多窗口</strong>
+                    </li>
+                  </ul>
+                  
+                  <dl>
+                    <dd>
+                      在Screen环境下，所有的会话都独立的运行，并拥有各自的编号、输入、输出和窗口缓存。用户可以通过快捷键在不同的窗口下切换，并可以自由的重定向各个窗口的输入和输出。Screen实现了基本的文本操作，如复制粘贴等；还提供了类似滚动条的功能，可以查看窗口状况的历史记录。窗口还可以被分区和命名，还可以监视后台窗口的活动。
+                    </dd>
+                  </dl>
+                  
+                  <ul>
+                    <li>
+                      <strong>会话共享</strong>
+                    </li>
+                  </ul>
+                  
+                  <dl>
+                    <dd>
+                      Screen可以让一个或多个用户从不同终端多次登录一个会话，并共享会话的所有特性（比如可以看到完全相同的输出）。它同时提供了窗口访问权限的机制，可以对窗口进行密码保护。
+                    </dd>
+                  </dl>
+                  
+                  <p>
+                    GNU&#8217;s Screen 官方站点：<a href="http://www.gnu.org/software/screen/" target="_blank">http://www.gnu.org/software/screen/</a>
+                  </p>
+                  
+                  <p>
+                    <strong>三、语法</strong>
+                  </p>
+                  
+                  <p>
+                    # screen [-AmRvx -ls -wipe][-d <作业名称>][-h <行数>][-r <作业名称>][-s ][-S <作业名称>]
+                  </p>
+                  
+                  <p>
+                    <strong>参数说明</strong><br /> 
+                  </p>
   
 
 
@@ -302,7 +298,13 @@
   <p class="container content">
   
   
-    UE 的格式化功能不强，自带的astyle版本陈旧，一般采用开源工具astyle来实现代码格式化。 首先下载最新的astyle，因为ue自带的astyle版本太老，不支持空格、中文名等。下载点这里 解压缩后得到 astyle.exe, 将之拷贝到 ue目录的gnu目录下面，覆盖原来的astyle.exe 选择菜单-&gt;高级-&gt;工具栏配置-&gt;工具栏配置， 输入你命名的工具名&#8221;C++格式化&#8221;， 命令行输入: 前面使用你自己的UE安装路径 "C:\Program Files\IDM Computer Solutions\UEStudio\GNU\astyle.exe" --style=ansi "%f" 转到选项卡的&#8221;输出&#8221;页， 选择“捕捉输出”，选择“输出到列表框”。 其它的保留默认。 用ue打开源代码文件，然后&#8221;高级&#8221; &#8211; “格式化代码” 如图
+    UE 的格式化功能不强，自带的astyle版本陈旧，一般采用开源工具astyle来实现代码格式化。
+  首先下载最新的astyle，因为ue自带的astyle版本太老，不支持空格、中文名等。下载点这里
+  解压缩后得到 astyle.exe, 将之拷贝到 ue目录的gnu目录下面，覆盖原来的astyle.exe
+  选择菜单-&gt;高级-&gt;工具栏配置-&gt;工具栏配置， 输入你命名的工具名&#8221;C++格式化&#8221;， 命令行输入:
+  前面使用你自己的UE安装路径 "C:\Program Files\IDM Computer Solutions\UEStudio\GNU\astyle.exe" --style=ansi "%f"  转到选项卡的&#8221;输出&#8221;页， 选择“捕捉输出”，选择“输出到列表框”。 其它的保留默认。
+ 用ue打开源代码文件，然后&#8221;高级&#8221; &#8211; “格式化代码”
+ 如图
   
 
 
@@ -331,7 +333,10 @@
   <p class="container content">
   
   
-    centos/redhat下安装tcpdump sudo yum install -y tcpdump 在tcpdump所在目录下执行 sudo chmod u+s tcpdump &nbsp; 原理参考： tcpdump 安装和文件的s权限 &#8211; arkblue的专栏 &#8211; 博客频道 &#8211; CSDN.NET
+      centos/redhat下安装tcpdump sudo yum install -y tcpdump
+  在tcpdump所在目录下执行 sudo chmod u+s tcpdump   &nbsp; 
+原理参考： tcpdump 安装和文件的s权限 &#8211; arkblue的专栏 &#8211; 博客频道 &#8211; CSDN.NET
+  
   
 
 
@@ -362,7 +367,7 @@
   
     <p>一、getopt函数</p>
 
-<p>![][1]</p>
+<p><img src="http://blog.chinaunix.net/attachment/201205/20/26833883_1337526381qRMV.png" alt="" /></p>
 
 <div>
   A.函数功能：处理命令行参数
@@ -436,6 +441,7 @@ while(1)
   </p>
 </div>
 
+<p></p>
   
 
 

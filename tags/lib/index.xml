@@ -10,7 +10,9 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Sun, 16 Jul 2017 10:13:13 +0800</lastBuildDate>
-    <atom:link href="http://www.gsymy.com/tags/lib/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://www.gsymy.com/tags/lib/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>VC MINGW dll lib 转换</title>
@@ -18,90 +20,19 @@
       <pubDate>Sun, 16 Jul 2017 10:13:13 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2017/07/16/vc_mingw_convert.html</guid>
-      <description>
-
-&lt;h1 id=&#34;vc-mingw-dll-lib-相互转换&#34;&gt;VC MINGW dll lib 相互转换&lt;/h1&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;VC XX.lib -&amp;gt; MINGW libXX.a&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;reimp XX.lib
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;reimp 是mingw自带的工具，位于mingw/mingw-utils-0.x/目录下&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;VC XX.dll -&amp;gt; VC XX.lib&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;pexports XX.dll &amp;gt; XX.def
-
-lib /machine:i386 /def:XX.def
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;pexports是mingw的gnu工具&lt;/p&gt;
-
-&lt;p&gt;下载地址: &lt;a href=&#34;https://sourceforge.net/projects/mingw/files/MinGW/Extension/pexports/&#34;&gt;https://sourceforge.net/projects/mingw/files/MinGW/Extension/pexports/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;或者通过 mingw-get install pexports安装&lt;/p&gt;
-
-&lt;p&gt;lib 是vc编译工具，安装vs系列环境后就有&lt;/p&gt;
-
-&lt;p&gt;/machine 参数决定生成32位还是64位程序，详细请自行查看相关帮助&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;注:此处生成的lib文件MINGW也可以使用&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;VC XX.dll -&amp;gt; mingw libXX.a&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;pexports XX.dll &amp;gt; XX.def
-
-dlltool --dllname XX.dll --def XX.def --output-lib libXX.a
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;dlltool是mingw自带工具&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;MINGW libXX.a -&amp;gt; mingw XX.dll&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ar x libXX.a
-gcc -shared -o XX.dll *.o -Wl,--export-all-symbols,--output-def,XX.def
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ar 和 gcc 均为mingw自带&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;MINGW libXX.a -&amp;gt; VC xx.lib (lib为动态库符号表索引,必须使用dll)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ar x libXX.a
-gcc -shared -o XX.dll *.o -Wl,--export-all-symbols,--output-def,XX.def
-
-lib /machine:i386 /def:XX.def 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ar 和 gcc 为mingw环境程序
-lib为VC环境程序&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;MINGW libXX.a -&amp;gt; VC xx.lib (lib为纯静态库，不需要dll)&lt;/p&gt;
-
-&lt;p&gt;MINGW 和 VC 的纯静态库不能相互转换！&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;从DLL导出def文件还可以使用手工编辑+ vc dumpbin&lt;/p&gt;
-
-&lt;p&gt;请参考&lt;a href=&#34;http://blog.csdn.net/ubuntu64fan/article/details/8927173&#34;&gt;http://blog.csdn.net/ubuntu64fan/article/details/8927173&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;补充 将.o 文件合并成.a&lt;/p&gt;
-
-&lt;p&gt;ar -crv libXX.a xxx.o xxx1.o &amp;hellip;.&lt;/p&gt;
-
-&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://blog.csdn.net/u011191259/article/details/49493497&#34;&gt;mingw&amp;amp;vc静态库lib &lt;a href=&#34;http://blog.csdn.net/u011191259/article/details/49493497&#34;&gt;http://blog.csdn.net/u011191259/article/details/49493497&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://blog.csdn.net/wanggang999/article/details/3284539&#34;&gt;把库文件从msvc格式.lib转化成MinGW格式.a的方法 &lt;a href=&#34;http://blog.csdn.net/wanggang999/article/details/3284539&#34;&gt;http://blog.csdn.net/wanggang999/article/details/3284539&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://blog.csdn.net/hellosijian/article/details/7425794&#34;&gt;mingw如何使用VC编译的dll &lt;a href=&#34;http://blog.csdn.net/hellosijian/article/details/7425794&#34;&gt;http://blog.csdn.net/hellosijian/article/details/7425794&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://blog.csdn.net/ubuntu64fan/article/details/8927173&#34;&gt;从DLL生成LIB &lt;a href=&#34;http://blog.csdn.net/ubuntu64fan/article/details/8927173&#34;&gt;http://blog.csdn.net/ubuntu64fan/article/details/8927173&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+      <description>VC MINGW dll lib 相互转换  VC XX.lib -&amp;gt; MINGW libXX.a
+reimp XX.lib  reimp 是mingw自带的工具，位于mingw/mingw-utils-0.x/目录下
+ VC XX.dll -&amp;gt; VC XX.lib
+pexports XX.dll &amp;gt; XX.def lib /machine:i386 /def:XX.def  pexports是mingw的gnu工具
+下载地址: https://sourceforge.net/projects/mingw/files/MinGW/Extension/pexports/
+或者通过 mingw-get install pexports安装
+lib 是vc编译工具，安装vs系列环境后就有
+/machine 参数决定生成32位还是64位程序，详细请自行查看相关帮助
+注:此处生成的lib文件MINGW也可以使用
+ VC XX.dll -&amp;gt; mingw libXX.a
+pexports XX.dll &amp;gt; XX.def dlltool --dllname XX.dll --def XX.def --output-lib libXX.a  dlltool是mingw自带工具
+ MINGW libXX.a -&amp;gt; mingw XX.dll
+ar x libXX.</description>
     </item>
     
   </channel>

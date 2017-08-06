@@ -26,15 +26,12 @@
 <meta property="og:type" content="website" />
 
 
-
-<link href="http://www.gsymy.com/index.xml" rel="alternate" type="application/rss+xml" title="程序猿的小本本" />
-
 <link rel="canonical" href="http://www.gsymy.com/" />
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.gsymy.com/touch-icon-144-precomposed.png">
 <link href="http://www.gsymy.com/favicon.png" rel="icon">
 <meta name="theme-color" content="#2053AB">
-<meta name="generator" content="Hugo 0.17-DEV" />
+<meta name="generator" content="Hugo 0.25.1" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -191,7 +188,19 @@
   <p class="container content">
   
   
-    最近在研究nginx，整好遇到一个需求就是希望服务器与客户端之间传输内容是加密的，防止中间监听泄露信息，但是去证书服务商那边申请证书又不合算，因为访问服务器的都是内部人士，所以自己给自己颁发证书，忽略掉浏览器的不信任警报即可。下面是颁发证书和配置过程。 首先确保机器上安装了openssl和openssl-devel #yum install openssl #yum install openssl-devel &nbsp; 然后就是自己颁发证书给自己 #cd /usr/local/nginx/conf #openssl genrsa -des3 -out server.key 1024 #openssl req -new -key server.key -out server.csr #openssl rsa -in server.key -out server_nopwd.key #openssl x509 -req -days 365 -in server.csr -signkey server_nopwd.key -out server.crt 至此证书已经生成完毕，下面就是配置nginx server { listen 443; ssl on; ssl_certificate /usr/local/nginx/conf/server.crt; ssl_certificate_key /usr/local/nginx/conf/server_nopwd.key; } &nbsp; 然后重启nginx即可。 ps： 如果出现&#8221;[emerg] 10464#0: unknown directive &#8220;ssl&#8221; in /usr/local/nginx-0.6.32/conf/nginx.conf:74&#8220;则说明没有将ssl模块编译进nginx，在configure的时候加上&#8221;&#8211;with-http_ssl_module&#8220;即可^^ 至此已经完成了https服务器搭建，但如何让浏览器信任自己颁发的证书呢？ 今天终于研究捣鼓出来了，只要将之前生成的server.crt文件导入到系统的证书管理器就行了，具体方法： 控制面板 -&gt; Internet选项 -&gt;
+    最近在研究nginx，整好遇到一个需求就是希望服务器与客户端之间传输内容是加密的，防止中间监听泄露信息，但是去证书服务商那边申请证书又不合算，因为访问服务器的都是内部人士，所以自己给自己颁发证书，忽略掉浏览器的不信任警报即可。下面是颁发证书和配置过程。
+
+首先确保机器上安装了openssl和openssl-devel
+
+#yum install openssl #yum install openssl-devel &nbsp;
+然后就是自己颁发证书给自己
+
+#cd /usr/local/nginx/conf #openssl genrsa -des3 -out server.key 1024 #openssl req -new -key server.key -out server.csr #openssl rsa -in server.key -out server_nopwd.key #openssl x509 -req -days 365 -in server.csr -signkey server_nopwd.key -out server.crt 至此证书已经生成完毕，下面就是配置nginx
+
+server { listen 443; ssl on; ssl_certificate /usr/local/nginx/conf/server.crt; ssl_certificate_key /usr/local/nginx/conf/server_nopwd.key; } &nbsp;
+然后重启nginx即可。
+
+ps： 如果出现&#8221;[emerg] 10464#0: unknown directive &#8220;ssl&#8221; in /usr/local/nginx-0.6.32/conf/nginx.conf:74&#8220;则说明没有将ssl模块编译进nginx，在configure的时候加上&#8221;&#8211;with-http_ssl_module&#8220;即可^^
   
 
 
@@ -220,7 +229,9 @@
   <p class="container content">
   
   
-    使用命令方式删除所有 redis-cli KEYS &#8220;126.com*&#8221; | xargs redis-cli DEL 使用lua方式 EVAL &#8220;return redis.call(&#8216;del&#8217;, unpack(redis.call(&#8216;keys&#8217;, ARGV[1])))&#8221; 0 *
+    使用命令方式删除所有
+redis-cli KEYS &#8220;126.com*&#8221; | xargs redis-cli DEL 使用lua方式
+EVAL &#8220;return redis.call(&#8216;del&#8217;, unpack(redis.call(&#8216;keys&#8217;, ARGV[1])))&#8221; 0 * 
   
 
 
@@ -249,7 +260,13 @@
   <p class="container content">
   
   
-    pch文件是vs生成的预编译文件，用来加速编译的。pch文件通常是由stdafx.cpp文件生成的。 如果你删除了这个文件而又实用了预编译选项则会报标题中的错误 Can&#8217;t open xxxx.pch 解决步骤: 工程属性-C/C++预处理-预处理头 选择 使用 Use/Yu 右键工程中的stdafx.cpp属性-C/C++预处理-预处理头 创建 Create/Yc 右键编译stdafx.cpp 此时再编译工程就OK了。
+    pch文件是vs生成的预编译文件，用来加速编译的。pch文件通常是由stdafx.cpp文件生成的。
+如果你删除了这个文件而又实用了预编译选项则会报标题中的错误
+
+Can&#8217;t open xxxx.pch
+解决步骤:
+     工程属性-C/C++预处理-预处理头
+选择    使用 Use/Yu      右键工程中的stdafx.cpp属性-C/C++预处理-预处理头    创建 Create/Yc      右键编译stdafx.cpp          此时再编译工程就OK了。
   
 
 
@@ -278,7 +295,24 @@
   <p class="container content">
   
   
-    CentOS中默认使用的GCC是4.4的，所以不支持C++11 gcc选项 -std=c++11 需要GCC4.7以上的版本 这里提供一个简单简单的方法 Centos使用 cd /etc/yum.repos.d sudo wget http://people.centos.org/tru/devtools-1.1/devtools-1.1.repo sudo yum --enablerepo=testing-1.1-devtools-6 install devtoolset-1.1-gcc devtoolset-1.1-binutils devtoolset-1.1-gcc-c++ 安装后gcc版本是4.7.2 你也可以激进一点安装更高版本的 sudo wget http://people.centos.org/tru/devtools-2/devtools-2.repo sudo yum install devtoolset-2-gcc devtoolset-2-binutils devtoolset-2-gcc-c++ 安装之后gcc版本是4.8.2 切换4.7.2 scl enable devtoolset-1.1 bash 切换4.8.2 scl enable devtoolset-2 bash 参考资料： http://braaten-family.org/ed/blog/2014-05-28-devtools-for-centos/ http://preilly.me/2013/05/28/redhat-developer-toolset-1-1/ ubuntu使用 参考这里: https://stackoverflow.com/questions/7832892/how-to-change-the-default-gcc-compiler-in-ubuntu
+    CentOS中默认使用的GCC是4.4的，所以不支持C++11
+gcc选项 -std=c++11 需要GCC4.7以上的版本
+这里提供一个简单简单的方法
+
+Centos使用
+cd /etc/yum.repos.d sudo wget http://people.centos.org/tru/devtools-1.1/devtools-1.1.repo sudo yum --enablerepo=testing-1.1-devtools-6 install devtoolset-1.1-gcc devtoolset-1.1-binutils devtoolset-1.1-gcc-c++ 安装后gcc版本是4.7.2
+你也可以激进一点安装更高版本的
+
+sudo wget http://people.centos.org/tru/devtools-2/devtools-2.repo sudo yum install devtoolset-2-gcc devtoolset-2-binutils devtoolset-2-gcc-c++ 安装之后gcc版本是4.8.2
+切换4.7.2
+scl enable devtoolset-1.1 bash 切换4.8.2
+scl enable devtoolset-2 bash 参考资料：
+
+http://braaten-family.org/ed/blog/2014-05-28-devtools-for-centos/
+http://preilly.me/2013/05/28/redhat-developer-toolset-1-1/
+ubuntu使用
+参考这里:
+https://stackoverflow.com/questions/7832892/how-to-change-the-default-gcc-compiler-in-ubuntu
   
 
 

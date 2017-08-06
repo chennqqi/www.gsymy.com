@@ -10,7 +10,9 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Sat, 10 Oct 2015 02:23:20 +0000</lastBuildDate>
-    <atom:link href="http://www.gsymy.com/tags/%E6%82%B2%E4%BC%A4%E7%9A%84%E6%95%85%E4%BA%8B/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://www.gsymy.com/tags/%E6%82%B2%E4%BC%A4%E7%9A%84%E6%95%85%E4%BA%8B/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>关于dota的一个悲伤故事</title>
@@ -18,12 +20,8 @@
       <pubDate>Sat, 10 Oct 2015 02:23:20 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2015/10/10/dota_story.html</guid>
-      <description>&lt;p&gt;悲伤的故事。。&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34;alignnone&#34; src=&#34;http://static.oschina.net/uploads/space/2015/1009/155548_fgIM_1589875.jpg&#34; alt=&#34;&#34; width=&#34;450&#34; height=&#34;800&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;这么多年单身原来是因为我dota打的菜。彩笔是不配拥有爱情的&amp;#8230;&lt;/p&gt;
-</description>
+      <description>悲伤的故事。。
+这么多年单身原来是因为我dota打的菜。彩笔是不配拥有爱情的&amp;#8230;</description>
     </item>
     
   </channel>

@@ -26,15 +26,12 @@
 <meta property="og:type" content="website" />
 
 
-
-<link href="http://www.gsymy.com/index.xml" rel="alternate" type="application/rss+xml" title="程序猿的小本本" />
-
 <link rel="canonical" href="http://www.gsymy.com/" />
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.gsymy.com/touch-icon-144-precomposed.png">
 <link href="http://www.gsymy.com/favicon.png" rel="icon">
 <meta name="theme-color" content="#2053AB">
-<meta name="generator" content="Hugo 0.17-DEV" />
+<meta name="generator" content="Hugo 0.25.1" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -191,7 +188,19 @@
   <p class="container content">
   
   
-    error while loading shared libraries: libtcmalloc.so.4: cannot open shared object file: No such file or directory 楼主在安装lnmp时，开启了tmalloc优化，结果在安装过程中报了如上错误； 解决办法： 用locate命令或者find命令查找确认该文件确实存在的路径； 将路径加载到ld的配置中，命令就一句(root权限) echo /usr/local/lib &gt; /etc/ld.so.conf.d/libtcmalloc.conf 楼主的文件位于/usr/local/lib 来自 &lt;http://www.th7.cn/Program/cp/201310/154663.shtml&gt;
+    error while loading shared libraries: libtcmalloc.so.4: cannot open shared object file: No such file or directory
+
+楼主在安装lnmp时，开启了tmalloc优化，结果在安装过程中报了如上错误；
+
+解决办法：
+
+ 用locate命令或者find命令查找确认该文件确实存在的路径；
+  将路径加载到ld的配置中，命令就一句(root权限)
+  echo /usr/local/lib &gt; /etc/ld.so.conf.d/libtcmalloc.conf 
+楼主的文件位于/usr/local/lib 
+来自 &lt;http://www.th7.cn/Program/cp/201310/154663.shtml&gt;
+
+  
   
 
 
@@ -220,7 +229,11 @@
   <p class="container content">
   
   
-    centos6 默认源的nginx版本很低，网上给出的大部分方法下载源码编译安装； 这种方法比较麻烦，其实最简单的方法是使用nginx官网的源进行安装； 进入 /etc/yum.repos.d/ 目录下生成nginx的源配置 cd /etc/yum.repos.d/ 用vi/vim/cat 工具生成nginx.repo填入以下内容 [nginx] name=nginx repo baseurl=http://nginx.org/packages/centos/$releasever/$basearch/ gpgcheck=0 enabled=1 安装 yum install -y nginx 更新 yum update nginx 参考:http://my.oschina.net/VincentJiang/blog/224993 https://www.nginx.com/resources/wiki/start/topics/tutorials/install/
+    centos6 默认源的nginx版本很低，网上给出的大部分方法下载源码编译安装；
+这种方法比较麻烦，其实最简单的方法是使用nginx官网的源进行安装；
+ 进入 /etc/yum.repos.d/ 目录下生成nginx的源配置  cd /etc/yum.repos.d/  用vi/vim/cat 工具生成nginx.repo填入以下内容
+[nginx] name=nginx repo baseurl=http://nginx.org/packages/centos/$releasever/$basearch/ gpgcheck=0 enabled=1  安装 yum install -y nginx 更新 yum update nginx 参考:http://my.oschina.net/VincentJiang/blog/224993
+https://www.nginx.com/resources/wiki/start/topics/tutorials/install/
   
 
 
@@ -249,7 +262,8 @@
   <p class="container content">
   
   
-    悲伤的故事。。 这么多年单身原来是因为我dota打的菜。彩笔是不配拥有爱情的&#8230;
+    悲伤的故事。。
+这么多年单身原来是因为我dota打的菜。彩笔是不配拥有爱情的&#8230;
   
 
 
@@ -278,7 +292,26 @@
   <p class="container content">
   
   
-    作为一个开发者tortoisegit/tortoisesvn当然时少不了的； 最近发现tortoisegit/tortoisesvn不在显示了，文件修改后也不变红； 刚开始以为是被360有优化掉了；查看了一下启动项和进程；没问题 TSVNCache.exe进程就是负责决定在tortoise管理下的每个文件、文件夹应该显示哪个图标； 公司电脑和我自己的电脑都有这个问题； 搜索引擎上找了一下： 找到了结论 Windows Explorer Shell 支持的 Overlay Icon 最多 15 个，Windows 自身使用了 4 个，只剩 11 个可扩展使用。 360cloud（云盘）、百度云盘、OneDrive、skyDrive等软件都会占用；而每个软件都会尽量让自己的优先生效； 我最近装了微软的OneDrive所以就出问题了； 解决办法： 修改 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers 里注册的优先顺序；使得Tortoise尽量靠前；顺序是按照ascii码的顺序来的； 盗一个图 注意：有些软件再你修改后，下次启动时会再次修改顺序；你要想办法解决这个问题！ &nbsp; &nbsp; 详细可以参考： http://blog.csdn.net/chaoyuan899/article/details/9128939 http://www.oschina.net/question/2297147_245156
+    作为一个开发者tortoisegit/tortoisesvn当然时少不了的；
+最近发现tortoisegit/tortoisesvn不在显示了，文件修改后也不变红；
+刚开始以为是被360有优化掉了；查看了一下启动项和进程；没问题
+TSVNCache.exe进程就是负责决定在tortoise管理下的每个文件、文件夹应该显示哪个图标；
+公司电脑和我自己的电脑都有这个问题；
+搜索引擎上找了一下：
+找到了结论
+Windows Explorer Shell 支持的 Overlay Icon 最多 15 个，Windows 自身使用了 4 个，只剩 11 个可扩展使用。
+360cloud（云盘）、百度云盘、OneDrive、skyDrive等软件都会占用；而每个软件都会尽量让自己的优先生效；
+我最近装了微软的OneDrive所以就出问题了；
+解决办法：
+修改
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers 里注册的优先顺序；使得Tortoise尽量靠前；顺序是按照ascii码的顺序来的；
+盗一个图
+注意：有些软件再你修改后，下次启动时会再次修改顺序；你要想办法解决这个问题！
+&nbsp;
+&nbsp;
+详细可以参考：
+http://blog.csdn.net/chaoyuan899/article/details/9128939
+http://www.oschina.net/question/2297147_245156
   
 
 

@@ -26,15 +26,12 @@
 <meta property="og:type" content="website" />
 
 
-
-<link href="http://www.gsymy.com/index.xml" rel="alternate" type="application/rss+xml" title="程序猿的小本本" />
-
 <link rel="canonical" href="http://www.gsymy.com/" />
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.gsymy.com/touch-icon-144-precomposed.png">
 <link href="http://www.gsymy.com/favicon.png" rel="icon">
 <meta name="theme-color" content="#2053AB">
-<meta name="generator" content="Hugo 0.17-DEV" />
+<meta name="generator" content="Hugo 0.25.1" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -278,7 +275,35 @@
   <p class="container content">
   
   
-    安装基础包 yum install perl openssh git yum install perl-Time-HiRes 创建git用户 useradd -d /home/git git passwd git 在git用户家目录下安装gitolite 切换到git用户 # su – git 创建文件夹bin $ mkdir bin 克隆gitolite源码 $ git clone https://github.com/sitaramc/gitolite.git $ ls bin gitolite 安装gitolite $ ./gitolite/install -to /home/git/bin/ $ cd bin/ $ ls commands gitolite gitolite-shell lib syntactic-sugar triggers VERSION VREF 配置gitolite管理员 生成管理员账户的公钥（此处指定本地root用户为管理员，键入回车使用默认值） # ssh-keygen 复制管理的公钥 # cp .ssh/id_rsa.pub /tmp/admin.pub 切换回git用户，为gitolite配置管理员 $ /home/git/bin/gitolite setup -pk /tmp/admin.pub Initialized empty Git repository in /home/git/repositories/gitolite-admin.git/ Initialized empty Git repository in /home/git/repositories/testing.git/ WARNING: /home/git/.ssh missing; creating a new one WARNING: /home/git/.ssh/authorized_keys missing; creating a new one $ ls bin gitolite projects.list repositories 管理员日常管理 管理员clone管理库（此处为本地root用户） # git clone git@192.168.1.95:gitolite-admin Initialized empty Git repository in /root/gitolite-admin/.git/ The authenticity of host &#8216;192.168.213.130 (192.168.213.130)&#8216; can&#8216;t be established.
+    安装基础包
+yum install perl openssh git
+ yum install perl-Time-HiRes
+ 创建git用户
+useradd -d /home/git git
+ passwd git
+ 在git用户家目录下安装gitolite
+切换到git用户
+
+# su –git
+ 创建文件夹bin
+
+$ mkdir bin
+ 克隆gitolite源码
+
+$ git clone https://github.com/sitaramc/gitolite.git
+ $ ls
+ bingitolite
+ 安装gitolite
+
+$ ./gitolite/install -to /home/git/bin/
+ $ cd bin/
+ $ ls
+ commandsgitolitegitolite-shelllibsyntactic-sugartriggersVERSIONVREF
+ 配置gitolite管理员
+生成管理员账户的公钥（此处指定本地root用户为管理员，键入回车使用默认值） 
+
+# ssh-keygen
+ 复制管理的公钥
   
 
 

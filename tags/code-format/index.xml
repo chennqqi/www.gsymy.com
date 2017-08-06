@@ -10,7 +10,9 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Sun, 23 Aug 2015 15:14:50 +0000</lastBuildDate>
-    <atom:link href="http://www.gsymy.com/tags/code-format/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://www.gsymy.com/tags/code-format/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>UE编辑器加载格式化代码插件astyle</title>
@@ -18,31 +20,13 @@
       <pubDate>Sun, 23 Aug 2015 15:14:50 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2015/08/23/ue_format.html</guid>
-      <description>&lt;p&gt;UE 的格式化功能不强，自带的astyle版本陈旧，一般采用开源工具astyle来实现代码格式化。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;  首先下载最新的astyle，因为ue自带的astyle版本太老，不支持空格、中文名等。&lt;a href=&#34;http://sourceforge.net/projects/astyle/?source=directory&#34;&gt;下载点这里&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;  解压缩后得到 astyle.exe, 将之拷贝到 ue目录的gnu目录下面，覆盖原来的astyle.exe&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;  选择&lt;strong&gt;菜单&lt;/strong&gt;-&amp;gt;&lt;strong&gt;高级&lt;/strong&gt;-&amp;gt;&lt;strong&gt;工具栏配置-&amp;gt;工具栏配置&lt;/strong&gt;， 输入你命名的工具名&amp;#8221;C++格式化&amp;#8221;， 命令行输入:&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;pre class=&#34;lang:default decode:true&#34;&gt;前面使用你自己的UE安装路径
-
-&#34;C:\Program Files\IDM Computer Solutions\UEStudio\GNU\astyle.exe&#34; --style=ansi &#34;%f&#34;
-&lt;/pre&gt;
-
-&lt;p&gt;转到选项卡的&amp;#8221;输出&amp;#8221;页， 选择“捕捉输出”，选择“输出到列表框”。 其它的保留默认。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;用ue打开源代码文件，然后&amp;#8221;高级&amp;#8221; &amp;#8211; “格式化代码”&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;如图&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.gsymy.com/wp-content/uploads/2015/08/无标题.png&#34;&gt;&lt;img class=&#34;alignnone size-full wp-image-170&#34; src=&#34;http://www.gsymy.com/wp-content/uploads/2015/08/无标题.png&#34; alt=&#34;无标题&#34; width=&#34;1440&#34; height=&#34;900&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>UE 的格式化功能不强，自带的astyle版本陈旧，一般采用开源工具astyle来实现代码格式化。
+  首先下载最新的astyle，因为ue自带的astyle版本太老，不支持空格、中文名等。下载点这里
+  解压缩后得到 astyle.exe, 将之拷贝到 ue目录的gnu目录下面，覆盖原来的astyle.exe
+  选择菜单-&amp;gt;高级-&amp;gt;工具栏配置-&amp;gt;工具栏配置， 输入你命名的工具名&amp;#8221;C++格式化&amp;#8221;， 命令行输入:
+  前面使用你自己的UE安装路径 &#34;C:\Program Files\IDM Computer Solutions\UEStudio\GNU\astyle.exe&#34; --style=ansi &#34;%f&#34;  转到选项卡的&amp;#8221;输出&amp;#8221;页， 选择“捕捉输出”，选择“输出到列表框”。 其它的保留默认。
+ 用ue打开源代码文件，然后&amp;#8221;高级&amp;#8221; &amp;#8211; “格式化代码”
+ 如图</description>
     </item>
     
   </channel>

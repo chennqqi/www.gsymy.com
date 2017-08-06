@@ -26,15 +26,12 @@
 <meta property="og:type" content="website" />
 
 
-
-<link href="http://www.gsymy.com/index.xml" rel="alternate" type="application/rss+xml" title="程序猿的小本本" />
-
 <link rel="canonical" href="http://www.gsymy.com/" />
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.gsymy.com/touch-icon-144-precomposed.png">
 <link href="http://www.gsymy.com/favicon.png" rel="icon">
 <meta name="theme-color" content="#2053AB">
-<meta name="generator" content="Hugo 0.17-DEV" />
+<meta name="generator" content="Hugo 0.25.1" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -191,7 +188,20 @@
   <p class="container content">
   
   
-    安装最新版本的phpymyadmin无法打开网站，查看日志显示如下： PHP message: PHP Fatal error: Call to undefined function mb_detect_encoding() 原因排查，没有安装php的mbstring扩展 解决办法: linux. sudo yum install -y php-mbstring &nbsp; 用locate查找一下你的mbstring.so路径 加入扩展 sudo vim /etc/php.ini 加入一行 extension=mbstring.so路径 重启php前端(php-fpm等) php-fpm sudo service php-fpm restart windows. 同理 下载mbstring.dll session http://www.phperz.com/article/14/1222/42451.html &nbsp; &nbsp; &nbsp; &nbsp;
+    安装最新版本的phpymyadmin无法打开网站，查看日志显示如下：
+PHP message: PHP Fatal error: Call to undefined function mb_detect_encoding() 原因排查，没有安装php的mbstring扩展
+解决办法:
+linux.
+sudo yum install -y php-mbstring  &nbsp;
+用locate查找一下你的mbstring.so路径 加入扩展 sudo vim /etc/php.ini 加入一行 extension=mbstring.so路径 重启php前端(php-fpm等) php-fpm sudo service php-fpm restart windows.
+同理
+下载mbstring.dll
+session
+http://www.phperz.com/article/14/1222/42451.html
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
   
 
 
@@ -220,7 +230,66 @@
   <p class="container content">
   
   
-    Google 镜像站搜集 在特殊的地方和特殊的时间，流畅顺利的打开一个网站也变得如此艰难。 列表中有些打不开可能是 DNS污染 的原因，可以参考 DNS劫持 DNS污染 介绍 与 公共DNS 推荐 一文尝试解决。不要没有尝试就问，谢谢！ 以下镜像站分原版、非原版。非原版的界面有些改变，搜索结果在一定程度上可能与原版相同。 如果您是以下镜像的作者，并且不希望您的镜像出现在以下列表中，可以联系我移除链接。 原版网页：[最后检测：2015-11-4] [推荐]http://googo.cf/ [推荐]https://g.weme.so/ [推荐]http://www.gog.pw/ [推荐]https://g.eeload.com/ [推荐]https://www.guge119.com/ http://g.yon.hk/ https://gg.wen.lu/ http://hisbig.com/ https://gg.kfd.me/ https://gs.awei.me/ http://gg.cytbj.com/ https://www.ppx.pw/ http://www.guge.link/ http://www.fcczp.com/ http://www.ggooo.net/ https://www.guge.click/ https://www.guge.date/ https://gg.searcher.top/ http://gg.cellmean.com/ http://google.kainidi.cn/ https://google.xface.me/ http://go.hibenben.com/ https://google-hk.wewell.net/ http://google.sidney-aldebaran.me/ 非原版网页：[最后检测：2015-10-31] [推荐]微搜：http://www.wesou.org/ [推荐]谷歌363：http://www.g363.com/ [推荐]Whats搜索：http://whatsoo.com/ [推荐]图灵搜索：https://www.tulingss.com/ [推荐]九尾搜索：http://jiuweisoso.wallpai.com/ 谷粉网：http://www.gool.wang/ 谷歌婊：http://www.gugebiao.com/ 丸子163：http://www.wanzi163.com/ 谷粉163：http://www.gufen163.com/ 丸子138：http://www.wanzi138.com/ 谷粉138：http://www.gufen138.com/ 谷歌搜索：http://guge.pro/ 快搜香港：http://hk.kuaiso.com/ 网搜天下：http://www.258369.cn/ 谷粉搜搜：http://www.googfen.com/ 谷粉搜搜：http://gfsoso.hao136.com/ 红杏谷歌：http://www.hxgoogle.com/ 布谷鸟搜索：http://m.wcuckoo.com/search/ Ask：http://home.tb.ask.com/ AOL：http://m.search.aol.com/ Avira：https://safesearch.avira.com/ Suche：http://suche.web.de/ Disconnect：https://search.disconnect.me/ WebWebWeb：http://webwebweb.com/ 谷歌学术：[最后检测：2015-11-4] [推荐]http://scholar.ppx.pw/ [推荐]http://googo.cf/scholar/ [推荐]http://gg.cytbj.com/scholar/ [推荐]http://www.fcczp.com/scholar/
+    Google 镜像站搜集
+
+在特殊的地方和特殊的时间，流畅顺利的打开一个网站也变得如此艰难。
+
+列表中有些打不开可能是 DNS污染 的原因，可以参考 DNS劫持 DNS污染 介绍 与 公共DNS 推荐 一文尝试解决。不要没有尝试就问，谢谢！
+以下镜像站分原版、非原版。非原版的界面有些改变，搜索结果在一定程度上可能与原版相同。
+如果您是以下镜像的作者，并且不希望您的镜像出现在以下列表中，可以联系我移除链接。
+原版网页：[最后检测：2015-11-4]
+
+[推荐]http://googo.cf/
+[推荐]https://g.weme.so/
+[推荐]http://www.gog.pw/
+[推荐]https://g.eeload.com/
+[推荐]https://www.guge119.com/
+http://g.yon.hk/
+https://gg.wen.lu/
+http://hisbig.com/
+https://gg.kfd.me/
+https://gs.awei.me/
+http://gg.cytbj.com/
+https://www.ppx.pw/
+http://www.guge.link/
+http://www.fcczp.com/
+http://www.ggooo.net/
+https://www.guge.click/
+https://www.guge.date/
+https://gg.searcher.top/
+http://gg.cellmean.com/
+http://google.kainidi.cn/
+https://google.xface.me/
+http://go.hibenben.com/
+https://google-hk.wewell.net/
+http://google.sidney-aldebaran.me/
+非原版网页：[最后检测：2015-10-31]
+
+[推荐]微搜：http://www.wesou.org/
+[推荐]谷歌363：http://www.g363.com/
+[推荐]Whats搜索：http://whatsoo.com/
+[推荐]图灵搜索：https://www.tulingss.com/
+[推荐]九尾搜索：http://jiuweisoso.wallpai.com/
+谷粉网：http://www.gool.wang/
+谷歌婊：http://www.gugebiao.com/
+丸子163：http://www.wanzi163.com/
+谷粉163：http://www.gufen163.com/
+丸子138：http://www.wanzi138.com/
+谷粉138：http://www.gufen138.com/
+谷歌搜索：http://guge.pro/
+快搜香港：http://hk.kuaiso.com/
+网搜天下：http://www.258369.cn/
+谷粉搜搜：http://www.googfen.com/
+谷粉搜搜：http://gfsoso.hao136.com/
+红杏谷歌：http://www.hxgoogle.com/
+布谷鸟搜索：http://m.wcuckoo.com/search/
+Ask：http://home.tb.ask.com/
+AOL：http://m.search.aol.com/
+Avira：https://safesearch.avira.com/
+Suche：http://suche.web.de/
+Disconnect：https://search.disconnect.me/
+WebWebWeb：http://webwebweb.com/
+谷歌学术：[最后检测：2015-11-4]
   
 
 
@@ -249,7 +318,12 @@
   <p class="container content">
   
   
-    有道是“女怕嫁错郎，男怕入错行”。走入社会之后不同职业会产生不同的人生路线。这里从网上摘来&#8221;2015年中国11大光棍职业&#8221;。你的职业登榜了吗？即将走入社会的大学生，看了这个榜单你有没有考虑换个职业呢？ &nbsp; 网友评选的“2015年中国11大光棍职业”排行榜： 公务员 快递员 空姐、空少 作家、诗人 歌手、演员、模特、主持人 程序员 农民工 厨师 记者、编辑 画家、书法家 医生、护士 &nbsp; 新闻来源:搜狐网 http://news.sohu.com/20151028/n424488061.shtml
+    有道是“女怕嫁错郎，男怕入错行”。走入社会之后不同职业会产生不同的人生路线。这里从网上摘来&#8221;2015年中国11大光棍职业&#8221;。你的职业登榜了吗？即将走入社会的大学生，看了这个榜单你有没有考虑换个职业呢？
+&nbsp;
+网友评选的“2015年中国11大光棍职业”排行榜：
+ 　公务员 　快递员 　空姐、空少 　作家、诗人 　歌手、演员、模特、主持人 　程序员 　农民工 　厨师 　记者、编辑 　画家、书法家 　医生、护士  &nbsp;
+新闻来源:搜狐网
+http://news.sohu.com/20151028/n424488061.shtml
   
 
 
@@ -278,7 +352,20 @@
   <p class="container content">
   
   
-    报错信息如下： WARNING: Unable to generate output for: Makefile.Debug [TEMPLATE vcapp] 正常情况下命令式: qmake -tp vc xxx.pro 解决办法 有些环境下装了多个Qt或者是环境变量有问题导致qmake没有找到正确的spec 修改命令为: qmake -tp vc -spec win32-msvc2010 xxx.pro &nbsp; 这里spec选择你需要的版本即可
+    报错信息如下：
+
+WARNING: Unable to generate output for: Makefile.Debug [TEMPLATE vcapp]
+
+正常情况下命令式:
+
+qmake -tp vc xxx.pro 
+解决办法
+有些环境下装了多个Qt或者是环境变量有问题导致qmake没有找到正确的spec
+
+修改命令为:
+
+qmake -tp vc -spec win32-msvc2010 xxx.pro &nbsp;
+这里spec选择你需要的版本即可
   
 
 

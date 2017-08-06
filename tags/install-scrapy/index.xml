@@ -10,7 +10,9 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Sat, 12 Sep 2015 13:07:56 +0000</lastBuildDate>
-    <atom:link href="http://www.gsymy.com/tags/install-scrapy/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://www.gsymy.com/tags/install-scrapy/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>安装scrapy</title>
@@ -49,35 +51,7 @@ pip install Scrapy&lt;/pre&gt;
 
 &lt;p&gt;0x02. 现在来解决第一个坑&lt;/p&gt;
 
-&lt;p&gt;如果你没有遇到这个坑请跳过这一条&lt;/p&gt;
-
-&lt;p&gt;安装过程中下载lxml报错&lt;/p&gt;
-
-&lt;p&gt;手动安装之，在错误信息中找到下载链接&lt;/p&gt;
-
-&lt;pre class=&#34;lang:default decode:true&#34;&gt;wget --no-check-certificate  https://pypi.python.org/packages/source/l/lxml/lxml-3.4.4.tar.gz
-
-md5checksum
-sudo pip install lxml-3.4.4.tar.gz&lt;/pre&gt;
-
-&lt;p&gt;似乎可能是网速太慢导致下载超时了，也可能是官网给的MD5没更新&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/16025788/why-does-pip-fail-with-bad-md5-hash-for-package&#34; target=&#34;_blank&#34;&gt;参考来源&lt;/a&gt;：&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/16025788/why-does-pip-fail-with-bad-md5-hash-for-package&#34;&gt;http://stackoverflow.com/questions/16025788/why-does-pip-fail-with-bad-md5-hash-for-package&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;安装完成之后继续pip install scrapy&lt;/p&gt;
-
-&lt;p&gt;如果遇到类似问题，请如法炮制&lt;/p&gt;
-
-&lt;p&gt;0x03.  安装&lt;/p&gt;
-
-&lt;p&gt;libffi-devel&lt;/p&gt;
-
-&lt;p&gt;为了加速你的安装过程0x01 步骤中给你写了！&lt;/p&gt;
-
-&lt;pre class=&#34;lang:default decode:true&#34;&gt;sudo yum install libffi-devel -y&lt;/pre&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

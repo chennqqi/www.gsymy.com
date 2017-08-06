@@ -10,7 +10,9 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Thu, 06 Jul 2017 22:56:21 +0800</lastBuildDate>
-    <atom:link href="http://www.gsymy.com/topics/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://www.gsymy.com/topics/linux/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>netinstall centos5</title>
@@ -18,35 +20,16 @@
       <pubDate>Thu, 06 Jul 2017 22:56:21 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2017/07/06/netinstall_centos5.html</guid>
-      <description>
-
-&lt;h1 id=&#34;网络安装centos5&#34;&gt;网络安装CentOs5&lt;/h1&gt;
-
-&lt;p&gt;目前CentOs官方已经停止支持CentOS5了，最新的版本是5.11。 为了快速安装系统，使用了 netinstall.iso。 CentOS的安装URL与网上的教程不匹配了。 我这里简单记录一下&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;用netinstall.iso 做boot启动系统&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://img1.51cto.com/attachment/201008/162309384.jpg&#34; alt=&#34;&#34; /&gt;
-原图无效请戳这里&lt;a href=&#34;http://img1.51cto.com/attachment/201008/162309384.jpg&#34;&gt;http://img1.51cto.com/attachment/201008/162309384.jpg&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;选择HTTP方式, 并按照您的实际情况配置网络&lt;/p&gt;
-
-&lt;p&gt;建议使用NAT方式和自动分配IP方式&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;旧版教程中&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://img1.51cto.com/attachment/201008/162920106.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Web Site name&lt;/strong&gt; 要填入 vault.centos.org&lt;br /&gt;
-&lt;strong&gt;CentOS directory&lt;/strong&gt; 要填入 5.11/os/x86_64&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;如果你要装的是32位请把x86_64替换为i386&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;参考:
-    &lt;a href=&#34;http://zh888.blog.51cto.com/1684752/380118&#34;&gt;http://zh888.blog.51cto.com/1684752/380118&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>网络安装CentOs5 目前CentOs官方已经停止支持CentOS5了，最新的版本是5.11。 为了快速安装系统，使用了 netinstall.iso。 CentOS的安装URL与网上的教程不匹配了。 我这里简单记录一下
+ 用netinstall.iso 做boot启动系统
+原图无效请戳这里http://img1.51cto.com/attachment/201008/162309384.jpg
+ 选择HTTP方式, 并按照您的实际情况配置网络
+建议使用NAT方式和自动分配IP方式
+ 旧版教程中
+Web Site name 要填入 vault.centos.org
+CentOS directory 要填入 5.11/os/x86_64
+如果你要装的是32位请把x86_64替换为i386
+  参考: http://zh888.blog.51cto.com/1684752/380118</description>
     </item>
     
     <item>
@@ -55,23 +38,9 @@
       <pubDate>Fri, 03 Feb 2017 10:01:17 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2017/02/03/unknown_u16_type.html</guid>
-      <description>&lt;p&gt;issue:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;gcc build error
-
-error: unknown type name ‘u16’
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;solution:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;install kernel-headers
-
-sudo yum install kernel-headers -y 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;referer:
-    &lt;a href=&#34;https://bugzilla.redhat.com/show_bug.cgi?format=multiple&amp;amp;id=689756&#34;&gt;https://bugzilla.redhat.com/show_bug.cgi?format=multiple&amp;amp;id=689756&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>issue:
+gcc build error error: unknown type name ‘u16’  solution:
+install kernel-headers sudo yum install kernel-headers -y  referer: https://bugzilla.redhat.com/show_bug.cgi?format=multiple&amp;amp;id=689756</description>
     </item>
     
     <item>
@@ -80,43 +49,14 @@ sudo yum install kernel-headers -y
       <pubDate>Sat, 08 Oct 2016 13:56:17 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2016/10/08/linux-mount-ntfs.html</guid>
-      <description>&lt;p&gt;#how to mount a ntfs partition/drive on linux&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;linux may not integrate ntfs driver, so you need install ntfs-3g&lt;br /&gt;
-&lt;code&gt;ntfs-3g&lt;/code&gt; is an opensource ntfs driver for linux&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#yum install ntfs-3g
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;detect your ntfs partition name&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;parted&lt;/code&gt; is an gnu partition tool that can analize disk like &lt;code&gt;fdisk&lt;/code&gt; which
-support &lt;code&gt;GPT&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#parted  
-    &amp;gt;print all
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;find you ntfs partition name. eg. /dev/sdb1&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;mount&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#mkdir /mnt/ntfs
-#mount -t ntfs-3g /dev/sdb1 /mnt/ntfs
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;now you can vist &lt;code&gt;/mnt/ntfs&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;others:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    1. all operation need root privilege.
-    2. if you want regular user vist the mounted ntfs partition. you need mount like this:
-
-        mount -o umask=000 -t ntfs-3g /dev/sdb1 /mnt/ntfs1
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>#how to mount a ntfs partition/drive on linux
+ linux may not integrate ntfs driver, so you need install ntfs-3g
+ntfs-3g is an opensource ntfs driver for linux
+#yum install ntfs-3g  detect your ntfs partition name
+parted is an gnu partition tool that can analize disk like fdisk which support GPT
+#parted &amp;gt;print all  find you ntfs partition name. eg. /dev/sdb1
+ mount
+#mkdir /mnt/ntfs #mount -t ntfs-3g /dev/sdb1 /mnt/ntfs  now you can vist /mnt/ntfs</description>
     </item>
     
     <item>
@@ -125,25 +65,11 @@ support &lt;code&gt;GPT&lt;/code&gt;&lt;/p&gt;
       <pubDate>Sat, 24 Sep 2016 09:14:14 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2016/09/24/notfound-sudo.html</guid>
-      <description>&lt;p&gt;##没有找到sudo/visudo &amp;ndash; not found sudo/visudo&lt;/p&gt;
-
-&lt;p&gt;买了一个VPS，新建了一个普通用户，想给配置个sudo权限时发现既没有visudo
-也没有/etc/sudoers&lt;/p&gt;
-
-&lt;p&gt;错误信息:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;-bash: sudo: command not found
--bash: visudo: command not found
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;解决办法&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;yum install sudo
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;注：
-    未在ubuntu下进行测试&lt;/p&gt;
-</description>
+      <description>##没有找到sudo/visudo &amp;ndash; not found sudo/visudo
+买了一个VPS，新建了一个普通用户，想给配置个sudo权限时发现既没有visudo 也没有/etc/sudoers
+错误信息:
+-bash: sudo: command not found -bash: visudo: command not found  解决办法
+yum install sudo  注： 未在ubuntu下进行测试</description>
     </item>
     
     <item>
@@ -152,38 +78,15 @@ support &lt;code&gt;GPT&lt;/code&gt;&lt;/p&gt;
       <pubDate>Sat, 17 Sep 2016 22:28:22 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2016/09/17/install_git.html</guid>
-      <description>&lt;p&gt;#linux 安装最新版本的git&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;下载源代码&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;https://www.kernel.org/pub/software/scm/git/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;最新版本为2.10.0&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;wget https://www.kernel.org/pub/software/scm/git/git-2.10.0.tar.gz
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;安装依赖环境(以CentOS为例)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo yum install -y openssl-devel libpcre-devel perl-ExtUtils-Embed libcurl-devel
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;配置安装&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tar xvf git-2.10.0.tar.gz
-cd git-2.10.0
-./configure --with-openssl --with-libpcre --with-expat --with-curl
-make
-sudo make install
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;说明：&lt;br /&gt;
-    &lt;code&gt;--with-openssl --with-libpcre --with-expat --with-curl&lt;/code&gt;选项开启支持https&lt;br /&gt;
-    如果不安装&lt;code&gt;perl-ExtUtils-Embed&lt;/code&gt;可能导致编译失败&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+      <description>#linux 安装最新版本的git
+ 下载源代码
+https://www.kernel.org/pub/software/scm/git/  最新版本为2.10.0
+wget https://www.kernel.org/pub/software/scm/git/git-2.10.0.tar.gz  安装依赖环境(以CentOS为例)
+sudo yum install -y openssl-devel libpcre-devel perl-ExtUtils-Embed libcurl-devel  配置安装
+tar xvf git-2.10.0.tar.gz cd git-2.10.0 ./configure --with-openssl --with-libpcre --with-expat --with-curl make sudo make install  说明：
+--with-openssl --with-libpcre --with-expat --with-curl选项开启支持https
+如果不安装perl-ExtUtils-Embed可能导致编译失败
+  </description>
     </item>
     
     <item>
@@ -192,29 +95,12 @@ sudo make install
       <pubDate>Thu, 25 Aug 2016 13:35:57 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2016/08/25/pyenv_rehash_problem.html</guid>
-      <description>&lt;p&gt;#pyenv rehash problem&lt;/p&gt;
-
-&lt;p&gt;description:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;pyenv: cannot rehash: /home/XXX/.pyenv/shims/.pyenv-shim exists
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;fixup:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;rm /home/XXX/.pyenv/shims/.pyenv-shim exists
-pyenv rehash &amp;amp;&amp;amp; hash -r
-pyenv rehash &amp;amp;&amp;amp; rehash
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;note:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;replace XXX with your real username
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;reference:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/29753592/pyenv-shim-not-created-when-installing-package-using-setup-py&#34;&gt;http://stackoverflow.com/questions/29753592/pyenv-shim-not-created-when-installing-package-using-setup-py&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>#pyenv rehash problem
+description:
+pyenv: cannot rehash: /home/XXX/.pyenv/shims/.pyenv-shim exists  fixup:
+rm /home/XXX/.pyenv/shims/.pyenv-shim exists pyenv rehash &amp;amp;&amp;amp; hash -r pyenv rehash &amp;amp;&amp;amp; rehash  note:
+replace XXX with your real username  reference:
+http://stackoverflow.com/questions/29753592/pyenv-shim-not-created-when-installing-package-using-setup-py</description>
     </item>
     
   </channel>

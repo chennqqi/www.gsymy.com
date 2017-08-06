@@ -10,7 +10,9 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Thu, 13 Aug 2015 10:45:25 +0000</lastBuildDate>
-    <atom:link href="http://www.gsymy.com/tags/%E9%94%99%E8%AF%AF%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://www.gsymy.com/tags/%E9%94%99%E8%AF%AF%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>windows错误码大全,妈妈再也不担心我win32api返回失败了！</title>
@@ -953,8 +955,7 @@
 7056 系统许可证已过期。您的登录请求被拒绝。 
 &lt;/pre&gt;
 
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

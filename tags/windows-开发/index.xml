@@ -10,7 +10,9 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Thu, 13 Aug 2015 10:45:25 +0000</lastBuildDate>
-    <atom:link href="http://www.gsymy.com/tags/windows-%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://www.gsymy.com/tags/windows-%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>windows错误码大全,妈妈再也不担心我win32api返回失败了！</title>
@@ -953,8 +955,7 @@
 7056 系统许可证已过期。您的登录请求被拒绝。 
 &lt;/pre&gt;
 
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -963,20 +964,13 @@
       <pubDate>Tue, 30 Jun 2015 09:44:00 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2015/06/30/vs20xx-error-c2143-missing-before-namespace-in-ms-vc-include.html</guid>
-      <description>
-
-&lt;h2 id=&#34;错误信息&#34;&gt;错误信息：&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;错误信息&#34;&gt;错误信息：&lt;/h2&gt;
 
 &lt;p&gt;VC\include\yvals.h(535): error C2143: syntax error : missing &amp;#8216;;&amp;#8217; before &amp;#8216;namespace&amp;#8217;&lt;/p&gt;
 
 &lt;h2 id=&#34;可能的原因&#34;&gt;可能的原因：&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;你include文件头文件中有文件遗漏了分号。请仔细检查你的源代码！&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;参考：&lt;a href=&#34;http://stackoverflow.com/questions/4309532/error-c2143-missing-before-namespace-in-ms-vc-include&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://stackoverflow.com/questions/4309532/error-c2143-missing-before-namespace-in-ms-vc-include&#34;&gt;http://stackoverflow.com/questions/4309532/error-c2143-missing-before-namespace-in-ms-vc-include&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

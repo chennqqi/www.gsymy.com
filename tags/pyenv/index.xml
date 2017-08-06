@@ -10,7 +10,9 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Thu, 25 Aug 2016 13:35:57 +0800</lastBuildDate>
-    <atom:link href="http://www.gsymy.com/tags/pyenv/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://www.gsymy.com/tags/pyenv/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>pyenv rehash problem</title>
@@ -18,29 +20,12 @@
       <pubDate>Thu, 25 Aug 2016 13:35:57 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2016/08/25/pyenv_rehash_problem.html</guid>
-      <description>&lt;p&gt;#pyenv rehash problem&lt;/p&gt;
-
-&lt;p&gt;description:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;pyenv: cannot rehash: /home/XXX/.pyenv/shims/.pyenv-shim exists
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;fixup:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;rm /home/XXX/.pyenv/shims/.pyenv-shim exists
-pyenv rehash &amp;amp;&amp;amp; hash -r
-pyenv rehash &amp;amp;&amp;amp; rehash
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;note:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;replace XXX with your real username
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;reference:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/29753592/pyenv-shim-not-created-when-installing-package-using-setup-py&#34;&gt;http://stackoverflow.com/questions/29753592/pyenv-shim-not-created-when-installing-package-using-setup-py&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>#pyenv rehash problem
+description:
+pyenv: cannot rehash: /home/XXX/.pyenv/shims/.pyenv-shim exists  fixup:
+rm /home/XXX/.pyenv/shims/.pyenv-shim exists pyenv rehash &amp;amp;&amp;amp; hash -r pyenv rehash &amp;amp;&amp;amp; rehash  note:
+replace XXX with your real username  reference:
+http://stackoverflow.com/questions/29753592/pyenv-shim-not-created-when-installing-package-using-setup-py</description>
     </item>
     
   </channel>

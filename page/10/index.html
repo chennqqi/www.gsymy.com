@@ -26,15 +26,12 @@
 <meta property="og:type" content="website" />
 
 
-
-<link href="http://www.gsymy.com/index.xml" rel="alternate" type="application/rss+xml" title="程序猿的小本本" />
-
 <link rel="canonical" href="http://www.gsymy.com/" />
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.gsymy.com/touch-icon-144-precomposed.png">
 <link href="http://www.gsymy.com/favicon.png" rel="icon">
 <meta name="theme-color" content="#2053AB">
-<meta name="generator" content="Hugo 0.17-DEV" />
+<meta name="generator" content="Hugo 0.25.1" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -191,7 +188,13 @@
   <p class="container content">
   
   
-    利用virt-what工具检测VPS虚拟化技术 检测是OpenVZ还是Xen老蒋 发布于 1年前 (2014-09-26) 分类：VPS基础应用阅读(543) 评论(0) 我们在选择VPS主机的时候肯定会看到商家提供方案有提到是用的openvz、xen、kvm等架构技术，具体我们不去讨论这3个常用的技术特点，总之相对而言，openvz可以超售比较多，所以相对成本就低，对于xen和kvm理论上操作可以超售部分，但相对比ovz好一些。 对于我们购买的VPS，也可能听到的技术不准确，可以用到virt-what方法来真实的检测。 第一、下载以及安装virt-what脚本 wget http://soft.itbulu.com/tools/virt-what-1.11.tar.gz #下载 tar zxf virt-what-1.11.tar.gz #解压 cd virt-what-1.11 #进入目录 ./configure #设置 make && make install #编译安装 理论上是可以操作没有问题的，但是在执行make && make install的时候会出现&#8221;make: *** No targets specified and no makefile found&#8221;的错误提示。 解决方法： yum install gcc gcc-c++ autoconf automake 安装必备的组件支持。 然后我们在操作： ./configure make && make install 这样就可以把virt-what安装成功。 第二、检测系统架构技术 virt-what 可以检测到老蒋这台机器使用的openvz，与官方卖给我的是一样的，没有骗我。 转载from: http://www.itbulu.com/virt-what.html
+     利用virt-what工具检测VPS虚拟化技术 检测是OpenVZ还是Xen老蒋 发布于 1年前 (2014-09-26) 分类：VPS基础应用阅读(543) 评论(0)
+我们在选择VPS主机的时候肯定会看到商家提供方案有提到是用的openvz、xen、kvm等架构技术，具体我们不去讨论这3个常用的技术特点，总之相对而言，openvz可以超售比较多，所以相对成本就低，对于xen和kvm理论上操作可以超售部分，但相对比ovz好一些。 对于我们购买的VPS，也可能听到的技术不准确，可以用到virt-what方法来真实的检测。  第一、下载以及安装virt-what脚本 wget http://soft.itbulu.com/tools/virt-what-1.11.tar.gz #下载
+tar zxf virt-what-1.11.tar.gz #解压
+cd virt-what-1.11 #进入目录
+./configure #设置
+make && make install #编译安装 理论上是可以操作没有问题的，但是在执行make && make install的时候会出现&#8221;make: *** No targets specified and no makefile found&#8221;的错误提示。 解决方法： yum install gcc gcc-c++ autoconf automake 安装必备的组件支持。 然后我们在操作： ./configure
+make && make install 这样就可以把virt-what安装成功。  第二、检测系统架构技术 virt-what 可以检测到老蒋这台机器使用的openvz，与官方卖给我的是一样的，没有骗我。  转载from:  http://www.itbulu.com/virt-what.html 
   
 
 
@@ -220,7 +223,7 @@
   <p class="container content">
   
   
-    阀值是阈值的常见错误写法。 引用同事说的一句话&#8221;阀值是阈值的文盲写法&#8220; 阀fá 控制、开关、把持。1) 机械名词,指在管道中用来控制液体或气体的部件。意为阀门、开关、把持。如截止阀、减压阀、安全阀。 阈(yù )范围,边界,程度。1) 门槛、门限,引申为边界、界阈、视阈。 可见“阀”与“阈”是词义不同的2个词。那么“阀值”会不会是一个新词呢? 经查，不是。在表达“界限”、“范围”的意思时应该用“阈”而不是“阀”。阈值跟英文threshold value对应。 在新版的《现代汉语词典》和《现代汉语规范词典》中，均没有收录“阀值”一词 ；但在日常生活、甚至许多科研论文中，都普遍存在误用的现象。 from 百度百科 http://baike.baidu.com/subview/648990/648990.htm
+       阀值是阈值的常见错误写法。  引用同事说的一句话&#8221;阀值是阈值的文盲写法&#8220;   阀fá 控制、开关、把持。1) 机械名词,指在管道中用来控制液体或气体的部件。意为阀门、开关、把持。如截止阀、减压阀、安全阀。  阈(yù )范围,边界,程度。1) 门槛、门限,引申为边界、界阈、视阈。  可见“阀”与“阈”是词义不同的2个词。那么“阀值”会不会是一个新词呢? 经查，不是。在表达“界限”、“范围”的意思时应该用“阈”而不是“阀”。阈值跟英文threshold value对应。  在新版的《现代汉语词典》和《现代汉语规范词典》中，均没有收录“阀值”一词 ；但在日常生活、甚至许多科研论文中，都普遍存在误用的现象。   from 百度百科  http://baike.baidu.com/subview/648990/648990.htm  
   
 
 
@@ -249,7 +252,7 @@
   <p class="container content">
   
   
-    Configure，Makefile.am, Makefile.in, Makefile文件之间关系 2009-08-12 12:14 1.autoscan (autoconf): 扫描源代码以搜寻普通的可移植性问题，比如检查编译器，库，头文件等，生成文件configure.scan,它是configure.ac的一个雏形。 your source files &#8211; [autoscan*] &#8211; [configure.scan] &#8211; configure.ac 2.aclocal (automake):根据已经安装的宏，用户定义宏和acinclude.m4文件中的宏将configure.ac文件所需要的宏集中定义到文件 aclocal.m4中。aclocal是一个perl 脚本程序，它的定义是：“aclocal &#8211; create aclocal.m4 by scanning configure.ac” user input files optional input process output files ================ ============== ======= ============ acinclude.m4 - - - - -. V .-------, configure.ac ------------------------&gt;;|aclocal| {user macro files} -&gt;;| |------&gt;;; aclocal.m4 `-------' 3.autoheader(autoconf): 根据configure.ac中的某些宏，比如cpp宏定义，运行m4，声称config.h.in user input files optional input process output files ================ ============== ======= ============ aclocal.m4 - - - - - - - .
+    Configure，Makefile.am, Makefile.in, Makefile文件之间关系  2009-08-12 12:14      1.autoscan (autoconf): 扫描源代码以搜寻普通的可移植性问题，比如检查编译器，库，头文件等，生成文件configure.scan,它是configure.ac的一个雏形。  your source files &#8211; [autoscan*] &#8211; [configure.scan] &#8211; configure.ac  2.aclocal (automake):根据已经安装的宏，用户定义宏和acinclude.m4文件中的宏将configure.ac文件所需要的宏集中定义到文件 aclocal.m4中。aclocal是一个perl 脚本程序，它的定义是：“aclocal &#8211; create aclocal.m4 by scanning configure.ac” user input files optional input process output files ================ ============== ======= ============ acinclude.m4 - - - - -. V .-------, configure.ac ------------------------&gt;;|aclocal| {user macro files} -&gt;;| |------&gt;;; aclocal.m4 `-------' 3.autoheader(autoconf): 根据configure.ac中的某些宏，比如cpp宏定义，运行m4，声称config.h.in user input files optional input process output files ================ ============== ======= ============ aclocal.
   
 
 
@@ -278,7 +281,7 @@
   <p class="container content">
   
   
-    <h1 id="img-class-alignnone-size-medium-wp-image-306-src-http-www-gsymy-com-wp-content-uploads-2015-09-logo512-jpg-alt-logo512-width-0-height-0-1"> [<img class="alignnone size-medium wp-image-306" src="http://www.gsymy.com/wp-content/uploads/2015/09/logo512.jpg" alt="logo512" width="0" height="0" />][1]</h1>
+    <h1 id="img-class-alignnone-size-medium-wp-image-306-src-http-www-gsymy-com-wp-content-uploads-2015-09-logo512-jpg-alt-logo512-width-0-height-0-1"> <a href="http://www.gsymy.com/wp-content/uploads/2015/09/logo512.jpg"><img class="alignnone size-medium wp-image-306" src="http://www.gsymy.com/wp-content/uploads/2015/09/logo512.jpg" alt="logo512" width="0" height="0" /></a></h1>
 
 <h1 id="今天是程序员节-programmer-s-day-if-ie-7">今天是程序员节（Programmer’s Day）&lt;!&ndash; [if IE 7]&gt;</h1>
 
@@ -385,8 +388,6 @@
               
 
 <pre><code>          &lt;p&gt;
-</code></pre>
-
   
 
 

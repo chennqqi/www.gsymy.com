@@ -10,7 +10,9 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Mon, 12 Jun 2017 15:40:21 +0800</lastBuildDate>
-    <atom:link href="http://www.gsymy.com/topics/error/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://www.gsymy.com/topics/error/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>curl error 35</title>
@@ -18,13 +20,7 @@
       <pubDate>Mon, 12 Jun 2017 15:40:21 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2017/06/12/curl_error_35.html</guid>
-      <description>
-
-&lt;h1 id=&#34;curl-error-35&#34;&gt;curl error 35&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code&gt;原因未明，待查
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description> curl error 35 原因未明，待查  </description>
     </item>
     
   </channel>

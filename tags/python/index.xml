@@ -10,7 +10,9 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Thu, 01 Dec 2016 21:20:40 +0800</lastBuildDate>
-    <atom:link href="http://www.gsymy.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://www.gsymy.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>python mysql 2014 error</title>
@@ -18,27 +20,13 @@
       <pubDate>Thu, 01 Dec 2016 21:20:40 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2016/12/02/python-mysql-2014-error.html</guid>
-      <description>&lt;p&gt;###python mysqlDB批量插入数据时报错&lt;/p&gt;
-
-&lt;p&gt;python MySQLdb module error code:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;Error 2014: Commands out of sync; you can&#39;t run this command now&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;This happened when excute mysql batch operation.
-Solution:&lt;/p&gt;
-
-&lt;p&gt;Every mysql option done, then call &lt;code&gt;commit()&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Using &lt;code&gt;executemany&lt;/code&gt; funcion is recommand.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;list = []
-sql = &#39;INSERT INTO tablexxx(a,b,c) VALUES(%s,%s,%s)&#39;
-for l in ll:
-    list.append(l)
-db.executemany(sql, list)#db.fetchmany() ...
-db.commit()
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>###python mysqlDB批量插入数据时报错
+python MySQLdb module error code:
+Error 2014: Commands out of sync; you can&#39;t run this command now
+This happened when excute mysql batch operation. Solution:
+Every mysql option done, then call commit()
+Using executemany funcion is recommand.
+list = [] sql = &#39;INSERT INTO tablexxx(a,b,c) VALUES(%s,%s,%s)&#39; for l in ll: list.append(l) db.executemany(sql, list)#db.fetchmany() ... db.commit()  </description>
     </item>
     
     <item>
@@ -47,29 +35,12 @@ db.commit()
       <pubDate>Thu, 25 Aug 2016 13:35:57 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2016/08/25/pyenv_rehash_problem.html</guid>
-      <description>&lt;p&gt;#pyenv rehash problem&lt;/p&gt;
-
-&lt;p&gt;description:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;pyenv: cannot rehash: /home/XXX/.pyenv/shims/.pyenv-shim exists
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;fixup:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;rm /home/XXX/.pyenv/shims/.pyenv-shim exists
-pyenv rehash &amp;amp;&amp;amp; hash -r
-pyenv rehash &amp;amp;&amp;amp; rehash
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;note:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;replace XXX with your real username
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;reference:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/29753592/pyenv-shim-not-created-when-installing-package-using-setup-py&#34;&gt;http://stackoverflow.com/questions/29753592/pyenv-shim-not-created-when-installing-package-using-setup-py&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>#pyenv rehash problem
+description:
+pyenv: cannot rehash: /home/XXX/.pyenv/shims/.pyenv-shim exists  fixup:
+rm /home/XXX/.pyenv/shims/.pyenv-shim exists pyenv rehash &amp;amp;&amp;amp; hash -r pyenv rehash &amp;amp;&amp;amp; rehash  note:
+replace XXX with your real username  reference:
+http://stackoverflow.com/questions/29753592/pyenv-shim-not-created-when-installing-package-using-setup-py</description>
     </item>
     
     <item>
@@ -109,35 +80,7 @@ pip install Scrapy&lt;/pre&gt;
 
 &lt;p&gt;0x02. 现在来解决第一个坑&lt;/p&gt;
 
-&lt;p&gt;如果你没有遇到这个坑请跳过这一条&lt;/p&gt;
-
-&lt;p&gt;安装过程中下载lxml报错&lt;/p&gt;
-
-&lt;p&gt;手动安装之，在错误信息中找到下载链接&lt;/p&gt;
-
-&lt;pre class=&#34;lang:default decode:true&#34;&gt;wget --no-check-certificate  https://pypi.python.org/packages/source/l/lxml/lxml-3.4.4.tar.gz
-
-md5checksum
-sudo pip install lxml-3.4.4.tar.gz&lt;/pre&gt;
-
-&lt;p&gt;似乎可能是网速太慢导致下载超时了，也可能是官网给的MD5没更新&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/16025788/why-does-pip-fail-with-bad-md5-hash-for-package&#34; target=&#34;_blank&#34;&gt;参考来源&lt;/a&gt;：&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/16025788/why-does-pip-fail-with-bad-md5-hash-for-package&#34;&gt;http://stackoverflow.com/questions/16025788/why-does-pip-fail-with-bad-md5-hash-for-package&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;安装完成之后继续pip install scrapy&lt;/p&gt;
-
-&lt;p&gt;如果遇到类似问题，请如法炮制&lt;/p&gt;
-
-&lt;p&gt;0x03.  安装&lt;/p&gt;
-
-&lt;p&gt;libffi-devel&lt;/p&gt;
-
-&lt;p&gt;为了加速你的安装过程0x01 步骤中给你写了！&lt;/p&gt;
-
-&lt;pre class=&#34;lang:default decode:true&#34;&gt;sudo yum install libffi-devel -y&lt;/pre&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

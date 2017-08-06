@@ -10,7 +10,9 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Sun, 02 Aug 2015 02:59:29 +0000</lastBuildDate>
-    <atom:link href="http://www.gsymy.com/tags/u%E7%9B%98%E6%9D%83%E9%99%90/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://www.gsymy.com/tags/u%E7%9B%98%E6%9D%83%E9%99%90/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>linux 挂载U盘</title>
@@ -41,25 +43,7 @@
 &lt;/ol&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;[linxux]#mkdir -p /mnt/usb&lt;/p&gt;
-
-&lt;p&gt;[linxux]#mount -t vfat /dev/sdb6 /mnt/usb&lt;/p&gt;
-
-&lt;p&gt;***常见问题，root身份挂载之后USB分区是普通用户只读的，可以在挂载时加入参数&lt;/p&gt;
-
-&lt;pre id=&#34;best-content-1722697460&#34; class=&#34;best-text mb-10&#34;&gt;-o umask=000&lt;/pre&gt;
-&lt;/blockquote&gt;
-
-&lt;ol&gt;
-&lt;li&gt;卸载&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;[linxux]#umount /mnt/usb&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-</description>
+&lt;p&gt;[linxux]#mkdir -p /mnt/usb&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -10,7 +10,9 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Tue, 06 Dec 2016 22:17:01 +0800</lastBuildDate>
-    <atom:link href="http://www.gsymy.com/tags/centos/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://www.gsymy.com/tags/centos/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>install gnu parallel, not only centos platform</title>
@@ -18,26 +20,13 @@
       <pubDate>Tue, 06 Dec 2016 22:17:01 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2016/12/06/install_gnu_parallel.html</guid>
-      <description>&lt;p&gt;##&lt;/p&gt;
-
-&lt;p&gt;Steps:
- visit &lt;a href=&#34;https://build.opensuse.org/package/show?package=parallel&amp;amp;project=home%3Atange&#34;&gt;https://build.opensuse.org/package/show?package=parallel&amp;amp;project=home%3Atange&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;look at right top corner, click &lt;a href=&#34;http://software.opensuse.org/download.html?project=home%3Atange&amp;amp;package=parallel&#34;&gt;download&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This support such platforms:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://software.opensuse.org/assets/download/centos-de865c285c8e1567761ee0feadbf4778.png&#34; alt=&#34;CentOS&#34; /&gt;
- &lt;img src=&#34;http://software.opensuse.org/assets/download/debian-7c7747407454caca1c5ab01fed35581d.png&#34; alt=&#34;Debian&#34; /&gt;
- &lt;img src=&#34;http://software.opensuse.org/assets/download/opensuse-ea5fec454e9f4ca53ea7276f48905243.png&#34; alt=&#34;openSUSE&#34; /&gt;
- &lt;img src=&#34;http://software.opensuse.org/assets/download/rhel-4f3565f8f0c66c2a555caf5c5fc3b287.png&#34; alt=&#34;redhat&#34; /&gt;
- &lt;img src=&#34;http://software.opensuse.org/assets/download/sle-a04c87206b6b247faebf37f846f8781d.png&#34; alt=&#34;suse&#34; /&gt;
- &lt;img src=&#34;http://software.opensuse.org/assets/download/ubuntu-1275234a5d802bea3ebcf789a50c9589.png&#34; alt=&#34;ubuntu&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Reference:&lt;br /&gt;
-1. &lt;a href=&#34;https://www.gnu.org/software/parallel/&#34;&gt;gnu parallel offical&lt;/a&gt;&lt;br /&gt;
-2. &lt;a href=&#34;http://blog.sina.com.cn/s/blog_3f7652740100y0ju.html&#34;&gt;轻松并发执行作业&amp;ndash;GNU Parallel&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>##
+Steps: visit https://build.opensuse.org/package/show?package=parallel&amp;amp;project=home%3Atange
+look at right top corner, click download.
+This support such platforms:
+Reference:
+1. gnu parallel offical
+2. 轻松并发执行作业&amp;ndash;GNU Parallel</description>
     </item>
     
     <item>
@@ -46,43 +35,14 @@
       <pubDate>Sat, 08 Oct 2016 13:56:17 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2016/10/08/linux-mount-ntfs.html</guid>
-      <description>&lt;p&gt;#how to mount a ntfs partition/drive on linux&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;linux may not integrate ntfs driver, so you need install ntfs-3g&lt;br /&gt;
-&lt;code&gt;ntfs-3g&lt;/code&gt; is an opensource ntfs driver for linux&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#yum install ntfs-3g
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;detect your ntfs partition name&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;parted&lt;/code&gt; is an gnu partition tool that can analize disk like &lt;code&gt;fdisk&lt;/code&gt; which
-support &lt;code&gt;GPT&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#parted  
-    &amp;gt;print all
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;find you ntfs partition name. eg. /dev/sdb1&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;mount&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#mkdir /mnt/ntfs
-#mount -t ntfs-3g /dev/sdb1 /mnt/ntfs
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;now you can vist &lt;code&gt;/mnt/ntfs&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;others:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    1. all operation need root privilege.
-    2. if you want regular user vist the mounted ntfs partition. you need mount like this:
-
-        mount -o umask=000 -t ntfs-3g /dev/sdb1 /mnt/ntfs1
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>#how to mount a ntfs partition/drive on linux
+ linux may not integrate ntfs driver, so you need install ntfs-3g
+ntfs-3g is an opensource ntfs driver for linux
+#yum install ntfs-3g  detect your ntfs partition name
+parted is an gnu partition tool that can analize disk like fdisk which support GPT
+#parted &amp;gt;print all  find you ntfs partition name. eg. /dev/sdb1
+ mount
+#mkdir /mnt/ntfs #mount -t ntfs-3g /dev/sdb1 /mnt/ntfs  now you can vist /mnt/ntfs</description>
     </item>
     
     <item>
@@ -91,25 +51,11 @@ support &lt;code&gt;GPT&lt;/code&gt;&lt;/p&gt;
       <pubDate>Sat, 24 Sep 2016 09:14:14 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2016/09/24/notfound-sudo.html</guid>
-      <description>&lt;p&gt;##没有找到sudo/visudo &amp;ndash; not found sudo/visudo&lt;/p&gt;
-
-&lt;p&gt;买了一个VPS，新建了一个普通用户，想给配置个sudo权限时发现既没有visudo
-也没有/etc/sudoers&lt;/p&gt;
-
-&lt;p&gt;错误信息:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;-bash: sudo: command not found
--bash: visudo: command not found
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;解决办法&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;yum install sudo
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;注：
-    未在ubuntu下进行测试&lt;/p&gt;
-</description>
+      <description>##没有找到sudo/visudo &amp;ndash; not found sudo/visudo
+买了一个VPS，新建了一个普通用户，想给配置个sudo权限时发现既没有visudo 也没有/etc/sudoers
+错误信息:
+-bash: sudo: command not found -bash: visudo: command not found  解决办法
+yum install sudo  注： 未在ubuntu下进行测试</description>
     </item>
     
     <item>
@@ -118,48 +64,42 @@ support &lt;code&gt;GPT&lt;/code&gt;&lt;/p&gt;
       <pubDate>Wed, 09 Dec 2015 14:15:43 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2015/12/09/linux_update_svn.html</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;CentOS自带的svn版本是1.6.11&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+      <description>CentOS自带的svn版本是1.6.11
 
-&lt;p&gt;&lt;img src=&#34;http://subversion.apache.org/images/svn-name-banner.jpg&#34; alt=&#34;Subversion&#34; /&gt;&lt;/p&gt;
+Svn1.6版本之前的设计是在每个文件夹下都存有.svn来保存svn信息和备份；
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;Svn1.6版本之前的设计是在每个文件夹下都存有.svn来保存svn信息和备份；&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+这种设计对于手工回复文件有一定的好处。1.6之后的版本都是使用在根目录下保存.svn文件夹，
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;这种设计对于手工回复文件有一定的好处。1.6之后的版本都是使用在根目录下保存.svn文件夹，&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+这种新的设计大大增强了安全性。新的设计你拷贝一个文件夹时不再附带无用的版本信息，删除svn信息也更加方便
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;这种新的设计大大增强了安全性。新的设计你拷贝一个文件夹时不再附带无用的版本信息，删除svn信息也更加方便&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+将这种文件夹拷贝给别人时也不用担心svn泄露。
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;将这种文件夹拷贝给别人时也不用担心svn泄露。&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+从web安全的角度讲也是更加安全了。
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;从web安全的角度讲也是更加安全了。&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+关于svn泄露漏洞这里贴一点资料，大家自己去看；此话题已经脱离了本问标题，不再讨论。
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;关于svn泄露漏洞这里贴一点资料，大家自己去看；此话题已经脱离了本问标题，不再讨论。&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+升级过程
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;升级过程&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+subversion是apache旗下的一个软件官方页面
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;subversion是apache旗下的一个软件官方页面&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+http://subversion.apache.org/download.cgi#installing
+里边有几种安装(升级)方式。
 
-&lt;p&gt;&lt;a href=&#34;http://subversion.apache.org/download.cgi&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://subversion.apache.org/download.cgi#installing&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+我这里给出最方便的方式，直接使用wandisco.com公司编译出的稳定版本；
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;里边有几种安装(升级)方式。&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+点击此处打开http://www.wandisco.com/subversion/download
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;我这里给出最方便的方式，直接使用wandisco.com公司编译出的稳定版本；&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+在页面中选择适合你系统的版本，在跳转的页面中填写一个表单。
+其他信息无所谓关键是邮箱一定要写真实邮箱，稍后你邮箱中会接收到一个下载地址。
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;点击此处打开&lt;a href=&#34;http://www.wandisco.com/subversion/download&#34;&gt;http://www.wandisco.com/subversion/download&lt;/a&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+下载并以sudo权限执行bash脚本就OK了。
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;在页面中选择适合你系统的版本，在跳转的页面中填写一个表单。&lt;span style=&#34;font-family: 宋体;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+为了方便大伙使用，我这里贴一个我已经下载好了的CentOS6 X86_64的bash脚本。其他版本请自行下载！
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;其他信息无所谓关键是邮箱一定要写真实邮箱，稍后你邮箱中会接收到一个下载地址。&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+svn泄露相关资料：
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;下载并以sudo权限执行bash脚本就OK了。&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;为了方便大伙使用，我这里贴一个我已经下载好了的CentOS6 X86_64的bash脚本。其他版本请自行下载！&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;svn泄露相关资料：&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.aisec.cn/secinfo/info/?type=svn&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://www.aisec.cn/secinfo/info/?type=svn&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.secpulse.com/archives/tag/svn%E6%96%87%E4%BB%B6%E6%B3%84%E9%9C%B2&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://www.secpulse.com/archives/tag/svn%E6%96%87%E4%BB%B6%E6%B3%84%E9%9C%B2&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-</description>
+http://www.aisec.cn/secinfo/info/?type=svn
+http://www.secpulse.com/archives/tag/svn%E6%96%87%E4%BB%B6%E6%B3%84%E9%9C%B2</description>
     </item>
     
     <item>
@@ -168,19 +108,10 @@ support &lt;code&gt;GPT&lt;/code&gt;&lt;/p&gt;
       <pubDate>Sun, 23 Aug 2015 15:10:26 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2015/08/23/tcpdumpnoroot.html</guid>
-      <description>&lt;ol&gt;
-&lt;li&gt;&lt;p&gt; centos/redhat下安装tcpdump &lt;pre class=&#34;lang:default decode:true&#34;&gt;sudo yum install -y tcpdump&lt;/pre&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt; 在tcpdump所在目录下执行 &lt;pre class=&#34;lang:sh decode:true&#34;&gt;sudo chmod u+s tcpdump&lt;/pre&gt;
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/li&gt; &lt;/ol&gt;&lt;/p&gt;
-
-&lt;p&gt;原理参考： &lt;em&gt;&lt;a href=&#34;http://blog.csdn.net/arkblue/article/details/7704304&#34;&gt;tcpdump 安装和文件的s权限 &amp;#8211; arkblue的专栏 &amp;#8211; 博客频道 &amp;#8211; CSDN.NET&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+      <description>  centos/redhat下安装tcpdump sudo yum install -y tcpdump
+  在tcpdump所在目录下执行 sudo chmod u+s tcpdump   &amp;nbsp; 
+原理参考： tcpdump 安装和文件的s权限 &amp;#8211; arkblue的专栏 &amp;#8211; 博客频道 &amp;#8211; CSDN.NET
+  </description>
     </item>
     
     <item>
@@ -197,80 +128,7 @@ support &lt;code&gt;GPT&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;解决办法：&lt;/p&gt;
 
-&lt;ol&gt;
-&lt;li&gt;vim 编辑 /etc/profile.d/qt.sh 文件&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;pre class=&#34;lang:sh decode:true &#34; title=&#34;qt.sh 文件&#34;&gt;# Qt initialization script (sh)
-
-# In multilib environments there is a preferred architecture, 64 bit over 32 bit in x86_64,
-# When a conflict is found between two packages corresponding with different arches,
-# the installed file is the one from the preferred arch. This is very common for executables
-# in /usr/bin, for example. If the file /usr/bin/foo is found in an x86_64 package and in an
-# i386 package, the executable from x86_64 will be installe
-
-if [ -z &#34;${QTDIR}&#34; ]; then
-
-case `uname -m` in
-   x86_64 | ia64 | s390x | ppc64 )
-      QT_PREFIXES=&#34;/usr/lib64/qt4 /usr/lib/qt4&#34; ;;
-   * )
-      QT_PREFIXES=&#34;/usr/lib/qt4 /usr/lib64/qt4&#34; ;;
-esac
-
-for QTDIR in ${QT_PREFIXES} ; do
-  test -d &#34;${QTDIR}&#34; &amp;&amp; break
-done
-unset QT_PREFIXES
-
-if ! echo ${PATH} | /bin/grep -q $QTDIR/bin ; then
-   PATH=$QTDIR/bin:${PATH}
-fi
-
-QTINC=&#34;$QTDIR/include&#34;
-QTLIB=&#34;$QTDIR/lib&#34;
-
-export QTDIR QTINC QTLIB PATH
-
-fi&lt;/pre&gt;
-
-&lt;pre class=&#34;lang:sh decode:true &#34; title=&#34;qt.sh 文件&#34;&gt;# Qt initialization script (sh)
-
-# In multilib environments there is a preferred architecture, 64 bit over 32 bit in x86_64,
-# When a conflict is found between two packages corresponding with different arches,
-# the installed file is the one from the preferred arch. This is very common for executables
-# in /usr/bin, for example. If the file /usr/bin/foo is found in an x86_64 package and in an
-# i386 package, the executable from x86_64 will be installe
-
-if [ -z &#34;${QTDIR}&#34; ]; then
-
-case `uname -m` in
-   x86_64 | ia64 | s390x | ppc64 )
-      QT_PREFIXES=&#34;/usr/lib64/qt4 /usr/lib/qt4&#34; ;;
-   * )
-      QT_PREFIXES=&#34;/usr/lib/qt4 /usr/lib64/qt4&#34; ;;
-esac
-
-for QTDIR in ${QT_PREFIXES} ; do
-  test -d &#34;${QTDIR}&#34; &amp;&amp; break
-done
-unset QT_PREFIXES
-
-if ! echo ${PATH} | /bin/grep -q $QTDIR/bin ; then
-   PATH=$QTDIR/bin:${PATH}
-fi
-
-QTINC=&#34;$QTDIR/include&#34;
-QTLIB=&#34;$QTDIR/lib&#34;
-
-export QTDIR QTINC QTLIB PATH
-
-fi&lt;/pre&gt;
-
-&lt;ol&gt;
-&lt;li&gt;重启系统&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -279,9 +137,7 @@ fi&lt;/pre&gt;
       <pubDate>Thu, 30 Jul 2015 15:46:20 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2015/07/30/centos-cantfind-json-c.html</guid>
-      <description>
-
-&lt;h2 id=&#34;错误信息&#34;&gt;错误信息:&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;错误信息&#34;&gt;错误信息:&lt;/h2&gt;
 
 &lt;div&gt;
   &lt;strong&gt;package &amp;#8216;json-c&amp;#8217; not found&lt;/strong&gt;
@@ -301,33 +157,7 @@ fi&lt;/pre&gt;
   &lt;/h2&gt;
 &lt;/div&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;1-确保你已经安装了json组件&#34;&gt;1. 确保你已经安装了json组件&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;div&gt;
-  &lt;p&gt;
-    sudo yum install -y json-c json-c-devel
-  &lt;/p&gt;
-  
-  &lt;div&gt;
-
-  &lt;/div&gt;
-  
-
-&lt;p&gt;&lt;h3&gt;
-    2. 建立符号链接
-  &lt;/h3&gt;
-&lt;/div&gt;&lt;/p&gt;
-
-&lt;div&gt;
-  sudo ln -s /lib64/pkgconfig/json-c.pc /usr/lib64/pkgconfig/json-c.pc&lt;br /&gt; sudo ln -s /lib64/pkgconfig/json.pc /usr/lib64/pkgconfig/json.pc
-&lt;/div&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;原因分析&#34;&gt;原因分析：&lt;/h2&gt;
-
-&lt;p&gt;可能是64位环境，pc文件放错位置了&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -336,9 +166,7 @@ fi&lt;/pre&gt;
       <pubDate>Thu, 30 Jul 2015 15:43:42 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2015/07/30/linux_not_found_gengetopt.html</guid>
-      <description>
-
-&lt;h2 id=&#34;系统没有安装gengetopt&#34;&gt;&lt;strong&gt;系统没有安装gengetopt&lt;/strong&gt;&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;系统没有安装gengetopt&#34;&gt;&lt;strong&gt;系统没有安装gengetopt&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;div&gt;
 &lt;/div&gt;
@@ -357,72 +185,7 @@ fi&lt;/pre&gt;
 &lt;div&gt;
 &lt;/div&gt;
 
-&lt;div&gt;
-  选择合适的版本
-&lt;/div&gt;
-
-&lt;div&gt;
-  wget &lt;a href=&#34;http://mirror.hust.edu.cn/gnu/gengetopt/gengetopt-2.22.tar.g&#34; target=&#34;_blank&#34;&gt;http://mirror.hust.edu.cn/gnu/gengetopt/gengetopt-2.22.tar.g&lt;/a&gt;z
-&lt;/div&gt;
-
-&lt;div&gt;
-  下载编译安装
-&lt;/div&gt;
-
-&lt;blockquote&gt;
-&lt;div&gt;
-
-&lt;/div&gt;
-
-&lt;div&gt;
-  tar xvf gengetopt-2.22.tar.gz
-&lt;/div&gt;
-
-&lt;div&gt;
-  cd gengetopt-2.22
-&lt;/div&gt;
-
-&lt;div&gt;
-  ./configure
-&lt;/div&gt;
-
-&lt;div&gt;
-  make
-&lt;/div&gt;
-
-&lt;div&gt;
-  sudo make install
-&lt;/div&gt;
-&lt;/blockquote&gt;
-
-&lt;div&gt;
-  补充说明：
-&lt;/div&gt;
-
-&lt;div&gt;
-  如果在编译过程中出现
-&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;strong&gt;fileutils.cpp: In function ‘char* create_filename(char*, char*)’:&lt;/strong&gt;&lt;br /&gt; &lt;strong&gt;fileutils.cpp:23: 错误：‘strlen’在此作用域中尚未声明&lt;/strong&gt;&lt;/p&gt; 
-  
-  &lt;div&gt;
-  &lt;/div&gt;
-  
-
-&lt;p&gt;&lt;div&gt;
-    修改src/fileutils.cpp 源文件添加头文件
-  &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div&gt;
-    #include &lt;string.h&gt;
-  &lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;div&gt;
-    继续编译安装即可
-  &lt;/div&gt;
-&lt;/div&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

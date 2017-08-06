@@ -10,7 +10,9 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Wed, 09 Dec 2015 14:15:43 +0000</lastBuildDate>
-    <atom:link href="http://www.gsymy.com/tags/subversion/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://www.gsymy.com/tags/subversion/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>linux更新svn客户端 | svn,subversion,更新svn</title>
@@ -18,48 +20,42 @@
       <pubDate>Wed, 09 Dec 2015 14:15:43 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2015/12/09/linux_update_svn.html</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;CentOS自带的svn版本是1.6.11&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+      <description>CentOS自带的svn版本是1.6.11
 
-&lt;p&gt;&lt;img src=&#34;http://subversion.apache.org/images/svn-name-banner.jpg&#34; alt=&#34;Subversion&#34; /&gt;&lt;/p&gt;
+Svn1.6版本之前的设计是在每个文件夹下都存有.svn来保存svn信息和备份；
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;Svn1.6版本之前的设计是在每个文件夹下都存有.svn来保存svn信息和备份；&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+这种设计对于手工回复文件有一定的好处。1.6之后的版本都是使用在根目录下保存.svn文件夹，
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;这种设计对于手工回复文件有一定的好处。1.6之后的版本都是使用在根目录下保存.svn文件夹，&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+这种新的设计大大增强了安全性。新的设计你拷贝一个文件夹时不再附带无用的版本信息，删除svn信息也更加方便
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;这种新的设计大大增强了安全性。新的设计你拷贝一个文件夹时不再附带无用的版本信息，删除svn信息也更加方便&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+将这种文件夹拷贝给别人时也不用担心svn泄露。
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;将这种文件夹拷贝给别人时也不用担心svn泄露。&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+从web安全的角度讲也是更加安全了。
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;从web安全的角度讲也是更加安全了。&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+关于svn泄露漏洞这里贴一点资料，大家自己去看；此话题已经脱离了本问标题，不再讨论。
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;关于svn泄露漏洞这里贴一点资料，大家自己去看；此话题已经脱离了本问标题，不再讨论。&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+升级过程
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;升级过程&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+subversion是apache旗下的一个软件官方页面
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;subversion是apache旗下的一个软件官方页面&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+http://subversion.apache.org/download.cgi#installing
+里边有几种安装(升级)方式。
 
-&lt;p&gt;&lt;a href=&#34;http://subversion.apache.org/download.cgi&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://subversion.apache.org/download.cgi#installing&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+我这里给出最方便的方式，直接使用wandisco.com公司编译出的稳定版本；
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;里边有几种安装(升级)方式。&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+点击此处打开http://www.wandisco.com/subversion/download
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;我这里给出最方便的方式，直接使用wandisco.com公司编译出的稳定版本；&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+在页面中选择适合你系统的版本，在跳转的页面中填写一个表单。
+其他信息无所谓关键是邮箱一定要写真实邮箱，稍后你邮箱中会接收到一个下载地址。
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;点击此处打开&lt;a href=&#34;http://www.wandisco.com/subversion/download&#34;&gt;http://www.wandisco.com/subversion/download&lt;/a&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+下载并以sudo权限执行bash脚本就OK了。
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;在页面中选择适合你系统的版本，在跳转的页面中填写一个表单。&lt;span style=&#34;font-family: 宋体;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+为了方便大伙使用，我这里贴一个我已经下载好了的CentOS6 X86_64的bash脚本。其他版本请自行下载！
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;其他信息无所谓关键是邮箱一定要写真实邮箱，稍后你邮箱中会接收到一个下载地址。&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+svn泄露相关资料：
 
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;下载并以sudo权限执行bash脚本就OK了。&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;为了方便大伙使用，我这里贴一个我已经下载好了的CentOS6 X86_64的bash脚本。其他版本请自行下载！&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;svn泄露相关资料：&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.aisec.cn/secinfo/info/?type=svn&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://www.aisec.cn/secinfo/info/?type=svn&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.secpulse.com/archives/tag/svn%E6%96%87%E4%BB%B6%E6%B3%84%E9%9C%B2&#34;&gt;&lt;span style=&#34;font-size: 10pt;&#34;&gt;http://www.secpulse.com/archives/tag/svn%E6%96%87%E4%BB%B6%E6%B3%84%E9%9C%B2&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-</description>
+http://www.aisec.cn/secinfo/info/?type=svn
+http://www.secpulse.com/archives/tag/svn%E6%96%87%E4%BB%B6%E6%B3%84%E9%9C%B2</description>
     </item>
     
   </channel>

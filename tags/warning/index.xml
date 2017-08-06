@@ -10,7 +10,9 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Sun, 25 Oct 2015 11:54:56 +0000</lastBuildDate>
-    <atom:link href="http://www.gsymy.com/tags/warning/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://www.gsymy.com/tags/warning/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>not found or not built by the last incremental link VS2010编译警告</title>
@@ -18,28 +20,26 @@
       <pubDate>Sun, 25 Oct 2015 11:54:56 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2015/10/25/not-found-or-not-built-by-the-last-incremental-link-vs2010warning.html</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;color: black; font-size: 10pt;&#34;&gt;not found or not built by the last incremental link; performing full link&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+      <description>not found or not built by the last incremental link; performing full link
 
-&lt;p&gt;&lt;span style=&#34;color: gray; font-size: 9pt;&#34;&gt;2015年10月25日&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+2015年10月25日
 
-&lt;p&gt;&lt;span style=&#34;color: gray; font-size: 9pt;&#34;&gt;19:53&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+19:53
 
-&lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;VS的一个编译警告，不算错误。原因和解决办法如下：&lt;/span&gt;&lt;span style=&#34;font-size: 12pt;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+VS的一个编译警告，不算错误。原因和解决办法如下：
+用visualstudio创建一个Win32 Console Application，编译后生成两个Debug目录，一个在项目所属的Solution下，这个Debug中会生成.exe等类型程序结果文件。另外 的一个在Project的目录中，这个Debug中包含pdb等文件，但是没有生成.exe等程序结果文件。
 
-&lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;用visualstudio创建一个Win32 Console Application，编译后生成两个Debug目录，一个在项目所属的Solution下，这个Debug中会生成.exe等类型程序结果文件。另外 的一个在Project的目录中，这个Debug中包含pdb等文件，但是没有生成.exe等程序结果文件。&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+Condition：
 
-&lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;Condition：&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+当再次重新编译项目时，出现如题的问题。
 
-&lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;当再次重新编译项目时，出现如题的问题。&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+Cause:
 
-&lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;Cause:&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+引起这个错误的根源在于Microsoft的VS的两个配置项配置冲突造成的： 配置1：Configuration Properties-&amp;gt;General-&amp;gt;Output Directory默认配置是$(SolutionDir)$(ConfigurationName) 配置2：Configuration Properties-&amp;gt;Linker-&amp;gt;General-&amp;gt;Output Directory默认配置是$(OutDir)/$(ProjectName).exe 上述的两项配置是冲突的。所以在你重新编译的时候这个错误就出现了
 
-&lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;引起这个错误的根源在于Microsoft的VS的两个配置项配置冲突造成的： 配置1：Configuration Properties-&amp;gt;General-&amp;gt;Output Directory默认配置是$(SolutionDir)$(ConfigurationName) 配置2：Configuration Properties-&amp;gt;Linker-&amp;gt;General-&amp;gt;Output Directory默认配置是$(OutDir)/$(ProjectName).exe 上述的两项配置是冲突的。所以在你重新编译的时候这个错误就出现了&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+Solution:
 
-&lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;Solution:&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #6e645b;&#34;&gt;&lt;span style=&#34;background-color: #ccced0;&#34;&gt;在project的property配置窗口中：Configuration Properties-&amp;gt;General：把Output Directory从$(SolutionDir)$(ConfigurationName)改 成$(ProjectDir)$(ConfigurationName)&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-</description>
+在project的property配置窗口中：Configuration Properties-&amp;gt;General：把Output Directory从$(SolutionDir)$(ConfigurationName)改 成$(ProjectDir)$(ConfigurationName)</description>
     </item>
     
   </channel>

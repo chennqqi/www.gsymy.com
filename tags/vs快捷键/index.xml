@@ -10,7 +10,9 @@
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Wed, 12 Aug 2015 03:50:04 +0000</lastBuildDate>
-    <atom:link href="http://www.gsymy.com/tags/vs%E5%BF%AB%E6%8D%B7%E9%94%AE/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://www.gsymy.com/tags/vs%E5%BF%AB%E6%8D%B7%E9%94%AE/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>visualstudio快捷键</title>
@@ -18,14 +20,10 @@
       <pubDate>Wed, 12 Aug 2015 03:50:04 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>http://www.gsymy.com/2015/08/12/visualstudio-shortcut.html</guid>
-      <description>&lt;p&gt;分享一个visualstudio快捷键的网站&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://visualstudioshortcuts.com&#34;&gt;http://visualstudioshortcuts.com&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;这个网站是个人站，不是微软官方的。这也是个做网站的思路，应该会有一些流量的&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-</description>
+      <description>分享一个visualstudio快捷键的网站
+http://visualstudioshortcuts.com
+这个网站是个人站，不是微软官方的。这也是个做网站的思路，应该会有一些流量的
+&amp;nbsp;</description>
     </item>
     
   </channel>
