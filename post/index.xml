@@ -9,10 +9,20 @@
     <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
-    <lastBuildDate>Sun, 16 Jul 2017 19:19:42 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 25 Feb 2018 12:13:13 +0800</lastBuildDate>
     
 	<atom:link href="http://www.gsymy.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>curl: (35) SSL connect error</title>
+      <link>http://www.gsymy.com/2018/02/25/curl_connect_error.html</link>
+      <pubDate>Sun, 25 Feb 2018 12:13:13 +0800</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>http://www.gsymy.com/2018/02/25/curl_connect_error.html</guid>
+      <description> curl: (35) SSL connect error解决办法 原因nss和libcurl版本过低导致的，解决办法升级。 centos命令
+sudo yum update nss curl -y  </description>
+    </item>
     
     <item>
       <title>软件著作权申请指南</title>

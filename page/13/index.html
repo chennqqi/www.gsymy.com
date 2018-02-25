@@ -26,14 +26,20 @@
 <meta property="og:type" content="website" />
 
 
+
+<link href="http://www.gsymy.com/index.xml" rel="alternate" type="application/rss+xml" title="程序猿的小本本" />
+
 <link rel="canonical" href="http://www.gsymy.com/" />
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.gsymy.com/touch-icon-144-precomposed.png">
 <link href="http://www.gsymy.com/favicon.png" rel="icon">
-<meta name="theme-color" content="#2053AB">
+
+<meta name="theme-color" content="theme-base-08">
+
 <meta name="generator" content="Hugo 0.25.1" />
 
-  <!--[if lt IE 9]>
+  
+<!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
@@ -43,6 +49,7 @@
 <link rel="stylesheet" href="http://www.gsymy.com/css/style.css">
 <link rel="stylesheet" href="http://www.gsymy.com/css/highlight/default.css">
 
+  
   
 </head>
 <body>
@@ -93,6 +100,12 @@
 
 <a id="contact-link-github" class="contact_link" href="https://github.com/chennqqi?tab=repositories">
   <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+
+
+
 
 
 
@@ -169,11 +182,43 @@
     <h1>程序猿的小本本
 </h1>
 
-    <span>last update: <time datetime="2017-07-16T19:19:42&#43;08:00">16 July at 7:19pm</time>
+    <span>last update: <time datetime="2018-02-25T12:13:13&#43;08:00">25 February at 12:13pm</time>
 </span>
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://www.gsymy.com/2015/08/31/centos_stop_cups.html">centos关闭cups打印服务
+</a>
+</h2>
+
+  <time datetime="2015-08-31">31 Aug, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    centos/redhat 等关闭cups打印服务
+linux的cups打印服务占用了631端口，大多数人用不到这个服务，建议关闭
+关闭服务和自启动：
+sudo service cups stop sudo chkconfig --level 2345 cups off &nbsp;
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://www.gsymy.com/2015/08/31/centos_stop_cups.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -301,43 +346,6 @@ htpasswd -c /usr/share/nginx/authdb liming 实际路径根据实际情况，如�
 
   <div class="container readlink">
   <a href="http://www.gsymy.com/2015/08/26/nginx_auth_proxy.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="http://www.gsymy.com/2015/08/26/nirsoft.html">nirsoft
-</a>
-</h2>
-
-  <time datetime="2015-08-26">26 Aug, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    推荐一个网站: http://www.nirsoft.net
-nirsoft开发了很多体积小又实用的windows软件，而且基本都是免费的。
-涵盖网络、注册表、磁盘、系统、路由、服务等等，基本上windows上开发所涉及的都有工具。
-这里可以下载工具合集
-&nbsp;
-&nbsp;
-&nbsp;
-语言包需要单独下载，并解压缩到软件集合（里边有很多exe)文件夹中
- Japanese Simplified Chinese Traditional Chinese  &nbsp;
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="http://www.gsymy.com/2015/08/26/nirsoft.html">Read more &rarr;</a>
 
 </div>
 
@@ -484,29 +492,11 @@ nirsoft开发了很多体积小又实用的windows软件，而且基本都是免
 </footer>
 
     </main>
-    ﻿
+    
+
 
 <script src="http://www.gsymy.com/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-
-
-
-
-
-
-
-<div style="display:none">
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?f0f7d05b2bbbb8c6a0d1d1a6b450bd97";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-<div>
-
 
 
     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256010403'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1256010403%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>

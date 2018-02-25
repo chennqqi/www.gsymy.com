@@ -26,14 +26,20 @@
 <meta property="og:type" content="website" />
 
 
+
+<link href="http://www.gsymy.com/index.xml" rel="alternate" type="application/rss+xml" title="程序猿的小本本" />
+
 <link rel="canonical" href="http://www.gsymy.com/" />
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.gsymy.com/touch-icon-144-precomposed.png">
 <link href="http://www.gsymy.com/favicon.png" rel="icon">
-<meta name="theme-color" content="#2053AB">
+
+<meta name="theme-color" content="theme-base-08">
+
 <meta name="generator" content="Hugo 0.25.1" />
 
-  <!--[if lt IE 9]>
+  
+<!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
@@ -43,6 +49,7 @@
 <link rel="stylesheet" href="http://www.gsymy.com/css/style.css">
 <link rel="stylesheet" href="http://www.gsymy.com/css/highlight/default.css">
 
+  
   
 </head>
 <body>
@@ -93,6 +100,12 @@
 
 <a id="contact-link-github" class="contact_link" href="https://github.com/chennqqi?tab=repositories">
   <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+
+
+
 
 
 
@@ -169,11 +182,53 @@
     <h1>程序猿的小本本
 </h1>
 
-    <span>last update: <time datetime="2017-07-16T19:19:42&#43;08:00">16 July at 7:19pm</time>
+    <span>last update: <time datetime="2018-02-25T12:13:13&#43;08:00">25 February at 12:13pm</time>
 </span>
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://www.gsymy.com/2015/11/15/jni-getfieldidcrash.html">jni GetFieldID崩溃的一个可能原因
+</a>
+</h2>
+
+  <time datetime="2015-11-15">15 Nov, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    错误信息如下：
+# Problematic frame:
+
+# V [libjvm.so+0x5338c6] jni_GetFieldID+0xf6
+
+java版本JDK 1.7.0 X64
+
+分析GetFieldID第一个参数是通过FindClass来获得的，如果获取失败这里就崩溃了。
+
+检查你FindClass里的参数是否正确；包路径是否正确；
+
+注意：在低版本的java里FindClass包路径写&#8221;com.XXX.XXX.XXX&#8221;是可以的，
+
+而java1.7里要求写&#8221;com/XXX/XXX/XXX&#8221;的路径方式
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://www.gsymy.com/2015/11/15/jni-getfieldidcrash.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -339,48 +394,6 @@ http://news.sohu.com/20151028/n424488061.shtml
 </article>
 
   
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="http://www.gsymy.com/2015/10/27/qmake_vsproject.html">qmake不能生成vs工程文件
-</a>
-</h2>
-
-  <time datetime="2015-10-27">27 Oct, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    报错信息如下：
-
-WARNING: Unable to generate output for: Makefile.Debug [TEMPLATE vcapp]
-
-正常情况下命令式:
-
-qmake -tp vc xxx.pro 
-解决办法
-有些环境下装了多个Qt或者是环境变量有问题导致qmake没有找到正确的spec
-
-修改命令为:
-
-qmake -tp vc -spec win32-msvc2010 xxx.pro &nbsp;
-这里spec选择你需要的版本即可
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="http://www.gsymy.com/2015/10/27/qmake_vsproject.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
   
 <div class="container pagination">
   
@@ -520,29 +533,11 @@ qmake -tp vc -spec win32-msvc2010 xxx.pro &nbsp;
 </footer>
 
     </main>
-    ﻿
+    
+
 
 <script src="http://www.gsymy.com/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-
-
-
-
-
-
-
-<div style="display:none">
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?f0f7d05b2bbbb8c6a0d1d1a6b450bd97";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-<div>
-
 
 
     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256010403'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1256010403%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>

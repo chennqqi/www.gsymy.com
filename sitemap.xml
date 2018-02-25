@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.gsymy.com/2018/02/25/curl_connect_error.html</loc>
+    <lastmod>2018-02-25T12:13:13+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.gsymy.com/2017/07/16/software_copyright.html</loc>
     <lastmod>2017-07-16T19:19:42+08:00</lastmod>
   </url>
@@ -410,7 +415,7 @@
   
   <url>
     <loc>http://www.gsymy.com/tags/centos/</loc>
-    <lastmod>2016-12-06T22:17:01+08:00</lastmod>
+    <lastmod>2018-02-25T12:13:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -435,6 +440,12 @@
   <url>
     <loc>http://www.gsymy.com/tags/copyright/</loc>
     <lastmod>2017-07-16T19:19:42+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.gsymy.com/tags/curl/</loc>
+    <lastmod>2018-02-25T12:13:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -590,13 +601,13 @@
   
   <url>
     <loc>http://www.gsymy.com/tags/linux/</loc>
-    <lastmod>2017-02-03T10:01:17+08:00</lastmod>
+    <lastmod>2018-02-25T12:13:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.gsymy.com/topics/linux/</loc>
-    <lastmod>2017-07-06T22:56:21+08:00</lastmod>
+    <lastmod>2018-02-25T12:13:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -650,7 +661,7 @@
   
   <url>
     <loc>http://www.gsymy.com/post/</loc>
-    <lastmod>2017-07-16T19:19:42+08:00</lastmod>
+    <lastmod>2018-02-25T12:13:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1016,7 +1027,7 @@
   
   <url>
     <loc>http://www.gsymy.com/</loc>
-    <lastmod>2017-07-16T19:19:42+08:00</lastmod>
+    <lastmod>2018-02-25T12:13:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   

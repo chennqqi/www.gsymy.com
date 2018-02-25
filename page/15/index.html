@@ -26,14 +26,20 @@
 <meta property="og:type" content="website" />
 
 
+
+<link href="http://www.gsymy.com/index.xml" rel="alternate" type="application/rss+xml" title="程序猿的小本本" />
+
 <link rel="canonical" href="http://www.gsymy.com/" />
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.gsymy.com/touch-icon-144-precomposed.png">
 <link href="http://www.gsymy.com/favicon.png" rel="icon">
-<meta name="theme-color" content="#2053AB">
+
+<meta name="theme-color" content="theme-base-08">
+
 <meta name="generator" content="Hugo 0.25.1" />
 
-  <!--[if lt IE 9]>
+  
+<!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
@@ -43,6 +49,7 @@
 <link rel="stylesheet" href="http://www.gsymy.com/css/style.css">
 <link rel="stylesheet" href="http://www.gsymy.com/css/highlight/default.css">
 
+  
   
 </head>
 <body>
@@ -93,6 +100,12 @@
 
 <a id="contact-link-github" class="contact_link" href="https://github.com/chennqqi?tab=repositories">
   <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+
+
+
 
 
 
@@ -169,11 +182,116 @@
     <h1>程序猿的小本本
 </h1>
 
-    <span>last update: <time datetime="2017-07-16T19:19:42&#43;08:00">16 July at 7:19pm</time>
+    <span>last update: <time datetime="2018-02-25T12:13:13&#43;08:00">25 February at 12:13pm</time>
 </span>
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://www.gsymy.com/2015/08/23/linux-getopt.html">Linux 命令行参数处理函数探究(转)
+</a>
+</h2>
+
+  <time datetime="2015-08-23">23 Aug, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    <p>一、getopt函数</p>
+
+<p><img src="http://blog.chinaunix.net/attachment/201205/20/26833883_1337526381qRMV.png" alt="" /></p>
+
+<div>
+  A.函数功能：处理命令行参数
+</div>
+
+<div>
+</div>
+
+<div>
+  B.参数:
+</div>
+
+<div>
+</div>
+
+<div>
+  argc代表命令行参数的个数，argv[i]存放命令行参数在内存存放的地址。这两个参数直接从mian(int argc,char *argv[])得到。
+</div>
+
+<div>
+</div>
+
+<div>
+  如果argv的元素是以 &#8220;-“开头称为一个选项元素,紧跟在&#8221;-&#8220;后面的一个字符称为选项字符。
+</div>
+
+<div>
+</div>
+
+<div>
+  eg:ls  -l
+</div>
+
+<div>
+</div>
+
+<div>
+  其中ls是可执行程序名称，-l称为选项元素，&#8217;l&#8217;称为选项字符
+</div>
+
+<div>
+</div>
+
+<div>
+  optstring:选项参数的集合
+</div>
+
+<div>
+</div>
+
+<div>
+  注意:如果getopt()函数被循环调用，每次调用都会返回一个对应选元素的选项字符,如果所有选项字符都放回后，再次调用getopt()函数返回-1。
+</div>
+
+<div>
+</div>
+
+<div>
+</div>
+
+<div>
+  <pre class="lang:c decode:true ">./a.out   -a  -n  -l
+ 
+while(1)
+{
+    ch = getopt(argc,argv,"anl");
+}</pre>
+  
+  <p>
+    &nbsp;
+  </p>
+</div>
+
+<p></p>
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://www.gsymy.com/2015/08/23/linux-getopt.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -405,43 +523,6 @@
 </article>
 
   
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="http://www.gsymy.com/2015/08/18/vs-cmdline-build.html">vs 命令行编译
-</a>
-</h2>
-
-  <time datetime="2015-08-18">18 Aug, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    <p>简单用法 进入命令行vs Command Prompt，参考以下格式</p>
-
-<pre class="lang:default decode:true">devenv xxxx.vcxproj /Build "Release|Win32"
-devenv xxxx.sln /Build "Debug|x64"</pre>
-
-<pre class="lang:default decode:true ">devenv xxxx.vcxproj /Clean "Release|Win32"
-devenv xxxx.sln /Clean "Debug|x64"</pre>
-
-<p>详细用法可以参考VS帮助 </p>
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="http://www.gsymy.com/2015/08/18/vs-cmdline-build.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
   
 <div class="container pagination">
   
@@ -581,29 +662,11 @@ devenv xxxx.sln /Clean "Debug|x64"</pre>
 </footer>
 
     </main>
-    ﻿
+    
+
 
 <script src="http://www.gsymy.com/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-
-
-
-
-
-
-
-<div style="display:none">
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?f0f7d05b2bbbb8c6a0d1d1a6b450bd97";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-<div>
-
 
 
     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256010403'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1256010403%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>

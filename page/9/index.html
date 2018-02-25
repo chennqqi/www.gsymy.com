@@ -26,14 +26,20 @@
 <meta property="og:type" content="website" />
 
 
+
+<link href="http://www.gsymy.com/index.xml" rel="alternate" type="application/rss+xml" title="程序猿的小本本" />
+
 <link rel="canonical" href="http://www.gsymy.com/" />
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.gsymy.com/touch-icon-144-precomposed.png">
 <link href="http://www.gsymy.com/favicon.png" rel="icon">
-<meta name="theme-color" content="#2053AB">
+
+<meta name="theme-color" content="theme-base-08">
+
 <meta name="generator" content="Hugo 0.25.1" />
 
-  <!--[if lt IE 9]>
+  
+<!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
@@ -43,6 +49,7 @@
 <link rel="stylesheet" href="http://www.gsymy.com/css/style.css">
 <link rel="stylesheet" href="http://www.gsymy.com/css/highlight/default.css">
 
+  
   
 </head>
 <body>
@@ -93,6 +100,12 @@
 
 <a id="contact-link-github" class="contact_link" href="https://github.com/chennqqi?tab=repositories">
   <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+
+
+
 
 
 
@@ -169,11 +182,63 @@
     <h1>程序猿的小本本
 </h1>
 
-    <span>last update: <time datetime="2017-07-16T19:19:42&#43;08:00">16 July at 7:19pm</time>
+    <span>last update: <time datetime="2018-02-25T12:13:13&#43;08:00">25 February at 12:13pm</time>
 </span>
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://www.gsymy.com/2015/10/15/wildcard_match.html">C语言通配符匹配
+</a>
+</h2>
+
+  <time datetime="2015-10-15">15 Oct, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    C语言通配符匹配
+
+工作中经常会遇到通配符，windows控制台程序，linux shell，还有web服务器配置路径，Makefile中。
+
+我来分享两个C语言通配符匹配程序和测试程序；我是抱着拿来主义的想法，年纪大了越越懒得动脑子了。
+
+
+通配符程序中用到的是*和?
+
+*表示任意多个任意字符
+
+?表示单个任意字符
+
+关于通配符的定义引用百度百科的一段话
+
+通配符是一种特殊语句，主要有星号(*)和问号(?)，用来模糊搜索文件。当查找文件夹时，可以使用它来代替一个或多个真正字符；当不知道真正字符或者懒得输入完整名字时，常常使用通配符代替一个或多个真正的字符。 实际上用&#8221;*Not?paOd&#8221;可以对应Notpad\MyNotpad【*可以代表任何文字】;Notpad\Notepad【?仅代表单个字】;Notepad\Notepod【ao代表a与o里二选一】，其余以此类推。
+
+第一个程序是商业友好的license，请放心使用！
+License
+
+This article has no explicit license attached to it but may contain usage terms in the article text or the download files themselves. If in doubt please contact the author via the discussion board below.
+
+A list of licenses authors might use can be found here
+第二个没有明确标明。
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://www.gsymy.com/2015/10/15/wildcard_match.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -272,54 +337,6 @@ https://www.nginx.com/resources/wiki/start/topics/tutorials/install/
 
   <div class="container readlink">
   <a href="http://www.gsymy.com/2015/10/10/dota_story.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="http://www.gsymy.com/2015/10/03/tortoisegittortoisesvn-icon.html">tortoisegit/tortoisesvn 图标失效问题
-</a>
-</h2>
-
-  <time datetime="2015-10-03">3 Oct, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    作为一个开发者tortoisegit/tortoisesvn当然时少不了的；
-最近发现tortoisegit/tortoisesvn不在显示了，文件修改后也不变红；
-刚开始以为是被360有优化掉了；查看了一下启动项和进程；没问题
-TSVNCache.exe进程就是负责决定在tortoise管理下的每个文件、文件夹应该显示哪个图标；
-公司电脑和我自己的电脑都有这个问题；
-搜索引擎上找了一下：
-找到了结论
-Windows Explorer Shell 支持的 Overlay Icon 最多 15 个，Windows 自身使用了 4 个，只剩 11 个可扩展使用。
-360cloud（云盘）、百度云盘、OneDrive、skyDrive等软件都会占用；而每个软件都会尽量让自己的优先生效；
-我最近装了微软的OneDrive所以就出问题了；
-解决办法：
-修改
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers 里注册的优先顺序；使得Tortoise尽量靠前；顺序是按照ascii码的顺序来的；
-盗一个图
-注意：有些软件再你修改后，下次启动时会再次修改顺序；你要想办法解决这个问题！
-&nbsp;
-&nbsp;
-详细可以参考：
-http://blog.csdn.net/chaoyuan899/article/details/9128939
-http://www.oschina.net/question/2297147_245156
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="http://www.gsymy.com/2015/10/03/tortoisegittortoisesvn-icon.html">Read more &rarr;</a>
 
 </div>
 
@@ -466,29 +483,11 @@ http://www.oschina.net/question/2297147_245156
 </footer>
 
     </main>
-    ﻿
+    
+
 
 <script src="http://www.gsymy.com/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-
-
-
-
-
-
-
-<div style="display:none">
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?f0f7d05b2bbbb8c6a0d1d1a6b450bd97";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-<div>
-
 
 
     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256010403'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1256010403%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>

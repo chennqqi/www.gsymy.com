@@ -26,14 +26,20 @@
 <meta property="og:type" content="website" />
 
 
+
+<link href="http://www.gsymy.com/index.xml" rel="alternate" type="application/rss+xml" title="程序猿的小本本" />
+
 <link rel="canonical" href="http://www.gsymy.com/" />
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.gsymy.com/touch-icon-144-precomposed.png">
 <link href="http://www.gsymy.com/favicon.png" rel="icon">
-<meta name="theme-color" content="#2053AB">
+
+<meta name="theme-color" content="theme-base-08">
+
 <meta name="generator" content="Hugo 0.25.1" />
 
-  <!--[if lt IE 9]>
+  
+<!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
@@ -43,6 +49,7 @@
 <link rel="stylesheet" href="http://www.gsymy.com/css/style.css">
 <link rel="stylesheet" href="http://www.gsymy.com/css/highlight/default.css">
 
+  
   
 </head>
 <body>
@@ -93,6 +100,12 @@
 
 <a id="contact-link-github" class="contact_link" href="https://github.com/chennqqi?tab=repositories">
   <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+
+
+
 
 
 
@@ -169,11 +182,68 @@
     <h1>程序猿的小本本
 </h1>
 
-    <span>last update: <time datetime="2017-07-16T19:19:42&#43;08:00">16 July at 7:19pm</time>
+    <span>last update: <time datetime="2018-02-25T12:13:13&#43;08:00">25 February at 12:13pm</time>
 </span>
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="http://www.gsymy.com/2016/01/11/centos_install_gitolite.html">centos安装gitolite
+</a>
+</h2>
+
+  <time datetime="2016-01-11">11 Jan, 2016</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    安装基础包
+yum install perl openssh git
+ yum install perl-Time-HiRes
+ 创建git用户
+useradd -d /home/git git
+ passwd git
+ 在git用户家目录下安装gitolite
+切换到git用户
+
+# su –git
+ 创建文件夹bin
+
+$ mkdir bin
+ 克隆gitolite源码
+
+$ git clone https://github.com/sitaramc/gitolite.git
+ $ ls
+ bingitolite
+ 安装gitolite
+
+$ ./gitolite/install -to /home/git/bin/
+ $ cd bin/
+ $ ls
+ commandsgitolitegitolite-shelllibsyntactic-sugartriggersVERSIONVREF
+ 配置gitolite管理员
+生成管理员账户的公钥（此处指定本地root用户为管理员，键入回车使用默认值） 
+
+# ssh-keygen
+ 复制管理的公钥
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="http://www.gsymy.com/2016/01/11/centos_install_gitolite.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -275,52 +345,6 @@ Can&#8217;t open xxxx.pch
 
   <div class="container readlink">
   <a href="http://www.gsymy.com/2015/12/30/visualstudio-pch.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="http://www.gsymy.com/2015/12/22/linux_using_cxx11.html">Linux使用C&#43;&#43;11
-</a>
-</h2>
-
-  <time datetime="2015-12-22">22 Dec, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    CentOS中默认使用的GCC是4.4的，所以不支持C++11
-gcc选项 -std=c++11 需要GCC4.7以上的版本
-这里提供一个简单简单的方法
-
-Centos使用
-cd /etc/yum.repos.d sudo wget http://people.centos.org/tru/devtools-1.1/devtools-1.1.repo sudo yum --enablerepo=testing-1.1-devtools-6 install devtoolset-1.1-gcc devtoolset-1.1-binutils devtoolset-1.1-gcc-c++ 安装后gcc版本是4.7.2
-你也可以激进一点安装更高版本的
-
-sudo wget http://people.centos.org/tru/devtools-2/devtools-2.repo sudo yum install devtoolset-2-gcc devtoolset-2-binutils devtoolset-2-gcc-c++ 安装之后gcc版本是4.8.2
-切换4.7.2
-scl enable devtoolset-1.1 bash 切换4.8.2
-scl enable devtoolset-2 bash 参考资料：
-
-http://braaten-family.org/ed/blog/2014-05-28-devtools-for-centos/
-http://preilly.me/2013/05/28/redhat-developer-toolset-1-1/
-ubuntu使用
-参考这里:
-https://stackoverflow.com/questions/7832892/how-to-change-the-default-gcc-compiler-in-ubuntu
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="http://www.gsymy.com/2015/12/22/linux_using_cxx11.html">Read more &rarr;</a>
 
 </div>
 
@@ -467,29 +491,11 @@ https://stackoverflow.com/questions/7832892/how-to-change-the-default-gcc-compil
 </footer>
 
     </main>
-    ﻿
+    
+
 
 <script src="http://www.gsymy.com/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-
-
-
-
-
-
-
-<div style="display:none">
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?f0f7d05b2bbbb8c6a0d1d1a6b450bd97";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-<div>
-
 
 
     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256010403'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1256010403%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
