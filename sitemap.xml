@@ -468,14 +468,14 @@
   </url>
   
   <url>
-    <loc>http://www.gsymy.com/tags/devops/</loc>
-    <lastmod>2015-11-15T06:46:03+00:00</lastmod>
+    <loc>http://www.gsymy.com/topics/devops/</loc>
+    <lastmod>2016-12-06T22:17:01+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.gsymy.com/topics/devops/</loc>
-    <lastmod>2016-12-06T22:17:01+08:00</lastmod>
+    <loc>http://www.gsymy.com/tags/devops/</loc>
+    <lastmod>2015-11-15T06:46:03+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -510,14 +510,14 @@
   </url>
   
   <url>
-    <loc>http://www.gsymy.com/tags/error/</loc>
-    <lastmod>2016-12-01T21:20:40+08:00</lastmod>
+    <loc>http://www.gsymy.com/topics/error/</loc>
+    <lastmod>2017-06-12T15:40:21+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.gsymy.com/topics/error/</loc>
-    <lastmod>2017-06-12T15:40:21+08:00</lastmod>
+    <loc>http://www.gsymy.com/tags/error/</loc>
+    <lastmod>2016-12-01T21:20:40+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -600,13 +600,13 @@
   </url>
   
   <url>
-    <loc>http://www.gsymy.com/tags/linux/</loc>
+    <loc>http://www.gsymy.com/topics/linux/</loc>
     <lastmod>2018-02-25T12:13:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.gsymy.com/topics/linux/</loc>
+    <loc>http://www.gsymy.com/tags/linux/</loc>
     <lastmod>2018-02-25T12:13:13+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -690,13 +690,13 @@
   </url>
   
   <url>
-    <loc>http://www.gsymy.com/tags/python/</loc>
+    <loc>http://www.gsymy.com/topics/python/</loc>
     <lastmod>2016-12-01T21:20:40+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.gsymy.com/topics/python/</loc>
+    <loc>http://www.gsymy.com/tags/python/</loc>
     <lastmod>2016-12-01T21:20:40+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -834,13 +834,13 @@
   </url>
   
   <url>
-    <loc>http://www.gsymy.com/tags/vs2017/</loc>
+    <loc>http://www.gsymy.com/topics/vs2017/</loc>
     <lastmod>2016-12-03T18:11:53+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.gsymy.com/topics/vs2017/</loc>
+    <loc>http://www.gsymy.com/tags/vs2017/</loc>
     <lastmod>2016-12-03T18:11:53+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -858,14 +858,14 @@
   </url>
   
   <url>
-    <loc>http://www.gsymy.com/tags/windows/</loc>
-    <lastmod>2016-09-18T16:30:17+08:00</lastmod>
+    <loc>http://www.gsymy.com/topics/windows/</loc>
+    <lastmod>2017-07-16T10:13:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.gsymy.com/topics/windows/</loc>
-    <lastmod>2017-07-16T10:13:13+08:00</lastmod>
+    <loc>http://www.gsymy.com/tags/windows/</loc>
+    <lastmod>2016-09-18T16:30:17+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -882,13 +882,13 @@
   </url>
   
   <url>
-    <loc>http://www.gsymy.com/tags/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E6%B4%BB/</loc>
+    <loc>http://www.gsymy.com/topics/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2016-11-02T15:19:17+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.gsymy.com/topics/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E6%B4%BB/</loc>
+    <loc>http://www.gsymy.com/tags/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2016-11-02T15:19:17+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -954,13 +954,13 @@
   </url>
   
   <url>
-    <loc>http://www.gsymy.com/tags/%E5%BB%BA%E7%AB%99/</loc>
+    <loc>http://www.gsymy.com/topics/%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2016-10-18T10:11:56+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.gsymy.com/topics/%E5%BB%BA%E7%AB%99/</loc>
+    <loc>http://www.gsymy.com/tags/%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2016-10-18T10:11:56+08:00</lastmod>
     <priority>0</priority>
   </url>
