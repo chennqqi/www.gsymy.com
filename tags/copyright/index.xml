@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Copyright on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/tags/copyright/</link>
+    <link>/tags/copyright/</link>
     <description>Recent content in Copyright on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Sun, 16 Jul 2017 19:19:42 +0800</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/tags/copyright/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/copyright/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>软件著作权申请指南</title>
-      <link>http://www.gsymy.com/2017/07/16/software_copyright.html</link>
+      <link>/2017/07/16/software_copyright.html</link>
       <pubDate>Sun, 16 Jul 2017 19:19:42 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2017/07/16/software_copyright.html</guid>
+      <guid>/2017/07/16/software_copyright.html</guid>
       <description> 软件著作权申请指南 1. 必备材料 软件著作权的申请材料主要包括 申请书（中国版权保护中心上填写，网上生成）、源代码、文档（可以命名为需求规格说明书、设计方案、用户需求说明书等）三部分 还有申请人（单位）的身份证明
 2. 要点 申请表  资料真实 自然人填写身份证号 软件名称应当和其他文档中统一 申请日期应当在软件完成之后 如果是企业申请，需要营业执照，注意全角字符和半角字符 注意企业的注册日期和软件的申请时间  软件源代码文档  软件代码超过60页就贴前三十页和最后三十页 软件代码中间不留空行空页，不是完全不留空行，是不需要切页 一页代码50行 最后一页代码需要是一个完整的功能模块 如果代码不足60页需要全部贴上去 文档标题软件名称应当和申请表标题一致 注意日期时间应当满足： 设计时间&amp;lt;代码时间&amp;lt;申请时间  设计说明书（可选用户手册等）  每页不应少于30行，页面包含图片除外 图片截图需要截完整，需要包含完整的退出最大化按钮背景，背景最好包含别的参照 设计说明书完成日期应当在软件源码完成之前  3. 更新历史 TO BE CONTINUE...  4. 参考  http://www.ccopyright.com/index.php?optionid=1057 https://www.zhihu.com/question/20850680  </description>
     </item>

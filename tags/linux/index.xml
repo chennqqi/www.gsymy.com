@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/tags/linux/</link>
+    <link>/tags/linux/</link>
     <description>Recent content in Linux on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,25 +11,25 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Sun, 25 Feb 2018 12:13:13 +0800</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>curl: (35) SSL connect error</title>
-      <link>http://www.gsymy.com/2018/02/25/curl_connect_error.html</link>
+      <link>/2018/02/25/curl_connect_error.html</link>
       <pubDate>Sun, 25 Feb 2018 12:13:13 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2018/02/25/curl_connect_error.html</guid>
+      <guid>/2018/02/25/curl_connect_error.html</guid>
       <description> curl: (35) SSL connect error解决办法 原因nss和libcurl版本过低导致的，解决办法升级。 centos命令
 sudo yum update nss curl -y  </description>
     </item>
     
     <item>
       <title>unknown_u16_type</title>
-      <link>http://www.gsymy.com/2017/02/03/unknown_u16_type.html</link>
+      <link>/2017/02/03/unknown_u16_type.html</link>
       <pubDate>Fri, 03 Feb 2017 10:01:17 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2017/02/03/unknown_u16_type.html</guid>
+      <guid>/2017/02/03/unknown_u16_type.html</guid>
       <description>issue:
 gcc build error error: unknown type name ‘u16’  solution:
 install kernel-headers sudo yum install kernel-headers -y  referer: https://bugzilla.redhat.com/show_bug.cgi?format=multiple&amp;amp;id=689756</description>
@@ -37,10 +37,10 @@ install kernel-headers sudo yum install kernel-headers -y  referer: https://bugz
     
     <item>
       <title>install gnu parallel, not only centos platform</title>
-      <link>http://www.gsymy.com/2016/12/06/install_gnu_parallel.html</link>
+      <link>/2016/12/06/install_gnu_parallel.html</link>
       <pubDate>Tue, 06 Dec 2016 22:17:01 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/12/06/install_gnu_parallel.html</guid>
+      <guid>/2016/12/06/install_gnu_parallel.html</guid>
       <description>##
 Steps: visit https://build.opensuse.org/package/show?package=parallel&amp;amp;project=home%3Atange
 look at right top corner, click download.
@@ -52,10 +52,10 @@ Reference:
     
     <item>
       <title>mount NTFS on linux</title>
-      <link>http://www.gsymy.com/2016/10/08/linux-mount-ntfs.html</link>
+      <link>/2016/10/08/linux-mount-ntfs.html</link>
       <pubDate>Sat, 08 Oct 2016 13:56:17 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/10/08/linux-mount-ntfs.html</guid>
+      <guid>/2016/10/08/linux-mount-ntfs.html</guid>
       <description>#how to mount a ntfs partition/drive on linux
  linux may not integrate ntfs driver, so you need install ntfs-3g
 ntfs-3g is an opensource ntfs driver for linux
@@ -68,10 +68,10 @@ parted is an gnu partition tool that can analize disk like fdisk which support G
     
     <item>
       <title>没有找到visudo - not found sudo</title>
-      <link>http://www.gsymy.com/2016/09/24/notfound-sudo.html</link>
+      <link>/2016/09/24/notfound-sudo.html</link>
       <pubDate>Sat, 24 Sep 2016 09:14:14 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/09/24/notfound-sudo.html</guid>
+      <guid>/2016/09/24/notfound-sudo.html</guid>
       <description>##没有找到sudo/visudo &amp;ndash; not found sudo/visudo
 买了一个VPS，新建了一个普通用户，想给配置个sudo权限时发现既没有visudo 也没有/etc/sudoers
 错误信息:
@@ -81,10 +81,10 @@ yum install sudo  注： 未在ubuntu下进行测试</description>
     
     <item>
       <title>linux 安装最新版本的git</title>
-      <link>http://www.gsymy.com/2016/09/17/install_git.html</link>
+      <link>/2016/09/17/install_git.html</link>
       <pubDate>Sat, 17 Sep 2016 22:28:22 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/09/17/install_git.html</guid>
+      <guid>/2016/09/17/install_git.html</guid>
       <description>#linux 安装最新版本的git
  下载源代码
 https://www.kernel.org/pub/software/scm/git/  最新版本为2.10.0
@@ -98,10 +98,10 @@ tar xvf git-2.10.0.tar.gz cd git-2.10.0 ./configure --with-openssl --with-libpcr
     
     <item>
       <title>pyenv rehash problem</title>
-      <link>http://www.gsymy.com/2016/08/25/pyenv_rehash_problem.html</link>
+      <link>/2016/08/25/pyenv_rehash_problem.html</link>
       <pubDate>Thu, 25 Aug 2016 13:35:57 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/08/25/pyenv_rehash_problem.html</guid>
+      <guid>/2016/08/25/pyenv_rehash_problem.html</guid>
       <description>#pyenv rehash problem
 description:
 pyenv: cannot rehash: /home/XXX/.pyenv/shims/.pyenv-shim exists  fixup:
@@ -112,10 +112,10 @@ http://stackoverflow.com/questions/29753592/pyenv-shim-not-created-when-installi
     
     <item>
       <title>linux screen 命令详解(转)</title>
-      <link>http://www.gsymy.com/2015/08/25/linux-screen.html</link>
+      <link>/2015/08/25/linux-screen.html</link>
       <pubDate>Tue, 25 Aug 2015 00:57:10 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/25/linux-screen.html</guid>
+      <guid>/2015/08/25/linux-screen.html</guid>
       <description>&lt;p&gt;转&lt;a href=&#34;http://www.cnblogs.com/mchina/archive/2013/01/30/2880680.html&#34; target=&#34;_blank&#34;&gt;linux screen 命令详解 &amp;#8211; David_Tang &amp;#8211; 博客园&lt;/a&gt;&lt;/p&gt;
 
 &lt;div id=&#34;home&#34;&gt;
@@ -202,10 +202,10 @@ http://stackoverflow.com/questions/29753592/pyenv-shim-not-created-when-installi
     
     <item>
       <title>非root用户使用tcpdump</title>
-      <link>http://www.gsymy.com/2015/08/23/tcpdumpnoroot.html</link>
+      <link>/2015/08/23/tcpdumpnoroot.html</link>
       <pubDate>Sun, 23 Aug 2015 15:10:26 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/23/tcpdumpnoroot.html</guid>
+      <guid>/2015/08/23/tcpdumpnoroot.html</guid>
       <description>  centos/redhat下安装tcpdump sudo yum install -y tcpdump
   在tcpdump所在目录下执行 sudo chmod u+s tcpdump   &amp;nbsp; 
 原理参考： tcpdump 安装和文件的s权限 &amp;#8211; arkblue的专栏 &amp;#8211; 博客频道 &amp;#8211; CSDN.NET
@@ -214,10 +214,10 @@ http://stackoverflow.com/questions/29753592/pyenv-shim-not-created-when-installi
     
     <item>
       <title>Linux 命令行参数处理函数探究(转)</title>
-      <link>http://www.gsymy.com/2015/08/23/linux-getopt.html</link>
+      <link>/2015/08/23/linux-getopt.html</link>
       <pubDate>Sun, 23 Aug 2015 01:59:32 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/23/linux-getopt.html</guid>
+      <guid>/2015/08/23/linux-getopt.html</guid>
       <description>&lt;p&gt;一、getopt函数&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://blog.chinaunix.net/attachment/201205/20/26833883_1337526381qRMV.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -299,10 +299,10 @@ while(1)
     
     <item>
       <title>怎么编写Linux守护程序</title>
-      <link>http://www.gsymy.com/2015/08/18/linux-daemon-writing-howto.html</link>
+      <link>/2015/08/18/linux-daemon-writing-howto.html</link>
       <pubDate>Tue, 18 Aug 2015 02:26:13 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/18/linux-daemon-writing-howto.html</guid>
+      <guid>/2015/08/18/linux-daemon-writing-howto.html</guid>
       <description>&lt;p&gt;来源： &lt;em&gt;&lt;a href=&#34;http://www.linuxprofilm.com/articles/linux-daemon-howto.html#&#34;&gt;Linux Daemon Writing HOWTO&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;linux-daemon-writing-howto&#34;&gt;Linux Daemon Writing HOWTO&lt;/h1&gt;
@@ -316,10 +316,10 @@ while(1)
     
     <item>
       <title>linux 修改默认Qt版本</title>
-      <link>http://www.gsymy.com/2015/08/08/linux-change_default_qt_version.html</link>
+      <link>/2015/08/08/linux-change_default_qt_version.html</link>
       <pubDate>Sat, 08 Aug 2015 03:03:59 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/08/linux-change_default_qt_version.html</guid>
+      <guid>/2015/08/08/linux-change_default_qt_version.html</guid>
       <description>&lt;p&gt;centos 5\6 下默认使用Qt3&lt;/p&gt;
 
 &lt;p&gt;可以通过sudo yum install qt-devel 安装qt4&lt;/p&gt;
@@ -333,10 +333,10 @@ while(1)
     
     <item>
       <title>linux 挂载U盘</title>
-      <link>http://www.gsymy.com/2015/08/02/linux-mountusbdisk.html</link>
+      <link>/2015/08/02/linux-mountusbdisk.html</link>
       <pubDate>Sun, 02 Aug 2015 02:59:29 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/02/linux-mountusbdisk.html</guid>
+      <guid>/2015/08/02/linux-mountusbdisk.html</guid>
       <description>&lt;p&gt;U盘插入后，用fdisk -l(需要管理员权限，否则为空) 查看U是否已经被识别&lt;/p&gt;
 
 &lt;ol&gt;
@@ -365,10 +365,10 @@ while(1)
     
     <item>
       <title>centos 无法找到json-c</title>
-      <link>http://www.gsymy.com/2015/07/30/centos-cantfind-json-c.html</link>
+      <link>/2015/07/30/centos-cantfind-json-c.html</link>
       <pubDate>Thu, 30 Jul 2015 15:46:20 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/07/30/centos-cantfind-json-c.html</guid>
+      <guid>/2015/07/30/centos-cantfind-json-c.html</guid>
       <description>&lt;h2 id=&#34;错误信息&#34;&gt;错误信息:&lt;/h2&gt;
 
 &lt;div&gt;
@@ -394,10 +394,10 @@ while(1)
     
     <item>
       <title>linux 无法找到gengetopt</title>
-      <link>http://www.gsymy.com/2015/07/30/linux_not_found_gengetopt.html</link>
+      <link>/2015/07/30/linux_not_found_gengetopt.html</link>
       <pubDate>Thu, 30 Jul 2015 15:43:42 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/07/30/linux_not_found_gengetopt.html</guid>
+      <guid>/2015/07/30/linux_not_found_gengetopt.html</guid>
       <description>&lt;h2 id=&#34;系统没有安装gengetopt&#34;&gt;&lt;strong&gt;系统没有安装gengetopt&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;div&gt;

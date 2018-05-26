@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Json C on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/tags/json-c/</link>
+    <link>/tags/json-c/</link>
     <description>Recent content in Json C on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Thu, 30 Jul 2015 15:46:20 +0000</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/tags/json-c/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/json-c/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>centos 无法找到json-c</title>
-      <link>http://www.gsymy.com/2015/07/30/centos-cantfind-json-c.html</link>
+      <link>/2015/07/30/centos-cantfind-json-c.html</link>
       <pubDate>Thu, 30 Jul 2015 15:46:20 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/07/30/centos-cantfind-json-c.html</guid>
+      <guid>/2015/07/30/centos-cantfind-json-c.html</guid>
       <description>&lt;h2 id=&#34;错误信息&#34;&gt;错误信息:&lt;/h2&gt;
 
 &lt;div&gt;

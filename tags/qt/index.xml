@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Qt on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/tags/qt/</link>
+    <link>/tags/qt/</link>
     <description>Recent content in Qt on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Tue, 27 Oct 2015 10:33:30 +0000</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/tags/qt/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/qt/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>qmake不能生成vs工程文件</title>
-      <link>http://www.gsymy.com/2015/10/27/qmake_vsproject.html</link>
+      <link>/2015/10/27/qmake_vsproject.html</link>
       <pubDate>Tue, 27 Oct 2015 10:33:30 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/10/27/qmake_vsproject.html</guid>
+      <guid>/2015/10/27/qmake_vsproject.html</guid>
       <description>报错信息如下：
 
 WARNING: Unable to generate output for: Makefile.Debug [TEMPLATE vcapp]
@@ -38,10 +38,10 @@ qmake -tp vc -spec win32-msvc2010 xxx.pro &amp;nbsp;
     
     <item>
       <title>linux 修改默认Qt版本</title>
-      <link>http://www.gsymy.com/2015/08/08/linux-change_default_qt_version.html</link>
+      <link>/2015/08/08/linux-change_default_qt_version.html</link>
       <pubDate>Sat, 08 Aug 2015 03:03:59 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/08/linux-change_default_qt_version.html</guid>
+      <guid>/2015/08/08/linux-change_default_qt_version.html</guid>
       <description>&lt;p&gt;centos 5\6 下默认使用Qt3&lt;/p&gt;
 
 &lt;p&gt;可以通过sudo yum install qt-devel 安装qt4&lt;/p&gt;

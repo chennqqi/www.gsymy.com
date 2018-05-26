@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>错误码 on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/tags/%E9%94%99%E8%AF%AF%E7%A0%81/</link>
+    <link>/tags/%E9%94%99%E8%AF%AF%E7%A0%81/</link>
     <description>Recent content in 错误码 on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Thu, 13 Aug 2015 10:45:25 +0000</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/tags/%E9%94%99%E8%AF%AF%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/%E9%94%99%E8%AF%AF%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>windows错误码大全,妈妈再也不担心我win32api返回失败了！</title>
-      <link>http://www.gsymy.com/2015/08/13/win_errorcode.html</link>
+      <link>/2015/08/13/win_errorcode.html</link>
       <pubDate>Thu, 13 Aug 2015 10:45:25 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/13/win_errorcode.html</guid>
+      <guid>/2015/08/13/win_errorcode.html</guid>
       <description>&lt;p&gt;windows错误码大全，中文对照表&lt;/p&gt;
 
 &lt;pre class=&#34;width:500 lang:php decode:true&#34; title=&#34;window错误码大全&#34;&gt;0000 操作已成功完成。

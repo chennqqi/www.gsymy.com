@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mingw32 on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/tags/mingw32/</link>
+    <link>/tags/mingw32/</link>
     <description>Recent content in Mingw32 on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Sun, 18 Sep 2016 16:30:17 +0800</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/tags/mingw32/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/mingw32/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>mingw32 编译器遇到的一些问题</title>
-      <link>http://www.gsymy.com/2016/09/18/mingw32_errors.html</link>
+      <link>/2016/09/18/mingw32_errors.html</link>
       <pubDate>Sun, 18 Sep 2016 16:30:17 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/09/18/mingw32_errors.html</guid>
+      <guid>/2016/09/18/mingw32_errors.html</guid>
       <description>#使用mingw32 移植项目时遇到的一些问题
 原创文章转载请注明出处！
  mingw32 &amp;lsquo;typeof&amp;rsquo;

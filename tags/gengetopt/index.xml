@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gengetopt on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/tags/gengetopt/</link>
+    <link>/tags/gengetopt/</link>
     <description>Recent content in Gengetopt on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Thu, 30 Jul 2015 15:43:42 +0000</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/tags/gengetopt/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/gengetopt/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>linux 无法找到gengetopt</title>
-      <link>http://www.gsymy.com/2015/07/30/linux_not_found_gengetopt.html</link>
+      <link>/2015/07/30/linux_not_found_gengetopt.html</link>
       <pubDate>Thu, 30 Jul 2015 15:43:42 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/07/30/linux_not_found_gengetopt.html</guid>
+      <guid>/2015/07/30/linux_not_found_gengetopt.html</guid>
       <description>&lt;h2 id=&#34;系统没有安装gengetopt&#34;&gt;&lt;strong&gt;系统没有安装gengetopt&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;div&gt;

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/tags/windows/</link>
+    <link>/tags/windows/</link>
     <description>Recent content in Windows on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Sun, 18 Sep 2016 16:30:17 +0800</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>mingw32 编译器遇到的一些问题</title>
-      <link>http://www.gsymy.com/2016/09/18/mingw32_errors.html</link>
+      <link>/2016/09/18/mingw32_errors.html</link>
       <pubDate>Sun, 18 Sep 2016 16:30:17 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/09/18/mingw32_errors.html</guid>
+      <guid>/2016/09/18/mingw32_errors.html</guid>
       <description>#使用mingw32 移植项目时遇到的一些问题
 原创文章转载请注明出处！
  mingw32 &amp;lsquo;typeof&amp;rsquo;
@@ -31,10 +31,10 @@ sample code: `for (int i=0; i&amp;lt;10; i++) {}` 以上代码在C++编译器下
     
     <item>
       <title>Project not selected to build for this solution configuration.</title>
-      <link>http://www.gsymy.com/2015/08/19/vsnotbuildbysolution.html</link>
+      <link>/2015/08/19/vsnotbuildbysolution.html</link>
       <pubDate>Wed, 19 Aug 2015 06:52:05 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/19/vsnotbuildbysolution.html</guid>
+      <guid>/2015/08/19/vsnotbuildbysolution.html</guid>
       <description>&lt;h1 id=&#34;cb_post_title_url.postTitle2&#34;&gt;&lt;a href=&#34;http://www.cnblogs.com/moonlight-zjb/p/3837762.html&#34;&gt;Project not selected to build for this solution configuration.&lt;/a&gt;&lt;/h1&gt;
 
 &lt;p&gt;{.postTitle}&lt;/p&gt;
@@ -120,10 +120,10 @@ sample code: `for (int i=0; i&amp;lt;10; i++) {}` 以上代码在C++编译器下
     
     <item>
       <title>windows错误码大全,妈妈再也不担心我win32api返回失败了！</title>
-      <link>http://www.gsymy.com/2015/08/13/win_errorcode.html</link>
+      <link>/2015/08/13/win_errorcode.html</link>
       <pubDate>Thu, 13 Aug 2015 10:45:25 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/13/win_errorcode.html</guid>
+      <guid>/2015/08/13/win_errorcode.html</guid>
       <description>&lt;p&gt;windows错误码大全，中文对照表&lt;/p&gt;
 
 &lt;pre class=&#34;width:500 lang:php decode:true&#34; title=&#34;window错误码大全&#34;&gt;0000 操作已成功完成。

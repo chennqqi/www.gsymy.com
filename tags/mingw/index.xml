@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mingw on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/tags/mingw/</link>
+    <link>/tags/mingw/</link>
     <description>Recent content in Mingw on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Sun, 16 Jul 2017 10:13:13 +0800</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/tags/mingw/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/mingw/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>VC MINGW dll lib 转换</title>
-      <link>http://www.gsymy.com/2017/07/16/vc_mingw_convert.html</link>
+      <link>/2017/07/16/vc_mingw_convert.html</link>
       <pubDate>Sun, 16 Jul 2017 10:13:13 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2017/07/16/vc_mingw_convert.html</guid>
+      <guid>/2017/07/16/vc_mingw_convert.html</guid>
       <description>VC MINGW dll lib 相互转换  VC XX.lib -&amp;gt; MINGW libXX.a
 reimp XX.lib  reimp 是mingw自带的工具，位于mingw/mingw-utils-0.x/目录下
  VC XX.dll -&amp;gt; VC XX.lib
@@ -37,10 +37,10 @@ ar x libXX.</description>
     
     <item>
       <title>mingw32 编译器遇到的一些问题</title>
-      <link>http://www.gsymy.com/2016/09/18/mingw32_errors.html</link>
+      <link>/2016/09/18/mingw32_errors.html</link>
       <pubDate>Sun, 18 Sep 2016 16:30:17 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/09/18/mingw32_errors.html</guid>
+      <guid>/2016/09/18/mingw32_errors.html</guid>
       <description>#使用mingw32 移植项目时遇到的一些问题
 原创文章转载请注明出处！
  mingw32 &amp;lsquo;typeof&amp;rsquo;

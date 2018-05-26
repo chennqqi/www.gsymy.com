@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>职业 on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/tags/%E8%81%8C%E4%B8%9A/</link>
+    <link>/tags/%E8%81%8C%E4%B8%9A/</link>
     <description>Recent content in 职业 on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Thu, 29 Oct 2015 13:47:58 +0000</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/tags/%E8%81%8C%E4%B8%9A/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/%E8%81%8C%E4%B8%9A/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>网友评选的“2015中国11大光棍职业”，程序员光荣上榜</title>
-      <link>http://www.gsymy.com/2015/10/29/programmer_job_2015.html</link>
+      <link>/2015/10/29/programmer_job_2015.html</link>
       <pubDate>Thu, 29 Oct 2015 13:47:58 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/10/29/programmer_job_2015.html</guid>
+      <guid>/2015/10/29/programmer_job_2015.html</guid>
       <description>有道是“女怕嫁错郎，男怕入错行”。走入社会之后不同职业会产生不同的人生路线。这里从网上摘来&amp;#8221;2015年中国11大光棍职业&amp;#8221;。你的职业登榜了吗？即将走入社会的大学生，看了这个榜单你有没有考虑换个职业呢？
 &amp;nbsp;
 网友评选的“2015年中国11大光棍职业”排行榜：

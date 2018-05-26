@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tcpdump on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/tags/tcpdump/</link>
+    <link>/tags/tcpdump/</link>
     <description>Recent content in Tcpdump on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Sun, 23 Aug 2015 15:10:26 +0000</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/tags/tcpdump/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/tcpdump/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>非root用户使用tcpdump</title>
-      <link>http://www.gsymy.com/2015/08/23/tcpdumpnoroot.html</link>
+      <link>/2015/08/23/tcpdumpnoroot.html</link>
       <pubDate>Sun, 23 Aug 2015 15:10:26 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/23/tcpdumpnoroot.html</guid>
+      <guid>/2015/08/23/tcpdumpnoroot.html</guid>
       <description>  centos/redhat下安装tcpdump sudo yum install -y tcpdump
   在tcpdump所在目录下执行 sudo chmod u+s tcpdump   &amp;nbsp; 
 原理参考： tcpdump 安装和文件的s权限 &amp;#8211; arkblue的专栏 &amp;#8211; 博客频道 &amp;#8211; CSDN.NET

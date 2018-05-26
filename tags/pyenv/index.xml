@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pyenv on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/tags/pyenv/</link>
+    <link>/tags/pyenv/</link>
     <description>Recent content in Pyenv on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Thu, 25 Aug 2016 13:35:57 +0800</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/tags/pyenv/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/pyenv/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>pyenv rehash problem</title>
-      <link>http://www.gsymy.com/2016/08/25/pyenv_rehash_problem.html</link>
+      <link>/2016/08/25/pyenv_rehash_problem.html</link>
       <pubDate>Thu, 25 Aug 2016 13:35:57 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/08/25/pyenv_rehash_problem.html</guid>
+      <guid>/2016/08/25/pyenv_rehash_problem.html</guid>
       <description>#pyenv rehash problem
 description:
 pyenv: cannot rehash: /home/XXX/.pyenv/shims/.pyenv-shim exists  fixup:

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>编译错误 on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/tags/%E7%BC%96%E8%AF%91%E9%94%99%E8%AF%AF/</link>
+    <link>/tags/%E7%BC%96%E8%AF%91%E9%94%99%E8%AF%AF/</link>
     <description>Recent content in 编译错误 on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Tue, 30 Jun 2015 09:44:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/tags/%E7%BC%96%E8%AF%91%E9%94%99%E8%AF%AF/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/%E7%BC%96%E8%AF%91%E9%94%99%E8%AF%AF/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>VS20XX 错误 Error C2143 (missing ; before namespace) in MS VC include</title>
-      <link>http://www.gsymy.com/2015/06/30/vs20xx-error-c2143-missing-before-namespace-in-ms-vc-include.html</link>
+      <link>/2015/06/30/vs20xx-error-c2143-missing-before-namespace-in-ms-vc-include.html</link>
       <pubDate>Tue, 30 Jun 2015 09:44:00 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/06/30/vs20xx-error-c2143-missing-before-namespace-in-ms-vc-include.html</guid>
+      <guid>/2015/06/30/vs20xx-error-c2143-missing-before-namespace-in-ms-vc-include.html</guid>
       <description>&lt;h2 id=&#34;错误信息&#34;&gt;错误信息：&lt;/h2&gt;
 
 &lt;p&gt;VC\include\yvals.h(535): error C2143: syntax error : missing &amp;#8216;;&amp;#8217; before &amp;#8216;namespace&amp;#8217;&lt;/p&gt;

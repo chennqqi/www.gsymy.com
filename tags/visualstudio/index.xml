@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Visualstudio on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/tags/visualstudio/</link>
+    <link>/tags/visualstudio/</link>
     <description>Recent content in Visualstudio on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Sun, 25 Oct 2015 11:54:56 +0000</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/tags/visualstudio/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/visualstudio/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>not found or not built by the last incremental link VS2010编译警告</title>
-      <link>http://www.gsymy.com/2015/10/25/not-found-or-not-built-by-the-last-incremental-link-vs2010warning.html</link>
+      <link>/2015/10/25/not-found-or-not-built-by-the-last-incremental-link-vs2010warning.html</link>
       <pubDate>Sun, 25 Oct 2015 11:54:56 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/10/25/not-found-or-not-built-by-the-last-incremental-link-vs2010warning.html</guid>
+      <guid>/2015/10/25/not-found-or-not-built-by-the-last-incremental-link-vs2010warning.html</guid>
       <description>not found or not built by the last incremental link; performing full link
 
 2015年10月25日
@@ -44,19 +44,19 @@ Solution:
     
     <item>
       <title>Visualstudio C语言包含C&#43;&#43;头文件编译不通过</title>
-      <link>http://www.gsymy.com/2015/09/07/vs_error_include_cpp.html</link>
+      <link>/2015/09/07/vs_error_include_cpp.html</link>
       <pubDate>Mon, 07 Sep 2015 10:29:39 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/09/07/vs_error_include_cpp.html</guid>
+      <guid>/2015/09/07/vs_error_include_cpp.html</guid>
       <description>error C2054: expected &#39;(&#39; to follow &#39;using&#39; error C2061: syntax error : identifier &#39;using&#39; c:\program files\microsoft visual studio 10.0\vc\include\cstdio(38): error C2054: expected &#39;(&#39; to follow &#39;using&#39; c:\program files\microsoft visual studio 10.0\vc\include\cstdio(40): error C2061: syntax error : identifier &#39;using&#39; c:\program files\microsoft visual studio 10.0\vc\include\cstdio(40): error C2054: expected &#39;(&#39; to follow &#39;using&#39; c:\program files\microsoft visual studio 10.0\vc\include\cstdio(40): error C2061: syntax error : identifier &#39;using&#39; c:\program files\microsoft visual studio 10.0\vc\include\cstdio(41): error C2061: syntax error : identifier &#39;clearerr&#39;  VS 编译代码时，如果里边既包含C又包含C++，在公共头文件中有C++头文件（如stl系列）时会报这个错误</description>
     </item>
     
     <item>
       <title>VS编译出错，工程文件不存在</title>
-      <link>http://www.gsymy.com/2015/08/19/vserrornoprjfile.html</link>
+      <link>/2015/08/19/vserrornoprjfile.html</link>
       <pubDate>Wed, 19 Aug 2015 09:25:52 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/19/vserrornoprjfile.html</guid>
+      <guid>/2015/08/19/vserrornoprjfile.html</guid>
       <description>&lt;h3 id=&#34;vs编译出错信息-title-pre-fs1&#34;&gt;VS编译出错信息: {.title.pre.fs1}&lt;/h3&gt;
 
 &lt;h3 id=&#34;span-class-tcnt-8220-the-project-file-8221-has-been-renamed-or-is-no-longer-in-the-solution-8221-span-title-pre-fs1&#34;&gt;&lt;span class=&#34;tcnt&#34;&gt;&amp;#8220;The project file &amp;#8221; has been renamed or is no longer in the solution&amp;#8221;&lt;/span&gt; {.title.pre.fs1}&lt;/h3&gt;
@@ -118,10 +118,10 @@ Solution:
     
     <item>
       <title>Project not selected to build for this solution configuration.</title>
-      <link>http://www.gsymy.com/2015/08/19/vsnotbuildbysolution.html</link>
+      <link>/2015/08/19/vsnotbuildbysolution.html</link>
       <pubDate>Wed, 19 Aug 2015 06:52:05 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/19/vsnotbuildbysolution.html</guid>
+      <guid>/2015/08/19/vsnotbuildbysolution.html</guid>
       <description>&lt;h1 id=&#34;cb_post_title_url.postTitle2&#34;&gt;&lt;a href=&#34;http://www.cnblogs.com/moonlight-zjb/p/3837762.html&#34;&gt;Project not selected to build for this solution configuration.&lt;/a&gt;&lt;/h1&gt;
 
 &lt;p&gt;{.postTitle}&lt;/p&gt;
@@ -207,10 +207,10 @@ Solution:
     
     <item>
       <title>visualstudio快捷键</title>
-      <link>http://www.gsymy.com/2015/08/12/visualstudio-shortcut.html</link>
+      <link>/2015/08/12/visualstudio-shortcut.html</link>
       <pubDate>Wed, 12 Aug 2015 03:50:04 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/12/visualstudio-shortcut.html</guid>
+      <guid>/2015/08/12/visualstudio-shortcut.html</guid>
       <description>分享一个visualstudio快捷键的网站
 http://visualstudioshortcuts.com
 这个网站是个人站，不是微软官方的。这也是个做网站的思路，应该会有一些流量的
@@ -219,10 +219,10 @@ http://visualstudioshortcuts.com
     
     <item>
       <title>VS20XX 错误 Error C2143 (missing ; before namespace) in MS VC include</title>
-      <link>http://www.gsymy.com/2015/06/30/vs20xx-error-c2143-missing-before-namespace-in-ms-vc-include.html</link>
+      <link>/2015/06/30/vs20xx-error-c2143-missing-before-namespace-in-ms-vc-include.html</link>
       <pubDate>Tue, 30 Jun 2015 09:44:00 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/06/30/vs20xx-error-c2143-missing-before-namespace-in-ms-vc-include.html</guid>
+      <guid>/2015/06/30/vs20xx-error-c2143-missing-before-namespace-in-ms-vc-include.html</guid>
       <description>&lt;h2 id=&#34;错误信息&#34;&gt;错误信息：&lt;/h2&gt;
 
 &lt;p&gt;VC\include\yvals.h(535): error C2143: syntax error : missing &amp;#8216;;&amp;#8217; before &amp;#8216;namespace&amp;#8217;&lt;/p&gt;

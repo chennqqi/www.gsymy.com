@@ -19,7 +19,7 @@
 
 <meta property="og:title" content="如何绘制数据流图  &middot; 程序猿的小本本 ">
 <meta property="og:site_name" content="程序猿的小本本"/>
-<meta property="og:url" content="http://www.gsymy.com/2015/08/18/paintdfd.html" />
+<meta property="og:url" content="/2015/08/18/paintdfd.html" />
 <meta property="og:locale" content="en-us">
 
 
@@ -42,8 +42,8 @@
 <meta name="twitter:creator" content="@" />
 <meta name="twitter:title" content="如何绘制数据流图" />
 <meta name="twitter:description" content="" />
-<meta name="twitter:url" content="http://www.gsymy.com/2015/08/18/paintdfd.html" />
-<meta name="twitter:domain" content="http://www.gsymy.com/">
+<meta name="twitter:url" content="/2015/08/18/paintdfd.html" />
+<meta name="twitter:domain" content="">
   
 
 <script type="application/ld+json">
@@ -57,29 +57,33 @@
     },
     "datePublished": "2015-08-18",
     "description": "",
-    "wordCount":  89 
+    "wordCount": 89
   }
 </script>
 
 
 
-<link rel="canonical" href="http://www.gsymy.com/2015/08/18/paintdfd.html" />
+<link rel="canonical" href="/2015/08/18/paintdfd.html" />
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.gsymy.com/touch-icon-144-precomposed.png">
-<link href="http://www.gsymy.com/favicon.png" rel="icon">
-<meta name="theme-color" content="#2053AB">
-<meta name="generator" content="Hugo 0.17-DEV" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+<link href="/favicon.png" rel="icon">
 
-  <!--[if lt IE 9]>
+<meta name="theme-color" content="theme-base-08">
+
+<meta name="generator" content="Hugo 0.37.1" />
+
+  
+<!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
 <link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="http://www.gsymy.com/css/font-awesome.min.css">
-<link rel="stylesheet" href="http://www.gsymy.com/css/style.css">
-<link rel="stylesheet" href="http://www.gsymy.com/css/highlight/default.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/highlight/default.css">
 
+  
   
 </head>
 <body>
@@ -87,7 +91,7 @@
     <header id="main-header" class="container main_header">
   <div class="container brand">
   <div class="container title h1-like">
-  <a class="baselink" href="http://www.gsymy.com/">
+  <a class="baselink" href="">
   程序猿的小本本
 
 </a>
@@ -108,15 +112,19 @@
   <nav class="container nav primary no-print">
   
 
-<a class="homelink" href="http://www.gsymy.com/">Home</a>
+<a class="homelink" href="">Home</a>
 
 
   
-<a href="http://www.gsymy.com/about">About</a>
+<a href="/about">About</a>
 
-<a href="http://www.gsymy.com/post" title="Show list of posts">Posts</a>
+<a href="/json" title="JSON format tool">JSON format</a>
 
-<a href="http://www.gsymy.com/tags" title="Show list of tags">Tags</a>
+<a href="/post" title="Show list of posts">Posts</a>
+
+<a href="/regulex" title="visulize regexp">Regulex</a>
+
+<a href="/tags" title="Show list of tags">Tags</a>
 
 
 </nav>
@@ -130,6 +138,12 @@
 
 <a id="contact-link-github" class="contact_link" href="https://github.com/chennqqi?tab=repositories">
   <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+
+
+
 
 
 
@@ -217,9 +231,9 @@
   &middot; (89 Words)
   <br>
   
-<a class="label" href="http://www.gsymy.com/tags/dfd">DFD</a>
+<a class="label" href="/tags/dfd">DFD</a>
 
-<a class="label" href="http://www.gsymy.com/tags/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE">数据流图</a>
+<a class="label" href="/tags/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE">数据流图</a>
 
 
   ﻿
@@ -248,6 +262,8 @@
 <p>数据流图分析关注的重点是数据，将面向控制的信息作为数据进行处理，包括了系统的所有数据，能准确的抽象系统数据的流向和处理过程．概括的描述当数据在系统流程中流动和处理的移动变换过程；数据流图分层进行分析，对顶层图的分析可以发现是否有输入信息或需要输出的信息被遗漏，容易及早发现系统各部分的逻辑错误，也容易修正．每一层都明确强调“需要什么”，“干了什么”“给出什么”；</p>
 
 <p>这样逐层分解下去，系统被严密的展开，系统的框架就展现出来了．采用数据流图进行分析，可以提高分析的可见性和可控性，更容易理解软件要完成什么功能，数据来源于哪里，结果要输出到哪里等等，清晰明了。</p>
+
+<p></p>
 
 <p>下面我们来看看数据流图的组成，设计原则和应用</p>
 
@@ -442,7 +458,6 @@
 <p><span lang="zh-CN">入库单</span><span lang="en-US">=</span><span lang="zh-CN">分类目录号</span><span lang="en-US">+</span><span lang="zh-CN">书名</span><span lang="en-US">+</span><span lang="zh-CN">作者</span><span lang="en-US">+</span><span lang="zh-CN">价格</span><span lang="en-US">+</span><span lang="zh-CN">数量</span><span lang="en-US">+</span><span lang="zh-CN">购书日期。</span></p>
 
 <p>转自:<a href="http://www.cnblogs.com/spring5/archive/2012/04/29/2485238.html">http://www.cnblogs.com/spring5/archive/2012/04/29/2485238.html</a></p>
-
 <div class="bdzn-search">
 <script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=3969809418513435361' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
 </div>
@@ -458,13 +473,13 @@
   
 
     
-    <a class="prev" href="http://www.gsymy.com/2015/08/13/win_errorcode.html" title="windows错误码大全,妈妈再也不担心我win32api返回失败了！">
+    <a class="prev" href="/2015/08/13/win_errorcode.html" title="windows错误码大全,妈妈再也不担心我win32api返回失败了！">
       Previous
     </a>
     
 
     
-    <a class="next" href="http://www.gsymy.com/2015/08/18/linux-daemon-writing-howto.html" title="怎么编写Linux守护程序">
+    <a class="next" href="/2015/08/18/linux-daemon-writing-howto.html" title="怎么编写Linux守护程序">
       Next
     </a>
     
@@ -476,19 +491,29 @@
 
   <div class="container comments">
   <h2>Comments</h2>
-  
+    
 
   
-<div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-<script>
-  var cloudTieConfig = {
-    url: document.location.href, 
-    sourceId: "",
-    productKey: "bda63d76410749d9b8050711af25507a",
-    target: "cloud-tie-wrapper"
-  };
-</script>
-<script src="https://img1.ws.126.net/f2e/tie/yun/sdk/loader.js"></script>
+﻿
+
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zMDAxMS82NTc2">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+
+
 
 </div>
 
@@ -529,29 +554,11 @@
 </footer>
 
     </main>
-    ﻿
+    
 
-<script src="http://www.gsymy.com/js/highlight.pack.js"></script>
+
+<script src="/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-
-
-
-
-
-
-
-<div style="display:none">
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?f0f7d05b2bbbb8c6a0d1d1a6b450bd97";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-<div>
-
 
 
     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256010403'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1256010403%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>

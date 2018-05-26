@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Two on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/tags/two/</link>
+    <link>/tags/two/</link>
     <description>Recent content in Two on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Mon, 12 Jun 2017 15:40:21 +0800</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/tags/two/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/two/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>curl error 35</title>
-      <link>http://www.gsymy.com/2017/06/12/curl_error_35.html</link>
+      <link>/2017/06/12/curl_error_35.html</link>
       <pubDate>Mon, 12 Jun 2017 15:40:21 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2017/06/12/curl_error_35.html</guid>
+      <guid>/2017/06/12/curl_error_35.html</guid>
       <description> curl error 35 原因未明，待查  </description>
     </item>
     

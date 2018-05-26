@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wordpress on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/tags/wordpress/</link>
+    <link>/tags/wordpress/</link>
     <description>Recent content in Wordpress on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Wed, 05 Aug 2015 03:38:19 +0000</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>wordpress4 添加友链</title>
-      <link>http://www.gsymy.com/2015/08/05/wordpress4-friendlink.html</link>
+      <link>/2015/08/05/wordpress4-friendlink.html</link>
       <pubDate>Wed, 05 Aug 2015 03:38:19 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/05/wordpress4-friendlink.html</guid>
+      <guid>/2015/08/05/wordpress4-friendlink.html</guid>
       <description>&lt;p&gt;wordpress4 有些功能隐藏起来了，友链功能默认关闭。&lt;/p&gt;
 
 &lt;p&gt;解决办法:&lt;/p&gt;

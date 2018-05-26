@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lib on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/tags/lib/</link>
+    <link>/tags/lib/</link>
     <description>Recent content in Lib on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Sun, 16 Jul 2017 10:13:13 +0800</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/tags/lib/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/lib/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>VC MINGW dll lib 转换</title>
-      <link>http://www.gsymy.com/2017/07/16/vc_mingw_convert.html</link>
+      <link>/2017/07/16/vc_mingw_convert.html</link>
       <pubDate>Sun, 16 Jul 2017 10:13:13 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2017/07/16/vc_mingw_convert.html</guid>
+      <guid>/2017/07/16/vc_mingw_convert.html</guid>
       <description>VC MINGW dll lib 相互转换  VC XX.lib -&amp;gt; MINGW libXX.a
 reimp XX.lib  reimp 是mingw自带的工具，位于mingw/mingw-utils-0.x/目录下
  VC XX.dll -&amp;gt; VC XX.lib

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/topics/linux/</link>
+    <link>/topics/linux/</link>
     <description>Recent content in Linux on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,25 +11,25 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Sun, 25 Feb 2018 12:13:13 +0800</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/topics/linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/topics/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>curl: (35) SSL connect error</title>
-      <link>http://www.gsymy.com/2018/02/25/curl_connect_error.html</link>
+      <link>/2018/02/25/curl_connect_error.html</link>
       <pubDate>Sun, 25 Feb 2018 12:13:13 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2018/02/25/curl_connect_error.html</guid>
+      <guid>/2018/02/25/curl_connect_error.html</guid>
       <description> curl: (35) SSL connect error解决办法 原因nss和libcurl版本过低导致的，解决办法升级。 centos命令
 sudo yum update nss curl -y  </description>
     </item>
     
     <item>
       <title>netinstall centos5</title>
-      <link>http://www.gsymy.com/2017/07/06/netinstall_centos5.html</link>
+      <link>/2017/07/06/netinstall_centos5.html</link>
       <pubDate>Thu, 06 Jul 2017 22:56:21 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2017/07/06/netinstall_centos5.html</guid>
+      <guid>/2017/07/06/netinstall_centos5.html</guid>
       <description>网络安装CentOs5 目前CentOs官方已经停止支持CentOS5了，最新的版本是5.11。 为了快速安装系统，使用了 netinstall.iso。 CentOS的安装URL与网上的教程不匹配了。 我这里简单记录一下
  用netinstall.iso 做boot启动系统
 原图无效请戳这里http://img1.51cto.com/attachment/201008/162309384.jpg
@@ -44,10 +44,10 @@ CentOS directory 要填入 5.11/os/x86_64
     
     <item>
       <title>unknown_u16_type</title>
-      <link>http://www.gsymy.com/2017/02/03/unknown_u16_type.html</link>
+      <link>/2017/02/03/unknown_u16_type.html</link>
       <pubDate>Fri, 03 Feb 2017 10:01:17 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2017/02/03/unknown_u16_type.html</guid>
+      <guid>/2017/02/03/unknown_u16_type.html</guid>
       <description>issue:
 gcc build error error: unknown type name ‘u16’  solution:
 install kernel-headers sudo yum install kernel-headers -y  referer: https://bugzilla.redhat.com/show_bug.cgi?format=multiple&amp;amp;id=689756</description>
@@ -55,10 +55,10 @@ install kernel-headers sudo yum install kernel-headers -y  referer: https://bugz
     
     <item>
       <title>mount NTFS on linux</title>
-      <link>http://www.gsymy.com/2016/10/08/linux-mount-ntfs.html</link>
+      <link>/2016/10/08/linux-mount-ntfs.html</link>
       <pubDate>Sat, 08 Oct 2016 13:56:17 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/10/08/linux-mount-ntfs.html</guid>
+      <guid>/2016/10/08/linux-mount-ntfs.html</guid>
       <description>#how to mount a ntfs partition/drive on linux
  linux may not integrate ntfs driver, so you need install ntfs-3g
 ntfs-3g is an opensource ntfs driver for linux
@@ -71,10 +71,10 @@ parted is an gnu partition tool that can analize disk like fdisk which support G
     
     <item>
       <title>没有找到visudo - not found sudo</title>
-      <link>http://www.gsymy.com/2016/09/24/notfound-sudo.html</link>
+      <link>/2016/09/24/notfound-sudo.html</link>
       <pubDate>Sat, 24 Sep 2016 09:14:14 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/09/24/notfound-sudo.html</guid>
+      <guid>/2016/09/24/notfound-sudo.html</guid>
       <description>##没有找到sudo/visudo &amp;ndash; not found sudo/visudo
 买了一个VPS，新建了一个普通用户，想给配置个sudo权限时发现既没有visudo 也没有/etc/sudoers
 错误信息:
@@ -84,10 +84,10 @@ yum install sudo  注： 未在ubuntu下进行测试</description>
     
     <item>
       <title>linux 安装最新版本的git</title>
-      <link>http://www.gsymy.com/2016/09/17/install_git.html</link>
+      <link>/2016/09/17/install_git.html</link>
       <pubDate>Sat, 17 Sep 2016 22:28:22 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/09/17/install_git.html</guid>
+      <guid>/2016/09/17/install_git.html</guid>
       <description>#linux 安装最新版本的git
  下载源代码
 https://www.kernel.org/pub/software/scm/git/  最新版本为2.10.0
@@ -101,10 +101,10 @@ tar xvf git-2.10.0.tar.gz cd git-2.10.0 ./configure --with-openssl --with-libpcr
     
     <item>
       <title>pyenv rehash problem</title>
-      <link>http://www.gsymy.com/2016/08/25/pyenv_rehash_problem.html</link>
+      <link>/2016/08/25/pyenv_rehash_problem.html</link>
       <pubDate>Thu, 25 Aug 2016 13:35:57 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/08/25/pyenv_rehash_problem.html</guid>
+      <guid>/2016/08/25/pyenv_rehash_problem.html</guid>
       <description>#pyenv rehash problem
 description:
 pyenv: cannot rehash: /home/XXX/.pyenv/shims/.pyenv-shim exists  fixup:

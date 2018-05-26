@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>女朋友 on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/tags/%E5%A5%B3%E6%9C%8B%E5%8F%8B/</link>
+    <link>/tags/%E5%A5%B3%E6%9C%8B%E5%8F%8B/</link>
     <description>Recent content in 女朋友 on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Thu, 22 Oct 2015 13:49:31 +0000</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/tags/%E5%A5%B3%E6%9C%8B%E5%8F%8B/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/%E5%A5%B3%E6%9C%8B%E5%8F%8B/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>程序员如何找对象?</title>
-      <link>http://www.gsymy.com/2015/10/22/programer_gf.html</link>
+      <link>/2015/10/22/programer_gf.html</link>
       <pubDate>Thu, 22 Oct 2015 13:49:31 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/10/22/programer_gf.html</guid>
+      <guid>/2015/10/22/programer_gf.html</guid>
       <description></description>
     </item>
     

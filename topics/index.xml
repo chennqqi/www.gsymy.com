@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Topics on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/topics/</link>
+    <link>/topics/</link>
     <description>Recent content in Topics on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,87 +11,87 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Tue, 06 Dec 2016 22:17:01 +0800</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/topics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/topics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Devops</title>
-      <link>http://www.gsymy.com/topics/devops/</link>
+      <link>/topics/devops/</link>
       <pubDate>Tue, 06 Dec 2016 22:17:01 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/topics/devops/</guid>
+      <guid>/topics/devops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Error</title>
-      <link>http://www.gsymy.com/topics/error/</link>
+      <link>/topics/error/</link>
       <pubDate>Mon, 12 Jun 2017 15:40:21 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/topics/error/</guid>
+      <guid>/topics/error/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>http://www.gsymy.com/topics/linux/</link>
+      <link>/topics/linux/</link>
       <pubDate>Sun, 25 Feb 2018 12:13:13 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/topics/linux/</guid>
+      <guid>/topics/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>http://www.gsymy.com/topics/python/</link>
+      <link>/topics/python/</link>
       <pubDate>Thu, 01 Dec 2016 21:20:40 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/topics/python/</guid>
+      <guid>/topics/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Software</title>
-      <link>http://www.gsymy.com/topics/software/</link>
+      <link>/topics/software/</link>
       <pubDate>Sun, 16 Jul 2017 19:19:42 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/topics/software/</guid>
+      <guid>/topics/software/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vs2017</title>
-      <link>http://www.gsymy.com/topics/vs2017/</link>
+      <link>/topics/vs2017/</link>
       <pubDate>Sat, 03 Dec 2016 18:11:53 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/topics/vs2017/</guid>
+      <guid>/topics/vs2017/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Windows</title>
-      <link>http://www.gsymy.com/topics/windows/</link>
+      <link>/topics/windows/</link>
       <pubDate>Sun, 16 Jul 2017 10:13:13 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/topics/windows/</guid>
+      <guid>/topics/windows/</guid>
       <description></description>
     </item>
     
     <item>
       <title>互联网生活</title>
-      <link>http://www.gsymy.com/topics/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E6%B4%BB/</link>
+      <link>/topics/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E6%B4%BB/</link>
       <pubDate>Wed, 02 Nov 2016 15:19:17 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/topics/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E6%B4%BB/</guid>
+      <guid>/topics/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E6%B4%BB/</guid>
       <description></description>
     </item>
     
     <item>
       <title>建站</title>
-      <link>http://www.gsymy.com/topics/%E5%BB%BA%E7%AB%99/</link>
+      <link>/topics/%E5%BB%BA%E7%AB%99/</link>
       <pubDate>Tue, 18 Oct 2016 10:11:56 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/topics/%E5%BB%BA%E7%AB%99/</guid>
+      <guid>/topics/%E5%BB%BA%E7%AB%99/</guid>
       <description></description>
     </item>
     

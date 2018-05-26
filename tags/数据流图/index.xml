@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>数据流图 on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/tags/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE/</link>
+    <link>/tags/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE/</link>
     <description>Recent content in 数据流图 on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Tue, 18 Aug 2015 02:21:57 +0000</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/tags/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>如何绘制数据流图</title>
-      <link>http://www.gsymy.com/2015/08/18/paintdfd.html</link>
+      <link>/2015/08/18/paintdfd.html</link>
       <pubDate>Tue, 18 Aug 2015 02:21:57 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/18/paintdfd.html</guid>
+      <guid>/2015/08/18/paintdfd.html</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.cnblogs.com/spring5/archive/2012/04/29/2485238.html&#34; target=&#34;_blank&#34;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;数据流图（Data Flow Diagram）：简称DFD，它从数据传递和加工角度，以图形方式来表达系统的逻辑功能、数据在系统内部的逻辑流向和逻辑变换过程，是结构化系统分析方法的主要表达工具及用于表示软件模型的一种图示方法。（百科）&lt;/p&gt;

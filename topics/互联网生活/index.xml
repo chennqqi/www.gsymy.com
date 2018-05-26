@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>互联网生活 on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/topics/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E6%B4%BB/</link>
+    <link>/topics/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E6%B4%BB/</link>
     <description>Recent content in 互联网生活 on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Wed, 02 Nov 2016 15:19:17 +0800</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/topics/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/topics/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>说说外企在中国的水土不服</title>
-      <link>http://www.gsymy.com/2016/11/02/bad-expirence-seagate.html</link>
+      <link>/2016/11/02/bad-expirence-seagate.html</link>
       <pubDate>Wed, 02 Nov 2016 15:19:17 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/11/02/bad-expirence-seagate.html</guid>
+      <guid>/2016/11/02/bad-expirence-seagate.html</guid>
       <description>近日购买了一块希捷3TB的硬盘，作为一个高技术的，当然要去官网验证一下。拆开包装，硬盘包装算是比较整洁，上面还有一个海绵防震垫。硬盘正面背面有多处二维码，直接扫描就跳转到验证页面了，还是很方便的。重点来了：在验证页面无法刷出验证码，无法提交。无奈在PC浏览器上验证，最后成功。
 希捷官网可以注册产品，可以验证产品保修期。笔者用以前注册的账号登录，结果忘记密码了，尝试重置，失败！
 总结一下槽点：

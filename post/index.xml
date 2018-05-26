@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/post/</link>
+    <link>/post/</link>
     <description>Recent content in Posts on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,35 +11,35 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Sun, 25 Feb 2018 12:13:13 +0800</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>curl: (35) SSL connect error</title>
-      <link>http://www.gsymy.com/2018/02/25/curl_connect_error.html</link>
+      <link>/2018/02/25/curl_connect_error.html</link>
       <pubDate>Sun, 25 Feb 2018 12:13:13 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2018/02/25/curl_connect_error.html</guid>
+      <guid>/2018/02/25/curl_connect_error.html</guid>
       <description> curl: (35) SSL connect error解决办法 原因nss和libcurl版本过低导致的，解决办法升级。 centos命令
 sudo yum update nss curl -y  </description>
     </item>
     
     <item>
       <title>软件著作权申请指南</title>
-      <link>http://www.gsymy.com/2017/07/16/software_copyright.html</link>
+      <link>/2017/07/16/software_copyright.html</link>
       <pubDate>Sun, 16 Jul 2017 19:19:42 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2017/07/16/software_copyright.html</guid>
+      <guid>/2017/07/16/software_copyright.html</guid>
       <description> 软件著作权申请指南 1. 必备材料 软件著作权的申请材料主要包括 申请书（中国版权保护中心上填写，网上生成）、源代码、文档（可以命名为需求规格说明书、设计方案、用户需求说明书等）三部分 还有申请人（单位）的身份证明
 2. 要点 申请表  资料真实 自然人填写身份证号 软件名称应当和其他文档中统一 申请日期应当在软件完成之后 如果是企业申请，需要营业执照，注意全角字符和半角字符 注意企业的注册日期和软件的申请时间  软件源代码文档  软件代码超过60页就贴前三十页和最后三十页 软件代码中间不留空行空页，不是完全不留空行，是不需要切页 一页代码50行 最后一页代码需要是一个完整的功能模块 如果代码不足60页需要全部贴上去 文档标题软件名称应当和申请表标题一致 注意日期时间应当满足： 设计时间&amp;lt;代码时间&amp;lt;申请时间  设计说明书（可选用户手册等）  每页不应少于30行，页面包含图片除外 图片截图需要截完整，需要包含完整的退出最大化按钮背景，背景最好包含别的参照 设计说明书完成日期应当在软件源码完成之前  3. 更新历史 TO BE CONTINUE...  4. 参考  http://www.ccopyright.com/index.php?optionid=1057 https://www.zhihu.com/question/20850680  </description>
     </item>
     
     <item>
       <title>VC MINGW dll lib 转换</title>
-      <link>http://www.gsymy.com/2017/07/16/vc_mingw_convert.html</link>
+      <link>/2017/07/16/vc_mingw_convert.html</link>
       <pubDate>Sun, 16 Jul 2017 10:13:13 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2017/07/16/vc_mingw_convert.html</guid>
+      <guid>/2017/07/16/vc_mingw_convert.html</guid>
       <description>VC MINGW dll lib 相互转换  VC XX.lib -&amp;gt; MINGW libXX.a
 reimp XX.lib  reimp 是mingw自带的工具，位于mingw/mingw-utils-0.x/目录下
  VC XX.dll -&amp;gt; VC XX.lib
@@ -57,10 +57,10 @@ ar x libXX.</description>
     
     <item>
       <title>netinstall centos5</title>
-      <link>http://www.gsymy.com/2017/07/06/netinstall_centos5.html</link>
+      <link>/2017/07/06/netinstall_centos5.html</link>
       <pubDate>Thu, 06 Jul 2017 22:56:21 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2017/07/06/netinstall_centos5.html</guid>
+      <guid>/2017/07/06/netinstall_centos5.html</guid>
       <description>网络安装CentOs5 目前CentOs官方已经停止支持CentOS5了，最新的版本是5.11。 为了快速安装系统，使用了 netinstall.iso。 CentOS的安装URL与网上的教程不匹配了。 我这里简单记录一下
  用netinstall.iso 做boot启动系统
 原图无效请戳这里http://img1.51cto.com/attachment/201008/162309384.jpg
@@ -75,19 +75,19 @@ CentOS directory 要填入 5.11/os/x86_64
     
     <item>
       <title>curl error 35</title>
-      <link>http://www.gsymy.com/2017/06/12/curl_error_35.html</link>
+      <link>/2017/06/12/curl_error_35.html</link>
       <pubDate>Mon, 12 Jun 2017 15:40:21 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2017/06/12/curl_error_35.html</guid>
+      <guid>/2017/06/12/curl_error_35.html</guid>
       <description> curl error 35 原因未明，待查  </description>
     </item>
     
     <item>
       <title>unknown_u16_type</title>
-      <link>http://www.gsymy.com/2017/02/03/unknown_u16_type.html</link>
+      <link>/2017/02/03/unknown_u16_type.html</link>
       <pubDate>Fri, 03 Feb 2017 10:01:17 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2017/02/03/unknown_u16_type.html</guid>
+      <guid>/2017/02/03/unknown_u16_type.html</guid>
       <description>issue:
 gcc build error error: unknown type name ‘u16’  solution:
 install kernel-headers sudo yum install kernel-headers -y  referer: https://bugzilla.redhat.com/show_bug.cgi?format=multiple&amp;amp;id=689756</description>
@@ -95,10 +95,10 @@ install kernel-headers sudo yum install kernel-headers -y  referer: https://bugz
     
     <item>
       <title>install gnu parallel, not only centos platform</title>
-      <link>http://www.gsymy.com/2016/12/06/install_gnu_parallel.html</link>
+      <link>/2016/12/06/install_gnu_parallel.html</link>
       <pubDate>Tue, 06 Dec 2016 22:17:01 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/12/06/install_gnu_parallel.html</guid>
+      <guid>/2016/12/06/install_gnu_parallel.html</guid>
       <description>##
 Steps: visit https://build.opensuse.org/package/show?package=parallel&amp;amp;project=home%3Atange
 look at right top corner, click download.
@@ -110,10 +110,10 @@ Reference:
     
     <item>
       <title>microsoft released vs2017 enterpirse</title>
-      <link>http://www.gsymy.com/2016/12/03/vs2017.html</link>
+      <link>/2016/12/03/vs2017.html</link>
       <pubDate>Sat, 03 Dec 2016 18:11:53 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/12/03/vs2017.html</guid>
+      <guid>/2016/12/03/vs2017.html</guid>
       <description>2016/11/16 Microsoft released vistual studio 2017 RC version.
 I tried to install(windows7), but failed.
 I&amp;rsquo;m excited about this version. But maybe wait some time until it&amp;rsquo;s stable.
@@ -123,10 +123,10 @@ download vs2017 here https://www.visualstudio.com/</description>
     
     <item>
       <title>python mysql 2014 error</title>
-      <link>http://www.gsymy.com/2016/12/02/python-mysql-2014-error.html</link>
+      <link>/2016/12/02/python-mysql-2014-error.html</link>
       <pubDate>Thu, 01 Dec 2016 21:20:40 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/12/02/python-mysql-2014-error.html</guid>
+      <guid>/2016/12/02/python-mysql-2014-error.html</guid>
       <description>###python mysqlDB批量插入数据时报错
 python MySQLdb module error code:
 Error 2014: Commands out of sync; you can&#39;t run this command now
@@ -138,10 +138,10 @@ list = [] sql = &#39;INSERT INTO tablexxx(a,b,c) VALUES(%s,%s,%s)&#39; for l in 
     
     <item>
       <title>说说外企在中国的水土不服</title>
-      <link>http://www.gsymy.com/2016/11/02/bad-expirence-seagate.html</link>
+      <link>/2016/11/02/bad-expirence-seagate.html</link>
       <pubDate>Wed, 02 Nov 2016 15:19:17 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/11/02/bad-expirence-seagate.html</guid>
+      <guid>/2016/11/02/bad-expirence-seagate.html</guid>
       <description>近日购买了一块希捷3TB的硬盘，作为一个高技术的，当然要去官网验证一下。拆开包装，硬盘包装算是比较整洁，上面还有一个海绵防震垫。硬盘正面背面有多处二维码，直接扫描就跳转到验证页面了，还是很方便的。重点来了：在验证页面无法刷出验证码，无法提交。无奈在PC浏览器上验证，最后成功。
 希捷官网可以注册产品，可以验证产品保修期。笔者用以前注册的账号登录，结果忘记密码了，尝试重置，失败！
 总结一下槽点：
@@ -181,10 +181,10 @@ google是典型，与其相对的微软和苹果另外两大IT巨头都在中国
     
     <item>
       <title>慎入pub域名</title>
-      <link>http://www.gsymy.com/2016/10/18/buy_pub_domain.html</link>
+      <link>/2016/10/18/buy_pub_domain.html</link>
       <pubDate>Tue, 18 Oct 2016 10:11:56 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/10/18/buy_pub_domain.html</guid>
+      <guid>/2016/10/18/buy_pub_domain.html</guid>
       <description>#慎入.pub域名
 很多蜜粉入了.pub域名。pub域名是阿里云最近几年新开放的，所以有很多好的域名可选，而且续费便宜。但是我自己建站的经历说说为什么要慎入pub域名
  目前仅在阿里云可以注册，不方便转移到别的域名商； 国内任何省份都不支持备案，之前阿里云放出的消息一直在争取，但是依旧遥遥无期； 及时不考虑第二条，将服务器放到国外，解析时依旧绕不开阿里云，国内的域名商好像都不支持解析.pub域名。我把服务放到国外，想用百度云加速&amp;hellip;依旧不行，想尝试一下DNSPai等第三方的DNS服务商都失败了&amp;hellip;  补充，如果想做投资长期持有可以入几个试一试；如果想做站那还是果断出坑吧</description>
@@ -192,10 +192,10 @@ google是典型，与其相对的微软和苹果另外两大IT巨头都在中国
     
     <item>
       <title>mount NTFS on linux</title>
-      <link>http://www.gsymy.com/2016/10/08/linux-mount-ntfs.html</link>
+      <link>/2016/10/08/linux-mount-ntfs.html</link>
       <pubDate>Sat, 08 Oct 2016 13:56:17 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/10/08/linux-mount-ntfs.html</guid>
+      <guid>/2016/10/08/linux-mount-ntfs.html</guid>
       <description>#how to mount a ntfs partition/drive on linux
  linux may not integrate ntfs driver, so you need install ntfs-3g
 ntfs-3g is an opensource ntfs driver for linux
@@ -208,10 +208,10 @@ parted is an gnu partition tool that can analize disk like fdisk which support G
     
     <item>
       <title>没有找到visudo - not found sudo</title>
-      <link>http://www.gsymy.com/2016/09/24/notfound-sudo.html</link>
+      <link>/2016/09/24/notfound-sudo.html</link>
       <pubDate>Sat, 24 Sep 2016 09:14:14 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/09/24/notfound-sudo.html</guid>
+      <guid>/2016/09/24/notfound-sudo.html</guid>
       <description>##没有找到sudo/visudo &amp;ndash; not found sudo/visudo
 买了一个VPS，新建了一个普通用户，想给配置个sudo权限时发现既没有visudo 也没有/etc/sudoers
 错误信息:
@@ -221,10 +221,10 @@ yum install sudo  注： 未在ubuntu下进行测试</description>
     
     <item>
       <title>mingw32 编译器遇到的一些问题</title>
-      <link>http://www.gsymy.com/2016/09/18/mingw32_errors.html</link>
+      <link>/2016/09/18/mingw32_errors.html</link>
       <pubDate>Sun, 18 Sep 2016 16:30:17 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/09/18/mingw32_errors.html</guid>
+      <guid>/2016/09/18/mingw32_errors.html</guid>
       <description>#使用mingw32 移植项目时遇到的一些问题
 原创文章转载请注明出处！
  mingw32 &amp;lsquo;typeof&amp;rsquo;
@@ -236,10 +236,10 @@ sample code: `for (int i=0; i&amp;lt;10; i++) {}` 以上代码在C++编译器下
     
     <item>
       <title>linux 安装最新版本的git</title>
-      <link>http://www.gsymy.com/2016/09/17/install_git.html</link>
+      <link>/2016/09/17/install_git.html</link>
       <pubDate>Sat, 17 Sep 2016 22:28:22 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/09/17/install_git.html</guid>
+      <guid>/2016/09/17/install_git.html</guid>
       <description>#linux 安装最新版本的git
  下载源代码
 https://www.kernel.org/pub/software/scm/git/  最新版本为2.10.0
@@ -253,10 +253,10 @@ tar xvf git-2.10.0.tar.gz cd git-2.10.0 ./configure --with-openssl --with-libpcr
     
     <item>
       <title>pyenv rehash problem</title>
-      <link>http://www.gsymy.com/2016/08/25/pyenv_rehash_problem.html</link>
+      <link>/2016/08/25/pyenv_rehash_problem.html</link>
       <pubDate>Thu, 25 Aug 2016 13:35:57 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/08/25/pyenv_rehash_problem.html</guid>
+      <guid>/2016/08/25/pyenv_rehash_problem.html</guid>
       <description>#pyenv rehash problem
 description:
 pyenv: cannot rehash: /home/XXX/.pyenv/shims/.pyenv-shim exists  fixup:
@@ -267,10 +267,10 @@ http://stackoverflow.com/questions/29753592/pyenv-shim-not-created-when-installi
     
     <item>
       <title>centos安装gitolite</title>
-      <link>http://www.gsymy.com/2016/01/11/centos_install_gitolite.html</link>
+      <link>/2016/01/11/centos_install_gitolite.html</link>
       <pubDate>Mon, 11 Jan 2016 14:48:49 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/01/11/centos_install_gitolite.html</guid>
+      <guid>/2016/01/11/centos_install_gitolite.html</guid>
       <description>安装基础包
 yum install perl openssh git
  yum install perl-Time-HiRes
@@ -304,10 +304,10 @@ $ ./gitolite/install -to /home/git/bin/
     
     <item>
       <title>使用nginx搭建https服务器</title>
-      <link>http://www.gsymy.com/2016/01/10/using_https_in_nginx.html</link>
+      <link>/2016/01/10/using_https_in_nginx.html</link>
       <pubDate>Sun, 10 Jan 2016 10:33:53 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2016/01/10/using_https_in_nginx.html</guid>
+      <guid>/2016/01/10/using_https_in_nginx.html</guid>
       <description>最近在研究nginx，整好遇到一个需求就是希望服务器与客户端之间传输内容是加密的，防止中间监听泄露信息，但是去证书服务商那边申请证书又不合算，因为访问服务器的都是内部人士，所以自己给自己颁发证书，忽略掉浏览器的不信任警报即可。下面是颁发证书和配置过程。
 
 首先确保机器上安装了openssl和openssl-devel
@@ -325,10 +325,10 @@ ps： 如果出现&amp;#8221;[emerg] 10464#0: unknown directive &amp;#8220;ssl&a
     
     <item>
       <title>Redis 删除所有键值 | redis,删除key,key</title>
-      <link>http://www.gsymy.com/2015/12/30/redis-delkey.html</link>
+      <link>/2015/12/30/redis-delkey.html</link>
       <pubDate>Wed, 30 Dec 2015 13:16:53 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/12/30/redis-delkey.html</guid>
+      <guid>/2015/12/30/redis-delkey.html</guid>
       <description>使用命令方式删除所有
 redis-cli KEYS &amp;#8220;126.com*&amp;#8221; | xargs redis-cli DEL 使用lua方式
 EVAL &amp;#8220;return redis.call(&amp;#8216;del&amp;#8217;, unpack(redis.call(&amp;#8216;keys&amp;#8217;, ARGV[1])))&amp;#8221; 0 * </description>
@@ -336,10 +336,10 @@ EVAL &amp;#8220;return redis.call(&amp;#8216;del&amp;#8217;, unpack(redis.call(&
     
     <item>
       <title>Visualstudio 编译不能打开pch文件 | vs2010,visualstudio,pch,预处理</title>
-      <link>http://www.gsymy.com/2015/12/30/visualstudio-pch.html</link>
+      <link>/2015/12/30/visualstudio-pch.html</link>
       <pubDate>Wed, 30 Dec 2015 10:38:43 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/12/30/visualstudio-pch.html</guid>
+      <guid>/2015/12/30/visualstudio-pch.html</guid>
       <description>pch文件是vs生成的预编译文件，用来加速编译的。pch文件通常是由stdafx.cpp文件生成的。
 如果你删除了这个文件而又实用了预编译选项则会报标题中的错误
 
@@ -351,10 +351,10 @@ Can&amp;#8217;t open xxxx.pch
     
     <item>
       <title>Linux使用C&#43;&#43;11</title>
-      <link>http://www.gsymy.com/2015/12/22/linux_using_cxx11.html</link>
+      <link>/2015/12/22/linux_using_cxx11.html</link>
       <pubDate>Tue, 22 Dec 2015 09:30:10 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/12/22/linux_using_cxx11.html</guid>
+      <guid>/2015/12/22/linux_using_cxx11.html</guid>
       <description>CentOS中默认使用的GCC是4.4的，所以不支持C++11
 gcc选项 -std=c++11 需要GCC4.7以上的版本
 这里提供一个简单简单的方法
@@ -377,10 +377,10 @@ https://stackoverflow.com/questions/7832892/how-to-change-the-default-gcc-compil
     
     <item>
       <title>linux更新svn客户端 | svn,subversion,更新svn</title>
-      <link>http://www.gsymy.com/2015/12/09/linux_update_svn.html</link>
+      <link>/2015/12/09/linux_update_svn.html</link>
       <pubDate>Wed, 09 Dec 2015 14:15:43 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/12/09/linux_update_svn.html</guid>
+      <guid>/2015/12/09/linux_update_svn.html</guid>
       <description>CentOS自带的svn版本是1.6.11
 
 Svn1.6版本之前的设计是在每个文件夹下都存有.svn来保存svn信息和备份；
@@ -421,19 +421,19 @@ http://www.secpulse.com/archives/tag/svn%E6%96%87%E4%BB%B6%E6%B3%84%E9%9C%B2</de
     
     <item>
       <title>一个充满魔性的外国妹子，看了好几遍…</title>
-      <link>http://www.gsymy.com/2015/11/29/magicgirl.html</link>
+      <link>/2015/11/29/magicgirl.html</link>
       <pubDate>Sun, 29 Nov 2015 13:29:29 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/11/29/magicgirl.html</guid>
+      <guid>/2015/11/29/magicgirl.html</guid>
       <description>程序员爱看妹子</description>
     </item>
     
     <item>
       <title>CentOS安装mongodb</title>
-      <link>http://www.gsymy.com/2015/11/20/centos_install_mongodb.html</link>
+      <link>/2015/11/20/centos_install_mongodb.html</link>
       <pubDate>Fri, 20 Nov 2015 07:31:11 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/11/20/centos_install_mongodb.html</guid>
+      <guid>/2015/11/20/centos_install_mongodb.html</guid>
       <description>yum源中添加mongodb下载地址
 
 具体步骤：
@@ -450,10 +450,10 @@ Cd /etc/yum.repo.d/
     
     <item>
       <title>jni GetFieldID崩溃的一个可能原因</title>
-      <link>http://www.gsymy.com/2015/11/15/jni-getfieldidcrash.html</link>
+      <link>/2015/11/15/jni-getfieldidcrash.html</link>
       <pubDate>Sun, 15 Nov 2015 06:46:37 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/11/15/jni-getfieldidcrash.html</guid>
+      <guid>/2015/11/15/jni-getfieldidcrash.html</guid>
       <description>错误信息如下：
 # Problematic frame:
 
@@ -472,10 +472,10 @@ java版本JDK 1.7.0 X64
     
     <item>
       <title>PHP字符集错误</title>
-      <link>http://www.gsymy.com/2015/11/15/php_codec_error.html</link>
+      <link>/2015/11/15/php_codec_error.html</link>
       <pubDate>Sun, 15 Nov 2015 06:46:03 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/11/15/php_codec_error.html</guid>
+      <guid>/2015/11/15/php_codec_error.html</guid>
       <description>安装最新版本的phpymyadmin无法打开网站，查看日志显示如下：
 PHP message: PHP Fatal error: Call to undefined function mb_detect_encoding() 原因排查，没有安装php的mbstring扩展
 解决办法:
@@ -494,10 +494,10 @@ http://www.phperz.com/article/14/1222/42451.html
     
     <item>
       <title>Google 镜像站搜集</title>
-      <link>http://www.gsymy.com/2015/11/06/google-mirror.html</link>
+      <link>/2015/11/06/google-mirror.html</link>
       <pubDate>Fri, 06 Nov 2015 03:11:33 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/11/06/google-mirror.html</guid>
+      <guid>/2015/11/06/google-mirror.html</guid>
       <description>Google 镜像站搜集
 
 在特殊的地方和特殊的时间，流畅顺利的打开一个网站也变得如此艰难。
@@ -562,10 +562,10 @@ WebWebWeb：http://webwebweb.com/
     
     <item>
       <title>网友评选的“2015中国11大光棍职业”，程序员光荣上榜</title>
-      <link>http://www.gsymy.com/2015/10/29/programmer_job_2015.html</link>
+      <link>/2015/10/29/programmer_job_2015.html</link>
       <pubDate>Thu, 29 Oct 2015 13:47:58 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/10/29/programmer_job_2015.html</guid>
+      <guid>/2015/10/29/programmer_job_2015.html</guid>
       <description>有道是“女怕嫁错郎，男怕入错行”。走入社会之后不同职业会产生不同的人生路线。这里从网上摘来&amp;#8221;2015年中国11大光棍职业&amp;#8221;。你的职业登榜了吗？即将走入社会的大学生，看了这个榜单你有没有考虑换个职业呢？
 &amp;nbsp;
 网友评选的“2015年中国11大光棍职业”排行榜：
@@ -576,10 +576,10 @@ http://news.sohu.com/20151028/n424488061.shtml</description>
     
     <item>
       <title>qmake不能生成vs工程文件</title>
-      <link>http://www.gsymy.com/2015/10/27/qmake_vsproject.html</link>
+      <link>/2015/10/27/qmake_vsproject.html</link>
       <pubDate>Tue, 27 Oct 2015 10:33:30 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/10/27/qmake_vsproject.html</guid>
+      <guid>/2015/10/27/qmake_vsproject.html</guid>
       <description>报错信息如下：
 
 WARNING: Unable to generate output for: Makefile.Debug [TEMPLATE vcapp]
@@ -598,10 +598,10 @@ qmake -tp vc -spec win32-msvc2010 xxx.pro &amp;nbsp;
     
     <item>
       <title>not found or not built by the last incremental link VS2010编译警告</title>
-      <link>http://www.gsymy.com/2015/10/25/not-found-or-not-built-by-the-last-incremental-link-vs2010warning.html</link>
+      <link>/2015/10/25/not-found-or-not-built-by-the-last-incremental-link-vs2010warning.html</link>
       <pubDate>Sun, 25 Oct 2015 11:54:56 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/10/25/not-found-or-not-built-by-the-last-incremental-link-vs2010warning.html</guid>
+      <guid>/2015/10/25/not-found-or-not-built-by-the-last-incremental-link-vs2010warning.html</guid>
       <description>not found or not built by the last incremental link; performing full link
 
 2015年10月25日
@@ -626,28 +626,28 @@ Solution:
     
     <item>
       <title>程序员如何找对象?</title>
-      <link>http://www.gsymy.com/2015/10/22/programer_gf.html</link>
+      <link>/2015/10/22/programer_gf.html</link>
       <pubDate>Thu, 22 Oct 2015 13:49:31 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/10/22/programer_gf.html</guid>
+      <guid>/2015/10/22/programer_gf.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>一张图–论女程序员为什么这么少</title>
-      <link>http://www.gsymy.com/2015/10/16/female_programmer.html</link>
+      <link>/2015/10/16/female_programmer.html</link>
       <pubDate>Fri, 16 Oct 2015 02:34:00 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/10/16/female_programmer.html</guid>
+      <guid>/2015/10/16/female_programmer.html</guid>
       <description>From: http://my.oschina.net/xxiaobian/blog/517846</description>
     </item>
     
     <item>
       <title>C语言通配符匹配</title>
-      <link>http://www.gsymy.com/2015/10/15/wildcard_match.html</link>
+      <link>/2015/10/15/wildcard_match.html</link>
       <pubDate>Thu, 15 Oct 2015 03:52:16 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/10/15/wildcard_match.html</guid>
+      <guid>/2015/10/15/wildcard_match.html</guid>
       <description>C语言通配符匹配
 
 工作中经常会遇到通配符，windows控制台程序，linux shell，还有web服务器配置路径，Makefile中。
@@ -676,10 +676,10 @@ A list of licenses authors might use can be found here
     
     <item>
       <title>libtcmalloc.so.4 链接失败</title>
-      <link>http://www.gsymy.com/2015/10/13/libtcmalloc-so-4-linkerror.html</link>
+      <link>/2015/10/13/libtcmalloc-so-4-linkerror.html</link>
       <pubDate>Tue, 13 Oct 2015 12:58:38 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/10/13/libtcmalloc-so-4-linkerror.html</guid>
+      <guid>/2015/10/13/libtcmalloc-so-4-linkerror.html</guid>
       <description>error while loading shared libraries: libtcmalloc.so.4: cannot open shared object file: No such file or directory
 
 楼主在安装lnmp时，开启了tmalloc优化，结果在安装过程中报了如上错误；
@@ -697,10 +697,10 @@ A list of licenses authors might use can be found here
     
     <item>
       <title>centos6 升级nginx</title>
-      <link>http://www.gsymy.com/2015/10/10/centos6-update-nginx.html</link>
+      <link>/2015/10/10/centos6-update-nginx.html</link>
       <pubDate>Sat, 10 Oct 2015 05:35:53 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/10/10/centos6-update-nginx.html</guid>
+      <guid>/2015/10/10/centos6-update-nginx.html</guid>
       <description>centos6 默认源的nginx版本很低，网上给出的大部分方法下载源码编译安装；
 这种方法比较麻烦，其实最简单的方法是使用nginx官网的源进行安装；
  进入 /etc/yum.repos.d/ 目录下生成nginx的源配置  cd /etc/yum.repos.d/  用vi/vim/cat 工具生成nginx.repo填入以下内容
@@ -710,20 +710,20 @@ https://www.nginx.com/resources/wiki/start/topics/tutorials/install/</descriptio
     
     <item>
       <title>关于dota的一个悲伤故事</title>
-      <link>http://www.gsymy.com/2015/10/10/dota_story.html</link>
+      <link>/2015/10/10/dota_story.html</link>
       <pubDate>Sat, 10 Oct 2015 02:23:20 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/10/10/dota_story.html</guid>
+      <guid>/2015/10/10/dota_story.html</guid>
       <description>悲伤的故事。。
 这么多年单身原来是因为我dota打的菜。彩笔是不配拥有爱情的&amp;#8230;</description>
     </item>
     
     <item>
       <title>tortoisegit/tortoisesvn 图标失效问题</title>
-      <link>http://www.gsymy.com/2015/10/03/tortoisegittortoisesvn-icon.html</link>
+      <link>/2015/10/03/tortoisegittortoisesvn-icon.html</link>
       <pubDate>Sat, 03 Oct 2015 14:11:02 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/10/03/tortoisegittortoisesvn-icon.html</guid>
+      <guid>/2015/10/03/tortoisegittortoisesvn-icon.html</guid>
       <description>作为一个开发者tortoisegit/tortoisesvn当然时少不了的；
 最近发现tortoisegit/tortoisesvn不在显示了，文件修改后也不变红；
 刚开始以为是被360有优化掉了；查看了一下启动项和进程；没问题
@@ -748,10 +748,10 @@ http://www.oschina.net/question/2297147_245156</description>
     
     <item>
       <title>利用virt-what工具检测VPS虚拟化技术(转)</title>
-      <link>http://www.gsymy.com/2015/09/25/virt-what.html</link>
+      <link>/2015/09/25/virt-what.html</link>
       <pubDate>Fri, 25 Sep 2015 10:10:00 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/09/25/virt-what.html</guid>
+      <guid>/2015/09/25/virt-what.html</guid>
       <description> 利用virt-what工具检测VPS虚拟化技术 检测是OpenVZ还是Xen老蒋 发布于 1年前 (2014-09-26) 分类：VPS基础应用阅读(543) 评论(0)
 我们在选择VPS主机的时候肯定会看到商家提供方案有提到是用的openvz、xen、kvm等架构技术，具体我们不去讨论这3个常用的技术特点，总之相对而言，openvz可以超售比较多，所以相对成本就低，对于xen和kvm理论上操作可以超售部分，但相对比ovz好一些。 对于我们购买的VPS，也可能听到的技术不准确，可以用到virt-what方法来真实的检测。  第一、下载以及安装virt-what脚本 wget http://soft.itbulu.com/tools/virt-what-1.11.tar.gz #下载
 tar zxf virt-what-1.11.tar.gz #解压
@@ -763,28 +763,28 @@ make &amp;&amp; make install 这样就可以把virt-what安装成功。  第二�
     
     <item>
       <title>咬文嚼字之阈值阀值</title>
-      <link>http://www.gsymy.com/2015/09/23/yzfz.html</link>
+      <link>/2015/09/23/yzfz.html</link>
       <pubDate>Wed, 23 Sep 2015 09:42:19 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/09/23/yzfz.html</guid>
+      <guid>/2015/09/23/yzfz.html</guid>
       <description>   阀值是阈值的常见错误写法。  引用同事说的一句话&amp;#8221;阀值是阈值的文盲写法&amp;#8220;   阀fá 控制、开关、把持。1) 机械名词,指在管道中用来控制液体或气体的部件。意为阀门、开关、把持。如截止阀、减压阀、安全阀。  阈(yù )范围,边界,程度。1) 门槛、门限,引申为边界、界阈、视阈。  可见“阀”与“阈”是词义不同的2个词。那么“阀值”会不会是一个新词呢? 经查，不是。在表达“界限”、“范围”的意思时应该用“阈”而不是“阀”。阈值跟英文threshold value对应。  在新版的《现代汉语词典》和《现代汉语规范词典》中，均没有收录“阀值”一词 ；但在日常生活、甚至许多科研论文中，都普遍存在误用的现象。   from 百度百科  http://baike.baidu.com/subview/648990/648990.htm  </description>
     </item>
     
     <item>
       <title>Configure,Makefile.am, Makefile.in, Makefile文件之间关系(转)</title>
-      <link>http://www.gsymy.com/2015/09/21/configuremakefile-am-makefile-in-makefile.html</link>
+      <link>/2015/09/21/configuremakefile-am-makefile-in-makefile.html</link>
       <pubDate>Mon, 21 Sep 2015 03:32:25 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/09/21/configuremakefile-am-makefile-in-makefile.html</guid>
+      <guid>/2015/09/21/configuremakefile-am-makefile-in-makefile.html</guid>
       <description>Configure，Makefile.am, Makefile.in, Makefile文件之间关系  2009-08-12 12:14      1.autoscan (autoconf): 扫描源代码以搜寻普通的可移植性问题，比如检查编译器，库，头文件等，生成文件configure.scan,它是configure.ac的一个雏形。  your source files &amp;#8211; [autoscan*] &amp;#8211; [configure.scan] &amp;#8211; configure.ac  2.aclocal (automake):根据已经安装的宏，用户定义宏和acinclude.m4文件中的宏将configure.ac文件所需要的宏集中定义到文件 aclocal.m4中。aclocal是一个perl 脚本程序，它的定义是：“aclocal &amp;#8211; create aclocal.m4 by scanning configure.ac” user input files optional input process output files ================ ============== ======= ============ acinclude.m4 - - - - -. V .-------, configure.ac ------------------------&amp;gt;;|aclocal| {user macro files} -&amp;gt;;| |------&amp;gt;;; aclocal.m4 `-------&#39; 3.autoheader(autoconf): 根据configure.ac中的某些宏，比如cpp宏定义，运行m4，声称config.h.in user input files optional input process output files ================ ============== ======= ============ aclocal.</description>
     </item>
     
     <item>
       <title>今天是程序员节</title>
-      <link>http://www.gsymy.com/2015/09/13/programer_day.html</link>
+      <link>/2015/09/13/programer_day.html</link>
       <pubDate>Sun, 13 Sep 2015 07:06:56 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/09/13/programer_day.html</guid>
+      <guid>/2015/09/13/programer_day.html</guid>
       <description>&lt;h1 id=&#34;img-class-alignnone-size-medium-wp-image-306-src-http-www-gsymy-com-wp-content-uploads-2015-09-logo512-jpg-alt-logo512-width-0-height-0-1&#34;&gt; &lt;a href=&#34;http://www.gsymy.com/wp-content/uploads/2015/09/logo512.jpg&#34;&gt;&lt;img class=&#34;alignnone size-medium wp-image-306&#34; src=&#34;http://www.gsymy.com/wp-content/uploads/2015/09/logo512.jpg&#34; alt=&#34;logo512&#34; width=&#34;0&#34; height=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/h1&gt;
 
 &lt;h1 id=&#34;今天是程序员节-programmer-s-day-if-ie-7&#34;&gt;今天是程序员节（Programmer’s Day）&amp;lt;!&amp;ndash; [if IE 7]&amp;gt;&lt;/h1&gt;
@@ -896,10 +896,10 @@ make &amp;&amp; make install 这样就可以把virt-what安装成功。  第二�
     
     <item>
       <title>安装scrapy</title>
-      <link>http://www.gsymy.com/2015/09/12/scrapy_install.html</link>
+      <link>/2015/09/12/scrapy_install.html</link>
       <pubDate>Sat, 12 Sep 2015 13:07:56 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/09/12/scrapy_install.html</guid>
+      <guid>/2015/09/12/scrapy_install.html</guid>
       <description>&lt;div class=&#34;para&#34;&gt;
   Scrapy，Python开发的一个快速,高层次的屏幕抓取和web抓取框架，用于抓取web站点并从页面中提取结构化的数据。Scrapy用途广泛，可以用于数据挖掘、监测和&lt;a href=&#34;http://baike.baidu.com/view/1303916.htm&#34; target=&#34;_blank&#34;&gt;自动化测试&lt;/a&gt;。
 &lt;/div&gt;
@@ -936,10 +936,10 @@ pip install Scrapy&lt;/pre&gt;
     
     <item>
       <title>centos安装python2.7</title>
-      <link>http://www.gsymy.com/2015/09/12/centos_python2-7.html</link>
+      <link>/2015/09/12/centos_python2-7.html</link>
       <pubDate>Sat, 12 Sep 2015 12:13:52 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/09/12/centos_python2-7.html</guid>
+      <guid>/2015/09/12/centos_python2-7.html</guid>
       <description>centos 系统默认带的python是2.6的，现在最新的一些程序很多要求python2.7，根据我的经验写一下整个过程
 0x01. 下载python2.7.10源码
 wget https://www.python.org/ftp/python/2.7.10/Python-2.7.10.tgz 0x02. 解压缩&amp;amp;编译
@@ -953,10 +953,10 @@ wget http://peak.telecommunity.com/dist/ez_setup.py sudo python ez_setup.py 0x06
     
     <item>
       <title>程序猿特有的15个坏习惯</title>
-      <link>http://www.gsymy.com/2015/09/10/programmer_bad_manners.html</link>
+      <link>/2015/09/10/programmer_bad_manners.html</link>
       <pubDate>Thu, 10 Sep 2015 03:46:29 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/09/10/programmer_bad_manners.html</guid>
+      <guid>/2015/09/10/programmer_bad_manners.html</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://img1.mydrivers.com/img/20131129/1aa55a73334e439fb089727e6861cf69.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;似乎任何职业都会给从业人员带来这样那样的习惯。&lt;/p&gt;
@@ -996,19 +996,19 @@ wget http://peak.telecommunity.com/dist/ez_setup.py sudo python ez_setup.py 0x06
     
     <item>
       <title>论程序员如何转行烧烤行业</title>
-      <link>http://www.gsymy.com/2015/09/08/programer_barbecue.html</link>
+      <link>/2015/09/08/programer_barbecue.html</link>
       <pubDate>Tue, 08 Sep 2015 02:50:51 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/09/08/programer_barbecue.html</guid>
+      <guid>/2015/09/08/programer_barbecue.html</guid>
       <description>从oschina动弹上看到的,赶紧收藏下来，说不定哪天就用得着呢</description>
     </item>
     
     <item>
       <title>集合算法题</title>
-      <link>http://www.gsymy.com/2015/09/07/get_subset_order.html</link>
+      <link>/2015/09/07/get_subset_order.html</link>
       <pubDate>Mon, 07 Sep 2015 12:27:05 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/09/07/get_subset_order.html</guid>
+      <guid>/2015/09/07/get_subset_order.html</guid>
       <description>有点意思的集合算法题；不是特别简单，也不是特别复杂，想做好还得好好想想。
 已知现在有若干组集合,集合的元素由字符串构成 set1 = {&#34;abc&#34;,&#34;bcd&#34;,...}; ... setn = {...} 1. 求所有集合的并集UnionSet 2. 将集合UnionSet中元素顺序进行编号，求出每个子集中元素的编号； 3. 选取Unionset中任意个元素，组成新的集合，求原有子集中哪些是新集合的子集(2015-09-08补充) 编程对于给定的集合以最小的时间代价完成1和2  我先说一下我的想法
 我说一下我的想法；
@@ -1025,29 +1025,29 @@ idx = 0 for (element in unionset) { for (setPtr in element.setPtrsList) { setPt
     
     <item>
       <title>Visualstudio C语言包含C&#43;&#43;头文件编译不通过</title>
-      <link>http://www.gsymy.com/2015/09/07/vs_error_include_cpp.html</link>
+      <link>/2015/09/07/vs_error_include_cpp.html</link>
       <pubDate>Mon, 07 Sep 2015 10:29:39 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/09/07/vs_error_include_cpp.html</guid>
+      <guid>/2015/09/07/vs_error_include_cpp.html</guid>
       <description>error C2054: expected &#39;(&#39; to follow &#39;using&#39; error C2061: syntax error : identifier &#39;using&#39; c:\program files\microsoft visual studio 10.0\vc\include\cstdio(38): error C2054: expected &#39;(&#39; to follow &#39;using&#39; c:\program files\microsoft visual studio 10.0\vc\include\cstdio(40): error C2061: syntax error : identifier &#39;using&#39; c:\program files\microsoft visual studio 10.0\vc\include\cstdio(40): error C2054: expected &#39;(&#39; to follow &#39;using&#39; c:\program files\microsoft visual studio 10.0\vc\include\cstdio(40): error C2061: syntax error : identifier &#39;using&#39; c:\program files\microsoft visual studio 10.0\vc\include\cstdio(41): error C2061: syntax error : identifier &#39;clearerr&#39;  VS 编译代码时，如果里边既包含C又包含C++，在公共头文件中有C++头文件（如stl系列）时会报这个错误</description>
     </item>
     
     <item>
       <title>scrapycmdline</title>
-      <link>http://www.gsymy.com/2015/09/04/scrapycmdline.html</link>
+      <link>/2015/09/04/scrapycmdline.html</link>
       <pubDate>Fri, 04 Sep 2015 06:42:20 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/09/04/scrapycmdline.html</guid>
+      <guid>/2015/09/04/scrapycmdline.html</guid>
       <description>scrapy没有找到包
 Traceback (most recent call last): File &#34;/usr/local/bin/scrapy&#34;, line 7, in &amp;lt;module&amp;gt; from scrapy.cmdline import execute ImportError: No module named scrapy.cmdline   如果没有正确安装scrapy，请重新安装scrapy 如果正确安装了scrapy,那么就可能是你系统上有多个python  如果是windows，使用正确的环境变量 如果是linux，多半是因为有多个python导致的。  修改yum里的python    </description>
     </item>
     
     <item>
       <title>centos关闭cups打印服务</title>
-      <link>http://www.gsymy.com/2015/08/31/centos_stop_cups.html</link>
+      <link>/2015/08/31/centos_stop_cups.html</link>
       <pubDate>Mon, 31 Aug 2015 00:54:59 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/31/centos_stop_cups.html</guid>
+      <guid>/2015/08/31/centos_stop_cups.html</guid>
       <description>centos/redhat 等关闭cups打印服务
 linux的cups打印服务占用了631端口，大多数人用不到这个服务，建议关闭
 关闭服务和自启动：
@@ -1056,10 +1056,10 @@ sudo service cups stop sudo chkconfig --level 2345 cups off &amp;nbsp;</descript
     
     <item>
       <title>一张图学会git</title>
-      <link>http://www.gsymy.com/2015/08/28/git-mindpic.html</link>
+      <link>/2015/08/28/git-mindpic.html</link>
       <pubDate>Fri, 28 Aug 2015 01:16:09 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/28/git-mindpic.html</guid>
+      <guid>/2015/08/28/git-mindpic.html</guid>
       <description>&lt;div class=&#34;para&#34;&gt;
   Git是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。Git的读音为[gɪt]。
 &lt;/div&gt;
@@ -1097,10 +1097,10 @@ sudo service cups stop sudo chkconfig --level 2345 cups off &amp;nbsp;</descript
     
     <item>
       <title>美国免备案VPS</title>
-      <link>http://www.gsymy.com/2015/08/27/us_vps.html</link>
+      <link>/2015/08/27/us_vps.html</link>
       <pubDate>Thu, 27 Aug 2015 01:11:41 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/27/us_vps.html</guid>
+      <guid>/2015/08/27/us_vps.html</guid>
       <description>&lt;p&gt;linux建站推荐，&lt;a href=&#34;http://www.kvmla.com/aff.php?aff=2173&#34; target=&#34;_blank&#34;&gt;美国免备案VPS&lt;/a&gt;&lt;/p&gt;
 
 &lt;div style=&#34;width: 135px&#34; class=&#34;wp-caption alignnone&#34;&gt;
@@ -1116,10 +1116,10 @@ sudo service cups stop sudo chkconfig --level 2345 cups off &amp;nbsp;</descript
     
     <item>
       <title>nginx 搭建带验证的HTTP代理</title>
-      <link>http://www.gsymy.com/2015/08/26/nginx_auth_proxy.html</link>
+      <link>/2015/08/26/nginx_auth_proxy.html</link>
       <pubDate>Wed, 26 Aug 2015 15:06:46 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/26/nginx_auth_proxy.html</guid>
+      <guid>/2015/08/26/nginx_auth_proxy.html</guid>
       <description>核心配置代码
 server { listen 8080;#监听端口 client_body_timeout 60000;#超时 client_max_body_size 1024m; send_timeout 60000; client_header_buffer_size 16k; large_client_header_buffers 4 64k; proxy_headers_hash_bucket_size 1024; proxy_headers_hash_max_size 4096; proxy_read_timeout 60000; proxy_send_timeout 60000; location / { auth_basic &#34;Please input your password:&#34;; auth_basic_user_file /usr/share/nginx/htpasswd; resolver 8.8.8.8; proxy_pass http://$http_host$request_uri; } } 说明auth_basic_user_file指向你生成的密码文件，这个文件是由apache的htpasswd生成的。
 用法如下:
@@ -1129,10 +1129,10 @@ htpasswd -c /usr/share/nginx/authdb liming 实际路径根据实际情况，如�
     
     <item>
       <title>nirsoft</title>
-      <link>http://www.gsymy.com/2015/08/26/nirsoft.html</link>
+      <link>/2015/08/26/nirsoft.html</link>
       <pubDate>Wed, 26 Aug 2015 00:50:57 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/26/nirsoft.html</guid>
+      <guid>/2015/08/26/nirsoft.html</guid>
       <description>推荐一个网站: http://www.nirsoft.net
 nirsoft开发了很多体积小又实用的windows软件，而且基本都是免费的。
 涵盖网络、注册表、磁盘、系统、路由、服务等等，基本上windows上开发所涉及的都有工具。
@@ -1146,10 +1146,10 @@ nirsoft开发了很多体积小又实用的windows软件，而且基本都是免
     
     <item>
       <title>linux screen 命令详解(转)</title>
-      <link>http://www.gsymy.com/2015/08/25/linux-screen.html</link>
+      <link>/2015/08/25/linux-screen.html</link>
       <pubDate>Tue, 25 Aug 2015 00:57:10 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/25/linux-screen.html</guid>
+      <guid>/2015/08/25/linux-screen.html</guid>
       <description>&lt;p&gt;转&lt;a href=&#34;http://www.cnblogs.com/mchina/archive/2013/01/30/2880680.html&#34; target=&#34;_blank&#34;&gt;linux screen 命令详解 &amp;#8211; David_Tang &amp;#8211; 博客园&lt;/a&gt;&lt;/p&gt;
 
 &lt;div id=&#34;home&#34;&gt;
@@ -1236,10 +1236,10 @@ nirsoft开发了很多体积小又实用的windows软件，而且基本都是免
     
     <item>
       <title>UE编辑器加载格式化代码插件astyle</title>
-      <link>http://www.gsymy.com/2015/08/23/ue_format.html</link>
+      <link>/2015/08/23/ue_format.html</link>
       <pubDate>Sun, 23 Aug 2015 15:14:50 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/23/ue_format.html</guid>
+      <guid>/2015/08/23/ue_format.html</guid>
       <description>UE 的格式化功能不强，自带的astyle版本陈旧，一般采用开源工具astyle来实现代码格式化。
   首先下载最新的astyle，因为ue自带的astyle版本太老，不支持空格、中文名等。下载点这里
   解压缩后得到 astyle.exe, 将之拷贝到 ue目录的gnu目录下面，覆盖原来的astyle.exe
@@ -1251,10 +1251,10 @@ nirsoft开发了很多体积小又实用的windows软件，而且基本都是免
     
     <item>
       <title>非root用户使用tcpdump</title>
-      <link>http://www.gsymy.com/2015/08/23/tcpdumpnoroot.html</link>
+      <link>/2015/08/23/tcpdumpnoroot.html</link>
       <pubDate>Sun, 23 Aug 2015 15:10:26 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/23/tcpdumpnoroot.html</guid>
+      <guid>/2015/08/23/tcpdumpnoroot.html</guid>
       <description>  centos/redhat下安装tcpdump sudo yum install -y tcpdump
   在tcpdump所在目录下执行 sudo chmod u+s tcpdump   &amp;nbsp; 
 原理参考： tcpdump 安装和文件的s权限 &amp;#8211; arkblue的专栏 &amp;#8211; 博客频道 &amp;#8211; CSDN.NET
@@ -1263,10 +1263,10 @@ nirsoft开发了很多体积小又实用的windows软件，而且基本都是免
     
     <item>
       <title>Linux 命令行参数处理函数探究(转)</title>
-      <link>http://www.gsymy.com/2015/08/23/linux-getopt.html</link>
+      <link>/2015/08/23/linux-getopt.html</link>
       <pubDate>Sun, 23 Aug 2015 01:59:32 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/23/linux-getopt.html</guid>
+      <guid>/2015/08/23/linux-getopt.html</guid>
       <description>&lt;p&gt;一、getopt函数&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://blog.chinaunix.net/attachment/201205/20/26833883_1337526381qRMV.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -1348,10 +1348,10 @@ while(1)
     
     <item>
       <title>VS编译出错，工程文件不存在</title>
-      <link>http://www.gsymy.com/2015/08/19/vserrornoprjfile.html</link>
+      <link>/2015/08/19/vserrornoprjfile.html</link>
       <pubDate>Wed, 19 Aug 2015 09:25:52 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/19/vserrornoprjfile.html</guid>
+      <guid>/2015/08/19/vserrornoprjfile.html</guid>
       <description>&lt;h3 id=&#34;vs编译出错信息-title-pre-fs1&#34;&gt;VS编译出错信息: {.title.pre.fs1}&lt;/h3&gt;
 
 &lt;h3 id=&#34;span-class-tcnt-8220-the-project-file-8221-has-been-renamed-or-is-no-longer-in-the-solution-8221-span-title-pre-fs1&#34;&gt;&lt;span class=&#34;tcnt&#34;&gt;&amp;#8220;The project file &amp;#8221; has been renamed or is no longer in the solution&amp;#8221;&lt;/span&gt; {.title.pre.fs1}&lt;/h3&gt;
@@ -1413,10 +1413,10 @@ while(1)
     
     <item>
       <title>wordpress基础操作</title>
-      <link>http://www.gsymy.com/2015/08/19/wordpress-basic.html</link>
+      <link>/2015/08/19/wordpress-basic.html</link>
       <pubDate>Wed, 19 Aug 2015 07:18:47 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/19/wordpress-basic.html</guid>
+      <guid>/2015/08/19/wordpress-basic.html</guid>
       <description>添加favoriteicon  在wp-content/themes/YOURTHEM/header.php 中添加下面语句，然后把favicon.ico文件放置到网站根目录
 &amp;lt;link rel=&#34;shortcut icon&#34; type=&#34;image/x-icon&#34; href=&#34;favicon.ico&#34; /&amp;gt; &amp;nbsp;
  添加统计代码  在wp-content/themes/YOURTHEM/footer.php 中添加对应的网站js代码即可
@@ -1429,10 +1429,10 @@ while(1)
     
     <item>
       <title>Project not selected to build for this solution configuration.</title>
-      <link>http://www.gsymy.com/2015/08/19/vsnotbuildbysolution.html</link>
+      <link>/2015/08/19/vsnotbuildbysolution.html</link>
       <pubDate>Wed, 19 Aug 2015 06:52:05 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/19/vsnotbuildbysolution.html</guid>
+      <guid>/2015/08/19/vsnotbuildbysolution.html</guid>
       <description>&lt;h1 id=&#34;cb_post_title_url.postTitle2&#34;&gt;&lt;a href=&#34;http://www.cnblogs.com/moonlight-zjb/p/3837762.html&#34;&gt;Project not selected to build for this solution configuration.&lt;/a&gt;&lt;/h1&gt;
 
 &lt;p&gt;{.postTitle}&lt;/p&gt;
@@ -1518,10 +1518,10 @@ while(1)
     
     <item>
       <title>vs 命令行编译</title>
-      <link>http://www.gsymy.com/2015/08/18/vs-cmdline-build.html</link>
+      <link>/2015/08/18/vs-cmdline-build.html</link>
       <pubDate>Tue, 18 Aug 2015 10:40:56 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/18/vs-cmdline-build.html</guid>
+      <guid>/2015/08/18/vs-cmdline-build.html</guid>
       <description>&lt;p&gt;简单用法 进入命令行vs Command Prompt，参考以下格式&lt;/p&gt;
 
 &lt;pre class=&#34;lang:default decode:true&#34;&gt;devenv xxxx.vcxproj /Build &#34;Release|Win32&#34;
@@ -1535,10 +1535,10 @@ devenv xxxx.sln /Clean &#34;Debug|x64&#34;&lt;/pre&gt;
     
     <item>
       <title>分享一个C/C&#43;&#43; 参考手册</title>
-      <link>http://www.gsymy.com/2015/08/18/a-cpp-manual.html</link>
+      <link>/2015/08/18/a-cpp-manual.html</link>
       <pubDate>Tue, 18 Aug 2015 04:03:35 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/18/a-cpp-manual.html</guid>
+      <guid>/2015/08/18/a-cpp-manual.html</guid>
       <description>下载链接 :http://pan.baidu.com/s/1eQuEo0a
 &amp;nbsp;
 &amp;nbsp;</description>
@@ -1546,10 +1546,10 @@ devenv xxxx.sln /Clean &#34;Debug|x64&#34;&lt;/pre&gt;
     
     <item>
       <title>怎么编写Linux守护程序</title>
-      <link>http://www.gsymy.com/2015/08/18/linux-daemon-writing-howto.html</link>
+      <link>/2015/08/18/linux-daemon-writing-howto.html</link>
       <pubDate>Tue, 18 Aug 2015 02:26:13 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/18/linux-daemon-writing-howto.html</guid>
+      <guid>/2015/08/18/linux-daemon-writing-howto.html</guid>
       <description>&lt;p&gt;来源： &lt;em&gt;&lt;a href=&#34;http://www.linuxprofilm.com/articles/linux-daemon-howto.html#&#34;&gt;Linux Daemon Writing HOWTO&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;linux-daemon-writing-howto&#34;&gt;Linux Daemon Writing HOWTO&lt;/h1&gt;
@@ -1563,10 +1563,10 @@ devenv xxxx.sln /Clean &#34;Debug|x64&#34;&lt;/pre&gt;
     
     <item>
       <title>如何绘制数据流图</title>
-      <link>http://www.gsymy.com/2015/08/18/paintdfd.html</link>
+      <link>/2015/08/18/paintdfd.html</link>
       <pubDate>Tue, 18 Aug 2015 02:21:57 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/18/paintdfd.html</guid>
+      <guid>/2015/08/18/paintdfd.html</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.cnblogs.com/spring5/archive/2012/04/29/2485238.html&#34; target=&#34;_blank&#34;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;数据流图（Data Flow Diagram）：简称DFD，它从数据传递和加工角度，以图形方式来表达系统的逻辑功能、数据在系统内部的逻辑流向和逻辑变换过程，是结构化系统分析方法的主要表达工具及用于表示软件模型的一种图示方法。（百科）&lt;/p&gt;
@@ -1588,10 +1588,10 @@ devenv xxxx.sln /Clean &#34;Debug|x64&#34;&lt;/pre&gt;
     
     <item>
       <title>windows错误码大全,妈妈再也不担心我win32api返回失败了！</title>
-      <link>http://www.gsymy.com/2015/08/13/win_errorcode.html</link>
+      <link>/2015/08/13/win_errorcode.html</link>
       <pubDate>Thu, 13 Aug 2015 10:45:25 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/13/win_errorcode.html</guid>
+      <guid>/2015/08/13/win_errorcode.html</guid>
       <description>&lt;p&gt;windows错误码大全，中文对照表&lt;/p&gt;
 
 &lt;pre class=&#34;width:500 lang:php decode:true&#34; title=&#34;window错误码大全&#34;&gt;0000 操作已成功完成。
@@ -2532,10 +2532,10 @@ devenv xxxx.sln /Clean &#34;Debug|x64&#34;&lt;/pre&gt;
     
     <item>
       <title>不疯狂怎么做好程序员</title>
-      <link>http://www.gsymy.com/2015/08/13/crazyprogrammer.html</link>
+      <link>/2015/08/13/crazyprogrammer.html</link>
       <pubDate>Thu, 13 Aug 2015 02:50:52 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/13/crazyprogrammer.html</guid>
+      <guid>/2015/08/13/crazyprogrammer.html</guid>
       <description>习惯了平凡；
 习惯了无为；
 习惯了麻木；
@@ -2556,10 +2556,10 @@ devenv xxxx.sln /Clean &#34;Debug|x64&#34;&lt;/pre&gt;
     
     <item>
       <title>MS15-034 exp</title>
-      <link>http://www.gsymy.com/2015/08/12/ms15-034-exp.html</link>
+      <link>/2015/08/12/ms15-034-exp.html</link>
       <pubDate>Wed, 12 Aug 2015 11:00:02 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/12/ms15-034-exp.html</guid>
+      <guid>/2015/08/12/ms15-034-exp.html</guid>
       <description>wget 一句话
 wget http://www.host.com --header=&#34;Range: bytes=0-18446744073709551615&#34; http://www.host.com 是你要测试的网站 &amp;nbsp;
 话说这个漏洞已经修复差不多了</description>
@@ -2567,10 +2567,10 @@ wget http://www.host.com --header=&#34;Range: bytes=0-18446744073709551615&#34; 
     
     <item>
       <title>visualstudio快捷键</title>
-      <link>http://www.gsymy.com/2015/08/12/visualstudio-shortcut.html</link>
+      <link>/2015/08/12/visualstudio-shortcut.html</link>
       <pubDate>Wed, 12 Aug 2015 03:50:04 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/12/visualstudio-shortcut.html</guid>
+      <guid>/2015/08/12/visualstudio-shortcut.html</guid>
       <description>分享一个visualstudio快捷键的网站
 http://visualstudioshortcuts.com
 这个网站是个人站，不是微软官方的。这也是个做网站的思路，应该会有一些流量的
@@ -2579,10 +2579,10 @@ http://visualstudioshortcuts.com
     
     <item>
       <title>linux 修改默认Qt版本</title>
-      <link>http://www.gsymy.com/2015/08/08/linux-change_default_qt_version.html</link>
+      <link>/2015/08/08/linux-change_default_qt_version.html</link>
       <pubDate>Sat, 08 Aug 2015 03:03:59 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/08/linux-change_default_qt_version.html</guid>
+      <guid>/2015/08/08/linux-change_default_qt_version.html</guid>
       <description>&lt;p&gt;centos 5\6 下默认使用Qt3&lt;/p&gt;
 
 &lt;p&gt;可以通过sudo yum install qt-devel 安装qt4&lt;/p&gt;
@@ -2596,10 +2596,10 @@ http://visualstudioshortcuts.com
     
     <item>
       <title>VisualStudio 断点不生效分析</title>
-      <link>http://www.gsymy.com/2015/08/06/visualstudio-invalid-breakpoint.html</link>
+      <link>/2015/08/06/visualstudio-invalid-breakpoint.html</link>
       <pubDate>Thu, 06 Aug 2015 08:08:18 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/06/visualstudio-invalid-breakpoint.html</guid>
+      <guid>/2015/08/06/visualstudio-invalid-breakpoint.html</guid>
       <description>&lt;p&gt;问题分析:&lt;/p&gt;
 
 &lt;p&gt;调试程序需要程序携带了调试信息。&lt;/p&gt;
@@ -2613,10 +2613,10 @@ http://visualstudioshortcuts.com
     
     <item>
       <title>wordpress4 添加友链</title>
-      <link>http://www.gsymy.com/2015/08/05/wordpress4-friendlink.html</link>
+      <link>/2015/08/05/wordpress4-friendlink.html</link>
       <pubDate>Wed, 05 Aug 2015 03:38:19 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/05/wordpress4-friendlink.html</guid>
+      <guid>/2015/08/05/wordpress4-friendlink.html</guid>
       <description>&lt;p&gt;wordpress4 有些功能隐藏起来了，友链功能默认关闭。&lt;/p&gt;
 
 &lt;p&gt;解决办法:&lt;/p&gt;
@@ -2626,10 +2626,10 @@ http://visualstudioshortcuts.com
     
     <item>
       <title>linux 挂载U盘</title>
-      <link>http://www.gsymy.com/2015/08/02/linux-mountusbdisk.html</link>
+      <link>/2015/08/02/linux-mountusbdisk.html</link>
       <pubDate>Sun, 02 Aug 2015 02:59:29 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/08/02/linux-mountusbdisk.html</guid>
+      <guid>/2015/08/02/linux-mountusbdisk.html</guid>
       <description>&lt;p&gt;U盘插入后，用fdisk -l(需要管理员权限，否则为空) 查看U是否已经被识别&lt;/p&gt;
 
 &lt;ol&gt;
@@ -2658,10 +2658,10 @@ http://visualstudioshortcuts.com
     
     <item>
       <title>centos 无法找到json-c</title>
-      <link>http://www.gsymy.com/2015/07/30/centos-cantfind-json-c.html</link>
+      <link>/2015/07/30/centos-cantfind-json-c.html</link>
       <pubDate>Thu, 30 Jul 2015 15:46:20 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/07/30/centos-cantfind-json-c.html</guid>
+      <guid>/2015/07/30/centos-cantfind-json-c.html</guid>
       <description>&lt;h2 id=&#34;错误信息&#34;&gt;错误信息:&lt;/h2&gt;
 
 &lt;div&gt;
@@ -2687,10 +2687,10 @@ http://visualstudioshortcuts.com
     
     <item>
       <title>linux 无法找到gengetopt</title>
-      <link>http://www.gsymy.com/2015/07/30/linux_not_found_gengetopt.html</link>
+      <link>/2015/07/30/linux_not_found_gengetopt.html</link>
       <pubDate>Thu, 30 Jul 2015 15:43:42 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/07/30/linux_not_found_gengetopt.html</guid>
+      <guid>/2015/07/30/linux_not_found_gengetopt.html</guid>
       <description>&lt;h2 id=&#34;系统没有安装gengetopt&#34;&gt;&lt;strong&gt;系统没有安装gengetopt&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;div&gt;
@@ -2715,10 +2715,10 @@ http://visualstudioshortcuts.com
     
     <item>
       <title>VS20XX 错误 Error C2143 (missing ; before namespace) in MS VC include</title>
-      <link>http://www.gsymy.com/2015/06/30/vs20xx-error-c2143-missing-before-namespace-in-ms-vc-include.html</link>
+      <link>/2015/06/30/vs20xx-error-c2143-missing-before-namespace-in-ms-vc-include.html</link>
       <pubDate>Tue, 30 Jun 2015 09:44:00 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/06/30/vs20xx-error-c2143-missing-before-namespace-in-ms-vc-include.html</guid>
+      <guid>/2015/06/30/vs20xx-error-c2143-missing-before-namespace-in-ms-vc-include.html</guid>
       <description>&lt;h2 id=&#34;错误信息&#34;&gt;错误信息：&lt;/h2&gt;
 
 &lt;p&gt;VC\include\yvals.h(535): error C2143: syntax error : missing &amp;#8216;;&amp;#8217; before &amp;#8216;namespace&amp;#8217;&lt;/p&gt;
@@ -2730,10 +2730,10 @@ http://visualstudioshortcuts.com
     
     <item>
       <title></title>
-      <link>http://www.gsymy.com/post/2016-12-01_python_mysql2014/</link>
+      <link>/post/2016-12-01_python_mysql2014/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/post/2016-12-01_python_mysql2014/</guid>
+      <guid>/post/2016-12-01_python_mysql2014/</guid>
       <description>+++
 author = &amp;laquo;admin&amp;raquo; date = &amp;laquo;2016-12-01T20:50:22+08:00&amp;raquo; description = &amp;laquo;Error 2014: Commands out of sync; you can&amp;rsquo;t run this command now&amp;raquo;
 keywords = [&amp;laquo;mysql error&amp;raquo;, &amp;laquo;python&amp;raquo;, &amp;laquo;mysql 2014 error&amp;raquo;] tags = [&amp;laquo;python&amp;raquo;, &amp;laquo;error&amp;raquo;, &amp;laquo;mysql&amp;raquo;] title = &amp;laquo;2016 12 01 python mysql error 2014&amp;raquo; url = &amp;laquo;/2016/12/01/python_mysql2014.html&amp;raquo; topics = [&amp;laquo;python&amp;raquo;] type = &amp;laquo;post&amp;raquo; draft = true

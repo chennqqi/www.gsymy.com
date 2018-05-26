@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vs on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/tags/vs/</link>
+    <link>/tags/vs/</link>
     <description>Recent content in Vs on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,15 +11,15 @@
     <copyright>(c) 2016 gsymy.com.</copyright>
     <lastBuildDate>Mon, 07 Sep 2015 10:29:39 +0000</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/tags/vs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/vs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Visualstudio C语言包含C&#43;&#43;头文件编译不通过</title>
-      <link>http://www.gsymy.com/2015/09/07/vs_error_include_cpp.html</link>
+      <link>/2015/09/07/vs_error_include_cpp.html</link>
       <pubDate>Mon, 07 Sep 2015 10:29:39 +0000</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/2015/09/07/vs_error_include_cpp.html</guid>
+      <guid>/2015/09/07/vs_error_include_cpp.html</guid>
       <description>error C2054: expected &#39;(&#39; to follow &#39;using&#39; error C2061: syntax error : identifier &#39;using&#39; c:\program files\microsoft visual studio 10.0\vc\include\cstdio(38): error C2054: expected &#39;(&#39; to follow &#39;using&#39; c:\program files\microsoft visual studio 10.0\vc\include\cstdio(40): error C2061: syntax error : identifier &#39;using&#39; c:\program files\microsoft visual studio 10.0\vc\include\cstdio(40): error C2054: expected &#39;(&#39; to follow &#39;using&#39; c:\program files\microsoft visual studio 10.0\vc\include\cstdio(40): error C2061: syntax error : identifier &#39;using&#39; c:\program files\microsoft visual studio 10.0\vc\include\cstdio(41): error C2061: syntax error : identifier &#39;clearerr&#39;  VS 编译代码时，如果里边既包含C又包含C++，在公共头文件中有C++头文件（如stl系列）时会报这个错误</description>
     </item>
     
