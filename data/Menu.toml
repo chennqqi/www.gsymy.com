@@ -1,0 +1,23 @@
+[posts]
+    Name = "Posts"
+    Title = "Show list of posts"
+    URL = "/post"
+
+[tags]
+    Name = "Tags"
+    Title = "Show list of tags"
+    URL = "/tags"
+    
+[about]
+    Name = "About"
+    URL = "/about"
+
+[regulex]
+	Name = "Regulex"
+    Title = "visulize regexp"
+    URL = "/regulex"
+    
+[json]
+	Name = "JSON format"
+    Title = "JSON format tool"
+    URL = "/json"    

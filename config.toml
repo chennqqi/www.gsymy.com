@@ -1,0 +1,74 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "程序猿的小本本"
+
+theme = "hyde-y"
+
+copyright = "(c) 2016 gsymy.com."
+
+paginate = 4
+paginatePath = "page"
+
+#disqusShortname = "your_disqus_shortname"
+
+[taxonomies]
+    tag = "tags"
+    topic = "topics"
+
+[author]
+    name = "chennqqi"
+    email = "chennqqi@qq.com"
+
+[params]
+    description = "光说有毛用|程序猿的小本本"
+    themeColor = "theme-base-08" # for hyde theme
+
+    # You can use markdown here.
+    brand = "程序猿的小本本"
+    topline = "光说有毛用"
+    footline = "code with <i class='fa fa-heart'></i>"
+
+    # Sidebar position
+    # false, true, "left", "right"
+    sidebar = "left"
+
+    # Text for the top menu link, which goes the root URL for the site.
+    # Default (if omitted) is "Home".
+    home = "Home"
+
+    # Select a syntax highight.
+    # Check the static/css/highlight directory for options.
+    highlight = "default"
+
+    # Google Analytics.
+    #googleAnalytics = "Your Google Analytics tracking code"
+
+    # Sidebar social links.
+    github = "chennqqi?tab=repositories" # Your Github profile ID
+    #bitbucket = "" # Your Bitbucket profile ID
+    #linkedin = "" # Your LinkedIn profile ID (from public URL)
+    #googleplus = "" # Your Google+ profile ID
+    #facebook = "" # Your Facebook profile ID
+    #twitter = "" # Your Twitter profile ID
+    #youtube = ""  # Your Youtube channel ID
+    #flattr = ""  # populate with your flattr uid
+
+	#NeteasyShortname = "gsymycom"
+	BaiduZN = "3969809418513435361"
+	BaiduTJ = "f0f7d05b2bbbb8c6a0d1d1a6b450bd97"
+	BaiduShare = "89860593"
+	livere = "MTAyMC8zMDAxMS82NTc2"
+	#CNZZ= "1256010403"
+	#Neteassy = "bda63d76410749d9b8050711af25507a"
+
+[blackfriday]
+    angledQuotes = true
+    fractions = false
+    hrefTargetBlank = false
+    latexDashes = true
+    plainIdAnchors = true
+    extensions = []
+    extensionmask = []
+     
+
+ignoreFiles = [ "\\.bak$", "\\.orgin$" ]
