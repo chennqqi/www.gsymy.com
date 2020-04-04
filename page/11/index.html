@@ -57,7 +57,7 @@
     <header id="main-header" class="container main_header">
   <div class="container brand">
   <div class="container title h1-like">
-  <a class="baselink" href="">
+  <a class="baselink" href="/">
   程序猿的小本本
 
 </a>
@@ -82,7 +82,7 @@
 
 
   
-<a href="/about.html">About</a>
+<a href="/about">About</a>
 
 <a href="/json" title="JSON format tool">JSON format</a>
 
@@ -186,11 +186,40 @@
     <h1>程序猿的小本本
 </h1>
 
-    <span>last update: <time datetime="2018-12-01T18:26:42&#43;08:00">1 December at 6:26pm</time>
+    <span>last update: <time datetime="2020-04-04T19:05:44&#43;08:00">4 April at 7:05pm</time>
 </span>
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="/2015/09/21/configuremakefile-am-makefile-in-makefile.html">Configure,Makefile.am, Makefile.in, Makefile文件之间关系(转)
+</a>
+</h2>
+
+  <time datetime="2015-09-21">21 Sep, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    Configure，Makefile.am, Makefile.in, Makefile文件之间关系  2009-08-12 12:14      1.autoscan (autoconf): 扫描源代码以搜寻普通的可移植性问题，比如检查编译器，库，头文件等，生成文件configure.scan,它是configure.ac的一个雏形。  your source files &#8211; [autoscan*] &#8211; [configure.scan] &#8211; configure.ac  2.aclocal (automake):根据已经安装的宏，用户定义宏和acinclude.m4文件中的宏将configure.ac文件所需要的宏集中定义到文件 aclocal.m4中。aclocal是一个perl 脚本程序，它的定义是：“aclocal &#8211; create aclocal.m4 by scanning configure.ac” user input files optional input process output files ================ ============== ======= ============ acinclude.m4 - - - - -. V .-------, configure.ac ------------------------&gt;;|aclocal| {user macro files} -&gt;;| |------&gt;;; aclocal.m4 `-------' 3.autoheader(autoconf): 根据configure.ac中的某些宏，比如cpp宏定义，运行m4，声称config.h.in user input files optional input process output files ================ ============== ======= ============ aclocal.
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="/2015/09/21/configuremakefile-am-makefile-in-makefile.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -424,165 +453,106 @@ wget http://peak.telecommunity.com/dist/ez_setup.py sudo python ez_setup.py 0x06
 </article>
 
   
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="/2015/09/10/programmer_bad_manners.html">程序猿特有的15个坏习惯
-</a>
-</h2>
-
-  <time datetime="2015-09-10">10 Sep, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    <p><img src="http://img1.mydrivers.com/img/20131129/1aa55a73334e439fb089727e6861cf69.png" alt="" /></p>
-
-<p>似乎任何职业都会给从业人员带来这样那样的习惯。</p>
-
-<p>编程已给程序猿带来很多坏习惯，编程也每天在继续给程序猿新增更多的坏习惯。当然有些习惯和编程无关了。下面这些习惯尽管程序猿也很想改掉，但已根深蒂固。</p>
-
-<p>用十六进制代码中的像素和颜色来解释某东西的大小；在天地万物中，去发现多态、继承和模式；</p>
-
-<p>在日常交谈中用代码相关的抽象术语。</p>
-
-<p><a href="http://www.oschina.net/uploads/img/201010/17094317_YoFb.jpg" target="_blank"><img src="http://www.oschina.net/uploads/img/201010/17094317_YoFb.jpg" alt="" width="450" height="318" /></a></p>
-
-<p><strong>0. 程序员数数会从0开始数起.</strong></p>
-
-<p>例: 程序员吵 架的时候会说: “我数三下, 你再不闭嘴我就不客气了! 零! 一! 二!” 或者列清单的时候编号会从0.开始写.</p>
-
-<p>因: array[0]是数组的第一个元素.</p>
-
-<p>评: 这个习惯的养成是一个艰难的过程. 多少次的越界, 多少次的循环次数错误让我们深深的记住了从0开始.</p>
-
-<p>**</p>
-
-<p>**</p>
-
-<p><strong>1. 程序员用肯定和否定 回答选择性的问题.</strong></p>
-
-<p>例: 问 “您想喝咖啡还是喝茶?” 程序员答: “嗯.”</p>
-
-<p>因: 当条件或||有一个子句值为真, 则整个语句值为真.</p>
-
-<p>评: 这个习惯夸张了一点, 但这的确是程序员思维方式的通病, 用计算机的处理逻辑处理人类问题. 当然这样的回答显然是存在编程错误的, 因为对于这个问题他错误的返回了布尔型的值. 虽然高度怀疑有没有人关心这种回答的结果是怎样, 还是给出一个答案. 如果真的在程序的世界里, 服务员会优先考虑给你咖啡, 如果没有咖啡了, 才会端茶给你.</p>
-
-<p>**</p>
-
-<p>** </p>
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="/2015/09/10/programmer_bad_manners.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
   
 <div class="container pagination">
   
 
 
-<a aria-label="First" href="/">
+<a aria-label="First" href="//">
   <span aria-hidden="true">««</span>
 </a>
 
-<a aria-label="Previous" href="/page/10/">
+<a aria-label="Previous" href="//page/10/">
   <span aria-hidden="true">«</span>
 </a>
 
 
-<a href="/">
+<a href="//">
   1
 </a>
 
-<a href="/page/2/">
+<a href="//page/2/">
   2
 </a>
 
-<a href="/page/3/">
+<a href="//page/3/">
   3
 </a>
 
-<a href="/page/4/">
+<a href="//page/4/">
   4
 </a>
 
-<a href="/page/5/">
+<a href="//page/5/">
   5
 </a>
 
-<a href="/page/6/">
+<a href="//page/6/">
   6
 </a>
 
-<a href="/page/7/">
+<a href="//page/7/">
   7
 </a>
 
-<a href="/page/8/">
+<a href="//page/8/">
   8
 </a>
 
-<a href="/page/9/">
+<a href="//page/9/">
   9
 </a>
 
-<a href="/page/10/">
+<a href="//page/10/">
   10
 </a>
 
-<a class="active" href="/page/11/">
+<a class="active" href="//page/11/">
   11
 </a>
 
-<a href="/page/12/">
+<a href="//page/12/">
   12
 </a>
 
-<a href="/page/13/">
+<a href="//page/13/">
   13
 </a>
 
-<a href="/page/14/">
+<a href="//page/14/">
   14
 </a>
 
-<a href="/page/15/">
+<a href="//page/15/">
   15
 </a>
 
-<a href="/page/16/">
+<a href="//page/16/">
   16
 </a>
 
-<a href="/page/17/">
+<a href="//page/17/">
   17
 </a>
 
-<a href="/page/18/">
+<a href="//page/18/">
   18
 </a>
 
-<a href="/page/19/">
+<a href="//page/19/">
   19
 </a>
 
+<a href="//page/20/">
+  20
+</a>
 
-<a aria-label="Next" href="/page/12/">
+
+<a aria-label="Next" href="//page/12/">
   <span aria-hidden="true">»</span>
 </a>
 
-<a aria-label="Last" href="/page/19/">
+<a aria-label="Last" href="//page/20/">
   <span aria-hidden="true">»»</span>
 </a>
 

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>分布式系统中的NWR  &middot; 程序猿的小本本</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="老骥伏枥，从头学起" />
+
+<meta name="keywords" content="distributed, nwr, database, fs, ">
+
+
+<meta property="og:title" content="分布式系统中的NWR  &middot; 程序猿的小本本 ">
+<meta property="og:site_name" content="程序猿的小本本"/>
+<meta property="og:url" content="/2020/04/04/distributed-nwr.html" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content="老骥伏枥，从头学起"/>
+<meta property="og:article:published_time" content="2020-04-04T19:05:44&#43;08:00" />
+<meta property="og:article:modified_time" content="2020-04-04T19:05:44&#43;08:00" />
+
+  
+    
+<meta property="og:article:tag" content="distributed">
+    
+<meta property="og:article:tag" content="nwr">
+    
+<meta property="og:article:tag" content="database">
+    
+<meta property="og:article:tag" content="fs">
+    
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@" />
+<meta name="twitter:title" content="分布式系统中的NWR" />
+<meta name="twitter:description" content="老骥伏枥，从头学起" />
+<meta name="twitter:url" content="/2020/04/04/distributed-nwr.html" />
+<meta name="twitter:domain" content="/">
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "分布式系统中的NWR",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2020-04-04",
+    "description": "老骥伏枥，从头学起",
+    "wordCount": 32
+  }
+</script>
+
+
+
+<link rel="canonical" href="/2020/04/04/distributed-nwr.html" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+<link href="/favicon.png" rel="icon">
+
+<meta name="theme-color" content="theme-base-08">
+
+<meta name="generator" content="Hugo 0.37.1" />
+
+  
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/highlight/default.css">
+
+  
+  
+</head>
+<body>
+  <main id="main-wrapper" class="container main_wrapper has-sidebar">
+    <header id="main-header" class="container main_header">
+  <div class="container brand">
+  <div class="container title h1-like">
+  <a class="baselink" href="/">
+  程序猿的小本本
+
+</a>
+
+</div>
+
+  
+<div class="container topline">
+  
+  光说有毛用
+
+
+</div>
+
+
+</div>
+
+  <nav class="container nav primary no-print">
+  
+
+<a class="homelink" href="/">Home</a>
+
+
+  
+<a href="/about">About</a>
+
+<a href="/json" title="JSON format tool">JSON format</a>
+
+<a href="/post" title="Show list of posts">Posts</a>
+
+<a href="/regulex" title="visulize regexp">Regulex</a>
+
+<a href="/tags" title="Show list of tags">Tags</a>
+
+
+</nav>
+
+<div class="container nav secondary no-print">
+  
+<a id="contact-link-email" class="contact_link" href="mailto:chennqqi@qq.com">
+  <span class="fa fa-envelope-square"></span><span>email</span></a>
+
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/chennqqi?tab=repositories">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  <div id="main-header-extra" class="container extra">
+  ﻿<button onClick="showFriendLinks(this)" ><i class="fa fa-chevron-down" id="btn-friendlinkicon"></i> links</button>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+<script>
+	var F=false;
+	function showFriendLinks(obj){
+		console.log("show ")
+	  	if (F) {
+	    	document.getElementById('D').style.display="none";
+		    document.getElementById('btn-friendlinkicon').className="fa fa-chevron-down";
+	 		obj.value="friend links↓";
+	    	F=false;
+	  	}else{
+	    	document.getElementById('D').style.display="";
+		    document.getElementById('btn-friendlinkicon').className="fa fa-chevron-up";
+	 		obj.value="hide↑"
+	    	F=true;    
+  		}
+	}
+</script>
+
+<div id="D" style="display:none; margin-top:10px; width:160px; line-height:180%; font-family:Raleway, Arial, sans-serif; font-size:14px;"> 
+  <div class="friend-links">
+    <div class="friend-links-url">
+    <a href="http://www.webshell.pub">webshell查杀</a>
+    </div>
+    <div class="friend-links-url">
+    <a href="http://wianm.com">wianm安全博客</a>
+    </div>
+    <div class="friend-links-url">
+      <a href="http://zzxiaoyu.cn">小宇安全站</a>
+    </div>
+    <div class="friend-links-url">
+      <a href="http://gs98.cn">故事酒吧</a>
+    </div>
+    <div class="friend-links-url">
+      <a href="http://cnkk.me">cnkk.me前端小站</a>
+    </div>
+    <div class="friend-links-url">
+      <a href="http://0413.so/">0413.so</a>
+    </div>    
+    <div class="friend-links-url">
+      <a href="http://www.ipaddr.site/">ipaddr.site</a>
+    </div>    
+</div>
+</div>
+</div>
+
+</header>
+
+
+<article id="main-content" class="container main_content single">
+  <header class="container hat">
+  <h1>分布式系统中的NWR
+</h1>
+
+  <div class="metas">
+<time datetime="2020-04-04">4 Apr, 2020</time>
+
+
+  
+    &middot; by admin
+  
+  &middot; Read in about 1 min
+  &middot; (32 Words)
+  <br>
+  
+<a class="label" href="/tags/distributed">distributed</a>
+
+
+  ﻿
+	<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_evernotecn" data-cmd="evernotecn" title="分享到印象笔记"></a></div>
+	<script>window._bd_share_config={"common":{"bdSnsKey":{"tsina":"11640679"},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+</div>
+
+</header>
+
+  <div class="container content">
+  
+
+<h2 id="意义">意义</h2>
+
+<p><strong>NWR是一种在分布式存储系统中用于控制一致性级别的一种策略</strong></p>
+
+<h2 id="定义">定义</h2>
+
+<ul>
+<li>N: 同一份数据的副本(replica)份数</li>
+<li>W: 写入一个数据时候要保证成功的份数</li>
+<li>R: 读取一个数据需要读取的副本份数</li>
+</ul>
+
+<h2 id="结论">结论</h2>
+
+<p>1.W+R&gt;N时，读写的副本中肯定存在交集，读操作的时候可以根据版本号或者修改时间来比较哪一份是最新数据，所以系统是<strong>强一致性的</strong></p>
+
+<p>2.W+R&lt;=N时，是<strong>弱一致性的</strong></p>
+
+<p>3.(N,W,R)=(1,1,1)时为单机系统</p>
+
+<p>4.(N,W,R)=(2,1,1)时为主从系统（例如redis主从），是弱一致性的；</p>
+
+<p>5.N越大，可靠性越好；W或者N越大性能越差；经验上设置W和R都为N/2+1</p>
+
+<p>6.(N,W,R)=(3,2,2)时为最小系统，任何时候保证写入两个成功副本即返回；读取时要最少读取两个副本；显然对于最小系统，任意一个节点出现问题后就会退化成(2,1,1)问题</p>
+
+<h2 id="故障方案">故障方案</h2>
+
+<p>1.如果网络故障引起分区，可以让少数节点不提供服务，牺牲可用性来保证可用性；当节点恢复后同步副本日志到这些节点；</p>
+
+<p>2.在要求最终一致性的场景，可以让少数节点分区只提供读取服务，不提供写入服务，待同步后再写入；</p>
+
+<p>3.大多折中方案中是牺牲部分一致性来提高可用；</p>
+
+<h2 id="分片">分片</h2>
+
+<p>如果说副本是提高可用性防止单点故障的方案，那么分片就是提高性能的方案；我们在mysql设计中对于大量数据进行分库、分表操作其实就是分片；redis集群的slots其实也是分片；通常利用一个哈希算法来确定（决策）数据写入（坐落于）哪个节点。显然分片可以可以提升单实例的性能，数据分布到不同节点上了，实现了<strong>负载均衡</strong></p>
+
+<h2 id="集群">集群</h2>
+
+<p>在前面的描述中，同一份数据产生N个副本，分布到N个节点上。</p>
+
+<p>Redis的slots，Cassandra的patitions，MongoDB的shards，elastic的shared</p>
+
+<p>我的理解是对于整个分布式系统节点数量M，每一份数目副本数为N,如果M:N=1:1即为上面描述的情况,在实际情况中效率较为低下;当N较大时存在效率低下，数据冗余过多的问题，所以实际中采用M&gt;N的方案。</p>
+
+<p>在elasticsearch中primary shared和replica shared不会分布到同一个节点上，防止单点故障，来保证高可用性，同时对于同一份数据不同的节点也可以提供<strong>负载均衡的作用</strong>。</p>
+
+<p>NWR+分片方案=提高可用性，提高性能</p>
+
+<h2 id="参考出处">参考出处</h2>
+
+<p><a href="https://blog.csdn.net/lavorange/article/details/52489998">https://blog.csdn.net/lavorange/article/details/52489998</a></p>
+
+<div class="bdzn-search">
+<script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=3969809418513435361' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
+</div>
+
+</div>
+
+
+
+  <footer class="container">
+  <div class="container navigation no-print">
+  <h2>Navigation</h2>
+  
+  
+
+    
+    <a class="prev" href="/2018/02/25/curl_connect_error.html" title="curl: (35) SSL connect error">
+      Previous
+    </a>
+    
+
+    
+
+  
+
+
+</div>
+
+  <div class="container comments">
+  <h2>Comments</h2>
+    
+
+  
+﻿
+
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zMDAxMS82NTc2">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+
+
+
+</div>
+
+</footer>
+
+</article>
+      <footer id="main-footer" class="container main_footer">
+  
+
+  <div class="container nav foot no-print">
+  
+
+  <a class="toplink" href="#">back to top</a>
+
+</div>
+
+  <div class="container credits">
+  
+<div class="container footline">
+  
+  code with <i class='fa fa-heart'></i>
+
+
+</div>
+
+
+  
+<div class="container copyright">
+  
+  &copy; 2016 gsymy.com.
+
+
+</div>
+
+
+</div>
+
+</footer>
+
+    </main>
+    
+
+
+<script src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256010403'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1256010403%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+<script>  
+	(	function(){
+			var bp = document.createElement('script');   
+			bp.src = '//push.zhanzhang.baidu.com/push.js';   
+			var s = document.getElementsByTagName("script")[0];   
+			s.parentNode.insertBefore(bp, s);   
+			})();   
+</script>
+
+  </body>
+</html>
+

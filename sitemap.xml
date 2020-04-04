@@ -3,8 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/about.html</loc>
-    <lastmod>2018-12-01T18:26:42+08:00</lastmod>
+    <loc>/2020/04/04/distributed-nwr.html</loc>
+    <lastmod>2020-04-04T19:05:44+08:00</lastmod>
   </url>
   
   <url>
@@ -485,6 +485,18 @@
   </url>
   
   <url>
+    <loc>/tags/distributed/</loc>
+    <lastmod>2020-04-04T19:05:44+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/topics/distributed/</loc>
+    <lastmod>2020-04-04T19:05:44+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/dll/</loc>
     <lastmod>2017-07-16T10:13:13+08:00</lastmod>
     <priority>0</priority>
@@ -660,7 +672,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2018-02-25T12:13:13+08:00</lastmod>
+    <lastmod>2020-04-04T19:05:44+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1020,7 +1032,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-12-01T18:26:42+08:00</lastmod>
+    <lastmod>2020-04-04T19:05:44+08:00</lastmod>
     <priority>0</priority>
   </url>
   
