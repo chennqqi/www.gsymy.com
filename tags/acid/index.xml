@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Acid on 程序猿的小本本</title>
+    <link>/tags/acid/</link>
+    <description>Recent content in Acid on 程序猿的小本本</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
+    <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
+    <copyright>(c) 2016 gsymy.com.</copyright>
+    <lastBuildDate>Sun, 05 Apr 2020 11:31:30 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/acid/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>acid</title>
+      <link>/2020/04/05/distributed-acid.html</link>
+      <pubDate>Sun, 05 Apr 2020 11:31:30 +0800</pubDate>
+      <author>chennqqi@qq.com (chennqqi)</author>
+      <guid>/2020/04/05/distributed-acid.html</guid>
+      <description> ACID ACID原则是数据库事务正常执行的四个，分别指原子性、一致性、独立性及持久性
+ 原子性(Atomicity): 原子性是指事务是一个不可分割的工作单位，事务中的操作要么都发生，要么都不发生 一致性(Consistency): 事务的运行不改变数据库中的一致性。 隔离性(Isolation): 是指两个以上的事务不会出现交错执行的状态。因为这样可能会导致数据不一致。 持久性(Durability): 事物提交执行后不会丢失，对数据库的修改是永久的，不受故障影响  </description>
+    </item>
+    
+  </channel>
+</rss>

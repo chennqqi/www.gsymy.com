@@ -186,11 +186,44 @@
     <h1>程序猿的小本本
 </h1>
 
-    <span>last update: <time datetime="2020-04-04T19:05:44&#43;08:00">4 April at 7:05pm</time>
+    <span>last update: <time datetime="2020-04-05T11:31:30&#43;08:00">5 April at 11:31am</time>
 </span>
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="/2015/10/10/centos6-update-nginx.html">centos6 升级nginx
+</a>
+</h2>
+
+  <time datetime="2015-10-10">10 Oct, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    centos6 默认源的nginx版本很低，网上给出的大部分方法下载源码编译安装；
+这种方法比较麻烦，其实最简单的方法是使用nginx官网的源进行安装；
+ 进入 /etc/yum.repos.d/ 目录下生成nginx的源配置  cd /etc/yum.repos.d/  用vi/vim/cat 工具生成nginx.repo填入以下内容
+[nginx] name=nginx repo baseurl=http://nginx.org/packages/centos/$releasever/$basearch/ gpgcheck=0 enabled=1  安装 yum install -y nginx 更新 yum update nginx 参考:http://my.oschina.net/VincentJiang/blog/224993
+https://www.nginx.com/resources/wiki/start/topics/tutorials/install/
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="/2015/10/10/centos6-update-nginx.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -298,35 +331,6 @@ make && make install 这样就可以把virt-what安装成功。  第二、检测
 
   <div class="container readlink">
   <a href="/2015/09/25/virt-what.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="/2015/09/23/yzfz.html">咬文嚼字之阈值阀值
-</a>
-</h2>
-
-  <time datetime="2015-09-23">23 Sep, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-       阀值是阈值的常见错误写法。  引用同事说的一句话&#8221;阀值是阈值的文盲写法&#8220;   阀fá 控制、开关、把持。1) 机械名词,指在管道中用来控制液体或气体的部件。意为阀门、开关、把持。如截止阀、减压阀、安全阀。  阈(yù )范围,边界,程度。1) 门槛、门限,引申为边界、界阈、视阈。  可见“阀”与“阈”是词义不同的2个词。那么“阀值”会不会是一个新词呢? 经查，不是。在表达“界限”、“范围”的意思时应该用“阈”而不是“阀”。阈值跟英文threshold value对应。  在新版的《现代汉语词典》和《现代汉语规范词典》中，均没有收录“阀值”一词 ；但在日常生活、甚至许多科研论文中，都普遍存在误用的现象。   from 百度百科  http://baike.baidu.com/subview/648990/648990.htm  
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="/2015/09/23/yzfz.html">Read more &rarr;</a>
 
 </div>
 

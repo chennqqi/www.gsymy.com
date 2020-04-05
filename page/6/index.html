@@ -186,11 +186,42 @@
     <h1>程序猿的小本本
 </h1>
 
-    <span>last update: <time datetime="2020-04-04T19:05:44&#43;08:00">4 April at 7:05pm</time>
+    <span>last update: <time datetime="2020-04-05T11:31:30&#43;08:00">5 April at 11:31am</time>
 </span>
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="/2015/12/30/redis-delkey.html">Redis 删除所有键值 | redis,删除key,key
+</a>
+</h2>
+
+  <time datetime="2015-12-30">30 Dec, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    使用命令方式删除所有
+redis-cli KEYS &#8220;126.com*&#8221; | xargs redis-cli DEL 使用lua方式
+EVAL &#8220;return redis.call(&#8216;del&#8217;, unpack(redis.call(&#8216;keys&#8217;, ARGV[1])))&#8221; 0 * 
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="/2015/12/30/redis-delkey.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -330,35 +361,6 @@ http://www.secpulse.com/archives/tag/svn%E6%96%87%E4%BB%B6%E6%B3%84%E9%9C%B2
 
   <div class="container readlink">
   <a href="/2015/12/09/linux_update_svn.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="/2015/11/29/magicgirl.html">一个充满魔性的外国妹子，看了好几遍…
-</a>
-</h2>
-
-  <time datetime="2015-11-29">29 Nov, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    程序员爱看妹子
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="/2015/11/29/magicgirl.html">Read more &rarr;</a>
 
 </div>
 
