@@ -20,8 +20,9 @@
       <pubDate>Sun, 05 Apr 2020 11:31:30 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
       <guid>/2020/04/05/distributed-acid.html</guid>
-      <description> ACID ACID原则是数据库事务正常执行的四个，分别指原子性、一致性、独立性及持久性
- 原子性(Atomicity): 原子性是指事务是一个不可分割的工作单位，事务中的操作要么都发生，要么都不发生 一致性(Consistency): 事务的运行不改变数据库中的一致性。 隔离性(Isolation): 是指两个以上的事务不会出现交错执行的状态。因为这样可能会导致数据不一致。 持久性(Durability): 事物提交执行后不会丢失，对数据库的修改是永久的，不受故障影响  </description>
+      <description>ACID ACID原则是数据库事务正常执行的四个，分别指原子性、一致性、独立性及持久性
+ 原子性(Atomicity): 原子性是指事务是一个不可分割的工作单位，事务中的操作要么都发生，要么都不发生 一致性(Consistency): 事务的运行不改变数据库中的一致性。 隔离性(Isolation): 是指两个以上的事务不会出现交错执行的状态。因为这样可能会导致数据不一致。 持久性(Durability): 事物提交执行后不会丢失，对数据库的修改是永久的，不受故障影响  [CAP理论]()中的一致性是可线性化的意思(linearizability)。而这个是非常特殊(而且非常强)的一致性。尤其是虽然ACID中的C也是一致性(Consistency)，但是和CAP里的一致性没有任何关系。数据库的一致性是指在事物没有被提交之前，数据没有被修改之前，所有读到的数据应当是一致的；在事物提交后，所有客户端读取到的数据应当是一致的。目前来看数据库事物的一致性更像是目标；而AID保证了数据库事物的一致性，ACID中的C是一种约束。
+reference https://blog.csdn.net/lianggzone/article/details/93149807</description>
     </item>
     
   </channel>

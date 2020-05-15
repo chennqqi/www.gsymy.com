@@ -2,37 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Topic 1 on 程序猿的小本本</title>
-    <link>http://www.gsymy.com/topics/topic-1/</link>
+    <link>/topics/topic-1/</link>
     <description>Recent content in Topic 1 on 程序猿的小本本</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>chennqqi@qq.com (chennqqi)</managingEditor>
     <webMaster>chennqqi@qq.com (chennqqi)</webMaster>
     <copyright>(c) 2016 gsymy.com.</copyright>
+    <lastBuildDate>Fri, 15 May 2020 15:06:47 +0800</lastBuildDate>
     
-	<atom:link href="http://www.gsymy.com/topics/topic-1/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/topics/topic-1/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title></title>
-      <link>http://www.gsymy.com/post/2017-12-08-filebeat/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>xorm JSON结构测试</title>
+      <link>/2020/05/15/xorm-json.html</link>
+      <pubDate>Fri, 15 May 2020 15:06:47 +0800</pubDate>
       <author>chennqqi@qq.com (chennqqi)</author>
-      <guid>http://www.gsymy.com/post/2017-12-08-filebeat/</guid>
-      <description>filebeat 笔记 下载安装
-https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html
-配置输出elasticsearch
-编辑filebeat.yml output.elasticsearch: hosts: [&amp;quot;myEShost:9200&amp;quot;] username: &amp;quot;elastic&amp;quot; password: &amp;quot;elastic&amp;quot; setup.kibana: host: &amp;quot;mykibanahost:5601&amp;quot; username: &amp;quot;elastic&amp;quot; password: &amp;quot;elastic&amp;quot; https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-configuration.html  filebeat可以输出到elasticsearch或者logstash(还包括其他)。
-如果要直接输出到elasticsearch需要在elasticsearch上创建pipeline来切分字段或者使用logstash来切分字段
-Filebeat modules
-提供切分通用日志文件的模块，自带了以下几种模块
- Apache2 module
- Auditd module
- Icinga module MySQL module Nginx module Redis module System module  使用modules的先决条件
- 安装ES 安装完整的filebeat 安装ES插件Ingest Node GeoIP，Inget User Agent
-sudo bin/elasticsearch-plugin install ingest-geoip sudo bin/elasticsearch-plugin install ingest-user-agent
- 确保es和kibana正在运行，能够正常接收数据
-  使用步骤 1. 配置并启动es和kibana 2.</description>
+      <guid>/2020/05/15/xorm-json.html</guid>
+      <description>xorm xorm官网 https://xorm.io xorm是一个轻量级的golang orm框架，支持多种数据库。 xorm能通过标记灵活的将golang数据结构和数据库字段进行映射，官方文档中支持将JSON和TEXT进行转换，但是文档写的不是很清楚。本文对此作测试并进行记录，帮助用户理清头绪。
+测试环境 xorm: v1.0.1 golang: 1.13.0 windows amd64 mysq: 5.7.0
+测试代码  struct: (TYPE,JSON,NAME)  代码:
+```Go package function import ( &amp;quot;testing&amp;quot; &amp;quot;xorm.io/xorm&amp;quot; ) type TblTestStructTJN struct { Id int64 `xorm:&amp;quot;pk autoincr INT(11)&amp;quot;` Name string `xorm:&amp;quot;varchar(255) unique&amp;quot;` Conf Test `xorm:&amp;quot;MediumText JSON &#39;conf&#39;&amp;quot; json:&amp;quot;conf&amp;quot;` } func TestOrmJsonTJN(t *testing.T) { orm, err := xorm.NewEngine(&amp;quot;mysql&amp;quot;, dsn) if err != nil { t.Fatal(&amp;quot;[test] xorm.NewEngine error:&amp;quot;, err) } defer orm.</description>
     </item>
     
   </channel>

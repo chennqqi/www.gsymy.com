@@ -186,11 +186,72 @@
     <h1>程序猿的小本本
 </h1>
 
-    <span>last update: <time datetime="2020-04-05T11:31:30&#43;08:00">5 April at 11:31am</time>
+    <span>last update: <time datetime="2020-05-15T15:06:47&#43;08:00">15 May at 3:06pm</time>
 </span>
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="/2015/08/28/git-mindpic.html">一张图学会git
+</a>
+</h2>
+
+  <time datetime="2015-08-28">28 Aug, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    <div class="para">
+  Git是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。Git的读音为[gɪt]。
+</div>
+
+<div class="para">
+  Git是一个开源的分布式版本控制系统，用以有效、高速的处理从很小到非常大的项目版本管理。Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。
+</div>
+
+<div class="para">
+</div>
+
+<div class="para">
+  Git可以说是目前最火、最流行的版本控制软件，目前绝大多数的代码仓库(国外的github、国内的oschina、coding)都使用的是Git
+</div>
+
+<div class="para">
+</div>
+
+<div class="para">
+</div>
+
+<div class="para">
+  自己在学习Git时发现了别人发的一张思维导图，感觉挺不错的就盗了过来
+</div>
+
+<div class="para">
+  <a href="http://www.gsymy.com/wp-content/uploads/2015/08/git-mind.png"><img class="alignnone size-full wp-image-193" src="http://www.gsymy.com/wp-content/uploads/2015/08/git-mind.png" alt="git mind" width="1759" height="3162" /></a>
+</div>
+
+<div class="para">
+</div>
+
+<p></p>
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="/2015/08/28/git-mindpic.html">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -294,116 +355,6 @@ nirsoft开发了很多体积小又实用的windows软件，而且基本都是免
 
   <div class="container readlink">
   <a href="/2015/08/26/nirsoft.html">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="/2015/08/25/linux-screen.html">linux screen 命令详解(转)
-</a>
-</h2>
-
-  <time datetime="2015-08-25">25 Aug, 2015</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    <p>转<a href="http://www.cnblogs.com/mchina/archive/2013/01/30/2880680.html" target="_blank">linux screen 命令详解 &#8211; David_Tang &#8211; 博客园</a></p>
-
-<div id="home">
-  <div id="main">
-    <div id="mainContent">
-      <div class="forFlow">
-        <div id="post_detail">
-          <div id="topics">
-            <div class="post">
-              <div class="postBody">
-                <div id="cnblogs_post_body">
-                  <p>
-                    <strong>一、背景</strong>
-                  </p>
-                  
-                  <p>
-                    系统管理员经常需要SSH 或者telent 远程登录到Linux 服务器，经常运行一些需要很长时间才能完成的任务，比如系统备份、ftp 传输等等。通常情况下我们都是为每一个这样的任务开一个远程终端窗口，因为它们执行的时间太长了。必须等待它们执行完毕，在此期间不能关掉窗口或者断开连接，否则这个任务就会被杀掉，一切半途而废了。
-                  </p>
-                  
-                  <p>
-                    <strong>二、简介</strong>
-                  </p>
-                  
-                  <p>
-                    <strong>GNU Screen</strong>是一款由GNU计划开发的用于命令行终端切换的自由软件。用户可以通过该软件同时连接多个本地或远程的命令行会话，并在其间自由切换。
-                  </p>
-                  
-                  <p>
-                    GNU Screen可以看作是窗口管理器的命令行界面版本。它提供了统一的管理多个会话的界面和相应的功能。
-                  </p>
-                  
-                  <ul>
-                    <li>
-                      <strong>会话恢复</strong>
-                    </li>
-                  </ul>
-                  
-                  <dl>
-                    <dd>
-                      只要Screen本身没有终止，在其内部运行的会话都可以恢复。这一点对于远程登录的用户特别有用——即使网络连接中断，用户也不会失去对已经打开的命令行会话的控制。只要再次登录到主机上执行<strong>screen -r</strong>就可以恢复会话的运行。同样在暂时离开的时候，也可以执行分离命令<strong>detach</strong>，在保证里面的程序正常运行的情况下让Screen挂起（切换到后台）。这一点和图形界面下的VNC很相似。
-                    </dd>
-                  </dl>
-                  
-                  <ul>
-                    <li>
-                      <strong>多窗口</strong>
-                    </li>
-                  </ul>
-                  
-                  <dl>
-                    <dd>
-                      在Screen环境下，所有的会话都独立的运行，并拥有各自的编号、输入、输出和窗口缓存。用户可以通过快捷键在不同的窗口下切换，并可以自由的重定向各个窗口的输入和输出。Screen实现了基本的文本操作，如复制粘贴等；还提供了类似滚动条的功能，可以查看窗口状况的历史记录。窗口还可以被分区和命名，还可以监视后台窗口的活动。
-                    </dd>
-                  </dl>
-                  
-                  <ul>
-                    <li>
-                      <strong>会话共享</strong>
-                    </li>
-                  </ul>
-                  
-                  <dl>
-                    <dd>
-                      Screen可以让一个或多个用户从不同终端多次登录一个会话，并共享会话的所有特性（比如可以看到完全相同的输出）。它同时提供了窗口访问权限的机制，可以对窗口进行密码保护。
-                    </dd>
-                  </dl>
-                  
-                  <p>
-                    GNU&#8217;s Screen 官方站点：<a href="http://www.gnu.org/software/screen/" target="_blank">http://www.gnu.org/software/screen/</a>
-                  </p>
-                  
-                  <p>
-                    <strong>三、语法</strong>
-                  </p>
-                  
-                  <p>
-                    # screen [-AmRvx -ls -wipe][-d <作业名称>][-h <行数>][-r <作业名称>][-s ][-S <作业名称>]
-                  </p>
-                  
-                  <p>
-                    <strong>参数说明</strong><br /> 
-                  </p>
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="/2015/08/25/linux-screen.html">Read more &rarr;</a>
 
 </div>
 
